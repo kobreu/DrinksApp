@@ -145,7 +145,7 @@ class PayController : UIViewController, MFMailComposeViewControllerDelegate {
                     let signatureViewController = MPBSignatureViewController()
                     signatureViewController.merchantName = "Getränke"
                     signatureViewController.amountText = amt + " €"
-                    //signatureViewController.modalPresentationStyle = UIModalPresentationStyle.FormSheet
+                    signatureViewController.modalPresentationStyle = UIModalPresentationStyle.FormSheet
                     self.presentViewController(signatureViewController, animated: true, completion: nil)
                     signatureViewController.registerOnPay({ () -> Void in
                         self.paymentProcess.continueWithCustomerSignature(signatureViewController.signature(), verified: true)
