@@ -1,0 +1,133 @@
+{
+    "info": {
+        "locale": "en_US", 
+        "rows": 2, 
+        "columns": 40
+    }, 
+    "localization": {
+        "ProviderAccessoryUpdating": [
+            "Applying", 
+            "updates"
+        ], 
+        "ProcessingTransaction": [
+            "Processing payment...", 
+            ""
+        ], 
+        "ApplicationSelection": [
+            "Please select your account", 
+            ""
+        ], 
+        "TransactionAborting": [
+            "Aborting payment...", 
+            ""
+        ], 
+        "ProvideIdentification": [
+            "Identification required", 
+            ""
+        ], 
+        "UpdatingDeviceConfigurationUpdate": [
+            "Updating Config", 
+            "This may take a few moments..."
+        ], 
+        "ReadingEMVCard": [
+            "Reading card...", 
+            ""
+        ], 
+        "ProvideSignature": [
+            "Signature required", 
+            ""
+        ], 
+        "ProviderAccessoryCheckingForUpdate": [
+            "Connecting to", 
+            "card reader"
+        ], 
+        "PINStatus": [
+            "Enter PIN", 
+            "$digits$"
+        ], 
+        "RemoveCardWithStatus": [
+            "$reason1$", 
+            "Remove card"
+        ], 
+        "UpdatingDeviceFirmwareUpdate": [
+            "Updating Firmware", 
+            "This may take a while..."
+        ], 
+        "ProviderFailed": [
+            "Transaction failed", 
+            "$error$"
+        ], 
+        "GenericError": [
+            "Error", 
+            ""
+        ], 
+        "BarcodeScannerActive": [
+            "Barcode scanner", 
+            "active"
+        ], 
+        "ProviderAccessoryConnecting": [
+            "Connecting to", 
+            "card reader"
+        ], 
+        "PresentCard": [
+            "$amount$", 
+            "Insert or swipe card"
+        ], 
+        "PINLastTry": [
+            "Enter PIN (last try)", 
+            "$digits$"
+        ], 
+        "PINOk": [
+            "PIN OK", 
+            ""
+        ], 
+        "ProviderCompleted": [
+            "Transaction", 
+            "completed"
+        ], 
+        "Idle": [
+            "Connected", 
+            ""
+        ], 
+        "ProviderTransactionRegistering": [
+            "Registering", 
+            "transaction"
+        ], 
+        "SwipeCard": [
+            "$amount$", 
+            "Swipe card"
+        ], 
+        "PINIncorrect": [
+            "Enter PIN (incorrect)", 
+            "$digits$"
+        ], 
+        "UpdatingDeviceSoftwareUpdate": [
+            "Updating Software", 
+            "This may take a while..."
+        ], 
+        "UpdatingDeviceKeyInjection": [
+            "Generating Keys", 
+            "This may take a few moments..."
+        ], 
+        "UpdatingDevice": [
+            "Updating...", 
+            ""
+        ], 
+        "ProviderTransactionQuerying": [
+            "Querying", 
+            "transaction"
+        ], 
+        "CardNotSupported": [
+            "Card not supported!", 
+            "Try another or press cancel"
+        ], 
+        "CompletedWithStatus": [
+            "$reason1$", 
+            ""
+        ], 
+        "InsertCard": [
+            "$amount$", 
+            "Insert card"
+        ]
+    }
+}

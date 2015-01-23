@@ -1,0 +1,93 @@
+{
+    "info": {
+        "locale": "de_DE", 
+        "rows": 1, 
+        "columns": 40
+    }, 
+    "localization": {
+        "DECLINED_PROCESSOR": [
+            "Zahlung abgelehnt"
+        ], 
+        "PENDING_WAITING_FOR_FINALIZATION": [
+            "Zahlung erfolgreich"
+        ], 
+        "APPROVED": [
+            "Zahlung erfolgreich"
+        ], 
+        "NONE": [
+            ""
+        ], 
+        "ERROR_PROCESSOR_INVALID_NONCE": [
+            "Verarbeitungsfehler (Invalid Nonce)"
+        ], 
+        "DECLINED_CARD_OR_TERMINAL_DECLINED": [
+            "Abgelehnt"
+        ], 
+        "ERROR_PROCESSOR_MISSING_SESSION": [
+            "Verarbeitungsfehler (Missing Session)"
+        ], 
+        "ERROR_TERMINAL_TIMEOUT": [
+            "Verarbeitungsfehler (Terminal Timeout)"
+        ], 
+        "DECLINED_INVALID_TERMINAL_SOFTWARE": [
+            "Zahlung nicht möglich"
+        ], 
+        "ABORTED_SHOPPER_ABORTED": [
+            "Zahlung abgebrochen"
+        ], 
+        "DECLINED_CARD_INVALID_SCHEME": [
+            "Karte nicht erlaubt"
+        ], 
+        "ERROR_PROCESSOR_INVALID_FORMAT": [
+            "Verarbeitungsfehler (Invalid Format)"
+        ], 
+        "DECLINED_INVALID_TERMINAL": [
+            "Zahlung nicht möglich"
+        ], 
+        "ERROR_TERMINAL_ERROR": [
+            "Verarbeitungsfehler (Terminal Error)"
+        ], 
+        "ABORTED_MERCHANT_ABORTED": [
+            "Zahlung abgebrochen"
+        ], 
+        "ERROR_PROCESSOR_INVALID_STATUS": [
+            "Verarbeitungsfehler (Invalid Status)"
+        ], 
+        "DECLINED_PIN_WRONG": [
+            "Falsche PIN"
+        ], 
+        "ERROR_SESSION_TIMEOUT": [
+            "Verarbeitungsfehler (Session Timeout)"
+        ], 
+        "DECLINED_CARD_INVALID_PAN": [
+            "Ungültige Karte"
+        ], 
+        "DECLINED_CARD_STOLEN": [
+            "Gestohlene Karte, Karte einziehen"
+        ], 
+        "DECLINED_SESSION_EXPIRED": [
+            "Zahlung nicht möglich"
+        ], 
+        "DECLINED_CARD_USE_ORIGINAL": [
+            "Original verwenden"
+        ], 
+        "ERROR_PROCESSOR_INVALID_SESSION": [
+            "Verarbeitungsfehler (Invalid Session)"
+        ], 
+        "DECLINED_INVALID_TERMINAL_CONFIG": [
+            "Zahlung nicht möglich"
+        ], 
+        "ERROR_SERVER_INVALID_RESPONSE": [
+            "Verarbeitungsfehler (Invalid Response)"
+        ], 
+        "DECLINED_CARD_EXPIRED": [
+            "Karte abgelaufen"
+        ], 
+        "ABORTED_SHOPPER_REMOVED_CARD": [
+            "Zahlung abgebrochen"
+        ], 
+        "DECLINED_PIN_WRONG_TOO_OFTEN": [
+            "Falsche PIN zu oft eingegeben"
+        ]
+    }
+}

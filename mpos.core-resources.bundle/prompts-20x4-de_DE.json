@@ -1,0 +1,180 @@
+{
+    "info": {
+        "locale": "de_DE", 
+        "rows": 4, 
+        "columns": 20
+    }, 
+    "localization": {
+        "ProviderAccessoryUpdating": [
+            ""
+        ], 
+        "ProcessingTransaction": [
+            "", 
+            "Zahlung wird", 
+            "verarbeitet...", 
+            ""
+        ], 
+        "ApplicationSelection": [
+            "", 
+            "Bitte Konto", 
+            "auswählen", 
+            ""
+        ], 
+        "TransactionAborting": [
+            "", 
+            "Zahlung wird", 
+            "abgebrochen...", 
+            ""
+        ], 
+        "PresentCard": [
+            "$amount$", 
+            "", 
+            "Karte einstecken", 
+            "oder durchziehen"
+        ], 
+        "UpdatingDeviceConfigurationUpdate": [
+            "Config-Update", 
+            "", 
+            "Dies kann einen", 
+            "Moment dauern..."
+        ], 
+        "ReadingEMVCard": [
+            "", 
+            "Karte wird", 
+            "gelesen...", 
+            ""
+        ], 
+        "ProvideSignature": [
+            "", 
+            "Unterschrift", 
+            "benötigt", 
+            ""
+        ], 
+        "ProviderAccessoryCheckingForUpdate": [
+            ""
+        ], 
+        "PINStatus": [
+            "", 
+            "PIN eingeben", 
+            "$digits$", 
+            ""
+        ], 
+        "RemoveCardWithStatus": [
+            "$reason1$", 
+            "$reason2$", 
+            "", 
+            "Karte entnehmen"
+        ], 
+        "UpdatingDeviceFirmwareUpdate": [
+            "Firmware-Update", 
+            "", 
+            "Dies kann etwas", 
+            "länger dauern..."
+        ], 
+        "ProviderFailed": [
+            ""
+        ], 
+        "GenericError": [
+            "", 
+            "", 
+            "Fehler", 
+            ""
+        ], 
+        "BarcodeScannerActive": [
+            "", 
+            "Barcodescanner", 
+            "aktiv", 
+            ""
+        ], 
+        "ProviderAccessoryConnecting": [
+            ""
+        ], 
+        "ProvideIdentification": [
+            "", 
+            "Identifikation", 
+            "benötigt", 
+            ""
+        ], 
+        "SelectApp": [
+            "Auswahl:", 
+            "", 
+            "", 
+            "mehr"
+        ], 
+        "PINLastTry": [
+            "", 
+            "PIN eingeben", 
+            "$digits$", 
+            "(letzter Versuch)"
+        ], 
+        "PINOk": [
+            "", 
+            "", 
+            "PIN OK", 
+            ""
+        ], 
+        "ProviderCompleted": [
+            ""
+        ], 
+        "Idle": [
+            "", 
+            "", 
+            "Verbunden", 
+            ""
+        ], 
+        "ProviderTransactionRegistering": [
+            ""
+        ], 
+        "SwipeCard": [
+            "$amount$", 
+            "", 
+            "Karte durchziehen", 
+            ""
+        ], 
+        "PINIncorrect": [
+            "", 
+            "Enter PIN", 
+            "$digits$", 
+            "(PIN falsch)"
+        ], 
+        "UpdatingDeviceSoftwareUpdate": [
+            "Software-Update", 
+            "", 
+            "Dies kann etwas", 
+            "länger dauern..."
+        ], 
+        "UpdatingDeviceKeyInjection": [
+            "Schlüsselerzeugung", 
+            "", 
+            "Dies kann einen", 
+            "Moment dauern..."
+        ], 
+        "UpdatingDevice": [
+            "", 
+            "Gerät wird", 
+            "aktualisiert...", 
+            ""
+        ], 
+        "ProviderTransactionQuerying": [
+            ""
+        ], 
+        "CardNotSupported": [
+            "Karte nicht", 
+            "unterstützt!", 
+            "Andere Karte", 
+            "oder abbrechen"
+        ], 
+        "CompletedWithStatus": [
+            "", 
+            "$reason1$", 
+            "$reason2$", 
+            ""
+        ], 
+        "InsertCard": [
+            "$amount$", 
+            "", 
+            "Karte einstecken", 
+            ""
+        ]
+    }
+}

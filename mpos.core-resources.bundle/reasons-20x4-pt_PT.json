@@ -1,0 +1,121 @@
+{
+    "info": {
+        "locale": "pt_PT", 
+        "rows": 2, 
+        "columns": 20
+    }, 
+    "localization": {
+        "DECLINED_PROCESSOR": [
+            "", 
+            "Pagamento recusado"
+        ], 
+        "PENDING_WAITING_FOR_FINALIZATION": [
+            "", 
+            "Pagamento aprovado"
+        ], 
+        "APPROVED": [
+            "", 
+            "Pagamento aprovado"
+        ], 
+        "NONE": [
+            "", 
+            ""
+        ], 
+        "ERROR_PROCESSOR_INVALID_NONCE": [
+            "", 
+            "Erro"
+        ], 
+        "DECLINED_CARD_OR_TERMINAL_DECLINED": [
+            "", 
+            "Recusado"
+        ], 
+        "ERROR_PROCESSOR_MISSING_SESSION": [
+            "", 
+            "Erro"
+        ], 
+        "ERROR_TERMINAL_TIMEOUT": [
+            "", 
+            "Erro"
+        ], 
+        "DECLINED_INVALID_TERMINAL_SOFTWARE": [
+            "Pagamento", 
+            "não possível"
+        ], 
+        "ABORTED_SHOPPER_ABORTED": [
+            "", 
+            "Pagamento abortado"
+        ], 
+        "DECLINED_CARD_INVALID_SCHEME": [
+            "Cartão", 
+            "não autorizado"
+        ], 
+        "ERROR_PROCESSOR_INVALID_FORMAT": [
+            "", 
+            "Erro"
+        ], 
+        "DECLINED_INVALID_TERMINAL": [
+            "", 
+            "Pagamento impossível"
+        ], 
+        "ERROR_TERMINAL_ERROR": [
+            "", 
+            "Erro"
+        ], 
+        "ABORTED_MERCHANT_ABORTED": [
+            "", 
+            "Pagamento abortado"
+        ], 
+        "ERROR_PROCESSOR_INVALID_STATUS": [
+            "", 
+            "Erro"
+        ], 
+        "DECLINED_PIN_WRONG": [
+            "", 
+            "PIN incorreto"
+        ], 
+        "ERROR_SESSION_TIMEOUT": [
+            "", 
+            "Erro"
+        ], 
+        "DECLINED_CARD_INVALID_PAN": [
+            "", 
+            "Cartão inválido"
+        ], 
+        "DECLINED_CARD_STOLEN": [
+            "Cartão roubado,", 
+            "tirar de circulação"
+        ], 
+        "DECLINED_SESSION_EXPIRED": [
+            "Pagamento", 
+            "não possível"
+        ], 
+        "DECLINED_CARD_USE_ORIGINAL": [
+            "", 
+            "Use cartão original"
+        ], 
+        "ERROR_PROCESSOR_INVALID_SESSION": [
+            "", 
+            "Erro"
+        ], 
+        "DECLINED_INVALID_TERMINAL_CONFIG": [
+            "Pagamento", 
+            "não possível"
+        ], 
+        "ERROR_SERVER_INVALID_RESPONSE": [
+            "", 
+            "Erro"
+        ], 
+        "DECLINED_CARD_EXPIRED": [
+            "", 
+            "Cartão expirado"
+        ], 
+        "ABORTED_SHOPPER_REMOVED_CARD": [
+            "", 
+            "Pagamento abortado"
+        ], 
+        "DECLINED_PIN_WRONG_TOO_OFTEN": [
+            "PIN errado inserido", 
+            "com muita frequência"
+        ]
+    }
+}

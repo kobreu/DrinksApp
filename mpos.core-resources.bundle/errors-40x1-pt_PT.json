@@ -1,0 +1,99 @@
+{
+    "info": {
+        "locale": "pt_PT", 
+        "rows": 1, 
+        "columns": 40
+    }, 
+    "localization": {
+        "ParameterInvalid": [
+            "Parâmetro inválido"
+        ], 
+        "AccessoryAlreadyDisconnected": [
+            "Acessório já desconectado"
+        ], 
+        "TransactionError": [
+            "Erro na transacção"
+        ], 
+        "TransactionAborted": [
+            "Transacção abortada"
+        ], 
+        "TransactionSessionNotFound": [
+            "Sessão da transacção não encontrada"
+        ], 
+        "SDKResourcesNotFound": [
+            "Recursos não encontrados"
+        ], 
+        "TransactionDeclined": [
+            "Transação recusada"
+        ], 
+        "AccessoryBusy": [
+            "Acessório está ocupado"
+        ], 
+        "TransactionNoLongerAbortable": [
+            "Transação já não pode ser abortada"
+        ], 
+        "AccessoryError": [
+            "Erro do acessório"
+        ], 
+        "AccessoryNotConnected": [
+            "Acessório não conectado"
+        ], 
+        "TransactionActionError": [
+            "Erro a executar transacção"
+        ], 
+        "AccessoryNotWhitelisted": [
+            "Acessório não autorizado"
+        ], 
+        "ParameterMissing": [
+            "Parâmetro em falta"
+        ], 
+        "AccessoryDeactivated": [
+            "Acessório está desactivado"
+        ], 
+        "SDKConfigurationMissing": [
+            "Falta a configuração"
+        ], 
+        "TransactionInvalid": [
+            "Transacção inválida"
+        ], 
+        "SDKResourcesModified": [
+            "Recursos em falta"
+        ], 
+        "ServerUnavailable": [
+            "Gateway não disponível"
+        ], 
+        "ServerError": [
+            "Erro do servidor"
+        ], 
+        "InternalInconsistency": [
+            "Erro interno"
+        ], 
+        "ServerAuthenticationFailed": [
+            "Autenticação do Gateway falhou"
+        ], 
+        "AccessoryTampered": [
+            "Acessório adulterado"
+        ], 
+        "TransactionReferenceNotFound": [
+            "Referência da transação não encontrada"
+        ], 
+        "ServerPinningWithRemoteFailed": [
+            "Verificação do Gateway falhou"
+        ], 
+        "AccessoryAlreadyConnected": [
+            "Acessório já conectado"
+        ], 
+        "AccessoryNotFound": [
+            "Acessório não encontrado"
+        ], 
+        "TransactionBusy": [
+            "Transação está ocupada"
+        ], 
+        "AccessoryRequiresUpdate": [
+            "Actualização do acessório necessária"
+        ], 
+        "AccessoryBatteryLow": [
+            "Bateria fraca"
+        ]
+    }
+}

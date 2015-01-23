@@ -1,0 +1,99 @@
+{
+    "info": {
+        "locale": "de_DE", 
+        "rows": 1, 
+        "columns": 40
+    }, 
+    "localization": {
+        "ParameterInvalid": [
+            "Parameter ungültig"
+        ], 
+        "AccessoryAlreadyDisconnected": [
+            "Verbindung zum Zubehör bereits getrennt"
+        ], 
+        "TransactionError": [
+            "Transaktionsfehler"
+        ], 
+        "TransactionAborted": [
+            "Transaktion abgebrochen"
+        ], 
+        "TransactionSessionNotFound": [
+            "Transaktions-Session nicht gefunden"
+        ], 
+        "SDKResourcesNotFound": [
+            "Ressourcen nicht gefunden"
+        ], 
+        "TransactionDeclined": [
+            "Transaktion abgelehnt"
+        ], 
+        "AccessoryBusy": [
+            "Zubehör ist besetzt"
+        ], 
+        "TransactionNoLongerAbortable": [
+            "Transaktion nicht mehr abbrechbar"
+        ], 
+        "AccessoryError": [
+            "Zubehörfehler"
+        ], 
+        "AccessoryNotConnected": [
+            "Keine Verbindung zum Zubehör"
+        ], 
+        "TransactionActionError": [
+            "Transaktion, Bedienungsfehler"
+        ], 
+        "AccessoryNotWhitelisted": [
+            "Kein Whitelisting des Zubehörs"
+        ], 
+        "ParameterMissing": [
+            "Parameter fehlt"
+        ], 
+        "AccessoryDeactivated": [
+            "Zubehör ausgeschaltet"
+        ], 
+        "SDKConfigurationMissing": [
+            "Konfiguration fehlt"
+        ], 
+        "TransactionInvalid": [
+            "Transaktion ungültig"
+        ], 
+        "SDKResourcesModified": [
+            "Ressourcen fehlen"
+        ], 
+        "ServerUnavailable": [
+            "Gateway nicht verfügbar"
+        ], 
+        "ServerError": [
+            "Serverfehler"
+        ], 
+        "InternalInconsistency": [
+            "Interner Fehler"
+        ], 
+        "ServerAuthenticationFailed": [
+            "Gateway-Authentifizierung fehlgeschlagen"
+        ], 
+        "AccessoryTampered": [
+            "Zubehör manipuliert"
+        ], 
+        "TransactionReferenceNotFound": [
+            "Transaktionsreferenz nicht gefunden"
+        ], 
+        "ServerPinningWithRemoteFailed": [
+            "Gateway-Prüfung fehlgeschlagen"
+        ], 
+        "AccessoryAlreadyConnected": [
+            "Zubehör bereits verbunden"
+        ], 
+        "AccessoryNotFound": [
+            "Zubehör nicht gefunden"
+        ], 
+        "TransactionBusy": [
+            "Transaktion besetzt"
+        ], 
+        "AccessoryRequiresUpdate": [
+            "Zubehör-Update erforderlich"
+        ], 
+        "AccessoryBatteryLow": [
+            "Niedrige Batterieladung"
+        ]
+    }
+}

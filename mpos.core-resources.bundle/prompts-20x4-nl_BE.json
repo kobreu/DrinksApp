@@ -1,0 +1,180 @@
+{
+    "info": {
+        "locale": "nl_BE", 
+        "rows": 4, 
+        "columns": 20
+    }, 
+    "localization": {
+        "ProviderAccessoryUpdating": [
+            ""
+        ], 
+        "ProcessingTransaction": [
+            "", 
+            "Betaling wordt", 
+            " verwerkt...", 
+            ""
+        ], 
+        "ApplicationSelection": [
+            "Gelieve ", 
+            "een rekening", 
+            "te kiezen", 
+            ""
+        ], 
+        "TransactionAborting": [
+            "", 
+            "Betaling wordt", 
+            "afgebroken...", 
+            ""
+        ], 
+        "PresentCard": [
+            "$amount$", 
+            "", 
+            "Kaart ingeven of ", 
+            "schuiven"
+        ], 
+        "UpdatingDeviceConfigurationUpdate": [
+            "Config-update", 
+            "", 
+            "Een ogenblikje ", 
+            "a.u.b. ..."
+        ], 
+        "ReadingEMVCard": [
+            "", 
+            "Kaart wordt", 
+            "gelezen...", 
+            ""
+        ], 
+        "ProvideSignature": [
+            "", 
+            "Handtekening", 
+            "vereist", 
+            ""
+        ], 
+        "ProviderAccessoryCheckingForUpdate": [
+            ""
+        ], 
+        "PINStatus": [
+            "", 
+            "PIN-code invoeren", 
+            "$digits$", 
+            ""
+        ], 
+        "RemoveCardWithStatus": [
+            "$reason1$", 
+            "$reason2$", 
+            "", 
+            "Kaart terugnemen"
+        ], 
+        "UpdatingDeviceFirmwareUpdate": [
+            "Firmware-update", 
+            "", 
+            "Dit kan iets", 
+            "langer duren..."
+        ], 
+        "ProviderFailed": [
+            ""
+        ], 
+        "GenericError": [
+            "", 
+            "", 
+            "Fout", 
+            ""
+        ], 
+        "BarcodeScannerActive": [
+            "", 
+            "Barcodescanner", 
+            "actief", 
+            ""
+        ], 
+        "ProviderAccessoryConnecting": [
+            ""
+        ], 
+        "ProvideIdentification": [
+            "", 
+            "Identificatie", 
+            "vereist", 
+            ""
+        ], 
+        "SelectApp": [
+            "Auswahl:", 
+            "", 
+            "", 
+            "mehr"
+        ], 
+        "PINLastTry": [
+            "", 
+            "PIN-code invoeren", 
+            "$digits$", 
+            "(laatste poging)"
+        ], 
+        "PINOk": [
+            "", 
+            "", 
+            "PIN OK", 
+            ""
+        ], 
+        "ProviderCompleted": [
+            ""
+        ], 
+        "Idle": [
+            "", 
+            "", 
+            "Verbonden", 
+            ""
+        ], 
+        "ProviderTransactionRegistering": [
+            ""
+        ], 
+        "SwipeCard": [
+            "$amount$", 
+            "", 
+            "Kaart doorschuiven", 
+            ""
+        ], 
+        "PINIncorrect": [
+            "", 
+            "Voer PIN in", 
+            "$digits$", 
+            "(foute PIN)"
+        ], 
+        "UpdatingDeviceSoftwareUpdate": [
+            "Software-update", 
+            "", 
+            "Dit kan iets", 
+            "langer duren..."
+        ], 
+        "UpdatingDeviceKeyInjection": [
+            "Aanmaken sleutel", 
+            "", 
+            "Dit kan even", 
+            "duren..."
+        ], 
+        "UpdatingDevice": [
+            "", 
+            "Toestel wordt", 
+            "bijgewerkt...", 
+            ""
+        ], 
+        "ProviderTransactionQuerying": [
+            ""
+        ], 
+        "CardNotSupported": [
+            "Kaart niet", 
+            "ondersteund!", 
+            "Andere kaart", 
+            "of afbreken"
+        ], 
+        "CompletedWithStatus": [
+            "", 
+            "$reason1$", 
+            "$reason2$", 
+            ""
+        ], 
+        "InsertCard": [
+            "$amount$", 
+            "", 
+            "Kaart ingeven", 
+            ""
+        ]
+    }
+}

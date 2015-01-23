@@ -1,0 +1,93 @@
+{
+    "info": {
+        "locale": "nl_BE", 
+        "rows": 1, 
+        "columns": 40
+    }, 
+    "localization": {
+        "DECLINED_PROCESSOR": [
+            "Betaling geweigerd"
+        ], 
+        "PENDING_WAITING_FOR_FINALIZATION": [
+            "Betaling geslaagd"
+        ], 
+        "APPROVED": [
+            "Betaling geslaagd"
+        ], 
+        "NONE": [
+            ""
+        ], 
+        "ERROR_PROCESSOR_INVALID_NONCE": [
+            "Verwerkingsfout (ongeldige nonce)"
+        ], 
+        "DECLINED_CARD_OR_TERMINAL_DECLINED": [
+            "Geweigerd"
+        ], 
+        "ERROR_PROCESSOR_MISSING_SESSION": [
+            "Verwerkingsfout (ontbrekende sessie)"
+        ], 
+        "ERROR_TERMINAL_TIMEOUT": [
+            "Verwerkingsfout (time-out terminal)"
+        ], 
+        "DECLINED_INVALID_TERMINAL_SOFTWARE": [
+            "Betaling onmogelijk"
+        ], 
+        "ABORTED_SHOPPER_ABORTED": [
+            "Betaling afgebroken"
+        ], 
+        "DECLINED_CARD_INVALID_SCHEME": [
+            "Kaart niet toegestaan"
+        ], 
+        "ERROR_PROCESSOR_INVALID_FORMAT": [
+            "Verwerkingsfout (ongeldig formaat)"
+        ], 
+        "DECLINED_INVALID_TERMINAL": [
+            "Betaling onmogelijk"
+        ], 
+        "ERROR_TERMINAL_ERROR": [
+            "Verwerkingsfout (terminalfout)"
+        ], 
+        "ABORTED_MERCHANT_ABORTED": [
+            "Betaling afgebroken"
+        ], 
+        "ERROR_PROCESSOR_INVALID_STATUS": [
+            "Verwerkingsfout (ongeldige status)"
+        ], 
+        "DECLINED_PIN_WRONG": [
+            "Verkeerde PIN"
+        ], 
+        "ERROR_SESSION_TIMEOUT": [
+            "Verwerkingsfout (time-out sessie)"
+        ], 
+        "DECLINED_CARD_INVALID_PAN": [
+            "Ongeldige kaart"
+        ], 
+        "DECLINED_CARD_STOLEN": [
+            "gestolen kaart, kaart inhouden"
+        ], 
+        "DECLINED_SESSION_EXPIRED": [
+            "Betaling onmogelijk"
+        ], 
+        "DECLINED_CARD_USE_ORIGINAL": [
+            "originele kaart gebruiken"
+        ], 
+        "ERROR_PROCESSOR_INVALID_SESSION": [
+            "Verwerkingsfout (ongeldige sessie)"
+        ], 
+        "DECLINED_INVALID_TERMINAL_CONFIG": [
+            "Betaling onmogelijk"
+        ], 
+        "ERROR_SERVER_INVALID_RESPONSE": [
+            "Verwerkingsfout (ongeldig antwoord)"
+        ], 
+        "DECLINED_CARD_EXPIRED": [
+            "Kaart vervallen"
+        ], 
+        "ABORTED_SHOPPER_REMOVED_CARD": [
+            "Betaling afgebroken"
+        ], 
+        "DECLINED_PIN_WRONG_TOO_OFTEN": [
+            "Te vaak verkeerde PIN ingevoerd"
+        ]
+    }
+}

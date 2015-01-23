@@ -1,0 +1,129 @@
+{
+    "info": {
+        "locale": "pt_PT", 
+        "rows": 2, 
+        "columns": 40
+    }, 
+    "localization": {
+        "ProviderAccessoryUpdating": [
+            "Atualização", 
+            "a decorrer"
+        ], 
+        "ProcessingTransaction": [
+            "A processar pagamento...", 
+            ""
+        ], 
+        "ApplicationSelection": [
+            "Por favor selecione a sua conta", 
+            ""
+        ], 
+        "TransactionAborting": [
+            "A abortar pagamento...", 
+            ""
+        ], 
+        "ProvideIdentification": [
+            "Identificação necessária", 
+            ""
+        ], 
+        "UpdatingDeviceConfigurationUpdate": [
+            "A atualizar configuração", 
+            "A operação pode levar algum tempo"
+        ], 
+        "ReadingEMVCard": [
+            "A ler cartão...", 
+            ""
+        ], 
+        "ProvideSignature": [
+            "Assinatura necessária", 
+            ""
+        ], 
+        "ProviderAccessoryCheckingForUpdate": [
+            "A conectar ao", 
+            "leitor de cartões"
+        ], 
+        "PINStatus": [
+            "Insira o PIN", 
+            "$digits$"
+        ], 
+        "RemoveCardWithStatus": [
+            "$reason1$", 
+            "Remova o cartão"
+        ], 
+        "UpdatingDeviceFirmwareUpdate": [
+            "A atualizar o Firmware", 
+            "A operação pode levar algum tempo"
+        ], 
+        "ProviderFailed": [
+            "Transação falhou", 
+            "$error$"
+        ], 
+        "GenericError": [
+            "Erro", 
+            ""
+        ], 
+        "BarcodeScannerActive": [
+            "Leitor de código de barras", 
+            "ativo"
+        ], 
+        "ProviderAccessoryConnecting": [
+            "A conectar ao", 
+            "leitor de cartões"
+        ], 
+        "PresentCard": [
+            "$amount$", 
+            "Insira ou passe cartão"
+        ], 
+        "PINLastTry": [
+            "Insira o PIN (última tentativa)", 
+            "$digits$"
+        ], 
+        "PINOk": [
+            "PIN OK"
+        ], 
+        "ProviderCompleted": [
+            "Transação efetuada"
+        ], 
+        "Idle": [
+            "Conectado"
+        ], 
+        "ProviderTransactionRegistering": [
+            "A registar transação"
+        ], 
+        "SwipeCard": [
+            "$amount$", 
+            "Passe cartão"
+        ], 
+        "PINIncorrect": [
+            "Insira o PIN (incorreto)", 
+            "$digits$"
+        ], 
+        "UpdatingDeviceSoftwareUpdate": [
+            "A atualizar software", 
+            "A operação pode levar algum tempo"
+        ], 
+        "UpdatingDeviceKeyInjection": [
+            "A gerar chaves", 
+            "A operação pode levar algum tempo"
+        ], 
+        "UpdatingDevice": [
+            "A atualizar...", 
+            ""
+        ], 
+        "ProviderTransactionQuerying": [
+            "Verificação do", 
+            "pagamento"
+        ], 
+        "CardNotSupported": [
+            "Cartão não suportado!", 
+            "Tente outro cartão ou anule a operação"
+        ], 
+        "CompletedWithStatus": [
+            "$reason1$", 
+            ""
+        ], 
+        "InsertCard": [
+            "$amount$", 
+            "Insira cartão"
+        ]
+    }
+}

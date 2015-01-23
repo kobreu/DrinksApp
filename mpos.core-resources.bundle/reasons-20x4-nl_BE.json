@@ -1,0 +1,121 @@
+{
+    "info": {
+        "locale": "nl_BE", 
+        "rows": 2, 
+        "columns": 20
+    }, 
+    "localization": {
+        "DECLINED_PROCESSOR": [
+            "", 
+            "Betaling geweigerd"
+        ], 
+        "PENDING_WAITING_FOR_FINALIZATION": [
+            "", 
+            "Betaling geslaagd"
+        ], 
+        "APPROVED": [
+            "", 
+            "Betaling geslaagd"
+        ], 
+        "NONE": [
+            "", 
+            ""
+        ], 
+        "ERROR_PROCESSOR_INVALID_NONCE": [
+            "", 
+            "Fout"
+        ], 
+        "DECLINED_CARD_OR_TERMINAL_DECLINED": [
+            "", 
+            "Geweigerd"
+        ], 
+        "ERROR_PROCESSOR_MISSING_SESSION": [
+            "", 
+            "Fout"
+        ], 
+        "ERROR_TERMINAL_TIMEOUT": [
+            "", 
+            "Fout"
+        ], 
+        "DECLINED_INVALID_TERMINAL_SOFTWARE": [
+            "Betaling", 
+            "onmogelijk"
+        ], 
+        "ABORTED_SHOPPER_ABORTED": [
+            "", 
+            "Betaling afgebroken"
+        ], 
+        "DECLINED_CARD_INVALID_SCHEME": [
+            "Kaart", 
+            "niet toegestaan"
+        ], 
+        "ERROR_PROCESSOR_INVALID_FORMAT": [
+            "", 
+            "Fout"
+        ], 
+        "DECLINED_INVALID_TERMINAL": [
+            "Betaling", 
+            "onmogelijk"
+        ], 
+        "ERROR_TERMINAL_ERROR": [
+            "", 
+            "Fout"
+        ], 
+        "ABORTED_MERCHANT_ABORTED": [
+            "", 
+            "Betaling afgebroken"
+        ], 
+        "ERROR_PROCESSOR_INVALID_STATUS": [
+            "", 
+            "Fout"
+        ], 
+        "DECLINED_PIN_WRONG": [
+            "", 
+            "Verkeerde PIN"
+        ], 
+        "ERROR_SESSION_TIMEOUT": [
+            "", 
+            "Fout"
+        ], 
+        "DECLINED_CARD_INVALID_PAN": [
+            "", 
+            "Ongeldige kaart"
+        ], 
+        "DECLINED_CARD_STOLEN": [
+            "Gestolen kaart, ", 
+            "kaart intrekken"
+        ], 
+        "DECLINED_SESSION_EXPIRED": [
+            "Betaling", 
+            "onmogelijk"
+        ], 
+        "DECLINED_CARD_USE_ORIGINAL": [
+            "Originele kaart", 
+            "gebruiken"
+        ], 
+        "ERROR_PROCESSOR_INVALID_SESSION": [
+            "", 
+            "Fout"
+        ], 
+        "DECLINED_INVALID_TERMINAL_CONFIG": [
+            "Betaling", 
+            "onmogelijk"
+        ], 
+        "ERROR_SERVER_INVALID_RESPONSE": [
+            "", 
+            "Fout"
+        ], 
+        "DECLINED_CARD_EXPIRED": [
+            "", 
+            "Kaart vervallen"
+        ], 
+        "ABORTED_SHOPPER_REMOVED_CARD": [
+            "", 
+            "Betaling afgebroken"
+        ], 
+        "DECLINED_PIN_WRONG_TOO_OFTEN": [
+            "Te vaak verkeerde", 
+            "PIN ingevoerd"
+        ]
+    }
+}

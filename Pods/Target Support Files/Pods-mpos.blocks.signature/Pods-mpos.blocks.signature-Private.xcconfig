@@ -1,0 +1,5 @@
+#include "Pods-mpos.blocks.signature.xcconfig"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Build" "${PODS_ROOT}/Headers/Build/mpos.blocks.signature" "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/AFNetworking" "${PODS_ROOT}/Headers/Public/CocoaLumberjack" "${PODS_ROOT}/Headers/Public/mpos.blocks.signature"
+OTHER_LDFLAGS = ${PODS_MPOS_BLOCKS_SIGNATURE_OTHER_LDFLAGS} -ObjC
+PODS_ROOT = ${SRCROOT}

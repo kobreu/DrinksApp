@@ -1,0 +1,99 @@
+{
+    "info": {
+        "locale": "nl_BE", 
+        "rows": 1, 
+        "columns": 40
+    }, 
+    "localization": {
+        "ParameterInvalid": [
+            "Ongeldige parameter"
+        ], 
+        "AccessoryAlreadyDisconnected": [
+            "Randapparaat al afgekoppeld"
+        ], 
+        "TransactionError": [
+            "Transactiefout"
+        ], 
+        "TransactionAborted": [
+            "Transactie afgebroken"
+        ], 
+        "TransactionSessionNotFound": [
+            "Transactiesessie niet gevonden"
+        ], 
+        "SDKResourcesNotFound": [
+            "Resources niet gevonden"
+        ], 
+        "TransactionDeclined": [
+            "Transactie geweigerd"
+        ], 
+        "AccessoryBusy": [
+            "Randapparaat is bezig"
+        ], 
+        "TransactionNoLongerAbortable": [
+            "Transactie kan niet meer gestopt worden"
+        ], 
+        "AccessoryError": [
+            "Fout randapparaat"
+        ], 
+        "AccessoryNotConnected": [
+            "Randapparaat niet verbonden"
+        ], 
+        "TransactionActionError": [
+            "Fout transactie-actie"
+        ], 
+        "AccessoryNotWhitelisted": [
+            "Randapparaat staat niet op witte lijst"
+        ], 
+        "ParameterMissing": [
+            "Parameter ontbreekt"
+        ], 
+        "AccessoryDeactivated": [
+            "Randapparaat is gedeactiveerd"
+        ], 
+        "SDKConfigurationMissing": [
+            "Configuratie ontbreekt"
+        ], 
+        "TransactionInvalid": [
+            "Transactie ongeldig"
+        ], 
+        "SDKResourcesModified": [
+            "Resources ontbreken"
+        ], 
+        "ServerUnavailable": [
+            "Gateway niet beschikbaar"
+        ], 
+        "ServerError": [
+            "Serverfout"
+        ], 
+        "InternalInconsistency": [
+            "Interne fout"
+        ], 
+        "ServerAuthenticationFailed": [
+            "Gateway authenticatie mislukt"
+        ], 
+        "AccessoryTampered": [
+            "Randapparatuur onrechtmatig gewijzigd"
+        ], 
+        "TransactionReferenceNotFound": [
+            "Transactiereferentie niet gevonden"
+        ], 
+        "ServerPinningWithRemoteFailed": [
+            "Gateway verificatie mislukt"
+        ], 
+        "AccessoryAlreadyConnected": [
+            "Randapparatuur al verbonden"
+        ], 
+        "AccessoryNotFound": [
+            "Randapparatuur niet gevonden"
+        ], 
+        "TransactionBusy": [
+            "Transactie is bezig"
+        ], 
+        "AccessoryRequiresUpdate": [
+            "Update randapparatuur vereist"
+        ], 
+        "AccessoryBatteryLow": [
+            "Batterij bijna leeg"
+        ]
+    }
+}
