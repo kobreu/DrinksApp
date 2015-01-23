@@ -60,7 +60,7 @@
             "Recursos em falta"
         ], 
         "ServerUnavailable": [
-            "Gateway não disponível"
+            "Verifique sua conexão com a internet"
         ], 
         "ServerError": [
             "Erro do servidor"

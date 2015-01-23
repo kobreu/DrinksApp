@@ -16,8 +16,10 @@
 // TO REPRODUCE, DISCLOSE OR DISTRIBUTE ITS CONTENTS, OR TO MANUFACTURE, USE, OR SELL ANYTHING THAT IT  MAY DESCRIBE, IN WHOLE OR IN PART.
 
 #import "mpos.h"
+
+#import "MPMpos+Extended.h"
+#import "MPMockConfiguration.h"
+
 #import "MPProvider+Extended.h"
 #import "MPTransactionTemplate.h"
 #import "MPTransactionTemplateFactory.h"
-#import "MPMpos+Extended.h"
-#import "MPMockConfiguration.h"

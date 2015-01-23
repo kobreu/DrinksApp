@@ -38,6 +38,8 @@ typedef NS_ENUM(NSUInteger, MPAccessoryType){
     MPAccessoryTypeUnknown = 0,
     /** Miura Shuttle */
     MPAccessoryTypeMiuraShuttle,
+    /** Miura M010 */
+    MPAccessoryTypeMiuraM010,
     /** Verifone E105 */
     MPAccessoryTypeVerifoneE105,
     /** Verifone E3x5*/

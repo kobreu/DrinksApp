@@ -60,7 +60,7 @@
             "Resources ontbreken"
         ], 
         "ServerUnavailable": [
-            "Gateway niet beschikbaar"
+            "Controleer uw internetverbinding"
         ], 
         "ServerError": [
             "Serverfout"

@@ -32,8 +32,12 @@ typedef NS_ENUM(NSUInteger, MPPaymentProcessDetailsState){
     MPPaymentProcessWaitingForCardRemoval,
     /** The process is processing a transaction */
     MPPaymentProcessDetailsStateProcessing,
-    /** The process completed successfully */
-    MPPaymentProcessDetailsStateCompleted,
+    /** The transaction was approved */
+    MPPaymentProcessDetailsStateApproved,
+    /** The transaction was declined */
+    MPPaymentProcessDetailsStateDeclined,
+    /** The transaction was aborted */
+    MPPaymentProcessDetailsStateAborted,
     /** The process failed during one of its stages */
     MPPaymentProcessDetailsStateFailed
 };
@@ -44,7 +48,7 @@ typedef NS_ENUM(NSUInteger, MPPaymentProcessDetailsState){
  */
 typedef NS_ENUM(NSUInteger, MPPaymentProcessDetailsStateDetails){
     /** The process is initialized, nothing has happened yet */
-    MPPaymentProcessDetailsStateDetailsInitialized,
+    MPPaymentProcessDetailsStateDetailsCreated,
     
     /** A connection attempt with an accessory is ongoing */
     MPPaymentProcessDetailsStateDetailsConnectingToAccessory,
@@ -72,8 +76,12 @@ typedef NS_ENUM(NSUInteger, MPPaymentProcessDetailsStateDetails){
     /** The transaction was completed */
     MPPaymentProcessDetailsStateDetailsProcessingCompleted,
     
-    /** The transaction processing is completed */
-    MPPaymentProcessDetailsStateDetailsCompleted,
+    /** The transaction was approved */
+    MPPaymentProcessDetailsStateDetailsApproved,
+    /** The transaction was declined */
+    MPPaymentProcessDetailsStateDetailsDeclined,
+    /** The transaction was aborted */
+    MPPaymentProcessDetailsStateDetailsAborted,
     /** The transaction processing failed at some point */
     MPPaymentProcessDetailsStateDetailsFailed
 };

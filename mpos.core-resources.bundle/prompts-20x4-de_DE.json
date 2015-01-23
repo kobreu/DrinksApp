@@ -32,6 +32,9 @@
             "Karte einstecken", 
             "oder durchziehen"
         ], 
+        "ProviderAccessoryConfiguringConnectionLink": [
+            ""
+        ], 
         "UpdatingDeviceConfigurationUpdate": [
             "Config-Update", 
             "", 
@@ -42,6 +45,9 @@
             "", 
             "Karte wird", 
             "gelesen...", 
+            ""
+        ], 
+        "ProviderApproved": [
             ""
         ], 
         "ProvideSignature": [
@@ -113,9 +119,6 @@
             "PIN OK", 
             ""
         ], 
-        "ProviderCompleted": [
-            ""
-        ], 
         "Idle": [
             "", 
             "", 
@@ -142,6 +145,12 @@
             "", 
             "Dies kann etwas", 
             "länger dauern..."
+        ], 
+        "ProviderDeclined": [
+            ""
+        ], 
+        "ProviderAborted": [
+            ""
         ], 
         "UpdatingDeviceKeyInjection": [
             "Schlüsselerzeugung", 

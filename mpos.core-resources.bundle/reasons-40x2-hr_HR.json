@@ -9,10 +9,10 @@
             "Declined"
         ], 
         "PENDING_WAITING_FOR_FINALIZATION": [
-            "Approved"
+            "Payment approved"
         ], 
         "APPROVED": [
-            "Approved"
+            "Payment approved"
         ], 
         "NONE": [
             ""

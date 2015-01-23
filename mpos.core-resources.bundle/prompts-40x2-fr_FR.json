@@ -25,6 +25,10 @@
             "Identification requise", 
             ""
         ], 
+        "ProviderAccessoryConfiguringConnectionLink": [
+            "Configuration", 
+            "du lecteur..."
+        ], 
         "UpdatingDeviceConfigurationUpdate": [
             "Mise à jour de la configuration.", 
             "Patientez SVP..."
@@ -32,6 +36,10 @@
         "ReadingEMVCard": [
             "Lecture de la carte", 
             "en cours..."
+        ], 
+        "ProviderApproved": [
+            "Paiement accepté", 
+            ""
         ], 
         "ProvideSignature": [
             "Signature requise", 
@@ -54,7 +62,7 @@
             "Patientez SVP..."
         ], 
         "ProviderFailed": [
-            "Paiement refusé", 
+            "Paiement échoué", 
             "$error$"
         ], 
         "GenericError": [
@@ -81,10 +89,6 @@
             "PIN OK", 
             ""
         ], 
-        "ProviderCompleted": [
-            "Paiement ", 
-            "effectué"
-        ], 
         "Idle": [
             "Connexion établie", 
             ""
@@ -104,6 +108,14 @@
         "UpdatingDeviceSoftwareUpdate": [
             "Mise à jour du logiciel. ", 
             "Patientez SVP"
+        ], 
+        "ProviderDeclined": [
+            "Paiement refusé", 
+            "$reason1$"
+        ], 
+        "ProviderAborted": [
+            "Paiement interrompu", 
+            ""
         ], 
         "UpdatingDeviceKeyInjection": [
             "Génération de clé.", 

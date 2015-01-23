@@ -32,6 +32,9 @@
             "Inserire o", 
             "strisciare la carta"
         ], 
+        "ProviderAccessoryConfiguringConnectionLink": [
+            ""
+        ], 
         "UpdatingDeviceConfigurationUpdate": [
             "Update config", 
             "", 
@@ -42,6 +45,9 @@
             "", 
             "Lettura", 
             "della carta...", 
+            ""
+        ], 
+        "ProviderApproved": [
             ""
         ], 
         "ProvideSignature": [
@@ -113,9 +119,6 @@
             "PIN OK", 
             ""
         ], 
-        "ProviderCompleted": [
-            ""
-        ], 
         "Idle": [
             "", 
             "", 
@@ -142,6 +145,12 @@
             "software", 
             "", 
             "Attendere prego..."
+        ], 
+        "ProviderDeclined": [
+            ""
+        ], 
+        "ProviderAborted": [
+            ""
         ], 
         "UpdatingDeviceKeyInjection": [
             "Generazione chiave", 

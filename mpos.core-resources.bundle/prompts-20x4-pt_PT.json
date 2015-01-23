@@ -32,6 +32,9 @@
             "Insira ou", 
             "passe cartão"
         ], 
+        "ProviderAccessoryConfiguringConnectionLink": [
+            ""
+        ], 
         "UpdatingDeviceConfigurationUpdate": [
             "Config-update", 
             "A operação", 
@@ -42,6 +45,9 @@
             "", 
             "A ler", 
             "cartão...", 
+            ""
+        ], 
+        "ProviderApproved": [
             ""
         ], 
         "ProvideSignature": [
@@ -113,9 +119,6 @@
             "PIN OK", 
             ""
         ], 
-        "ProviderCompleted": [
-            ""
-        ], 
         "Idle": [
             "", 
             "", 
@@ -142,6 +145,12 @@
             "A operação", 
             "pode levar", 
             "algum tempo..."
+        ], 
+        "ProviderDeclined": [
+            ""
+        ], 
+        "ProviderAborted": [
+            ""
         ], 
         "UpdatingDeviceKeyInjection": [
             "A gerar chaves", 

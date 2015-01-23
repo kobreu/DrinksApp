@@ -38,7 +38,6 @@ typedef void (^MPPaymentProcessRegistered)(MPPaymentProcess *paymentProcess, MPT
  * Indicates a status change of the overall process and provides information about whats happening with process.
  * @param paymentProcess The instance that called the block
  * @param transaction The transaction that is currently being processed (same as paymentProcess.transaction)
- * @param details The latest details object for providing access to the status (same as paymentProcess.details)
  * @since 2.2.0
  */
 typedef void (^MPPaymentProcessStatusChanged)(MPPaymentProcess *paymentProcess, MPTransaction *transaction, MPPaymentProcessDetails *details);
@@ -58,9 +57,9 @@ typedef void (^MPPaymentProcessActionRequired)(MPPaymentProcess *paymentProcess,
  * @param paymentProcess The instance that called the block
  * @param transaction The transaction that has been processed (same as paymentProcess.transaction)
  * @param details The latest details object for providing access to the overall processing status (same as paymentProcess.details)
- * @since 2.2.0
+ * @since 2.2.5
  */
-typedef void (^MPPaymentProcessEnded)(MPPaymentProcess *paymentProcess, MPTransaction *transaction, MPPaymentProcessDetails *details);
+typedef void (^MPPaymentProcessCompleted)(MPPaymentProcess *paymentProcess, MPTransaction *transaction, MPPaymentProcessDetails *details);
 
 
 /**
@@ -105,7 +104,14 @@ typedef void (^MPPaymentProcessEnded)(MPPaymentProcess *paymentProcess, MPTransa
  * @param verified Indicates if the signature matches the one on the card
  * @since 2.2.0
  */
-- (void)continueWithCustomerSignature:(UIImage *)signature verified:(BOOL)verified;
+- (void)continueWithCustomerSignature:(UIImage *)signature
+                             verified:(BOOL)verified;
+
+/**
+ * Continues a transaction indicating that the signature will be captured on the receipt after the transaction. Continues after a respective actionRequired callback was called.
+ * @since 2.2.5
+ */
+- (void)continueWithCustomerSignatureOnReceipt;
 
 /**
  * Continues a transaction with with a identity verification a respective actionRequired callback was called.

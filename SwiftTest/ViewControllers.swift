@@ -12,30 +12,54 @@ import MessageUI
 
 class CustomTableViewCell : UITableViewCell {
     @IBOutlet weak var button: UIButton!
+    @IBOutlet weak var amt: UILabel!
 }
 
-class Employee {
-    var name = "fribbu"
+class Employee : NSObject {
+    var id = 0
+    var title = "fribbu"
     var amount = 0
     
-    init(name:String, amount: Int){
-        self.name = name
+    init(id:Int, name:String, amount: Int){
+        self.id = id
+        self.title = name
         self.amount = amount
     }
     
 }
 
+class Drink {
+    var title = ""
+    var cost = 100
+    
+    init(name:String, cost: Int) {
+        self.title = name
+        self.cost = cost
+    }
+}
+
 class DataManager {
     
     func employeeList(success: (Array<Employee>) -> Void, failure: () -> Void)  {
-        success([Employee(name: "Pedro", amount: 0), Employee(name: "Sanda", amount: 0), Employee(name: "David", amount: 0), Employee(name: "Per", amount: 0), Employee(name: "Michael", amount: 0), Employee(name: "Dmitry", amount: 0), Employee(name: "David", amount: 0), Employee(name: "Ahmed", amount: 0), Employee(name: "Abhi", amount: 0), Employee(name: "Simon 1.3", amount: 0), Employee(name: "Simon 2.0", amount: 0), Employee(name: "Thorsten", amount: 0), Employee(name: "Sanda", amount: 0)]);
+        let manager = AFHTTPRequestOperationManager();
+        manager.GET("http://qultures.com/payworks/server.php/employees", parameters: nil, success: { (operation:AFHTTPRequestOperation!, responseObject:AnyObject?) -> Void in
+            println("JSON: %@", responseObject)
+        }) { (operation, error) -> Void in
+            failure()
+        }
+        /*success([Employee(id: 0, name: "Pedro", amount: 0), Employee(id: 1,name: "Sanda", amount: 0), Employee(id: 2, name: "David", amount: 0), Employee(id: 3,name: "Per", amount: 0), Employee(id: 4,name: "Michael", amount: 0), Employee(id: 5,name: "Dmitry", amount: 0), Employee(id: 6,name: "David", amount: 0), Employee(id: 7,name: "Ahmed", amount: 0), Employee(id: 8,name: "Abhi", amount: 0), Employee(id: 8,name: "Simon 1.3", amount: 0), Employee(id: 9,name: "Simon 2.0", amount: 0), Employee(id: 10,name: "Thorsten", amount: 0)]);*/
     }
+    
+    func drinkList(success: (Array<Drink> -> Void), failure: () -> Void) {
+        success([Drink(name:"Mate", cost: 100),Drink(name:"Spezi", cost: 100)])
+    }
+    
 }
 
 
 class EmployeeTableController : UITableViewController {
     
-    var employees = []
+    var employees:Array<Employee>!
     
     var datamanager = DataManager()
     
@@ -60,9 +84,11 @@ class EmployeeTableController : UITableViewController {
         let identifier = "identifier";
         let cell = (tableView.dequeueReusableCellWithIdentifier(identifier) ?? CustomTableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: identifier)) as CustomTableViewCell;
         let index = indexPath.row
-        cell.textLabel?.text = toString(index)
-       // cell.textLabel?.text = self.employees[index].name
-        //cell.detailTextLabel?.text = toString(self.employees[index].amount)
+        println(self.employees[index].title)
+        cell.textLabel?.text = self.employees[index].title
+        let amtD = Double(self.employees[index].amount) / 100.0
+        println(amtD)
+        cell.amt.text = String(format: "%.2f €", amtD)
         let button = UIButton();
         button.setTitle("title", forState: .Normal);
         [cell.addSubview(button)];
@@ -79,28 +105,74 @@ class EmployeeTableController : UITableViewController {
     }
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        self.navigationController?.pushViewController(DrinksTableController(), animated: true);
+        let drinks = DrinksTableController()
+        drinks.finished = {(drink:Drink) -> () in
+            self.employees[indexPath.row].amount += drink.cost
+            self.tableView.reloadRowsAtIndexPaths([indexPath], withRowAnimation: UITableViewRowAnimation.None)
+            self.sort()
+        }
+        self.navigationController?.pushViewController(drinks, animated: true);
+    }
+    
+    
+    func sort() {
+        let unsorted = self.employees
+        
+        self.employees.sort({ $0.amount > $1.amount })
+        
+        self.tableView.beginUpdates()
+        
+        for (index, element) in enumerate(unsorted) {
+            let destRow = find(self.employees, element)!
+            
+            if (destRow != index) {
+                let sourceIndexPath = NSIndexPath(forRow: index, inSection: 0)
+                let destIndexPath = NSIndexPath(forRow: destRow, inSection: 0)
+                self.tableView.moveRowAtIndexPath(sourceIndexPath, toIndexPath: destIndexPath)
+            }
+        }
+        self.tableView.endUpdates()
     }
 }
 
 class DrinksTableController : UITableViewController {
+    
+    var datamanager = DataManager()
+    
+    var drinks:Array<Drink>!
+    
+    var finished: (Drink -> Void)!
+
+    
+    override func viewDidLoad() {
+        datamanager.drinkList({ (drinks) -> Void in
+            self.drinks = drinks
+            self.tableView.reloadData()
+            }, failure: { () -> Void in
+                
+        })
+    }
+    
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1;
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1;
+        return self.drinks.count;
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let identifier = "identifier";
         let cell = (tableView.dequeueReusableCellWithIdentifier(identifier) ?? UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: identifier)) as UITableViewCell;
-        cell.textLabel?.text = "drink"
+        let index = indexPath.row
+        cell.textLabel?.text = self.drinks[index].title
         return cell
     }
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         self.navigationController?.popViewControllerAnimated(true);
+        let drink = self.drinks[indexPath.row]
+        self.finished(drink)
        /* var alert = UIAlertController(title: "Yay", message: "5€, wanna pay now?", preferredStyle: UIAlertControllerStyle.Alert)
         alert.addAction(UIAlertAction(title: "Pay later...", style: UIAlertActionStyle.Cancel, handler: { action in
             
@@ -109,6 +181,7 @@ class DrinksTableController : UITableViewController {
 
         self.presentViewController(alert, animated: true, completion: nil)*/
     }
+
 }
 
 class PayController : UIViewController, MFMailComposeViewControllerDelegate {
@@ -157,7 +230,7 @@ class PayController : UIViewController, MFMailComposeViewControllerDelegate {
                 default:
                     println("default")
                 }
-            }, ended: { (process:MPPaymentProcess!, transaction:MPTransaction?, paymentProcessDetails:MPPaymentProcessDetails!) -> Void in
+            }, completed: { (process:MPPaymentProcess!, transaction:MPTransaction?, paymentProcessDetails:MPPaymentProcessDetails!) -> Void in
                 self.cancel.hidden = true
                 self.done.hidden = false;
                 if(transaction?.status == MPTransactionStatus.Approved) {

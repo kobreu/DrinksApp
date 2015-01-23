@@ -9,7 +9,7 @@
             "Parameter ungültig"
         ], 
         "AccessoryAlreadyDisconnected": [
-            "Verbindung zum Zubehör bereits getrennt"
+            "Verbindung zum Leser bereits getrennt"
         ], 
         "TransactionError": [
             "Transaktionsfehler"
@@ -27,28 +27,28 @@
             "Transaktion abgelehnt"
         ], 
         "AccessoryBusy": [
-            "Zubehör ist besetzt"
+            "Leser ist blockiert"
         ], 
         "TransactionNoLongerAbortable": [
             "Transaktion nicht mehr abbrechbar"
         ], 
         "AccessoryError": [
-            "Zubehörfehler"
+            "Leserfehler"
         ], 
         "AccessoryNotConnected": [
-            "Keine Verbindung zum Zubehör"
+            "Keine Verbindung zum Leser"
         ], 
         "TransactionActionError": [
             "Transaktion, Bedienungsfehler"
         ], 
         "AccessoryNotWhitelisted": [
-            "Kein Whitelisting des Zubehörs"
+            "Kein Whitelisting des Lesers"
         ], 
         "ParameterMissing": [
             "Parameter fehlt"
         ], 
         "AccessoryDeactivated": [
-            "Zubehör ausgeschaltet"
+            "Leser deaktiviert"
         ], 
         "SDKConfigurationMissing": [
             "Konfiguration fehlt"
@@ -60,7 +60,7 @@
             "Ressourcen fehlen"
         ], 
         "ServerUnavailable": [
-            "Gateway nicht verfügbar"
+            "Internetverbindung prüfen"
         ], 
         "ServerError": [
             "Serverfehler"
@@ -72,7 +72,7 @@
             "Gateway-Authentifizierung fehlgeschlagen"
         ], 
         "AccessoryTampered": [
-            "Zubehör manipuliert"
+            "Leser manipuliert"
         ], 
         "TransactionReferenceNotFound": [
             "Transaktionsreferenz nicht gefunden"
@@ -81,16 +81,16 @@
             "Gateway-Prüfung fehlgeschlagen"
         ], 
         "AccessoryAlreadyConnected": [
-            "Zubehör bereits verbunden"
+            "Leser bereits verbunden"
         ], 
         "AccessoryNotFound": [
-            "Zubehör nicht gefunden"
+            "Leser nicht gefunden"
         ], 
         "TransactionBusy": [
-            "Transaktion besetzt"
+            "Transaktion blockiert"
         ], 
         "AccessoryRequiresUpdate": [
-            "Zubehör-Update erforderlich"
+            "Leser-Update erforderlich"
         ], 
         "AccessoryBatteryLow": [
             "Niedrige Batterieladung"

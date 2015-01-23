@@ -60,7 +60,7 @@
             "Resources missing"
         ], 
         "ServerUnavailable": [
-            "Gateway unavailable"
+            "Check your internet connection"
         ], 
         "ServerError": [
             "Server error"

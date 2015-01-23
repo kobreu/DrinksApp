@@ -1,121 +1,121 @@
 {
     "info": {
-        "columns": 20,
-        "locale": "es_ES",
-        "rows": 2
-    },
+        "locale": "en_US", 
+        "rows": 2, 
+        "columns": 20
+    }, 
     "localization": {
-        "ABORTED_MERCHANT_ABORTED": [
-            "",
-            "Merchant aborted"
-        ],
-        "ABORTED_SHOPPER_ABORTED": [
-            "",
-            "Shopper aborted"
-        ],
-        "ABORTED_SHOPPER_REMOVED_CARD": [
-            "",
-            "Shopper aborted"
-        ],
-        "APPROVED": [
-            "",
-            "Approved"
-        ],
-        "DECLINED_CARD_EXPIRED": [
-            "",
-            "Card expired"
-        ],
-        "DECLINED_CARD_INVALID_PAN": [
-            "",
-            "Invalid card"
-        ],
-        "DECLINED_CARD_INVALID_SCHEME": [
-            "",
-            "Card not allowed"
-        ],
-        "DECLINED_CARD_OR_TERMINAL_DECLINED": [
-            "",
-            "Declined"
-        ],
-        "DECLINED_CARD_STOLEN": [
-            "Stolen card,",
-            "pick up"
-        ],
-        "DECLINED_CARD_USE_ORIGINAL": [
-            "",
-            "Use original card"
-        ],
-        "DECLINED_INVALID_TERMINAL": [
-            "Payment not ",
-            "possible"
-        ],
-        "DECLINED_INVALID_TERMINAL_CONFIG": [
-            "Payment not ",
-            "possible"
-        ],
-        "DECLINED_INVALID_TERMINAL_SOFTWARE": [
-            "Payment not ",
-            "possible"
-        ],
-        "DECLINED_PIN_WRONG": [
-            "",
-            "Wrong PIN"
-        ],
-        "DECLINED_PIN_WRONG_TOO_OFTEN": [
-            "Wrong PIN entered",
-            "too often"
-        ],
         "DECLINED_PROCESSOR": [
-            "",
-            "Declined"
-        ],
-        "DECLINED_SESSION_EXPIRED": [
-            "Payment not ",
-            "possible"
-        ],
-        "ERROR_PROCESSOR_INVALID_FORMAT": [
-            "",
-            "Processing error"
-        ],
-        "ERROR_PROCESSOR_INVALID_NONCE": [
-            "",
-            "Processing error"
-        ],
-        "ERROR_PROCESSOR_INVALID_SESSION": [
-            "",
-            "Processing error"
-        ],
-        "ERROR_PROCESSOR_INVALID_STATUS": [
-            "",
-            "Processing error"
-        ],
-        "ERROR_PROCESSOR_MISSING_SESSION": [
-            "",
-            "Processing error"
-        ],
-        "ERROR_SESSION_TIMEOUT": [
-            "",
-            "Processing error"
-        ],
-        "ERROR_TERMINAL_ERROR": [
-            "",
-            "Processing error"
-        ],
-        "ERROR_SERVER_INVALID_RESPONSE": [
-            "",
-            "Processing error"
-        ],
-        "ERROR_TERMINAL_TIMEOUT": [
-            "",
-            "Processing error"
-        ],
+            "", 
+            "Payment declined"
+        ], 
+        "PENDING_WAITING_FOR_FINALIZATION": [
+            "", 
+            "Payment approved"
+        ], 
+        "APPROVED": [
+            "", 
+            "Payment approved"
+        ], 
         "NONE": [
-            "",
+            "", 
             ""
-        ],
-        "PENDING_WAITING_FOR_FINALIZATION" : [
-            "",
-            "Approved"
+        ], 
+        "ERROR_PROCESSOR_INVALID_NONCE": [
+            "", 
+            "Processing error"
+        ], 
+        "DECLINED_CARD_OR_TERMINAL_DECLINED": [
+            "", 
+            "Declined"
+        ], 
+        "ERROR_PROCESSOR_MISSING_SESSION": [
+            "", 
+            "Processing error"
+        ], 
+        "ERROR_TERMINAL_TIMEOUT": [
+            "", 
+            "Processing error"
+        ], 
+        "DECLINED_INVALID_TERMINAL_SOFTWARE": [
+            "Payment not ", 
+            "possible"
+        ], 
+        "ABORTED_SHOPPER_ABORTED": [
+            "", 
+            "Shopper aborted"
+        ], 
+        "DECLINED_CARD_INVALID_SCHEME": [
+            "", 
+            "Card not allowed"
+        ], 
+        "ERROR_PROCESSOR_INVALID_FORMAT": [
+            "", 
+            "Processing error"
+        ], 
+        "DECLINED_INVALID_TERMINAL": [
+            "Payment not ", 
+            "possible"
+        ], 
+        "ERROR_TERMINAL_ERROR": [
+            "", 
+            "Processing error"
+        ], 
+        "ABORTED_MERCHANT_ABORTED": [
+            "", 
+            "Merchant aborted"
+        ], 
+        "ERROR_PROCESSOR_INVALID_STATUS": [
+            "", 
+            "Processing error"
+        ], 
+        "DECLINED_PIN_WRONG": [
+            "", 
+            "Wrong PIN"
+        ], 
+        "ERROR_SESSION_TIMEOUT": [
+            "", 
+            "Processing error"
+        ], 
+        "DECLINED_CARD_INVALID_PAN": [
+            "", 
+            "Invalid card"
+        ], 
+        "DECLINED_CARD_STOLEN": [
+            "Stolen card,", 
+            "pick up"
+        ], 
+        "DECLINED_SESSION_EXPIRED": [
+            "Payment not ", 
+            "possible"
+        ], 
+        "DECLINED_CARD_USE_ORIGINAL": [
+            "", 
+            "Use original card"
+        ], 
+        "ERROR_PROCESSOR_INVALID_SESSION": [
+            "", 
+            "Processing error"
+        ], 
+        "DECLINED_INVALID_TERMINAL_CONFIG": [
+            "Payment not ", 
+            "possible"
+        ], 
+        "ERROR_SERVER_INVALID_RESPONSE": [
+            "", 
+            "Processing error"
+        ], 
+        "DECLINED_CARD_EXPIRED": [
+            "", 
+            "Card expired"
+        ], 
+        "ABORTED_SHOPPER_REMOVED_CARD": [
+            "", 
+            "Shopper aborted"
+        ], 
+        "DECLINED_PIN_WRONG_TOO_OFTEN": [
+            "Wrong PIN entered", 
+            "too often"
         ]
     }
 }

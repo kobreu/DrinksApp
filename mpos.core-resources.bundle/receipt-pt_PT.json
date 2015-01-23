@@ -15,7 +15,7 @@
         "ReceiptType": "Tipo de Recibo", 
         "PaymentDetailsEMVApplicationID": "AID", 
         "Identifier": "PWID", 
-        "Time": "Tempo", 
+        "Time": "Hora", 
         "Date": "Data", 
         "ClearingDetailsAuthorizationCode": "Autorização", 
         "ClearingDetailsMerchantId": "N° de contrato", 
@@ -38,7 +38,7 @@
             "ICC": "Chip", 
             "MANUAL": "Manual", 
             "MAGSTRIPE": "Banda magnética", 
-            "CONTACTLESS": "Contactless", 
+            "CONTACTLESS": "Sem contato", 
             "MAGSTRIPE_AS_FALLBACK": "Banda magnética"
         }, 
         "ReceiptType": {

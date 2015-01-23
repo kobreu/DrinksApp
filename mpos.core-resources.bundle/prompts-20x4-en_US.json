@@ -32,6 +32,9 @@
             "Insert or ", 
             "swipe card"
         ], 
+        "ProviderAccessoryConfiguringConnectionLink": [
+            ""
+        ], 
         "UpdatingDeviceConfigurationUpdate": [
             "Updating Config", 
             "", 
@@ -42,6 +45,9 @@
             "", 
             "", 
             "Reading card...", 
+            ""
+        ], 
+        "ProviderApproved": [
             ""
         ], 
         "ProvideSignature": [
@@ -113,9 +119,6 @@
             "PIN OK", 
             ""
         ], 
-        "ProviderCompleted": [
-            ""
-        ], 
         "Idle": [
             "", 
             "", 
@@ -142,6 +145,12 @@
             "", 
             "This may take", 
             "a while..."
+        ], 
+        "ProviderDeclined": [
+            ""
+        ], 
+        "ProviderAborted": [
+            ""
         ], 
         "UpdatingDeviceKeyInjection": [
             "Generating Keys", 

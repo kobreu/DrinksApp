@@ -25,12 +25,20 @@
             "Identifikation benötigt", 
             ""
         ], 
+        "ProviderAccessoryConfiguringConnectionLink": [
+            "Konfiguriere", 
+            "Kartenleser..."
+        ], 
         "UpdatingDeviceConfigurationUpdate": [
             "Config-Update", 
             "Dies kann einen Moment dauern..."
         ], 
         "ReadingEMVCard": [
             "Karte wird gelesen...", 
+            ""
+        ], 
+        "ProviderApproved": [
+            "Zahlung erfolgreich", 
             ""
         ], 
         "ProvideSignature": [
@@ -54,7 +62,7 @@
             "Dies kann einen Moment dauern..."
         ], 
         "ProviderFailed": [
-            "Zahlung abgelehnt", 
+            "Zahlung fehlgeschlagen", 
             "$error$"
         ], 
         "GenericError": [
@@ -81,10 +89,6 @@
             "PIN OK", 
             ""
         ], 
-        "ProviderCompleted": [
-            "Zahlung", 
-            "durchgeführt"
-        ], 
         "Idle": [
             "Verbunden", 
             ""
@@ -104,6 +108,14 @@
         "UpdatingDeviceSoftwareUpdate": [
             "Software-Update", 
             "Dies kann einen Moment dauern..."
+        ], 
+        "ProviderDeclined": [
+            "Zahlung abgelehnt", 
+            "$reason1$"
+        ], 
+        "ProviderAborted": [
+            "Zahlung abgebrochen", 
+            ""
         ], 
         "UpdatingDeviceKeyInjection": [
             "Schlüsselerzeugung", 

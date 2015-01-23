@@ -25,12 +25,20 @@
             "Identificação necessária", 
             ""
         ], 
+        "ProviderAccessoryConfiguringConnectionLink": [
+            "A configurar", 
+            "o leitor..."
+        ], 
         "UpdatingDeviceConfigurationUpdate": [
             "A atualizar configuração", 
             "A operação pode levar algum tempo"
         ], 
         "ReadingEMVCard": [
             "A ler cartão...", 
+            ""
+        ], 
+        "ProviderApproved": [
+            "Pagamento aprovado", 
             ""
         ], 
         "ProvideSignature": [
@@ -54,7 +62,7 @@
             "A operação pode levar algum tempo"
         ], 
         "ProviderFailed": [
-            "Transação falhou", 
+            "Pagamento falhou", 
             "$error$"
         ], 
         "GenericError": [
@@ -80,9 +88,6 @@
         "PINOk": [
             "PIN OK"
         ], 
-        "ProviderCompleted": [
-            "Transação efetuada"
-        ], 
         "Idle": [
             "Conectado"
         ], 
@@ -100,6 +105,14 @@
         "UpdatingDeviceSoftwareUpdate": [
             "A atualizar software", 
             "A operação pode levar algum tempo"
+        ], 
+        "ProviderDeclined": [
+            "Pagamento recusado", 
+            "$reason1$"
+        ], 
+        "ProviderAborted": [
+            "Pagamento abortado", 
+            ""
         ], 
         "UpdatingDeviceKeyInjection": [
             "A gerar chaves", 

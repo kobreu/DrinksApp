@@ -32,6 +32,9 @@
             "Kaart ingeven of ", 
             "schuiven"
         ], 
+        "ProviderAccessoryConfiguringConnectionLink": [
+            ""
+        ], 
         "UpdatingDeviceConfigurationUpdate": [
             "Config-update", 
             "", 
@@ -42,6 +45,9 @@
             "", 
             "Kaart wordt", 
             "gelezen...", 
+            ""
+        ], 
+        "ProviderApproved": [
             ""
         ], 
         "ProvideSignature": [
@@ -68,8 +74,8 @@
         "UpdatingDeviceFirmwareUpdate": [
             "Firmware-update", 
             "", 
-            "Dit kan iets", 
-            "langer duren..."
+            "Dit kan even", 
+            "duren..."
         ], 
         "ProviderFailed": [
             ""
@@ -113,9 +119,6 @@
             "PIN OK", 
             ""
         ], 
-        "ProviderCompleted": [
-            ""
-        ], 
         "Idle": [
             "", 
             "", 
@@ -142,6 +145,12 @@
             "", 
             "Dit kan iets", 
             "langer duren..."
+        ], 
+        "ProviderDeclined": [
+            ""
+        ], 
+        "ProviderAborted": [
+            ""
         ], 
         "UpdatingDeviceKeyInjection": [
             "Aanmaken sleutel", 

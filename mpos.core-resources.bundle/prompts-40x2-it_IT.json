@@ -25,12 +25,20 @@
             "Necessaria identificazione", 
             ""
         ], 
+        "ProviderAccessoryConfiguringConnectionLink": [
+            "Configurazione", 
+            "del lettore..."
+        ], 
         "UpdatingDeviceConfigurationUpdate": [
             "Aggiornamento configurazione", 
             "Pazientare qualche istante..."
         ], 
         "ReadingEMVCard": [
             "Lettura della carta...", 
+            ""
+        ], 
+        "ProviderApproved": [
+            "Pagamento accettato", 
             ""
         ], 
         "ProvideSignature": [
@@ -54,7 +62,7 @@
             "Pazientare qualche istante..."
         ], 
         "ProviderFailed": [
-            "Pagamento rifiutato", 
+            "Pagamento non riuscito", 
             "$error$"
         ], 
         "GenericError": [
@@ -81,10 +89,6 @@
             "PIN OK", 
             ""
         ], 
-        "ProviderCompleted": [
-            "Pagamento", 
-            "eseguito"
-        ], 
         "Idle": [
             "Collegamento", 
             ""
@@ -104,6 +108,14 @@
         "UpdatingDeviceSoftwareUpdate": [
             "Aggiornamento software", 
             "Pazientare qualche istante..."
+        ], 
+        "ProviderDeclined": [
+            "Pagamento rifiutato", 
+            "$reason1$"
+        ], 
+        "ProviderAborted": [
+            "Pagamento annullato", 
+            ""
         ], 
         "UpdatingDeviceKeyInjection": [
             "Generazione di chiavi", 

@@ -60,7 +60,7 @@
             "Absence de ressources"
         ], 
         "ServerUnavailable": [
-            "Passerelle indisponible"
+            "Vérifiez votre liaison internet"
         ], 
         "ServerError": [
             "Erreur du serveur"

@@ -6,7 +6,7 @@
     }, 
     "localization": {
         "DECLINED_PROCESSOR": [
-            "Paiement refusé"
+            "Refusé"
         ], 
         "PENDING_WAITING_FOR_FINALIZATION": [
             "Paiement accepté"

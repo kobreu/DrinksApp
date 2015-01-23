@@ -32,6 +32,9 @@
             "Insérer ou faire ", 
             "glisser la carte"
         ], 
+        "ProviderAccessoryConfiguringConnectionLink": [
+            ""
+        ], 
         "UpdatingDeviceConfigurationUpdate": [
             "Mise à jour config.", 
             "", 
@@ -42,6 +45,9 @@
             "", 
             "Carte en cours", 
             "de lecture...", 
+            ""
+        ], 
+        "ProviderApproved": [
             ""
         ], 
         "ProvideSignature": [
@@ -113,9 +119,6 @@
             "NIP OK", 
             ""
         ], 
-        "ProviderCompleted": [
-            ""
-        ], 
         "Idle": [
             "", 
             "", 
@@ -142,6 +145,12 @@
             "du logiciel", 
             "Cela peut prendre", 
             "quelques instants..."
+        ], 
+        "ProviderDeclined": [
+            ""
+        ], 
+        "ProviderAborted": [
+            ""
         ], 
         "UpdatingDeviceKeyInjection": [
             "Génération de la clé", 

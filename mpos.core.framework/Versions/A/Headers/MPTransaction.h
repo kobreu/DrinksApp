@@ -301,13 +301,6 @@ typedef NS_ENUM(NSUInteger, MPTransactionState)
 /** @name Customer and Receipt Information */
 
 /**
- * Additional customer information attached to the transaction and submitted to the processor.
- * @since 2.0.0
- */
-//@property (strong, nonatomic) MPCustomerInformation *customerInformation;
-
-
-/**
  * Receipt information to be send to a printer or provided with other means.
  * @since 2.0.0
  */
