@@ -20,7 +20,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0XE-pK-eaN">
-                                            <rect key="frame" x="539" y="7" width="30" height="30"/>
+                                            <rect key="frame" x="495" y="0.0" width="105" height="44"/>
                                             <state key="normal" title="Pay">
                                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                             </state>
@@ -50,7 +50,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dqN-Oh-UAA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="851" y="-1586"/>
+            <point key="canvasLocation" x="851" y="-1589"/>
         </scene>
         <!--Pay Controller-->
         <scene sceneID="roY-UO-iiU">

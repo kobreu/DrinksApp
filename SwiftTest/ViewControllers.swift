@@ -16,12 +16,12 @@ class CustomTableViewCell : UITableViewCell {
 }
 
 class Employee : NSObject {
-    var id = 0
+    var mid = 0
     var title = "fribbu"
     var amount = 0
     
     init(id:Int, name:String, amount: Int){
-        self.id = id
+        self.mid = id
         self.title = name
         self.amount = amount
     }
@@ -38,22 +38,47 @@ class Drink {
     }
 }
 
+class MerchantData {
+    var name = "payworks GmbH"
+    var street = "Grillparzerstraße 14"
+    var townzip = "81675 München"
+    var country = "Deutschland"
+    var merchantIdentifier = "f41e0335-dd3a-4849-a129-29b44bdd21a2"
+    var merchantSecretKey = "iqL6Vq8C4jnK7Wq9BDFUiZEGfHJNoABY"
+    var serverType = MPProviderMode.TEST
+    var readerType = MPAccessoryFamily.MiuraMPI
+    var paymentEnabled = true
+}
+
 class DataManager {
     
     func employeeList(success: (Array<Employee>) -> Void, failure: () -> Void)  {
-        let manager = AFHTTPRequestOperationManager();
+        /*let manager = AFHTTPRequestOperationManager();
         manager.GET("http://qultures.com/payworks/server.php/employees", parameters: nil, success: { (operation:AFHTTPRequestOperation!, responseObject:AnyObject?) -> Void in
             println("JSON: %@", responseObject)
         }) { (operation, error) -> Void in
             failure()
-        }
-        /*success([Employee(id: 0, name: "Pedro", amount: 0), Employee(id: 1,name: "Sanda", amount: 0), Employee(id: 2, name: "David", amount: 0), Employee(id: 3,name: "Per", amount: 0), Employee(id: 4,name: "Michael", amount: 0), Employee(id: 5,name: "Dmitry", amount: 0), Employee(id: 6,name: "David", amount: 0), Employee(id: 7,name: "Ahmed", amount: 0), Employee(id: 8,name: "Abhi", amount: 0), Employee(id: 8,name: "Simon 1.3", amount: 0), Employee(id: 9,name: "Simon 2.0", amount: 0), Employee(id: 10,name: "Thorsten", amount: 0)]);*/
+        }*/
+        success([Employee(id: 0, name: "Pedro", amount: 0), Employee(id: 1,name: "Sanda", amount: 0), Employee(id: 2, name: "David", amount: 0), Employee(id: 3,name: "Per", amount: 0), Employee(id: 4,name: "Michael", amount: 0), Employee(id: 5,name: "Dmitry", amount: 0), Employee(id: 6,name: "David", amount: 0), Employee(id: 7,name: "Ahmed", amount: 0), Employee(id: 8,name: "Abhi", amount: 0), Employee(id: 8,name: "Simon 1.3", amount: 0), Employee(id: 9,name: "Simon 2.0", amount: 0), Employee(id: 10,name: "Thorsten", amount: 0)]);
     }
     
     func drinkList(success: (Array<Drink> -> Void), failure: () -> Void) {
         success([Drink(name:"Mate", cost: 100),Drink(name:"Spezi", cost: 100)])
     }
     
+    func pushAmount(id: Int, amt:Int, success: (Void -> Void), failure: (Void -> Void)) {
+        success()
+    }
+    
+    func merchantData(success: (MerchantData) -> Void, failure: () -> Void) {
+        success(MerchantData())
+    }
+    
+}
+
+class RemoteDataManager : DataManager {
+    
+
 }
 
 
@@ -91,23 +116,37 @@ class EmployeeTableController : UITableViewController {
         cell.amt.text = String(format: "%.2f €", amtD)
         let button = UIButton();
         button.setTitle("title", forState: .Normal);
+        button.tag = indexPath.row
         [cell.addSubview(button)];
         return cell
     }
     
     
     @IBAction func pay(sender: AnyObject) {
-        let controller = self.storyboard?.instantiateViewControllerWithIdentifier("pay") as UIViewController
+        let controller = self.storyboard?.instantiateViewControllerWithIdentifier("pay") as PayController
         controller.modalPresentationStyle = UIModalPresentationStyle.FormSheet;
-        self.presentViewController(controller, animated: true) { () -> Void in
-            
-        };
+        controller.amount = self.employees[sender.tag].amount
+        self.presentViewController(controller, animated: true, completion: nil)
+        
+        controller.onPay = {(success: Bool) -> Void in
+            if success {
+                self.employees[sender.tag].amount = 0
+                let id = self.employees[sender.tag].mid
+                self.datamanager.pushAmount(id, amt: 0, success: {} , failure: {})
+                self.tableView.reloadRowsAtIndexPaths([NSIndexPath(forRow: sender.tag, inSection: 0)], withRowAnimation: UITableViewRowAnimation.None)
+                self.sort()
+            }
+        }
+
     }
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         let drinks = DrinksTableController()
         drinks.finished = {(drink:Drink) -> () in
             self.employees[indexPath.row].amount += drink.cost
+            let id = self.employees[indexPath.row].mid
+            let amount = self.employees[indexPath.row].amount
+            self.datamanager.pushAmount(id, amt: amount, success: {}, failure: {})
             self.tableView.reloadRowsAtIndexPaths([indexPath], withRowAnimation: UITableViewRowAnimation.None)
             self.sort()
         }
@@ -196,6 +235,12 @@ class PayController : UIViewController, MFMailComposeViewControllerDelegate {
     var paymentProcess:MPPaymentProcess!
     var actualReceipt: MPReceipt!
     
+    var successful: Bool = false
+    
+    var amount: Int = 0
+    
+    var onPay: (Bool -> Void)!
+    
     override func viewDidAppear(animated: Bool) {
         let transactionProvider = MPMpos.transactionProviderForMode(MPProviderMode.TEST, merchantIdentifier: "f41e0335-dd3a-4849-a129-29b44bdd21a2", merchantSecretKey: "iqL6Vq8C4jnK7Wq9BDFUiZEGfHJNoABY")
         
@@ -232,10 +277,13 @@ class PayController : UIViewController, MFMailComposeViewControllerDelegate {
                 }
             }, completed: { (process:MPPaymentProcess!, transaction:MPTransaction?, paymentProcessDetails:MPPaymentProcessDetails!) -> Void in
                 self.cancel.hidden = true
-                self.done.hidden = false;
+                self.done.hidden = false
+                self.successful = false
                 if(transaction?.status == MPTransactionStatus.Approved) {
                     self.receipt.hidden = false
+                    self.successful = true
                     self.actualReceipt = process.receiptFactory.customerReceiptForTransaction(transaction)
+                    
                 }
             })
     }
@@ -244,7 +292,7 @@ class PayController : UIViewController, MFMailComposeViewControllerDelegate {
         let controller = MFMailComposeViewController()
         controller.setSubject("payworks Receipt")
         controller.setCcRecipients(["sanda.bozic@payworksmobile.com"])
-        controller.setMessageBody(self.actualReceipt.prettyPrinted(), isHTML: false)
+        controller.setMessageBody(NSString(format: "%@\n%@\n%@\n%@\n\n%@", "payworks GmbH", "Grillparzerstraße 14", "81675 München", "Deutschland", self.actualReceipt.prettyPrinted()), isHTML: false)
         controller.modalPresentationStyle = UIModalPresentationStyle.FormSheet
         controller.mailComposeDelegate = self
         self.presentViewController(controller, animated: true, completion: nil)
@@ -257,6 +305,8 @@ class PayController : UIViewController, MFMailComposeViewControllerDelegate {
     }
     @IBAction func doen(sender: AnyObject) {
         self.dismissViewControllerAnimated(true, completion: nil);
+        self.onPay(self.successful)
+
     }
     @IBAction func abrot(sender: AnyObject) {
         self.paymentProcess.requestAbort()
