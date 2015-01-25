@@ -66,6 +66,12 @@
 #define COCOAPODS_VERSION_MINOR_CocoaLumberjack_Extensions 9
 #define COCOAPODS_VERSION_PATCH_CocoaLumberjack_Extensions 2
 
+// HockeySDK
+#define COCOAPODS_POD_AVAILABLE_HockeySDK
+#define COCOAPODS_VERSION_MAJOR_HockeySDK 3
+#define COCOAPODS_VERSION_MINOR_HockeySDK 6
+#define COCOAPODS_VERSION_PATCH_HockeySDK 2
+
 // ObjectMapper
 #define COCOAPODS_POD_AVAILABLE_ObjectMapper
 #define COCOAPODS_VERSION_MAJOR_ObjectMapper 0

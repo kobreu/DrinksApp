@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "96D34984A83EBE80F0F9F2BB"
+               BlueprintIdentifier = "6A99FE724AF82821AE0905ED"
                BuildableName = "MPBSignatureViewResources.bundle"
                BlueprintName = "Pods-mpos.blocks.signature-MPBSignatureViewResources"
                ReferencedContainer = "container:Pods.xcodeproj">

@@ -3,4 +3,4 @@ pod 'CocoaLumberjack', '~> 1.8'
 pod 'mpos.blocks.signature'
 pod 'AFNetworking'
 pod 'ObjectMapper', '~> 0.2'
-
+pod 'HockeySDK'

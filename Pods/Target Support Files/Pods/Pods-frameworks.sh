@@ -47,12 +47,14 @@ code_sign() {
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework 'AFNetworking.framework'
   install_framework 'CocoaLumberjack.framework'
+  install_framework 'HockeySDK.framework'
   install_framework 'ObjectMapper.framework'
   install_framework 'mpos_blocks_signature.framework'
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework 'AFNetworking.framework'
   install_framework 'CocoaLumberjack.framework'
+  install_framework 'HockeySDK.framework'
   install_framework 'ObjectMapper.framework'
   install_framework 'mpos_blocks_signature.framework'
 fi

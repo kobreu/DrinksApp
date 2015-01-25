@@ -18,6 +18,11 @@ class CustomTableViewCell : UITableViewCell {
     @IBOutlet weak var pay: UIButton!
 }
 
+class DrinkTableViewCell : UITableViewCell {
+    
+    @IBOutlet weak var cost: UILabel!
+}
+
 class Employee : NSObject, Mappable {
     var mid = 0
     var title = "fribbu"
@@ -108,6 +113,8 @@ class RemoteDataManager : DataManager {
         let manager = AFHTTPRequestOperationManager();
         manager.GET("http://qultures.com/payworks/server.php/employees", parameters: nil, success: { (operation:AFHTTPRequestOperation!, responseObject:AnyObject?) -> Void in
             let users = Mapper().mapArray(string:operation.responseString, toType: Employee.self)
+            println(operation.responseString)
+            println(users)
             success(users)
             }) { (operation, error) -> Void in
                 failure()
@@ -159,6 +166,7 @@ class EmployeeTableController : UITableViewController {
         datamanager.employeeList({ (employees) -> Void in
             self.employees = employees
             self.tableView.reloadData()
+            self.sort()
         }, failure: { () -> Void in
             
         })
@@ -175,6 +183,7 @@ class EmployeeTableController : UITableViewController {
             // TODO: only hide payment Buttons if necessary
             println(merchantData)
             self.tableView.reloadData()
+            self.sort()
         }, failure: { () -> Void in
             
         })
@@ -230,7 +239,7 @@ class EmployeeTableController : UITableViewController {
     }
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        let drinks = DrinksTableController()
+        let drinks = self.storyboard?.instantiateViewControllerWithIdentifier("drinksController") as DrinksTableController
         drinks.drinks = self.drinks
         drinks.finished = {(drink:Drink) -> () in
             let newamount = self.employees[indexPath.row].amount + drink.cost
@@ -291,10 +300,11 @@ class DrinksTableController : UITableViewController {
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let identifier = "identifier";
-        let cell = (tableView.dequeueReusableCellWithIdentifier(identifier) ?? UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: identifier)) as UITableViewCell;
+        let identifier = "identifierElse";
+        let cell = (tableView.dequeueReusableCellWithIdentifier(identifier) ?? DrinkTableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: identifier)) as DrinkTableViewCell;
         let index = indexPath.row
         cell.textLabel?.text = self.drinks[index].title
+        cell.cost.text = String(format: "%.2f €", Double(self.drinks[index].cost / 100))
         return cell
     }
     
