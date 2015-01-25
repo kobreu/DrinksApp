@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="boI-RT-y9L">
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <scenes>
@@ -38,6 +37,7 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="amt" destination="OWa-uc-hS3" id="LIG-cI-D6e"/>
+                                    <outlet property="pay" destination="0XE-pK-eaN" id="Jm5-gv-vKW"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>

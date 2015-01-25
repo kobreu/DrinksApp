@@ -18,7 +18,7 @@
 		2DEA8F011A487712004EF502 /* mpos.core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DEA8EFD1A487712004EF502 /* mpos.core.framework */; };
 		2DEA8F051A487E7B004EF502 /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DEA8F041A487E7B004EF502 /* ExternalAccessory.framework */; };
 		2DF8D4041A7164CC002F507F /* ViewControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DF8D4031A7164CC002F507F /* ViewControllers.swift */; };
-		DD933D53F6344C8E8F62A02A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 15735FFA7A5C4A0F9422F7CD /* libPods.a */; };
+		4174B25E386732F8F47F9846 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C9EA4E8830854EAABA78A6A /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,7 +33,6 @@
 
 /* Begin PBXFileReference section */
 		0D50387589C8D54105D2173A /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		15735FFA7A5C4A0F9422F7CD /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DEA8ED51A4876E3004EF502 /* SwiftTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DEA8ED91A4876E3004EF502 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2DEA8EDA1A4876E3004EF502 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -50,6 +49,7 @@
 		2DEA8F031A487892004EF502 /* mpos-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "mpos-Bridging-Header.h"; sourceTree = "<group>"; };
 		2DEA8F041A487E7B004EF502 /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
 		2DF8D4031A7164CC002F507F /* ViewControllers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllers.swift; sourceTree = "<group>"; };
+		7C9EA4E8830854EAABA78A6A /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF6CBB782B86FFAE8298D593 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -62,7 +62,7 @@
 				2DEA8EFE1A487712004EF502 /* mpos.accessories.miura-shuttle.framework in Frameworks */,
 				2DEA8F011A487712004EF502 /* mpos.core.framework in Frameworks */,
 				2DEA8EFF1A487712004EF502 /* mpos.comlinks.externalaccessory.framework in Frameworks */,
-				DD933D53F6344C8E8F62A02A /* libPods.a in Frameworks */,
+				4174B25E386732F8F47F9846 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,7 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				2DEA8F041A487E7B004EF502 /* ExternalAccessory.framework */,
-				15735FFA7A5C4A0F9422F7CD /* libPods.a */,
+				7C9EA4E8830854EAABA78A6A /* Pods.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -169,6 +169,7 @@
 				2DEA8ED21A4876E3004EF502 /* Frameworks */,
 				2DEA8ED31A4876E3004EF502 /* Resources */,
 				932A14F772234B94AE5C9A47 /* Copy Pods Resources */,
+				6FD442BE63B2FF01DC0B6415 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -269,6 +270,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6FD442BE63B2FF01DC0B6415 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		932A14F772234B94AE5C9A47 /* Copy Pods Resources */ = {
@@ -426,7 +442,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = SwiftTest/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -449,7 +465,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = SwiftTest/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";

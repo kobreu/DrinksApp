@@ -11,5 +11,3 @@
 @import MobileCoreServices;
 
 #import <mpos.core/mpos.h>
-#import <mpos.blocks.signature/MPBSignatureViewController.h>
-#import <AFNetworking/AFNetworking.h>

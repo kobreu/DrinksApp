@@ -4,17 +4,22 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>MPBSignatureViewResources.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>Pods-AFNetworking.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
 		<key>Pods-CocoaLumberjack.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-ObjectMapper.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-mpos.blocks.signature-MPBSignatureViewResources.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -32,27 +37,32 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>84BD667E50DA3B35CA03B1AB</key>
+		<key>600D6D75B92710A11C8296ED</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>960FF58FEA5F6467AA6715CE</key>
+		<key>91BCBE978D65C8E5EC356724</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B9C32695DD59319FEE49FF7F</key>
+		<key>96D34984A83EBE80F0F9F2BB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D63C7974B26C4184D9EDECC8</key>
+		<key>ADE2289459B09A71D0833C54</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F200C41AC43A581767D197FE</key>
+		<key>C002620496C335E3D06871B6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CE0FA06295E4BE1C1048B66A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
