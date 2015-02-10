@@ -24,17 +24,17 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-MPBSignatureViewController-MPBSignatureViewResources.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-MPBSignatureViewController.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-ObjectMapper.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods-mpos.blocks.signature-MPBSignatureViewResources.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods-mpos.blocks.signature.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -47,42 +47,42 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>0D77EAF2DCBF092FCA641A4D</key>
+		<key>0F27ECD59187AC6C1631C838</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>4CC7E9BA5A333B137BFF6587</key>
+		<key>0F6DF07238E75336BF4C96CC</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>4F7FB83B834AE4908326B3B3</key>
+		<key>3476E2BAA5DFF7913D66227E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>6A99FE724AF82821AE0905ED</key>
+		<key>8057B90D5FACFB0425E98A7A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8ED9BC7B4E19E07297BCDD08</key>
+		<key>CA18A2B42E3E60D0B585C3A7</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A2BD2EE8D9EEE62C248B2331</key>
+		<key>CDC691D58BB5AF86941A204C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F41B39EDF9B4665C160335DD</key>
+		<key>D24EC10FAB744D8F6A845F84</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F425B845D8A782E78589B08F</key>
+		<key>E890E3EDCD78B89A146D52BB</key>
 		<dict>
 			<key>primary</key>
 			<true/>

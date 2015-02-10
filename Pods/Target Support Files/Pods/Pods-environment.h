@@ -72,15 +72,15 @@
 #define COCOAPODS_VERSION_MINOR_HockeySDK 6
 #define COCOAPODS_VERSION_PATCH_HockeySDK 2
 
+// MPBSignatureViewController
+#define COCOAPODS_POD_AVAILABLE_MPBSignatureViewController
+#define COCOAPODS_VERSION_MAJOR_MPBSignatureViewController 1
+#define COCOAPODS_VERSION_MINOR_MPBSignatureViewController 4
+#define COCOAPODS_VERSION_PATCH_MPBSignatureViewController 5
+
 // ObjectMapper
 #define COCOAPODS_POD_AVAILABLE_ObjectMapper
 #define COCOAPODS_VERSION_MAJOR_ObjectMapper 0
 #define COCOAPODS_VERSION_MINOR_ObjectMapper 3
 #define COCOAPODS_VERSION_PATCH_ObjectMapper 0
-
-// mpos.blocks.signature
-#define COCOAPODS_POD_AVAILABLE_mpos_blocks_signature
-#define COCOAPODS_VERSION_MAJOR_mpos_blocks_signature 1
-#define COCOAPODS_VERSION_MINOR_mpos_blocks_signature 3
-#define COCOAPODS_VERSION_PATCH_mpos_blocks_signature 3
 

@@ -1,6 +1,0 @@
-framework module mpos_blocks_signature {
-  umbrella header "Pods-mpos.blocks.signature-umbrella.h"
-
-  export *
-  module * { export * }
-}

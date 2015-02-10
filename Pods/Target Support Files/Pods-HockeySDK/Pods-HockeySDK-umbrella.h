@@ -13,7 +13,6 @@
 #import "BITCrashManager.h"
 #import "BITCrashManagerDelegate.h"
 #import "BITCrashMetaData.h"
-#import "BITCrashReportTextFormatter.h"
 #import "BITFeedbackActivity.h"
 #import "BITFeedbackComposeViewController.h"
 #import "BITFeedbackComposeViewControllerDelegate.h"

@@ -11,6 +11,7 @@ import UIKit
 import MessageUI
 import ObjectMapper
 import AFNetworking
+import MPBSignatureViewController
 
 class CustomTableViewCell : UITableViewCell {
     @IBOutlet weak var button: UIButton!
@@ -80,7 +81,7 @@ class MerchantData : NSObject, Mappable {
         self.street <= mapper["street"]
         self.townzip <= mapper["townzip"]
         self.country <= mapper["country"]
-        self.merchantIdentifier <= mapper["merchantIdentifier"]
+        self.merchantIdentifier <= mapper["merchantId"]
         self.merchantSecretKey <= mapper["merchantSecretKey"]
         self.readerModel <= mapper["readerModel"]
         self.serverType <= mapper["serverType"]
@@ -216,22 +217,25 @@ class EmployeeTableController : UITableViewController {
     
     
     @IBAction func pay(sender: AnyObject) {
+        let buttonPosition = sender.convertPoint(CGPointZero, toView: self.tableView)
+        let indexPath = self.tableView.indexPathForRowAtPoint(buttonPosition)!
         let controller = self.storyboard?.instantiateViewControllerWithIdentifier("pay") as PayController
         controller.modalPresentationStyle = UIModalPresentationStyle.FormSheet;
-        controller.amount = self.employees[sender.tag].amount
+        controller.amount = self.employees[indexPath.row].amount
+        controller.merchantData = self.merchantData
         self.presentViewController(controller, animated: true, completion: nil)
         
         controller.onPay = {(success: Bool) -> Void in
             if success {
-                self.employees[sender.tag].amount = 0
-                let id = self.employees[sender.tag].mid
+                self.employees[indexPath.row].amount = 0
+                let id = self.employees[indexPath.row].mid
                 self.datamanager.pushAmount(id, amount: 0, success: {} , failure: {
                     let alertController = UIAlertController(title: "Could not reset your amount!", message:
                         "Please contact Korbinian.", preferredStyle: UIAlertControllerStyle.Alert)
                     alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.Default,handler: nil))
                     self.presentViewController(alertController, animated: true, completion: nil)
                 })
-                self.tableView.reloadRowsAtIndexPaths([NSIndexPath(forRow: sender.tag, inSection: 0)], withRowAnimation: UITableViewRowAnimation.None)
+                self.tableView.reloadRowsAtIndexPaths([NSIndexPath(forRow: indexPath.row, inSection: 0)], withRowAnimation: UITableViewRowAnimation.None)
                 self.sort()
             }
         }
@@ -304,7 +308,7 @@ class DrinksTableController : UITableViewController {
         let cell = (tableView.dequeueReusableCellWithIdentifier(identifier) ?? DrinkTableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: identifier)) as DrinkTableViewCell;
         let index = indexPath.row
         cell.textLabel?.text = self.drinks[index].title
-        cell.cost.text = String(format: "%.2f €", Double(self.drinks[index].cost / 100))
+        cell.cost.text = String(format: "%.2f €", Double(self.drinks[index].cost) / 100.0)
         return cell
     }
     
@@ -339,14 +343,16 @@ class PayController : UIViewController, MFMailComposeViewControllerDelegate {
     
     var amount: Int = 0
     
+    var merchantData:MerchantData = MerchantData()
+    
     var onPay: (Bool -> Void)!
     
     override func viewDidAppear(animated: Bool) {
-        let transactionProvider = MPMpos.transactionProviderForMode(MPProviderMode.TEST, merchantIdentifier: "f41e0335-dd3a-4849-a129-29b44bdd21a2", merchantSecretKey: "iqL6Vq8C4jnK7Wq9BDFUiZEGfHJNoABY")
+        let transactionProvider = MPMpos.transactionProviderForMode(merchantData.serverType == "LIVE" ? MPProviderMode.LIVE : MPProviderMode.TEST, merchantIdentifier: merchantData.merchantIdentifier, merchantSecretKey: merchantData.merchantSecretKey)
         
-        let amt = "108.20"
+        let amt:NSDecimalNumber = NSDecimalNumber(double: Double(amount) / 100.0)
         
-        let transactionTemplate = transactionProvider.chargeTransactionTemplateWithAmount(NSDecimalNumber(string: amt), currency: MPCurrency.EUR, subject: "subject", customIdentifier: "customIdentifier")
+        let transactionTemplate = transactionProvider.chargeTransactionTemplateWithAmount(amt, currency: MPCurrency.EUR, subject: "subject", customIdentifier: "customIdentifier")
         
         self.paymentProcess = transactionProvider.startPaymentWithTemplate(transactionTemplate, usingAccessory: MPAccessoryFamily.MiuraMPI, registered: { (process:MPPaymentProcess!, transaction:MPTransaction!) -> Void in
             // do sth
@@ -360,17 +366,13 @@ class PayController : UIViewController, MFMailComposeViewControllerDelegate {
                 switch (transactionAction) {
                 case MPTransactionAction.CustomerSignature:
                     // In a live app, this image comes from your signature screen
-                    /*let signatureViewController = nil /* MPBSignatureViewController()*/
-                    signatureViewController.merchantName = "Getränke"
-                    signatureViewController.amountText = amt + " €"
+                    let signatureViewController = MPBDefaultStyleSignatureViewController(configuration: MPBSignatureViewControllerConfiguration(merchantName: "payworks", formattedAmount: String(format: "%.2f €", Double(self.amount) / 100.0)))
                     signatureViewController.modalPresentationStyle = UIModalPresentationStyle.FormSheet
+                    signatureViewController.continueBlock = {(signature:UIImage!) -> Void in
+                        self.paymentProcess.continueWithCustomerSignature(signature, verified: true)}
+                    signatureViewController.cancelBlock = {() -> Void in
+                        self.paymentProcess.continueWithCustomerSignature(nil, verified: false)}
                     self.presentViewController(signatureViewController, animated: true, completion: nil)
-                    signatureViewController.registerOnPay({ () -> Void in
-                        self.paymentProcess.continueWithCustomerSignature(signatureViewController.signature(), verified: true)
-                    }, onCancel: { () -> Void in
-                        self.paymentProcess.continueWithCustomerSignature(nil, verified: false)
-                    })*/
-                    println("no sig!")
                 case MPTransactionAction.CustomerIdentification:
                     self.paymentProcess.continueWithCustomerIdentityVerified(false)
                 default:

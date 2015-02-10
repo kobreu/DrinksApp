@@ -1,1 +1,0 @@
-PODS_MPOS_BLOCKS_SIGNATURE_OTHER_LDFLAGS = -framework "GLKit" -framework "OpenGLES"

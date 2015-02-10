@@ -6,8 +6,9 @@
 //  Copyright (c) 2014 Korbinian Breu. All rights reserved.
 //
 
-@import Foundation;
-@import SystemConfiguration;
-@import MobileCoreServices;
 
+#define HOCKEYSDK_FEATURE_CRASH_REPORTER NO
+
+#import <MPBSignatureViewController/MPBSignatureViewController.h>
 #import <mpos.core/mpos.h>
+#import <HockeySDK/HockeySDK.h>

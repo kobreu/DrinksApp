@@ -26,21 +26,21 @@ PODS:
   - CocoaLumberjack/Extensions (1.9.2):
     - CocoaLumberjack/Core
   - HockeySDK (3.6.2)
-  - mpos.blocks.signature (1.3.3)
+  - MPBSignatureViewController (1.4.5)
   - ObjectMapper (0.3)
 
 DEPENDENCIES:
   - AFNetworking
   - CocoaLumberjack (~> 1.8)
   - HockeySDK
-  - mpos.blocks.signature
+  - MPBSignatureViewController
   - ObjectMapper (~> 0.2)
 
 SPEC CHECKSUMS:
   AFNetworking: 0f54cb5d16ce38c1b76948faffb8d5fb705021c7
   CocoaLumberjack: 205769c032b5fef85b92472046bcc8b7e7c8a817
   HockeySDK: bfd1f5ac75938b07499c4ac12932244b72a2e70b
-  mpos.blocks.signature: 065a1b1039be27594e5fbed49ad0e439a9dc57e3
+  MPBSignatureViewController: 5c6e09e9cbe9a026247e1ee8cea5bc105933b439
   ObjectMapper: ba7b2c2420c158ed64a10d349919a7ec464af6c8
 
-COCOAPODS: 0.36.0.beta.1
+COCOAPODS: 0.36.0.beta.2

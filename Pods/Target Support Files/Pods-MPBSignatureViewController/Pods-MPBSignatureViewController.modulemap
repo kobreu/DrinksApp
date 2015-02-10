@@ -1,0 +1,6 @@
+framework module MPBSignatureViewController {
+  umbrella header "Pods-MPBSignatureViewController-umbrella.h"
+
+  export *
+  module * { export * }
+}
