@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D8333A31A8BBA260098E6FB /* mPOSUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D8333A11A8BBA260098E6FB /* mPOSUI.framework */; };
+		2D8333A41A8BBA260098E6FB /* mPOSUIResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2D8333A21A8BBA260098E6FB /* mPOSUIResources.bundle */; };
 		2DEA8EDB1A4876E3004EF502 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DEA8EDA1A4876E3004EF502 /* AppDelegate.swift */; };
 		2DEA8EE01A4876E3004EF502 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DEA8EDE1A4876E3004EF502 /* Main.storyboard */; };
 		2DEA8EE21A4876E3004EF502 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DEA8EE11A4876E3004EF502 /* Images.xcassets */; };
@@ -33,6 +35,8 @@
 
 /* Begin PBXFileReference section */
 		0D50387589C8D54105D2173A /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		2D8333A11A8BBA260098E6FB /* mPOSUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = mPOSUI.framework; sourceTree = "<group>"; };
+		2D8333A21A8BBA260098E6FB /* mPOSUIResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = mPOSUIResources.bundle; sourceTree = "<group>"; };
 		2DEA8ED51A4876E3004EF502 /* SwiftTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DEA8ED91A4876E3004EF502 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2DEA8EDA1A4876E3004EF502 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -61,6 +65,7 @@
 				2DEA8F051A487E7B004EF502 /* ExternalAccessory.framework in Frameworks */,
 				2DEA8EFE1A487712004EF502 /* mpos.accessories.miura-shuttle.framework in Frameworks */,
 				2DEA8F011A487712004EF502 /* mpos.core.framework in Frameworks */,
+				2D8333A31A8BBA260098E6FB /* mPOSUI.framework in Frameworks */,
 				2DEA8EFF1A487712004EF502 /* mpos.comlinks.externalaccessory.framework in Frameworks */,
 				4174B25E386732F8F47F9846 /* Pods.framework in Frameworks */,
 			);
@@ -82,6 +87,8 @@
 				2DEA8ED71A4876E3004EF502 /* SwiftTest */,
 				2DEA8EED1A4876E3004EF502 /* SwiftTestTests */,
 				2DEA8ED61A4876E3004EF502 /* Products */,
+				2D8333A11A8BBA260098E6FB /* mPOSUI.framework */,
+				2D8333A21A8BBA260098E6FB /* mPOSUIResources.bundle */,
 				2DEA8EFA1A487712004EF502 /* mpos.accessories.miura-shuttle.framework */,
 				2DEA8EFB1A487712004EF502 /* mpos.comlinks.externalaccessory.framework */,
 				2DEA8EFC1A487712004EF502 /* mpos.core-resources.bundle */,
@@ -243,6 +250,7 @@
 			files = (
 				2DEA8F001A487712004EF502 /* mpos.core-resources.bundle in Resources */,
 				2DEA8EE01A4876E3004EF502 /* Main.storyboard in Resources */,
+				2D8333A41A8BBA260098E6FB /* mPOSUIResources.bundle in Resources */,
 				2DEA8EE51A4876E3004EF502 /* LaunchScreen.xib in Resources */,
 				2DEA8EE21A4876E3004EF502 /* Images.xcassets in Resources */,
 			);

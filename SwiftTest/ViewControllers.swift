@@ -219,27 +219,31 @@ class EmployeeTableController : UITableViewController {
     @IBAction func pay(sender: AnyObject) {
         let buttonPosition = sender.convertPoint(CGPointZero, toView: self.tableView)
         let indexPath = self.tableView.indexPathForRowAtPoint(buttonPosition)!
-        let controller = self.storyboard?.instantiateViewControllerWithIdentifier("pay") as PayController
-        controller.modalPresentationStyle = UIModalPresentationStyle.FormSheet;
-        controller.amount = self.employees[indexPath.row].amount
-        controller.merchantData = self.merchantData
-        self.presentViewController(controller, animated: true, completion: nil)
         
-        controller.onPay = {(success: Bool) -> Void in
-            if success {
+        let amount = self.employees[indexPath.row].amount
+        let controller = MPUPaymentController.initializePaymentControllerWithProviderMode(merchantData.serverType == "LIVE" ? MPProviderMode.LIVE : MPProviderMode.TEST, identifier: merchantData.merchantIdentifier, secret: merchantData.merchantSecretKey) as MPUPaymentController
+        
+        controller.configuration.accessoryFamily = MPAccessoryFamily.MiuraMPI
+        let viewController = controller.createPaymentViewControllerWithAmount(NSDecimalNumber(double: Double(amount) / 100.0), currency: MPCurrency.EUR, subject: "subject", customIdentifier: "customIdentifier") { (result) -> Void in
+            self.dismissViewControllerAnimated(true, completion: nil)
+            if (result == MPUPaymentControllerResult.Approved) {
                 self.employees[indexPath.row].amount = 0
                 let id = self.employees[indexPath.row].mid
                 self.datamanager.pushAmount(id, amount: 0, success: {} , failure: {
-                    let alertController = UIAlertController(title: "Could not reset your amount!", message:
-                        "Please contact Korbinian.", preferredStyle: UIAlertControllerStyle.Alert)
-                    alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.Default,handler: nil))
-                    self.presentViewController(alertController, animated: true, completion: nil)
                 })
                 self.tableView.reloadRowsAtIndexPaths([NSIndexPath(forRow: indexPath.row, inSection: 0)], withRowAnimation: UITableViewRowAnimation.None)
                 self.sort()
+            } else {
+                let alertController = UIAlertController(title: "You did not pay!", message:
+                    "If you think this was due to an error, contact Korbinian.", preferredStyle: UIAlertControllerStyle.Alert)
+                alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.Default,handler: nil))
+                self.presentViewController(alertController, animated: true, completion: nil)
             }
         }
-
+        
+        let modalNav = UINavigationController(rootViewController: viewController)
+        modalNav.modalPresentationStyle = UIModalPresentationStyle.FormSheet
+        self.presentViewController(modalNav, animated: true, completion: nil)
     }
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
@@ -327,91 +331,4 @@ class DrinksTableController : UITableViewController {
 
 }
 
-class PayController : UIViewController, MFMailComposeViewControllerDelegate {
-    
-    @IBOutlet weak var line1: UILabel!
-    @IBOutlet weak var line2: UILabel!
 
-    @IBOutlet weak var done: UIButton!
-    @IBOutlet weak var receipt: UIButton!
-    @IBOutlet weak var cancel: UIButton!
-    
-    var paymentProcess:MPPaymentProcess!
-    var actualReceipt: MPReceipt!
-    
-    var successful: Bool = false
-    
-    var amount: Int = 0
-    
-    var merchantData:MerchantData = MerchantData()
-    
-    var onPay: (Bool -> Void)!
-    
-    override func viewDidAppear(animated: Bool) {
-        let transactionProvider = MPMpos.transactionProviderForMode(merchantData.serverType == "LIVE" ? MPProviderMode.LIVE : MPProviderMode.TEST, merchantIdentifier: merchantData.merchantIdentifier, merchantSecretKey: merchantData.merchantSecretKey)
-        
-        let amt:NSDecimalNumber = NSDecimalNumber(double: Double(amount) / 100.0)
-        
-        let transactionTemplate = transactionProvider.chargeTransactionTemplateWithAmount(amt, currency: MPCurrency.EUR, subject: "subject", customIdentifier: "customIdentifier")
-        
-        self.paymentProcess = transactionProvider.startPaymentWithTemplate(transactionTemplate, usingAccessory: MPAccessoryFamily.MiuraMPI, registered: { (process:MPPaymentProcess!, transaction:MPTransaction!) -> Void in
-            // do sth
-            }, statusChanged: { (process:MPPaymentProcess!, transaction:MPTransaction?, processDetails:MPPaymentProcessDetails!) -> Void in
-                // do sth
-                self.line1.text = processDetails.information[0] as String
-                self.line2.text = processDetails.information[1] as String
-                self.cancel.hidden = !(transaction?.canBeAborted() ?? false)
-
-            }, actionRequired: { (process:MPPaymentProcess!, transaction:MPTransaction!, transactionAction:MPTransactionAction, transactionActionSupport:MPTransactionActionSupport?) -> Void in
-                switch (transactionAction) {
-                case MPTransactionAction.CustomerSignature:
-                    // In a live app, this image comes from your signature screen
-                    let signatureViewController = MPBDefaultStyleSignatureViewController(configuration: MPBSignatureViewControllerConfiguration(merchantName: "payworks", formattedAmount: String(format: "%.2f €", Double(self.amount) / 100.0)))
-                    signatureViewController.modalPresentationStyle = UIModalPresentationStyle.FormSheet
-                    signatureViewController.continueBlock = {(signature:UIImage!) -> Void in
-                        self.paymentProcess.continueWithCustomerSignature(signature, verified: true)}
-                    signatureViewController.cancelBlock = {() -> Void in
-                        self.paymentProcess.continueWithCustomerSignature(nil, verified: false)}
-                    self.presentViewController(signatureViewController, animated: true, completion: nil)
-                case MPTransactionAction.CustomerIdentification:
-                    self.paymentProcess.continueWithCustomerIdentityVerified(false)
-                default:
-                    println("default")
-                }
-            }, completed: { (process:MPPaymentProcess!, transaction:MPTransaction?, paymentProcessDetails:MPPaymentProcessDetails!) -> Void in
-                self.cancel.hidden = true
-                self.done.hidden = false
-                self.successful = false
-                if(transaction?.status == MPTransactionStatus.Approved) {
-                    self.receipt.hidden = false
-                    self.successful = true
-                    self.actualReceipt = process.receiptFactory.customerReceiptForTransaction(transaction)
-                    
-                }
-            })
-    }
-    
-    @IBAction func sned(sender: AnyObject) {
-        let controller = MFMailComposeViewController()
-        controller.setSubject("payworks Receipt")
-        controller.setCcRecipients(["sanda.bozic@payworksmobile.com"])
-        controller.setMessageBody(NSString(format: "%@\n%@\n%@\n%@\n\n%@", "payworks GmbH", "Grillparzerstraße 14", "81675 München", "Deutschland", self.actualReceipt.prettyPrinted()), isHTML: false)
-        controller.modalPresentationStyle = UIModalPresentationStyle.FormSheet
-        controller.mailComposeDelegate = self
-        self.presentViewController(controller, animated: true, completion: nil)
-        
-    }
-    
-    func mailComposeController(controller: MFMailComposeViewController!, didFinishWithResult result: MFMailComposeResult, error: NSError!) {
-        // do nothing?
-        controller.dismissViewControllerAnimated(true, completion: nil)
-    }
-    @IBAction func doen(sender: AnyObject) {
-        self.dismissViewControllerAnimated(true, completion: nil);
-        self.onPay(self.successful)
-
-    }
-    @IBAction func abrot(sender: AnyObject) {
-        self.paymentProcess.requestAbort()
-    }
-}

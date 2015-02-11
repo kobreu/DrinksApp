@@ -12,3 +12,4 @@
 #import <MPBSignatureViewController/MPBSignatureViewController.h>
 #import <mpos.core/mpos.h>
 #import <HockeySDK/HockeySDK.h>
+#import <mPOSUI/mPOSUI.h>
