@@ -153,21 +153,97 @@ class RemoteDataManager : DataManager {
 
 }
 
+class FirebaseDataManager : DataManager {
+    
+    var employeeRef:Firebase
+    
+    override init() {
+        // Create a reference to a Firebase location
+        employeeRef = Firebase(url:"https://amber-fire-1440.firebaseio.com/employees")
+        
+       
+    }
+    
+    override func employeeList(success: (Array<Employee>) -> Void, failure: () -> Void) {
+        // start reading data
+        employeeRef.observeEventType(.Value, withBlock: {
+            snapshot in
+            let enumerator = snapshot.children
+            var users:Array<Employee> = []
+            while let rest = enumerator.nextObject() as? FDataSnapshot {
+                println(rest.value)
+                let emp = Employee()
+                emp.mid = rest.value["id"] as Int
+                emp.title = rest.value["name"] as String
+                emp.amount = rest.value["amount"] as Int
+                users.append(emp)
+            }
+            success(users)
+        })
+    }
+    
+    override func drinkList(success: (Array<Drink> -> Void), failure: () -> Void) {
+        let drinkRef = Firebase(url:"https://amber-fire-1440.firebaseio.com/drinks")
+        
+        drinkRef.observeEventType(.Value, withBlock: { (snapshot) -> Void in
+            let enumerator = snapshot.children
+            var drinks:Array<Drink> = []
+            while let drink = enumerator.nextObject() as? FDataSnapshot {
+                let drinkA = Drink()
+                drinkA.title = drink.value["name"] as String
+                drinkA.cost = drink.value["cost"] as Int
+                drinks.append(drinkA)
+            }
+            success(drinks)
+        })
+    }
+    
+    override func merchantData(success: (MerchantData) -> Void, failure: () -> Void) {
+        let merchantDataRef = Firebase(url:"https://amber-fire-1440.firebaseio.com/merchantData")
+        
+        merchantDataRef.observeEventType(.Value, withBlock: { (snapshot) -> Void in
+            let merchantData = MerchantData()
+            merchantData.name = snapshot.value["name"] as String
+            merchantData.street = snapshot.value["street"] as String
+            merchantData.townzip = snapshot.value["townzip"] as String
+            merchantData.country = snapshot.value["country"] as String
+            merchantData.merchantIdentifier = snapshot.value["merchantId"] as String
+            merchantData.merchantSecretKey = snapshot.value["merchantSecretKey"] as String
+            merchantData.readerModel = snapshot.value["readerModel"] as String
+            merchantData.serverType = snapshot.value["serverType"] as String
+            merchantData.paymentEnabled = snapshot.value["paymentEnabled"] as Bool
+            
+            success(merchantData)
+        })
+    }
+    
+    override func pushAmount(employee: Int, amount: Int, success: (Void -> Void), failure: (Void -> Void)) {
+        let pushAmountRef = Firebase(url: "https://amber-fire-1440.firebaseio.com/employees")
+        
+        let employee = pushAmountRef.childByAppendingPath(String(employee - 1))
+        
+        var amount = ["amount": amount]
+        
+        employee.updateChildValues(amount)
+    }
+}
+
 
 class EmployeeTableController : UITableViewController {
     
     var employees:Array<Employee>!
     var drinks: Array<Drink>!
     
-    var datamanager = RemoteDataManager()
+    var datamanager = FirebaseDataManager()
     var merchantData:MerchantData!
     
     override func viewDidLoad() {
         self.employees = []
         datamanager.employeeList({ (employees) -> Void in
+            let oldEmployees = self.employees
             self.employees = employees
             self.tableView.reloadData()
-            self.sort()
+            self.sort(oldEmployees)
         }, failure: { () -> Void in
             
         })
@@ -184,10 +260,12 @@ class EmployeeTableController : UITableViewController {
             // TODO: only hide payment Buttons if necessary
             println(merchantData)
             self.tableView.reloadData()
-            self.sort()
+            self.sort(self.employees)
         }, failure: { () -> Void in
             
         })
+        
+        
     }
     
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
@@ -209,8 +287,8 @@ class EmployeeTableController : UITableViewController {
         cell.amt.text = String(format: "%.2f €", amtD)
         let button = UIButton();
         button.setTitle("title", forState: .Normal);
-        button.tag = indexPath.row
         cell.pay.hidden = !self.merchantData.paymentEnabled
+        cell.tag = self.employees[index].mid
         [cell.addSubview(button)];
         return cell
     }
@@ -232,7 +310,7 @@ class EmployeeTableController : UITableViewController {
                 self.datamanager.pushAmount(id, amount: 0, success: {} , failure: {
                 })
                 self.tableView.reloadRowsAtIndexPaths([NSIndexPath(forRow: indexPath.row, inSection: 0)], withRowAnimation: UITableViewRowAnimation.None)
-                self.sort()
+                self.sort(self.employees)
             } else {
                 let alertController = UIAlertController(title: "You did not pay!", message:
                     "If you think this was due to an error, contact Korbinian.", preferredStyle: UIAlertControllerStyle.Alert)
@@ -256,7 +334,7 @@ class EmployeeTableController : UITableViewController {
             self.datamanager.pushAmount(id, amount: newamount, success: {
                 self.employees[indexPath.row].amount = newamount
                 self.tableView.reloadRowsAtIndexPaths([indexPath], withRowAnimation: UITableViewRowAnimation.None)
-                self.sort()
+                self.sort(self.employees)
             }, failure: {
                 let alertController = UIAlertController(title: "Could not add drink, try again!", message:
                     nil, preferredStyle: UIAlertControllerStyle.Alert)
@@ -267,19 +345,32 @@ class EmployeeTableController : UITableViewController {
         self.navigationController?.pushViewController(drinks, animated: true);
     }
     
+    func findEmployeeIndexById(employees: Array<Employee>, id:Int) -> Int? {
+        for employee in employees {
+            if(employee.mid == id) {
+                return find(employees, employee)
+            }
+        }
+        return nil
+    }
     
-    func sort() {
+    
+    func sort(oldEmployees: Array<Employee>) {
         let unsorted = self.employees
+        
+        println(oldEmployees)
+        println(self.employees)
         
         self.employees.sort({ $0.amount > $1.amount })
         
         self.tableView.beginUpdates()
         
         for (index, element) in enumerate(unsorted) {
+            let sourceRow = self.findEmployeeIndexById(oldEmployees, id: element.mid) ?? index
             let destRow = find(self.employees, element)!
             
-            if (destRow != index) {
-                let sourceIndexPath = NSIndexPath(forRow: index, inSection: 0)
+            if (destRow != sourceRow) {
+                let sourceIndexPath = NSIndexPath(forRow: sourceRow, inSection: 0)
                 let destIndexPath = NSIndexPath(forRow: destRow, inSection: 0)
                 self.tableView.moveRowAtIndexPath(sourceIndexPath, toIndexPath: destIndexPath)
             }

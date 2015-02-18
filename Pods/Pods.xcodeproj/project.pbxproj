@@ -40,7 +40,7 @@
 		20293A9702C27A5D45441B82 /* HockeySDKFeatureConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = DBD276F41F55712069AC028F /* HockeySDKFeatureConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2053EB8E5B88B3F3CD526092 /* Rectangle@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0E0201B478C7AD4733E38CD7 /* Rectangle@3x.png */; };
 		20B0253F5F102AB95AD24EBF /* MPBSignatureViewControllerConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 1946A0B557D883355F9E6F12 /* MPBSignatureViewControllerConfiguration.m */; };
-		20E04F48269D6D37F82665FE /* BITCrashReportTextFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 70869DC8F57781FAF4AA56BE /* BITCrashReportTextFormatter.h */; };
+		20E04F48269D6D37F82665FE /* BITCrashReportTextFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 70869DC8F57781FAF4AA56BE /* BITCrashReportTextFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		22933E9EFF1584EA7ED00CEF /* BITFeedbackActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = BE32F0890E2E542663D13890 /* BITFeedbackActivity.m */; };
 		22FAE10650292683E7687D93 /* BITFeedbackManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 9670E2246EBB0AA361B8D101 /* BITFeedbackManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		24D6B9C4E802B1031E893BFA /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B87D382D6757E5E8BA72C43 /* Pods-dummy.m */; };
