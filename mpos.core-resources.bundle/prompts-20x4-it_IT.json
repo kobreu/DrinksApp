@@ -1,189 +1,199 @@
 {
     "info": {
-        "locale": "it_IT", 
-        "rows": 4, 
-        "columns": 20
-    }, 
+        "columns": 20,
+        "locale": "it_IT",
+        "rows": 4
+    },
     "localization": {
-        "ProviderAccessoryUpdating": [
-            ""
-        ], 
-        "ProcessingTransaction": [
-            "", 
-            "Elaborazione", 
-            "pagamento...", 
-            ""
-        ], 
         "ApplicationSelection": [
-            "", 
-            "Selezionare", 
-            "il conto", 
+            "",
+            "Please select",
+            "your account",
             ""
-        ], 
-        "TransactionAborting": [
-            "", 
-            "Il pagamento", 
-            "viene interrotto...", 
+        ],
+        "AuthorizingTransaction": [
+            "",
+            "Authorizing",
+            "payment...",
             ""
-        ], 
-        "PresentCard": [
-            "$amount$", 
-            "", 
-            "Inserire o", 
-            "strisciare la carta"
-        ], 
-        "ProviderAccessoryConfiguringConnectionLink": [
-            ""
-        ], 
-        "UpdatingDeviceConfigurationUpdate": [
-            "Update config", 
-            "", 
-            "Può richiedere", 
-            "alcuni istanti..."
-        ], 
-        "ReadingEMVCard": [
-            "", 
-            "Lettura", 
-            "della carta...", 
-            ""
-        ], 
-        "ProviderApproved": [
-            ""
-        ], 
-        "ProvideSignature": [
-            "", 
-            "Necessaria", 
-            "firma", 
-            ""
-        ], 
-        "ProviderAccessoryCheckingForUpdate": [
-            ""
-        ], 
-        "PINStatus": [
-            "", 
-            "Inserire il PIN", 
-            "$digits$", 
-            ""
-        ], 
-        "RemoveCardWithStatus": [
-            "$reason1$", 
-            "$reason2$", 
-            "", 
-            "Prendere la carta"
-        ], 
-        "UpdatingDeviceFirmwareUpdate": [
-            "Firmware-Update", 
-            "", 
-            "Può richiedere", 
-            "più tempo..."
-        ], 
-        "ProviderFailed": [
-            ""
-        ], 
-        "GenericError": [
-            "", 
-            "", 
-            "Errore", 
-            ""
-        ], 
+        ],           
         "BarcodeScannerActive": [
-            "", 
-            "Scanner codice a ", 
-            "barre attivo", 
+            "",
+            "Barcode scanner",
+            "active",
             ""
-        ], 
-        "ProviderAccessoryConnecting": [
+        ],
+        "CardNotSupportedIccMagstripe": [
+            "",
+            "",
+            "Try another card",
             ""
-        ], 
-        "ProvideIdentification": [
-            "", 
-            "Identificazione", 
-            "necessaria", 
+        ],
+        "CardNotSupportedNfc": [
+            "",
+            "Insert, swipe or",
+            "try another card",
             ""
-        ], 
-        "SelectApp": [
-            "Auswahl:", 
-            "", 
-            "", 
-            "mehr"
-        ], 
-        "PINLastTry": [
-            "", 
-            "Inserire il PIN", 
-            "$digits$", 
-            "(ultimo tentativo)"
-        ], 
-        "PINOk": [
-            "", 
-            "", 
-            "PIN OK", 
-            ""
-        ], 
-        "Idle": [
-            "", 
-            "", 
-            "Connesso", 
-            ""
-        ], 
-        "ProviderTransactionRegistering": [
-            ""
-        ], 
-        "SwipeCard": [
-            "$amount$ ", 
-            " ", 
-            "Strisciare la carta", 
-            ""
-        ], 
-        "PINIncorrect": [
-            "", 
-            "Inserire il PIN", 
-            "$digits$", 
-            "(PIN errato)"
-        ], 
-        "UpdatingDeviceSoftwareUpdate": [
-            "Aggiornamento", 
-            "software", 
-            "", 
-            "Attendere prego..."
-        ], 
-        "ProviderDeclined": [
-            ""
-        ], 
-        "ProviderAborted": [
-            ""
-        ], 
-        "UpdatingDeviceKeyInjection": [
-            "Generazione chiave", 
-            "", 
-            "Può richiedere", 
-            "alcuni istanti..."
-        ], 
-        "UpdatingDevice": [
-            "", 
-            "Il dispositivo viene", 
-            "aggiornato...", 
-            ""
-        ], 
-        "ProviderTransactionQuerying": [
-            ""
-        ], 
-        "CardNotSupported": [
-            "Carta non", 
-            "supportata! Inserire", 
-            "un’altra carta o", 
-            "interrompere"
-        ], 
+        ],
         "CompletedWithStatus": [
-            "", 
-            "$reason1$", 
-            "$reason2$", 
+            "",
+            "$reason1$",
+            "$reason2$",
             ""
-        ], 
+        ],
+        "CompletingTransaction": [
+            "",
+            "Completing",
+            "payment...",
+            ""
+        ],           
+        "GenericError": [
+            "",
+            "",
+            "Error",
+            ""
+        ],
+        "Idle": [
+            "",
+            "",
+            "Connected",
+            ""
+        ],
         "InsertCard": [
-            "$amount$", 
-            " ", 
-            "Inserire la carta", 
+            "$amount$",
+            "",
+            "Insert card",
             ""
+        ],
+        "InsertOrSwipeCard": [
+            "$amount$",
+            "",
+            "Insert or",
+            "swipe card"
+        ],
+        "InsertOrSwipeCardActivateNfc": [
+            "$amount$",
+            "Insert or",
+            "swipe card",
+            "[OK] for NFC"
+        ],
+        "PINIncorrect": [
+            "",
+            "Enter PIN",
+            "$digits$",
+            "(PIN incorrect)"
+        ],
+        "PINLastTry": [
+            "",
+            "Enter PIN",
+            "$digits$",
+            "(last try)"
+        ],
+        "PINOk": [
+            "",
+            "",
+            "PIN OK",
+            ""
+        ],
+        "PINStatus": [
+            "",
+            "Enter PIN",
+            "$digits$",
+            ""
+        ],
+        "PresentCard": [
+            "$amount$",
+            "",
+            "Present card",
+            ""
+        ],
+        "ProcessingTransaction": [
+            "",
+            "Processing",
+            "payment...",
+            ""
+        ],
+        "ProvideIdentification": [
+            "",
+            "Identification",
+            "required",
+            ""
+        ],
+        "ProvideSignature": [
+            "",
+            "Signature",
+            "required",
+            ""
+        ],
+        "ProvideSignatureWithStatus": [
+            "$reason1$",
+            "$reason2$",
+            "Signature",
+            "required",            
+        ],             
+        "ProviderAccessoryCheckingForUpdate": [],
+        "ProviderAccessoryConnecting": [],
+        "ProviderAccessoryUpdating": [],
+        "ProviderAborted": [],
+        "ProviderApproved": [],
+        "ProviderDeclined": [],
+        "ProviderFailed": [],
+        "ProviderTransactionQuerying": [],
+        "ProviderTransactionRegistering": [],
+        "ProviderAccessoryConfiguringConnectionLink":[],
+        "ReadingEMVCard": [
+            "",
+            "",
+            "Reading card...",
+            ""
+        ],
+        "RemoveCardWithStatus": [
+            "$reason1$",
+            "$reason2$",
+            "",
+            "Remove card"
+        ],
+        "SwipeCard": [
+            "$amount$",
+            "",
+            "Swipe card",
+            ""
+        ],
+        "TransactionAborting": [
+            "",
+            "Aborting",
+            "payment...",
+            ""
+        ],
+        "UpdatingDevice": [
+            "",
+            "",
+            "Updating...",
+            ""
+        ],
+        "UpdatingDeviceConfigurationUpdate": [
+            "Updating Config",
+            "",
+            "This may take",
+            "a few moments..."
+        ],
+        "UpdatingDeviceFirmwareUpdate": [
+            "Updating Firmware",
+            "",
+            "This may take",
+            "a while..."
+        ],
+        "UpdatingDeviceKeyInjection": [
+            "Generating Keys",
+            "",
+            "This may take",
+            "a few moments..."
+        ],
+        "UpdatingDeviceSoftwareUpdate": [
+            "Updating Software",
+            "",
+            "This may take",
+            "a while..."
         ]
     }
 }

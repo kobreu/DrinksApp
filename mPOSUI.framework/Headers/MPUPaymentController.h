@@ -39,7 +39,7 @@ typedef NS_ENUM(NSUInteger, MPUPaymentControllerResult) {
 };
 
 
-typedef void (^MPUPaymentControllerCompleted)(MPUPaymentControllerResult);
+typedef void (^MPUPaymentControllerCompleted)(MPUPaymentControllerResult, MPTransaction *transaction);
 
 /**
  * The MPUPaymentController takes control over a payment.
@@ -60,7 +60,7 @@ typedef void (^MPUPaymentControllerCompleted)(MPUPaymentControllerResult);
 /**
  * Initializes the MPUPaymentController. The method *MUST* be called before any payment can be started.
  */
-+ (id)initializePaymentControllerWithProviderMode:(MPProviderMode)providerMode identifier:(NSString *)merchantIdentifier secret:(NSString *)merchantSecret;
++ (id)initializePaymentControllerWithProviderMode:(MPProviderMode)providerMode merchantIdentifier:(NSString *)merchantIdentifier merchantSecret:(NSString *)merchantSecret;
 
 
 /**

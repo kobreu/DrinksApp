@@ -21,12 +21,14 @@
  */
 typedef NS_ENUM(NSUInteger, MPTransactionStatusDetailsCode){
     /** Transaction needs to be initialized */
-    MPTransactionStatusDetailsCodeNone = 0,
+    MPTransactionStatusDetailsCodeUnknown = 0,
     
     /** Transaction is initialized and can be started */
     MPTransactionStatusDetailsCodeInitializedAtServer,
     /** Transaction is initialized and can be started */
     MPTransactionStatusDetailsCodeInitializedAtProcessor,
+    /** Transaction has been re-initialized at the server and should be processed again */
+    MPTransactionStatusDetailsCodeInitializedWithReplacement,
     
     /** The transaction was send to the processor and is awaiting approval */
     MPTransactionStatusDetailsCodePendingWaitungForProcessor,
@@ -38,7 +40,7 @@ typedef NS_ENUM(NSUInteger, MPTransactionStatusDetailsCode){
     
     /** The transaction was aborted by the customer */
     MPTransactionStatusDetailsCodeDeclinedCardOrTerminalDeclined,
-    /** The transaction was declined by the terminal */
+    /** The transaction was declined by the processor */
     MPTransactionStatusDetailsCodeDeclinedProcessor,
     /** The software on the device is no longer valid */
     MPTransactionStatusDetailsCodeDeclinedInvalidTerminalSoftware,
@@ -48,6 +50,22 @@ typedef NS_ENUM(NSUInteger, MPTransactionStatusDetailsCode){
     MPTransactionStatusDetailsCodeDeclinedInvalidTerminal,
     /** The session created for the transaction has expired */
     MPTransactionStatusDetailsCodeDeclinedSessionExpired,
+    /** The entered PIN is wrong */
+    MPTransactionStatusDetailsCodeDeclinedPinWrong,
+    /** The PIN was entered wrong too often*/
+    MPTransactionStatusDetailsCodeDeclinedPinWrongTooOften,
+    /** The used card is expired */
+    MPTransactionStatusDetailsCodeDeclinedCardExpired,
+    /** The scheme presented by the card is invalid */
+    MPTransactionStatusDetailsCodeDeclinedCardInvalidScheme,
+    /** The PAN on the card is invalid*/
+    MPTransactionStatusDetailsCodeDeclinedCardInvalidPan,
+    /** The card was reported stolen */
+    MPTransactionStatusDetailsCodeDeclinedCardStolen,
+    /** A different card has to be used for this transaction */
+    MPTransactionStatusDetailsCodeDeclinedCardUseOriginal,
+    /** The transaction was declined by the processor with a special error case */
+    MPTransactionStatusDetailsCodeDeclinedProcessorExceedsWithdrawalCountLimit,
     
     /** The transaction was aborted by the customer by removing the card */
     MPTransactionStatusDetailsCodeAbortedShopperRemovedCard,
@@ -55,6 +73,8 @@ typedef NS_ENUM(NSUInteger, MPTransactionStatusDetailsCode){
     MPTransactionStatusDetailsCodeAbortedShopperAborted,
     /** The transaction was aborted by the merchant */
     MPTransactionStatusDetailsCodeAbortedMerchantAborted,
+    /** The transaction timed out waiting for a card */
+    MPTransactionStatusDetailsCodeAbortedWaitingForCardTimeout,
     
     /** Processor error */
     MPTransactionStatusDetailsCodeErrorInvalidProcessorFormat,
@@ -72,8 +92,10 @@ typedef NS_ENUM(NSUInteger, MPTransactionStatusDetailsCode){
     MPTransactionStatusDetailsCodeErrorTerminalTimeout,
     /** The server returned an invalid response */
     MPTransactionStatusDetailsCodeErrorServerInvalidResponse,
-    /** Tne server timed out*/
-    MPTransactionStatusDetailsCodeErrorServerSessionTimeout
+    /** The server timed out*/
+    MPTransactionStatusDetailsCodeErrorServerSessionTimeout,
+    /** The transaction was (falsely) approved offline */
+    MPTransactionStatusDetailsCodeErrorApprovedOffline
 };
 
 

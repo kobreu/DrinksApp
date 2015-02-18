@@ -25,6 +25,7 @@ PODS:
   - CocoaLumberjack/Core (1.9.2)
   - CocoaLumberjack/Extensions (1.9.2):
     - CocoaLumberjack/Core
+  - Firebase (2.2.0)
   - HockeySDK (3.6.2)
   - MPBSignatureViewController (1.4.5)
   - ObjectMapper (0.3)
@@ -32,6 +33,7 @@ PODS:
 DEPENDENCIES:
   - AFNetworking
   - CocoaLumberjack (~> 1.8)
+  - Firebase (>= 2.2.0)
   - HockeySDK
   - MPBSignatureViewController
   - ObjectMapper (~> 0.2)
@@ -39,6 +41,7 @@ DEPENDENCIES:
 SPEC CHECKSUMS:
   AFNetworking: 0f54cb5d16ce38c1b76948faffb8d5fb705021c7
   CocoaLumberjack: 205769c032b5fef85b92472046bcc8b7e7c8a817
+  Firebase: e7a2ea2ffeff99f9c37028b354194dcc9718d36b
   HockeySDK: bfd1f5ac75938b07499c4ac12932244b72a2e70b
   MPBSignatureViewController: 5c6e09e9cbe9a026247e1ee8cea5bc105933b439
   ObjectMapper: ba7b2c2420c158ed64a10d349919a7ec464af6c8

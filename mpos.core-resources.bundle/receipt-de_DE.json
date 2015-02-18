@@ -1,49 +1,59 @@
 {
     "info": {
         "locale": "de_DE"
-    }, 
+    },
     "labels": {
-        "Status": "Status", 
-        "PaymentDetailsSchemeOrLabel": "Karte", 
-        "Subject": "Beschreibung", 
-        "PaymentDetailsSource": "Eingabemodus", 
-        "StatusText": "Information", 
-        "ClearingDetailsTerminalId": "Terminal-ID", 
-        "PaymentDetailsMaskedAccount": "Konto", 
-        "ClearingDetailsOriginalTransactionIdentifier": "Original TA", 
-        "ClearingDetailsTransactionIdentifier": "Transaktion", 
-        "ReceiptType": "Beleg", 
-        "PaymentDetailsEMVApplicationID": "AID", 
-        "Identifier": "PWID", 
-        "Time": "Uhrzeit", 
-        "Date": "Datum", 
-        "ClearingDetailsAuthorizationCode": "Genehmigung", 
-        "ClearingDetailsMerchantId": "Vertrags-Nr", 
-        "AmountAndCurrency": "Betrag", 
-        "TransactionType": "Art"
-    }, 
+		"Date": "Datum",
+		"Time": "Uhrzeit",
+		"Status": "Status",
+		"AmountAndCurrency": "Betrag",
+		"StatusText": "Information",
+		"Subject": "Beschreibung",
+		"TransactionType": "Art",
+		"ReceiptType": "Beleg",
+        "Identifier": "PWID",
+        "PaymentDetailsSource": "Eingabemodus",
+        "PaymentDetailsEMVApplicationID": "AID",
+		"PaymentDetailsSchemeOrLabel" : "Karte",
+		"PaymentDetailsMaskedAccount" : "Konto",
+        "PaymentDetailsCustomerVerification": "Verifizierung",
+        "PaymentDetailsAccountSequenceNumber" : "Kartennummer",
+        "ClearingDetailsTransactionIdentifier": "Transaktion",
+        "ClearingDetailsOriginalTransactionIdentifier": "Original TA",
+        "ClearingDetailsAuthorizationCode": "Genehmigung",
+        "ClearingDetailsMerchantId": "Vertrags-Nr",
+        "ClearingDetailsTerminalId": "Terminal-ID"
+    },
     "values": {
-        "StatusText": {
-            "DECLINED": "Genehmigung abgelehnt.", 
-            "APPROVED": "Bitte Beleg aufbewahren!", 
-            "ABORTED": "Transaktion abgebrochen.", 
-            "ERROR": "Transaktion ungültig."
-        }, 
-        "TransactionType": {
-            "REFUND": "Stornierung", 
-            "CHARGE": "Bezahlung"
-        }, 
-        "PaymentDetailsSource": {
-            "MANUAL_AS_FALLBACK": "Manuell", 
-            "ICC": "Chip", 
-            "MANUAL": "Manuell", 
-            "MAGSTRIPE": "Magnetstreifen", 
-            "CONTACTLESS": "Kontaktlos", 
-            "MAGSTRIPE_AS_FALLBACK": "Magnetstreifen"
-        }, 
         "ReceiptType": {
-            "MERCHANT": "Händlerbeleg", 
+            "MERCHANT": "Händlerbeleg",
             "CUSTOMER": "Kundenbeleg"
+        },
+        "StatusText": {
+            "APPROVED": "Bitte Beleg aufbewahren!",
+            "DECLINED": "Genehmigung abgelehnt.",
+            "ABORTED": "Transaktion abgebrochen.",
+            "ERROR": "Transaktion ungültig."
+        },
+        "PaymentDetailsSource": {
+            "ICC": "Chip",
+            "MAGSTRIPE": "Magnetstreifen",
+            "MAGSTRIPE_AS_FALLBACK": "Magnetstreifen",
+            "MANUAL": "Manuell",
+            "MANUAL_AS_FALLBACK": "Manuell",
+            "NFC_ICC": "Kontaktlos",
+            "NFC_MAGSTRIPE": "Kontaktlos"            
+        },
+        "TransactionType": {
+            "CHARGE": "Bezahlung",
+            "REFUND": "Stornierung"
+        },
+        "PaymentDetailsCustomerVerification": {
+            "NONE": "Keine",
+            "PIN": "PIN",
+            "SIGNATURE": "Unterschrift",
+            "PIN_AND_SIGNATURE": "PIN und Unterschrift",
+            "SHOPPER_DEVICE": "Kundengerät"
         }
     }
 }

@@ -221,10 +221,10 @@ class EmployeeTableController : UITableViewController {
         let indexPath = self.tableView.indexPathForRowAtPoint(buttonPosition)!
         
         let amount = self.employees[indexPath.row].amount
-        let controller = MPUPaymentController.initializePaymentControllerWithProviderMode(merchantData.serverType == "LIVE" ? MPProviderMode.LIVE : MPProviderMode.TEST, identifier: merchantData.merchantIdentifier, secret: merchantData.merchantSecretKey) as MPUPaymentController
+        let controller = MPUPaymentController.initializePaymentControllerWithProviderMode(merchantData.serverType == "LIVE" ? MPProviderMode.LIVE : MPProviderMode.TEST, merchantIdentifier: merchantData.merchantIdentifier, merchantSecret: merchantData.merchantSecretKey) as MPUPaymentController
         
         controller.configuration.accessoryFamily = MPAccessoryFamily.MiuraMPI
-        let viewController = controller.createPaymentViewControllerWithAmount(NSDecimalNumber(double: Double(amount) / 100.0), currency: MPCurrency.EUR, subject: "subject", customIdentifier: "customIdentifier") { (result) -> Void in
+        let viewController = controller.createPaymentViewControllerWithAmount(NSDecimalNumber(double: Double(amount) / 100.0), currency: MPCurrency.EUR, subject: "subject", customIdentifier: "customIdentifier") { (result, tx) -> Void in
             self.dismissViewControllerAnimated(true, completion: nil)
             if (result == MPUPaymentControllerResult.Approved) {
                 self.employees[indexPath.row].amount = 0

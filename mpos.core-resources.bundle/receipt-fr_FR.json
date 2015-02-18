@@ -1,49 +1,59 @@
 {
     "info": {
         "locale": "fr_FR"
-    }, 
+    },
     "labels": {
-        "Status": "Statut", 
-        "PaymentDetailsSchemeOrLabel": "Carte", 
-        "Subject": "Description", 
-        "PaymentDetailsSource": "Mode de saisie", 
-        "StatusText": "Informations", 
-        "ClearingDetailsTerminalId": "ID terminal", 
-        "PaymentDetailsMaskedAccount": "Compte", 
-        "ClearingDetailsOriginalTransactionIdentifier": "Trx originale", 
-        "ClearingDetailsTransactionIdentifier": "Transaction", 
-        "ReceiptType": "Justificatif", 
-        "PaymentDetailsEMVApplicationID": "AID", 
-        "Identifier": "PWID", 
-        "Time": "Heure", 
-        "Date": "Date", 
-        "ClearingDetailsAuthorizationCode": "Autorisation", 
-        "ClearingDetailsMerchantId": "N° de contrat", 
-        "AmountAndCurrency": "Montant", 
-        "TransactionType": "Type"
-    }, 
+        "Date": "Date",
+        "Time": "Time",
+        "Status": "Status",
+        "AmountAndCurrency": "Amount",
+        "StatusText": "Information",
+        "Subject": "Description",
+        "TransactionType": "Type",
+        "ReceiptType": "Receipt Type",
+        "Identifier": "PWID",
+        "PaymentDetailsSource": "Entry Mode",
+        "PaymentDetailsEMVApplicationID": "AID",
+        "PaymentDetailsSchemeOrLabel" : "Card",
+        "PaymentDetailsMaskedAccount" : "Account",
+        "PaymentDetailsCustomerVerification": "Verification",
+        "PaymentDetailsAccountSequenceNumber" : "Card Number",        
+        "ClearingDetailsTransactionIdentifier": "Transaction",
+        "ClearingDetailsOriginalTransactionIdentifier": "Original TX",
+        "ClearingDetailsAuthorizationCode": "Authorization",
+        "ClearingDetailsMerchantId": "Merchant ID",
+        "ClearingDetailsTerminalId": "Terminal ID"
+    },
     "values": {
-        "StatusText": {
-            "DECLINED": "Autorisation refusée", 
-            "APPROVED": "Justificatif à conserver!", 
-            "ABORTED": "Transaction interrompue", 
-            "ERROR": "Transaction non valide"
-        }, 
-        "TransactionType": {
-            "REFUND": "Annulation", 
-            "CHARGE": "Paiement"
-        }, 
-        "PaymentDetailsSource": {
-            "MANUAL_AS_FALLBACK": "Manuel", 
-            "ICC": "Puce", 
-            "MANUAL": "Manuel", 
-            "MAGSTRIPE": "Bande magnétique", 
-            "CONTACTLESS": "Sans contact", 
-            "MAGSTRIPE_AS_FALLBACK": "Bande magnétique"
-        }, 
         "ReceiptType": {
-            "MERCHANT": "Justificatif commerçant", 
-            "CUSTOMER": "Justificatif titulaire"
+            "MERCHANT": "Merchant Receipt",
+            "CUSTOMER": "Cardholder Receipt"
+        },
+        "StatusText": {
+            "APPROVED": "Please retain receipt!",
+            "DECLINED": "Authorization declined.",
+            "ABORTED": "Canceled transaction.",
+            "ERROR": "Invalid transaction."
+        },
+        "PaymentDetailsSource": {
+            "ICC": "Chip",
+            "MAGSTRIPE": "Magstripe",
+            "MAGSTRIPE_AS_FALLBACK": "Magstripe",
+            "MANUAL": "Keyed",
+            "MANUAL_AS_FALLBACK": "Keyed",
+            "NFC_ICC": "Contactless",
+            "NFC_MAGSTRIPE": "Contactless"
+        },
+        "TransactionType": {
+            "CHARGE": "Payment",
+            "REFUND": "Reversal"
+        },
+        "PaymentDetailsCustomerVerification": {
+            "NONE": "None",
+            "PIN": "PIN",
+            "SIGNATURE": "Signature",
+            "PIN_AND_SIGNATURE": "PIN and Signature",
+            "SHOPPER_DEVICE": "Customer Device"
         }
     }
 }

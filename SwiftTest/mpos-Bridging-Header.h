@@ -13,3 +13,4 @@
 #import <mpos.core/mpos.h>
 #import <HockeySDK/HockeySDK.h>
 #import <mPOSUI/mPOSUI.h>
+#import <Fire

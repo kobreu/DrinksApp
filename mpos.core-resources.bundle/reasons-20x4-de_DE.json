@@ -1,121 +1,153 @@
 {
     "info": {
-        "locale": "de_DE", 
-        "rows": 2, 
-        "columns": 20
-    }, 
+        "columns": 20,
+        "locale": "de_DE",
+        "rows": 2
+    },
     "localization": {
-        "DECLINED_PROCESSOR": [
-            "", 
-            "Zahlung abgelehnt"
-        ], 
-        "PENDING_WAITING_FOR_FINALIZATION": [
-            "", 
-            "Zahlung erfolgreich"
-        ], 
-        "APPROVED": [
-            "", 
-            "Zahlung erfolgreich"
-        ], 
-        "NONE": [
-            "", 
-            ""
-        ], 
-        "ERROR_PROCESSOR_INVALID_NONCE": [
-            "", 
-            "Fehler"
-        ], 
-        "DECLINED_CARD_OR_TERMINAL_DECLINED": [
-            "", 
-            "Abgelehnt"
-        ], 
-        "ERROR_PROCESSOR_MISSING_SESSION": [
-            "", 
-            "Fehler"
-        ], 
-        "ERROR_TERMINAL_TIMEOUT": [
-            "", 
-            "Fehler"
-        ], 
-        "DECLINED_INVALID_TERMINAL_SOFTWARE": [
-            "Zahlung nicht", 
-            "möglich"
-        ], 
-        "ABORTED_SHOPPER_ABORTED": [
-            "", 
+        "ABORTED":[
+            "",
             "Zahlung abgebrochen"
-        ], 
-        "DECLINED_CARD_INVALID_SCHEME": [
-            "", 
-            "Karte nicht erlaubt"
-        ], 
-        "ERROR_PROCESSOR_INVALID_FORMAT": [
-            "", 
-            "Fehler"
-        ], 
-        "DECLINED_INVALID_TERMINAL": [
-            "Zahlung nicht", 
-            "möglich"
-        ], 
-        "ERROR_TERMINAL_ERROR": [
-            "", 
-            "Fehler"
-        ], 
+        ],
         "ABORTED_MERCHANT_ABORTED": [
-            "", 
+            "",
             "Zahlung abgebrochen"
-        ], 
-        "ERROR_PROCESSOR_INVALID_STATUS": [
-            "", 
-            "Fehler"
-        ], 
-        "DECLINED_PIN_WRONG": [
-            "", 
-            "Falsche PIN"
-        ], 
-        "ERROR_SESSION_TIMEOUT": [
-            "", 
-            "Fehler"
-        ], 
-        "DECLINED_CARD_INVALID_PAN": [
-            "", 
-            "Ungültige Karte"
-        ], 
-        "DECLINED_CARD_STOLEN": [
-            "Gestohlene Karte,", 
-            "Karte einziehen"
-        ], 
-        "DECLINED_SESSION_EXPIRED": [
-            "Zahlung nicht", 
-            "möglich"
-        ], 
-        "DECLINED_CARD_USE_ORIGINAL": [
-            "", 
-            "Original verwenden"
-        ], 
-        "ERROR_PROCESSOR_INVALID_SESSION": [
-            "", 
-            "Fehler"
-        ], 
-        "DECLINED_INVALID_TERMINAL_CONFIG": [
-            "Zahlung nicht", 
-            "möglich"
-        ], 
-        "ERROR_SERVER_INVALID_RESPONSE": [
-            "", 
-            "Fehler"
-        ], 
-        "DECLINED_CARD_EXPIRED": [
-            "", 
-            "Karte abgelaufen"
-        ], 
+        ],
+        "ABORTED_SHOPPER_ABORTED": [
+            "",
+            "Zahlung abgebrochen"
+        ],
         "ABORTED_SHOPPER_REMOVED_CARD": [
-            "", 
+            "",
             "Zahlung abgebrochen"
-        ], 
+        ],
+        "ABORTED_PRESENT_CARD_TIMED_OUT": [
+        	"",
+        	"Zahlung abgebrochen"
+        ],
+        "APPROVED": [
+            "",
+            "Zahlung erfolgreich"
+        ],
+        "DECLINED": [
+            "",
+            "Zahlung abgelehnt"
+        ],        
+        "DECLINED_CARD_EXPIRED": [
+            "Karte abgelaufen,",
+            "Zahlung abgelehnt"
+        ],
+        "DECLINED_CARD_INVALID_PAN": [
+            "Karte ungültig,",
+            "Zahlung abgelehnt"
+        ],
+        "DECLINED_CARD_INVALID_SCHEME": [
+            "Karte nicht erlaubt,",
+            "Zahlung abgelehnt"
+        ],
+        "DECLINED_CARD_OR_TERMINAL_DECLINED": [
+            "",
+            "Zahlung abgelehnt"
+        ],
+        "DECLINED_CARD_STOLEN": [
+            "Gestohlene Karte,",
+            "Karte einziehen"
+        ],
+        "DECLINED_CARD_USE_ORIGINAL": [
+            "Original verwenden,",
+            "Zahlung abgelehnt"
+        ],
+        "DECLINED_INVALID_TERMINAL": [
+            "Zahlung nicht",
+            "möglich"
+        ],
+        "DECLINED_INVALID_TERMINAL_CONFIG": [
+            "Zahlung nicht",
+            "möglich"
+        ],
+        "DECLINED_INVALID_TERMINAL_SOFTWARE": [
+            "Zahlung nicht",
+            "möglich"
+        ],
+        "DECLINED_PIN_WRONG": [
+            "PIN falsch,",
+            "Zahlung abgelehnt"
+        ],
         "DECLINED_PIN_WRONG_TOO_OFTEN": [
-            "Falsche PIN zu", 
-            "oft eingegeben"
+            "PIN zu oft falsch,",
+            "Zahlung abgelehnt"
+        ],
+        "DECLINED_PROCESSOR": [
+            "",
+            "Zahlung abgelehnt"
+        ],
+        "DECLINED_PROCESSOR_EXCEEDS_WITHDRAWAL_COUNT_LIMIT": [
+            "",
+            "Zahlung abgelehnt"
+        ],        
+        "DECLINED_SESSION_EXPIRED": [
+            "Zahlung nicht",
+            "möglich"
+        ],
+        "ERROR": [
+            "",
+            "Verarbeitungsfehler"
+        ],      
+        "ERROR_APPROVED_OFFLINE": [
+            "Verarbeitungsfehler",
+            "(Invalid Approval)"
+        ],        
+        "ERROR_PROCESSOR_INVALID_FORMAT": [
+            "Verarbeitungsfehler",
+            "(Invalid Format)"
+        ],
+        "ERROR_PROCESSOR_INVALID_NONCE": [
+            "Verarbeitungsfehler",
+            "(Invalid Nonce)"
+        ],
+        "ERROR_PROCESSOR_INVALID_SESSION": [
+            "Verarbeitungsfehler",
+            "(Invalid Session)"
+        ],
+        "ERROR_PROCESSOR_INVALID_STATUS": [
+            "Verarbeitungsfehler",
+            "(Invalid Status)"
+        ],
+        "ERROR_PROCESSOR_MISSING_SESSION": [
+            "Verarbeitungsfehler",
+            "(Missing Session)"
+        ],
+        "ERROR_SESSION_TIMEOUT": [
+            "Verarbeitungsfehler",
+            "(Session Timeout)"
+        ],
+        "ERROR_TERMINAL_ERROR": [
+            "Verarbeitungsfehler",
+            "(Terminal Error)"
+        ],
+        "ERROR_SERVER_INVALID_RESPONSE": [
+            "Verarbeitungsfehler",
+            "(Invalid Response)"
+        ],
+        "ERROR_TERMINAL_TIMEOUT": [
+            "Verarbeitungsfehler",
+            "(Terminal Timeout)"
+        ],
+        "ERROR_APPROVED_OFFLINE": [
+        	"Verarbeitungsfehler",
+        	"(Terminal Approval)"
+        ],
+        "NONE": [
+            "",
+            ""
+        ],
+        "PENDING" : [
+            "Zahlung wird",
+            "verarbeitet..."
+        ],        
+        "PENDING_WAITING_FOR_FINALIZATION" : [
+            "",
+            "Zahlung erfolgreich"
         ]
     }
 }

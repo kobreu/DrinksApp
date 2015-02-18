@@ -331,22 +331,6 @@ typedef NS_ENUM(NSUInteger, MPProviderMode){
  * Starts registering and executing a given transaction with the help of the given accessory. From there on action callbacks will request additional parameters if necessary.
  * This request typically starts a mPOS transaction.
  * @param transaction The transaction to be excecuted
- * @param schemePreference The schemes that are allowed for the transaction (they will be used in the order of appearance)
- * @param accessory The accessory to use for the transaction
- * @param approval The approved handler called when the transaction was approved.
- * @param decline The declined handler called when the transaction was declined during the execution.
- * @param abort The abort handler called when the transaction was aborted during the execution.
- * @param failure The failure handler called when the transaction failed, have a look at the error for more details
- * @param actionRequired The action required handler called when additional details are necessary (e.g. a customer signature)
- * @throws NSException If the transaction is invalid
- * @since 2.0.0
- */
-- (void)startTransaction:(MPTransaction *)transaction usingSchemePreference:(NSArray *)schemePreference onAccessory:(MPAccessory *)accessory approval:(MPTransactionApproval)approval decline:(MPTransactionDecline)decline abort:(MPTransactionAbort)abort failure:(MPTransactionFailure)failure actionRequired:(MPTransactionActionRequired)actionRequired __attribute__((deprecated("Scheme preferences are no longer honored, use startTransaction:usingAccessory:approval:decline:abort:failure:actionRequired: instead.")));
-
-/**
- * Starts registering and executing a given transaction with the help of the given accessory. From there on action callbacks will request additional parameters if necessary.
- * This request typically starts a mPOS transaction.
- * @param transaction The transaction to be excecuted
  * @param accessory The accessory to use for the transaction
  * @param approval The approved handler called when the transaction was approved.
  * @param decline The declined handler called when the transaction was declined during the execution.
