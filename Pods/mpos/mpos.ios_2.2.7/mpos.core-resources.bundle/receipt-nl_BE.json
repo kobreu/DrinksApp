@@ -1,0 +1,49 @@
+{
+    "info": {
+        "locale": "nl_BE"
+    }, 
+    "labels": {
+        "Status": "Status", 
+        "PaymentDetailsSchemeOrLabel": "Kaart", 
+        "Subject": "Beschrijving", 
+        "PaymentDetailsSource": "Invoermodus", 
+        "StatusText": "Informatie", 
+        "ClearingDetailsTerminalId": "Terminal-ID", 
+        "PaymentDetailsMaskedAccount": "Rekening", 
+        "ClearingDetailsOriginalTransactionIdentifier": "Originele Trx", 
+        "ClearingDetailsTransactionIdentifier": "Transactie", 
+        "ReceiptType": "Betalingsbewijs", 
+        "PaymentDetailsEMVApplicationID": "AID", 
+        "Identifier": "PWID", 
+        "Time": "Tijdstip", 
+        "Date": "Datum", 
+        "ClearingDetailsAuthorizationCode": "Autorisatie", 
+        "ClearingDetailsMerchantId": "Contractnr.", 
+        "AmountAndCurrency": "Bedrag", 
+        "TransactionType": "Type"
+    }, 
+    "values": {
+        "StatusText": {
+            "DECLINED": "Autorisatie geweigerd.", 
+            "APPROVED": "Betalingsbewijs bewaren a.u.b.!", 
+            "ABORTED": "Transactie afgebroken.", 
+            "ERROR": "Transactie ongeldig."
+        }, 
+        "TransactionType": {
+            "REFUND": "Annulatie", 
+            "CHARGE": "Betaling"
+        }, 
+        "PaymentDetailsSource": {
+            "MANUAL_AS_FALLBACK": "Manueel", 
+            "ICC": "Chip", 
+            "MANUAL": "Manueel", 
+            "MAGSTRIPE": "Magneetstrip", 
+            "CONTACTLESS": "Contactloos", 
+            "MAGSTRIPE_AS_FALLBACK": "Magneetstrip"
+        }, 
+        "ReceiptType": {
+            "MERCHANT": "Bewijs handelaar", 
+            "CUSTOMER": "Bewijs klant"
+        }
+    }
+}

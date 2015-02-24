@@ -7,20 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2D8333A31A8BBA260098E6FB /* mPOSUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D8333A11A8BBA260098E6FB /* mPOSUI.framework */; };
-		2D8333A41A8BBA260098E6FB /* mPOSUIResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2D8333A21A8BBA260098E6FB /* mPOSUIResources.bundle */; };
 		2DEA8EDB1A4876E3004EF502 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DEA8EDA1A4876E3004EF502 /* AppDelegate.swift */; };
 		2DEA8EE01A4876E3004EF502 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DEA8EDE1A4876E3004EF502 /* Main.storyboard */; };
 		2DEA8EE21A4876E3004EF502 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DEA8EE11A4876E3004EF502 /* Images.xcassets */; };
 		2DEA8EE51A4876E3004EF502 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2DEA8EE31A4876E3004EF502 /* LaunchScreen.xib */; };
 		2DEA8EF11A4876E3004EF502 /* SwiftTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DEA8EF01A4876E3004EF502 /* SwiftTestTests.swift */; };
-		2DEA8EFE1A487712004EF502 /* mpos.accessories.miura-shuttle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DEA8EFA1A487712004EF502 /* mpos.accessories.miura-shuttle.framework */; };
-		2DEA8EFF1A487712004EF502 /* mpos.comlinks.externalaccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DEA8EFB1A487712004EF502 /* mpos.comlinks.externalaccessory.framework */; };
-		2DEA8F001A487712004EF502 /* mpos.core-resources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2DEA8EFC1A487712004EF502 /* mpos.core-resources.bundle */; };
-		2DEA8F011A487712004EF502 /* mpos.core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DEA8EFD1A487712004EF502 /* mpos.core.framework */; };
 		2DEA8F051A487E7B004EF502 /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DEA8F041A487E7B004EF502 /* ExternalAccessory.framework */; };
 		2DF8D4041A7164CC002F507F /* ViewControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DF8D4031A7164CC002F507F /* ViewControllers.swift */; };
-		4174B25E386732F8F47F9846 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C9EA4E8830854EAABA78A6A /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		90180996989980138D7B4F53 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4996AC80A9DF2958237ACA3C /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,8 +29,6 @@
 
 /* Begin PBXFileReference section */
 		0D50387589C8D54105D2173A /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		2D8333A11A8BBA260098E6FB /* mPOSUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = mPOSUI.framework; sourceTree = "<group>"; };
-		2D8333A21A8BBA260098E6FB /* mPOSUIResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = mPOSUIResources.bundle; sourceTree = "<group>"; };
 		2DEA8ED51A4876E3004EF502 /* SwiftTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DEA8ED91A4876E3004EF502 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2DEA8EDA1A4876E3004EF502 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -46,14 +38,10 @@
 		2DEA8EEA1A4876E3004EF502 /* SwiftTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DEA8EEF1A4876E3004EF502 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2DEA8EF01A4876E3004EF502 /* SwiftTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftTestTests.swift; sourceTree = "<group>"; };
-		2DEA8EFA1A487712004EF502 /* mpos.accessories.miura-shuttle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = "mpos.accessories.miura-shuttle.framework"; sourceTree = "<group>"; };
-		2DEA8EFB1A487712004EF502 /* mpos.comlinks.externalaccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = mpos.comlinks.externalaccessory.framework; sourceTree = "<group>"; };
-		2DEA8EFC1A487712004EF502 /* mpos.core-resources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = "mpos.core-resources.bundle"; sourceTree = "<group>"; };
-		2DEA8EFD1A487712004EF502 /* mpos.core.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = mpos.core.framework; sourceTree = "<group>"; };
 		2DEA8F031A487892004EF502 /* mpos-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "mpos-Bridging-Header.h"; sourceTree = "<group>"; };
 		2DEA8F041A487E7B004EF502 /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
 		2DF8D4031A7164CC002F507F /* ViewControllers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllers.swift; sourceTree = "<group>"; };
-		7C9EA4E8830854EAABA78A6A /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4996AC80A9DF2958237ACA3C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF6CBB782B86FFAE8298D593 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -63,11 +51,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2DEA8F051A487E7B004EF502 /* ExternalAccessory.framework in Frameworks */,
-				2DEA8EFE1A487712004EF502 /* mpos.accessories.miura-shuttle.framework in Frameworks */,
-				2DEA8F011A487712004EF502 /* mpos.core.framework in Frameworks */,
-				2D8333A31A8BBA260098E6FB /* mPOSUI.framework in Frameworks */,
-				2DEA8EFF1A487712004EF502 /* mpos.comlinks.externalaccessory.framework in Frameworks */,
-				4174B25E386732F8F47F9846 /* Pods.framework in Frameworks */,
+				90180996989980138D7B4F53 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,12 +71,6 @@
 				2DEA8ED71A4876E3004EF502 /* SwiftTest */,
 				2DEA8EED1A4876E3004EF502 /* SwiftTestTests */,
 				2DEA8ED61A4876E3004EF502 /* Products */,
-				2D8333A11A8BBA260098E6FB /* mPOSUI.framework */,
-				2D8333A21A8BBA260098E6FB /* mPOSUIResources.bundle */,
-				2DEA8EFA1A487712004EF502 /* mpos.accessories.miura-shuttle.framework */,
-				2DEA8EFB1A487712004EF502 /* mpos.comlinks.externalaccessory.framework */,
-				2DEA8EFC1A487712004EF502 /* mpos.core-resources.bundle */,
-				2DEA8EFD1A487712004EF502 /* mpos.core.framework */,
 				823C72FB70BC4A0CB3FE068A /* Frameworks */,
 				53891056E3808D8E9CBAA709 /* Pods */,
 			);
@@ -159,7 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				2DEA8F041A487E7B004EF502 /* ExternalAccessory.framework */,
-				7C9EA4E8830854EAABA78A6A /* Pods.framework */,
+				4996AC80A9DF2958237ACA3C /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -176,7 +154,6 @@
 				2DEA8ED21A4876E3004EF502 /* Frameworks */,
 				2DEA8ED31A4876E3004EF502 /* Resources */,
 				932A14F772234B94AE5C9A47 /* Copy Pods Resources */,
-				6FD442BE63B2FF01DC0B6415 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -248,9 +225,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2DEA8F001A487712004EF502 /* mpos.core-resources.bundle in Resources */,
 				2DEA8EE01A4876E3004EF502 /* Main.storyboard in Resources */,
-				2D8333A41A8BBA260098E6FB /* mPOSUIResources.bundle in Resources */,
 				2DEA8EE51A4876E3004EF502 /* LaunchScreen.xib in Resources */,
 				2DEA8EE21A4876E3004EF502 /* Images.xcassets in Resources */,
 			);
@@ -279,21 +254,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		6FD442BE63B2FF01DC0B6415 /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		932A14F772234B94AE5C9A47 /* Copy Pods Resources */ = {
@@ -442,6 +402,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BF6CBB782B86FFAE8298D593 /* Pods.debug.xcconfig */;
 			buildSettings = {
+				ARCHS = armv7;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CLANG_MODULES_AUTOLINK = YES;
@@ -468,6 +429,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0D50387589C8D54105D2173A /* Pods.release.xcconfig */;
 			buildSettings = {
+				ARCHS = armv7;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CLANG_MODULES_AUTOLINK = YES;

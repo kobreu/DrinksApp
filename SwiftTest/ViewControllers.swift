@@ -9,9 +9,6 @@
 import Foundation
 import UIKit
 import MessageUI
-import ObjectMapper
-import AFNetworking
-import MPBSignatureViewController
 
 class CustomTableViewCell : UITableViewCell {
     @IBOutlet weak var button: UIButton!
@@ -24,7 +21,7 @@ class DrinkTableViewCell : UITableViewCell {
     @IBOutlet weak var cost: UILabel!
 }
 
-class Employee : NSObject, Mappable {
+class Employee : NSObject {
     var mid = 0
     var title = "fribbu"
     var amount = 0
@@ -37,15 +34,10 @@ class Employee : NSObject, Mappable {
         self.amount = amount
     }
     
-    func map(mapper: Mapper) {
-        self.mid <= mapper["id"]
-        self.title <= mapper["name"]
-        self.amount <= mapper["amount"]
-    }
     
 }
 
-class Drink : NSObject, Mappable {
+class Drink : NSObject {
     var title = ""
     var cost = 100
     
@@ -56,14 +48,11 @@ class Drink : NSObject, Mappable {
         self.cost = cost
    }
     
-    func map(mapper: Mapper) {
-        self.title <= mapper["name"]
-        self.cost <= mapper["cost"]
-    }
+
 }
 
 
-class MerchantData : NSObject, Mappable {
+class MerchantData : NSObject {
     var name = "payworks GmbH"
     var street = "Grillparzerstraße 14"
     var townzip = "81675 München"
@@ -76,17 +65,7 @@ class MerchantData : NSObject, Mappable {
     
     required override init() {}
     
-    func map(mapper: Mapper) {
-        self.name <= mapper["name"]
-        self.street <= mapper["street"]
-        self.townzip <= mapper["townzip"]
-        self.country <= mapper["country"]
-        self.merchantIdentifier <= mapper["merchantId"]
-        self.merchantSecretKey <= mapper["merchantSecretKey"]
-        self.readerModel <= mapper["readerModel"]
-        self.serverType <= mapper["serverType"]
-        self.paymentEnabled <= mapper["paymentEnabled"]
-    }
+
 }
 
 class DataManager {
@@ -108,50 +87,7 @@ class DataManager {
     }
 }
 
-class RemoteDataManager : DataManager {
-    
-    override func employeeList(success: (Array<Employee>) -> Void, failure: () -> Void) {
-        let manager = AFHTTPRequestOperationManager();
-        manager.GET("http://qultures.com/payworks/server.php/employees", parameters: nil, success: { (operation:AFHTTPRequestOperation!, responseObject:AnyObject?) -> Void in
-            let users = Mapper().mapArray(string:operation.responseString, toType: Employee.self)
-            println(operation.responseString)
-            println(users)
-            success(users)
-            }) { (operation, error) -> Void in
-                failure()
-        }
-    }
-    
-    override func drinkList(success: (Array<Drink> -> Void), failure: () -> Void) {
-        let manager = AFHTTPRequestOperationManager();
-        manager.GET("http://qultures.com/payworks/server.php/drinks", parameters: nil, success: { (operation:AFHTTPRequestOperation!, responseObject:AnyObject?) -> Void in
-            let drinks = Mapper().mapArray(string:operation.responseString, toType: Drink.self)
-            success(drinks)
-            }) { (operation, error) -> Void in
-                failure()
-        }
-    }
-    
-    override func merchantData(success: (MerchantData) -> Void, failure: () -> Void) {
-        let manager = AFHTTPRequestOperationManager();
-        manager.GET("http://qultures.com/payworks/server.php/merchantData", parameters: nil, success: { (operation:AFHTTPRequestOperation!, responseObject:AnyObject?) -> Void in
-            let merchantData = Mapper().map(string:operation.responseString, toType: MerchantData.self)
-            success(merchantData)
-            }) { (operation, error) -> Void in
-                failure()
-        }
-    }
-    
-    override func pushAmount(employee: Int, amount: Int, success: (Void -> Void), failure: (Void -> Void)) {
-        let manager = AFHTTPRequestOperationManager();
-        manager.POST("http://qultures.com/payworks/server.php/pushAmount", parameters: [ "employee" : employee, "amount" : amount ], success: { (operation:AFHTTPRequestOperation!, responseObject:AnyObject?) -> Void in
-                success()
-            }) { (operation, error) -> Void in
-                failure()
-        }
-    }
 
-}
 
 class FirebaseDataManager : DataManager {
     

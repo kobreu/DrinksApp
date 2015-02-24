@@ -1,0 +1,145 @@
+{
+    "info": {
+        "locale": "fr_FR", 
+        "rows": 2, 
+        "columns": 40
+    }, 
+    "localization": {
+        "ProviderAccessoryUpdating": [
+            "Mise à jour ", 
+            "en cours"
+        ], 
+        "ProcessingTransaction": [
+            "Paiement en cours de traitement...", 
+            ""
+        ], 
+        "ApplicationSelection": [
+            "Sélectionner carte", 
+            ""
+        ], 
+        "TransactionAborting": [
+            "Paiement interrompu...", 
+            ""
+        ], 
+        "ProvideIdentification": [
+            "Identification requise", 
+            ""
+        ], 
+        "ProviderAccessoryConfiguringConnectionLink": [
+            "Configuration", 
+            "du lecteur..."
+        ], 
+        "UpdatingDeviceConfigurationUpdate": [
+            "Mise à jour de la configuration.", 
+            "Patientez SVP..."
+        ], 
+        "ReadingEMVCard": [
+            "Lecture de la carte", 
+            "en cours..."
+        ], 
+        "ProviderApproved": [
+            "Paiement accepté", 
+            ""
+        ], 
+        "ProvideSignature": [
+            "Signature requise", 
+            ""
+        ], 
+        "ProviderAccessoryCheckingForUpdate": [
+            "Connexion au lecteur ", 
+            "de cartes en cours"
+        ], 
+        "PINStatus": [
+            "Saisir le PIN", 
+            "$digits$"
+        ], 
+        "RemoveCardWithStatus": [
+            "$reason1$", 
+            "Retirer la carte"
+        ], 
+        "UpdatingDeviceFirmwareUpdate": [
+            "Mise à jour firmware", 
+            "Patientez SVP..."
+        ], 
+        "ProviderFailed": [
+            "Paiement échoué", 
+            "$error$"
+        ], 
+        "GenericError": [
+            "Erreur", 
+            ""
+        ], 
+        "BarcodeScannerActive": [
+            "Lecteur", 
+            "de code-barres actif"
+        ], 
+        "ProviderAccessoryConnecting": [
+            "Connexion au lecteur ", 
+            "de cartes en cours"
+        ], 
+        "PresentCard": [
+            "$amount$", 
+            "Insérer ou faire glisser la carte"
+        ], 
+        "PINLastTry": [
+            "Saisir le code PIN (dernier essai)", 
+            "$digits$"
+        ], 
+        "PINOk": [
+            "PIN OK", 
+            ""
+        ], 
+        "Idle": [
+            "Connexion établie", 
+            ""
+        ], 
+        "ProviderTransactionRegistering": [
+            "Paiement en cours", 
+            "d'enregistrement"
+        ], 
+        "SwipeCard": [
+            "$amount$", 
+            "Faire glisser la carte"
+        ], 
+        "PINIncorrect": [
+            "Saisir le PIN (PIN incorrect)", 
+            "$digits$"
+        ], 
+        "UpdatingDeviceSoftwareUpdate": [
+            "Mise à jour du logiciel. ", 
+            "Patientez SVP"
+        ], 
+        "ProviderDeclined": [
+            "Paiement refusé", 
+            "$reason1$"
+        ], 
+        "ProviderAborted": [
+            "Paiement interrompu", 
+            ""
+        ], 
+        "UpdatingDeviceKeyInjection": [
+            "Génération de clé.", 
+            "Patientez SVP"
+        ], 
+        "UpdatingDevice": [
+            "Mise à jour...", 
+            ""
+        ], 
+        "ProviderTransactionQuerying": [
+            "Contrôle ", 
+            "du paiement "
+        ], 
+        "CardNotSupported": [
+            "Carte non reconnue!", 
+            "Autre carte ou annuler"
+        ], 
+        "CompletedWithStatus": [
+            "$reason1$", 
+            ""
+        ], 
+        "InsertCard": [
+            "$amount$", 
+            "Insérer la carte"
+        ]
+    }
+}

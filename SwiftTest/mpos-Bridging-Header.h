@@ -14,3 +14,4 @@
 #import <HockeySDK/HockeySDK.h>
 #import <mPOSUI/mPOSUI.h>
 #import <Firebase/Firebase.h>
+#import <AFNetworking/AFNetworking.h>

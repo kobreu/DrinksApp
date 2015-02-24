@@ -1,0 +1,145 @@
+{
+    "info": {
+        "locale": "de_DE", 
+        "rows": 2, 
+        "columns": 40
+    }, 
+    "localization": {
+        "ProviderAccessoryUpdating": [
+            "Update wird", 
+            "durchgeführt"
+        ], 
+        "ProcessingTransaction": [
+            "Zahlung wird verarbeitet...", 
+            ""
+        ], 
+        "ApplicationSelection": [
+            "Karte auswählen", 
+            ""
+        ], 
+        "TransactionAborting": [
+            "Zahlung wird abgebrochen...", 
+            ""
+        ], 
+        "ProvideIdentification": [
+            "Identifikation benötigt", 
+            ""
+        ], 
+        "ProviderAccessoryConfiguringConnectionLink": [
+            "Konfiguriere", 
+            "Kartenleser..."
+        ], 
+        "UpdatingDeviceConfigurationUpdate": [
+            "Config-Update", 
+            "Dies kann einen Moment dauern..."
+        ], 
+        "ReadingEMVCard": [
+            "Karte wird gelesen...", 
+            ""
+        ], 
+        "ProviderApproved": [
+            "Zahlung erfolgreich", 
+            ""
+        ], 
+        "ProvideSignature": [
+            "Unterschrift benötigt", 
+            ""
+        ], 
+        "ProviderAccessoryCheckingForUpdate": [
+            "Verbinde mit", 
+            "Kartenleser"
+        ], 
+        "PINStatus": [
+            "PIN eingeben", 
+            "$digits$"
+        ], 
+        "RemoveCardWithStatus": [
+            "$reason1$", 
+            "Karte entnehmen"
+        ], 
+        "UpdatingDeviceFirmwareUpdate": [
+            "Firmware-Update", 
+            "Dies kann einen Moment dauern..."
+        ], 
+        "ProviderFailed": [
+            "Zahlung fehlgeschlagen", 
+            "$error$"
+        ], 
+        "GenericError": [
+            "Fehler", 
+            ""
+        ], 
+        "BarcodeScannerActive": [
+            "Barcodescanner", 
+            "aktiv"
+        ], 
+        "ProviderAccessoryConnecting": [
+            "Verbinde mit", 
+            "Kartenleser"
+        ], 
+        "PresentCard": [
+            "$amount$", 
+            "Karte einstecken oder durchziehen"
+        ], 
+        "PINLastTry": [
+            "PIN eingeben (letzter Versuch)", 
+            "$digits$"
+        ], 
+        "PINOk": [
+            "PIN OK", 
+            ""
+        ], 
+        "Idle": [
+            "Verbunden", 
+            ""
+        ], 
+        "ProviderTransactionRegistering": [
+            "Registriere", 
+            "Zahlung"
+        ], 
+        "SwipeCard": [
+            "$amount$", 
+            "Karte durchziehen"
+        ], 
+        "PINIncorrect": [
+            "PIN eingeben (PIN falsch)", 
+            "$digits$"
+        ], 
+        "UpdatingDeviceSoftwareUpdate": [
+            "Software-Update", 
+            "Dies kann einen Moment dauern..."
+        ], 
+        "ProviderDeclined": [
+            "Zahlung abgelehnt", 
+            "$reason1$"
+        ], 
+        "ProviderAborted": [
+            "Zahlung abgebrochen", 
+            ""
+        ], 
+        "UpdatingDeviceKeyInjection": [
+            "Schlüsselerzeugung", 
+            "Dies kann einen Moment dauern..."
+        ], 
+        "UpdatingDevice": [
+            "Update...", 
+            ""
+        ], 
+        "ProviderTransactionQuerying": [
+            "Überprüfe", 
+            "Zahlung"
+        ], 
+        "CardNotSupported": [
+            "Karte nicht unterstützt!", 
+            "Andere Karte oder abbrechen"
+        ], 
+        "CompletedWithStatus": [
+            "$reason1$", 
+            ""
+        ], 
+        "InsertCard": [
+            "$amount$", 
+            "Karte einstecken"
+        ]
+    }
+}

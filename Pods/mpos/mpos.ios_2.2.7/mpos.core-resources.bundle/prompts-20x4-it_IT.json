@@ -1,0 +1,189 @@
+{
+    "info": {
+        "locale": "it_IT", 
+        "rows": 4, 
+        "columns": 20
+    }, 
+    "localization": {
+        "ProviderAccessoryUpdating": [
+            ""
+        ], 
+        "ProcessingTransaction": [
+            "", 
+            "Elaborazione", 
+            "pagamento...", 
+            ""
+        ], 
+        "ApplicationSelection": [
+            "", 
+            "Selezionare", 
+            "il conto", 
+            ""
+        ], 
+        "TransactionAborting": [
+            "", 
+            "Il pagamento", 
+            "viene interrotto...", 
+            ""
+        ], 
+        "PresentCard": [
+            "$amount$", 
+            "", 
+            "Inserire o", 
+            "strisciare la carta"
+        ], 
+        "ProviderAccessoryConfiguringConnectionLink": [
+            ""
+        ], 
+        "UpdatingDeviceConfigurationUpdate": [
+            "Update config", 
+            "", 
+            "Può richiedere", 
+            "alcuni istanti..."
+        ], 
+        "ReadingEMVCard": [
+            "", 
+            "Lettura", 
+            "della carta...", 
+            ""
+        ], 
+        "ProviderApproved": [
+            ""
+        ], 
+        "ProvideSignature": [
+            "", 
+            "Necessaria", 
+            "firma", 
+            ""
+        ], 
+        "ProviderAccessoryCheckingForUpdate": [
+            ""
+        ], 
+        "PINStatus": [
+            "", 
+            "Inserire il PIN", 
+            "$digits$", 
+            ""
+        ], 
+        "RemoveCardWithStatus": [
+            "$reason1$", 
+            "$reason2$", 
+            "", 
+            "Prendere la carta"
+        ], 
+        "UpdatingDeviceFirmwareUpdate": [
+            "Firmware-Update", 
+            "", 
+            "Può richiedere", 
+            "più tempo..."
+        ], 
+        "ProviderFailed": [
+            ""
+        ], 
+        "GenericError": [
+            "", 
+            "", 
+            "Errore", 
+            ""
+        ], 
+        "BarcodeScannerActive": [
+            "", 
+            "Scanner codice a ", 
+            "barre attivo", 
+            ""
+        ], 
+        "ProviderAccessoryConnecting": [
+            ""
+        ], 
+        "ProvideIdentification": [
+            "", 
+            "Identificazione", 
+            "necessaria", 
+            ""
+        ], 
+        "SelectApp": [
+            "Auswahl:", 
+            "", 
+            "", 
+            "mehr"
+        ], 
+        "PINLastTry": [
+            "", 
+            "Inserire il PIN", 
+            "$digits$", 
+            "(ultimo tentativo)"
+        ], 
+        "PINOk": [
+            "", 
+            "", 
+            "PIN OK", 
+            ""
+        ], 
+        "Idle": [
+            "", 
+            "", 
+            "Connesso", 
+            ""
+        ], 
+        "ProviderTransactionRegistering": [
+            ""
+        ], 
+        "SwipeCard": [
+            "$amount$ ", 
+            " ", 
+            "Strisciare la carta", 
+            ""
+        ], 
+        "PINIncorrect": [
+            "", 
+            "Inserire il PIN", 
+            "$digits$", 
+            "(PIN errato)"
+        ], 
+        "UpdatingDeviceSoftwareUpdate": [
+            "Aggiornamento", 
+            "software", 
+            "", 
+            "Attendere prego..."
+        ], 
+        "ProviderDeclined": [
+            ""
+        ], 
+        "ProviderAborted": [
+            ""
+        ], 
+        "UpdatingDeviceKeyInjection": [
+            "Generazione chiave", 
+            "", 
+            "Può richiedere", 
+            "alcuni istanti..."
+        ], 
+        "UpdatingDevice": [
+            "", 
+            "Il dispositivo viene", 
+            "aggiornato...", 
+            ""
+        ], 
+        "ProviderTransactionQuerying": [
+            ""
+        ], 
+        "CardNotSupported": [
+            "Carta non", 
+            "supportata! Inserire", 
+            "un’altra carta o", 
+            "interrompere"
+        ], 
+        "CompletedWithStatus": [
+            "", 
+            "$reason1$", 
+            "$reason2$", 
+            ""
+        ], 
+        "InsertCard": [
+            "$amount$", 
+            " ", 
+            "Inserire la carta", 
+            ""
+        ]
+    }
+}
