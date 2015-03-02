@@ -1,1 +1,0 @@
-../../../MPBSignatureViewController/MPBSignatureViewController/MPBSignatureViewControllerConfiguration.h

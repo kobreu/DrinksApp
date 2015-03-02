@@ -10,43 +10,43 @@
 #define COCOAPODS_POD_AVAILABLE_AFNetworking
 #define COCOAPODS_VERSION_MAJOR_AFNetworking 2
 #define COCOAPODS_VERSION_MINOR_AFNetworking 5
-#define COCOAPODS_VERSION_PATCH_AFNetworking 0
+#define COCOAPODS_VERSION_PATCH_AFNetworking 1
 
 // AFNetworking/NSURLConnection
 #define COCOAPODS_POD_AVAILABLE_AFNetworking_NSURLConnection
 #define COCOAPODS_VERSION_MAJOR_AFNetworking_NSURLConnection 2
 #define COCOAPODS_VERSION_MINOR_AFNetworking_NSURLConnection 5
-#define COCOAPODS_VERSION_PATCH_AFNetworking_NSURLConnection 0
+#define COCOAPODS_VERSION_PATCH_AFNetworking_NSURLConnection 1
 
 // AFNetworking/NSURLSession
 #define COCOAPODS_POD_AVAILABLE_AFNetworking_NSURLSession
 #define COCOAPODS_VERSION_MAJOR_AFNetworking_NSURLSession 2
 #define COCOAPODS_VERSION_MINOR_AFNetworking_NSURLSession 5
-#define COCOAPODS_VERSION_PATCH_AFNetworking_NSURLSession 0
+#define COCOAPODS_VERSION_PATCH_AFNetworking_NSURLSession 1
 
 // AFNetworking/Reachability
 #define COCOAPODS_POD_AVAILABLE_AFNetworking_Reachability
 #define COCOAPODS_VERSION_MAJOR_AFNetworking_Reachability 2
 #define COCOAPODS_VERSION_MINOR_AFNetworking_Reachability 5
-#define COCOAPODS_VERSION_PATCH_AFNetworking_Reachability 0
+#define COCOAPODS_VERSION_PATCH_AFNetworking_Reachability 1
 
 // AFNetworking/Security
 #define COCOAPODS_POD_AVAILABLE_AFNetworking_Security
 #define COCOAPODS_VERSION_MAJOR_AFNetworking_Security 2
 #define COCOAPODS_VERSION_MINOR_AFNetworking_Security 5
-#define COCOAPODS_VERSION_PATCH_AFNetworking_Security 0
+#define COCOAPODS_VERSION_PATCH_AFNetworking_Security 1
 
 // AFNetworking/Serialization
 #define COCOAPODS_POD_AVAILABLE_AFNetworking_Serialization
 #define COCOAPODS_VERSION_MAJOR_AFNetworking_Serialization 2
 #define COCOAPODS_VERSION_MINOR_AFNetworking_Serialization 5
-#define COCOAPODS_VERSION_PATCH_AFNetworking_Serialization 0
+#define COCOAPODS_VERSION_PATCH_AFNetworking_Serialization 1
 
 // AFNetworking/UIKit
 #define COCOAPODS_POD_AVAILABLE_AFNetworking_UIKit
 #define COCOAPODS_VERSION_MAJOR_AFNetworking_UIKit 2
 #define COCOAPODS_VERSION_MINOR_AFNetworking_UIKit 5
-#define COCOAPODS_VERSION_PATCH_AFNetworking_UIKit 0
+#define COCOAPODS_VERSION_PATCH_AFNetworking_UIKit 1
 
 // CocoaLumberjack
 #define COCOAPODS_POD_AVAILABLE_CocoaLumberjack
@@ -82,59 +82,65 @@
 #define COCOAPODS_POD_AVAILABLE_MPBSignatureViewController
 #define COCOAPODS_VERSION_MAJOR_MPBSignatureViewController 1
 #define COCOAPODS_VERSION_MINOR_MPBSignatureViewController 4
-#define COCOAPODS_VERSION_PATCH_MPBSignatureViewController 5
+#define COCOAPODS_VERSION_PATCH_MPBSignatureViewController 8
 
-// Paybutton
-#define COCOAPODS_POD_AVAILABLE_Paybutton
-#define COCOAPODS_VERSION_MAJOR_Paybutton 1
-#define COCOAPODS_VERSION_MINOR_Paybutton 0
-#define COCOAPODS_VERSION_PATCH_Paybutton 0
+// payworks
+#define COCOAPODS_POD_AVAILABLE_payworks
+#define COCOAPODS_VERSION_MAJOR_payworks 2
+#define COCOAPODS_VERSION_MINOR_payworks 2
+#define COCOAPODS_VERSION_PATCH_payworks 8
 
-// mpos
-#define COCOAPODS_POD_AVAILABLE_mpos
-#define COCOAPODS_VERSION_MAJOR_mpos 2
-#define COCOAPODS_VERSION_MINOR_mpos 2
-#define COCOAPODS_VERSION_PATCH_mpos 7
+// payworks/mpos
+#define COCOAPODS_POD_AVAILABLE_payworks_mpos
+#define COCOAPODS_VERSION_MAJOR_payworks_mpos 2
+#define COCOAPODS_VERSION_MINOR_payworks_mpos 2
+#define COCOAPODS_VERSION_PATCH_payworks_mpos 8
 
-// mpos/accessories
-#define COCOAPODS_POD_AVAILABLE_mpos_accessories
-#define COCOAPODS_VERSION_MAJOR_mpos_accessories 2
-#define COCOAPODS_VERSION_MINOR_mpos_accessories 2
-#define COCOAPODS_VERSION_PATCH_mpos_accessories 7
+// payworks/mpos/accessories
+#define COCOAPODS_POD_AVAILABLE_payworks_mpos_accessories
+#define COCOAPODS_VERSION_MAJOR_payworks_mpos_accessories 2
+#define COCOAPODS_VERSION_MINOR_payworks_mpos_accessories 2
+#define COCOAPODS_VERSION_PATCH_payworks_mpos_accessories 8
 
-// mpos/accessories/miura
-#define COCOAPODS_POD_AVAILABLE_mpos_accessories_miura
-#define COCOAPODS_VERSION_MAJOR_mpos_accessories_miura 2
-#define COCOAPODS_VERSION_MINOR_mpos_accessories_miura 2
-#define COCOAPODS_VERSION_PATCH_mpos_accessories_miura 7
+// payworks/mpos/accessories/miura
+#define COCOAPODS_POD_AVAILABLE_payworks_mpos_accessories_miura
+#define COCOAPODS_VERSION_MAJOR_payworks_mpos_accessories_miura 2
+#define COCOAPODS_VERSION_MINOR_payworks_mpos_accessories_miura 2
+#define COCOAPODS_VERSION_PATCH_payworks_mpos_accessories_miura 8
 
-// mpos/accessories/verifone-e105
-#define COCOAPODS_POD_AVAILABLE_mpos_accessories_verifone_e105
-#define COCOAPODS_VERSION_MAJOR_mpos_accessories_verifone_e105 2
-#define COCOAPODS_VERSION_MINOR_mpos_accessories_verifone_e105 2
-#define COCOAPODS_VERSION_PATCH_mpos_accessories_verifone_e105 7
+// payworks/mpos/accessories/verifone-e105
+#define COCOAPODS_POD_AVAILABLE_payworks_mpos_accessories_verifone_e105
+#define COCOAPODS_VERSION_MAJOR_payworks_mpos_accessories_verifone_e105 2
+#define COCOAPODS_VERSION_MINOR_payworks_mpos_accessories_verifone_e105 2
+#define COCOAPODS_VERSION_PATCH_payworks_mpos_accessories_verifone_e105 8
 
-// mpos/comlinks
-#define COCOAPODS_POD_AVAILABLE_mpos_comlinks
-#define COCOAPODS_VERSION_MAJOR_mpos_comlinks 2
-#define COCOAPODS_VERSION_MINOR_mpos_comlinks 2
-#define COCOAPODS_VERSION_PATCH_mpos_comlinks 7
+// payworks/mpos/comlinks
+#define COCOAPODS_POD_AVAILABLE_payworks_mpos_comlinks
+#define COCOAPODS_VERSION_MAJOR_payworks_mpos_comlinks 2
+#define COCOAPODS_VERSION_MINOR_payworks_mpos_comlinks 2
+#define COCOAPODS_VERSION_PATCH_payworks_mpos_comlinks 8
 
-// mpos/comlinks/externalaccessory
-#define COCOAPODS_POD_AVAILABLE_mpos_comlinks_externalaccessory
-#define COCOAPODS_VERSION_MAJOR_mpos_comlinks_externalaccessory 2
-#define COCOAPODS_VERSION_MINOR_mpos_comlinks_externalaccessory 2
-#define COCOAPODS_VERSION_PATCH_mpos_comlinks_externalaccessory 7
+// payworks/mpos/comlinks/externalaccessory
+#define COCOAPODS_POD_AVAILABLE_payworks_mpos_comlinks_externalaccessory
+#define COCOAPODS_VERSION_MAJOR_payworks_mpos_comlinks_externalaccessory 2
+#define COCOAPODS_VERSION_MINOR_payworks_mpos_comlinks_externalaccessory 2
+#define COCOAPODS_VERSION_PATCH_payworks_mpos_comlinks_externalaccessory 8
 
-// mpos/comlinks/verifone-e105
-#define COCOAPODS_POD_AVAILABLE_mpos_comlinks_verifone_e105
-#define COCOAPODS_VERSION_MAJOR_mpos_comlinks_verifone_e105 2
-#define COCOAPODS_VERSION_MINOR_mpos_comlinks_verifone_e105 2
-#define COCOAPODS_VERSION_PATCH_mpos_comlinks_verifone_e105 7
+// payworks/mpos/comlinks/verifone
+#define COCOAPODS_POD_AVAILABLE_payworks_mpos_comlinks_verifone
+#define COCOAPODS_VERSION_MAJOR_payworks_mpos_comlinks_verifone 2
+#define COCOAPODS_VERSION_MINOR_payworks_mpos_comlinks_verifone 2
+#define COCOAPODS_VERSION_PATCH_payworks_mpos_comlinks_verifone 8
 
-// mpos/core
-#define COCOAPODS_POD_AVAILABLE_mpos_core
-#define COCOAPODS_VERSION_MAJOR_mpos_core 2
-#define COCOAPODS_VERSION_MINOR_mpos_core 2
-#define COCOAPODS_VERSION_PATCH_mpos_core 7
+// payworks/mpos/core
+#define COCOAPODS_POD_AVAILABLE_payworks_mpos_core
+#define COCOAPODS_VERSION_MAJOR_payworks_mpos_core 2
+#define COCOAPODS_VERSION_MINOR_payworks_mpos_core 2
+#define COCOAPODS_VERSION_PATCH_payworks_mpos_core 8
+
+// payworks/mpos/ui
+#define COCOAPODS_POD_AVAILABLE_payworks_mpos_ui
+#define COCOAPODS_VERSION_MAJOR_payworks_mpos_ui 2
+#define COCOAPODS_VERSION_MINOR_payworks_mpos_ui 2
+#define COCOAPODS_VERSION_PATCH_payworks_mpos_ui 8
 

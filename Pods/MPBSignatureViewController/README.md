@@ -8,8 +8,8 @@ Works perfectly with the mPOS SDK by [payworks](http://www.payworksmobile.com). 
 
 In your podfile:
 
-	source 'http://pods.mpymnt.com/io.mpymnt.repo.pods.git'
-    pod 'MPBSignatureViewController'
+	source 'https://bitbucket.org/mpymnt/io.mpymnt.repo.pods.git'
+	pod 'MPBSignatureViewController'
 
 ## Use
 
@@ -21,9 +21,9 @@ Show it and register callbacks
 
 ```objectivec
 MPBSignatureViewControllerConfiguration* config = [MPBSignatureViewControllerConfiguration 
-    configurationWithMerchantName:@"Antiques + Valuables GmbH"
-    formattedAmount:@"421.99 €"];
-// some styles display the scheme
+    configurationWithFormattedAmount:@"421.99 €"];
+// some styles display the scheme and merchant name
+config.merchantName = @"Antiques + Valuables GmbH";
 config.scheme = MPBSignatureViewControllerConfigurationSchemeMaestro;
 MPBMposUIStyleSignatureViewController *vc = [[MPBMposUIStyleSignatureViewController alloc] initWithConfiguration: config];
 vc.continueBlock = ^(UIImage *signature) {

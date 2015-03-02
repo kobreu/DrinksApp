@@ -4,6 +4,16 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>HockeySDKResources.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>MPBSignatureViewResources.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-AFNetworking.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -14,7 +24,7 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-HockeySDK-HockeySDKResources.xcscheme</key>
+		<key>Pods-Firebase.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -24,12 +34,12 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-MPBSignatureViewController-MPBSignatureViewResources.xcscheme</key>
+		<key>Pods-MPBSignatureViewController.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-MPBSignatureViewController.xcscheme</key>
+		<key>Pods-payworks.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -42,37 +52,47 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>14F16B7A83D32A0C38DE44CF</key>
+		<key>01CC27CEFD461A2512AE11BA</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>40E60D5FF34C5CA2444A154E</key>
+		<key>29716F513A03646E12DCE932</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>59B9CD0CE32D920036EB3081</key>
+		<key>54FA91EB717BEA75ACF53E1A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>6D913C82B52226F54C615496</key>
+		<key>5F8C2F72432FBC2E0E8E9271</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C7E3C38B42E8D17605B4516A</key>
+		<key>8EE63CBF2E7CDE56B0B71ED4</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D15D2B6DE40A149337E06612</key>
+		<key>B39F16B7A24F84AA64A1C24C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E480CD41F372BEA2EF97E9EE</key>
+		<key>B956081F139463912472F88C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CBF74A07486BEC3189F46DBB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EAF4B19B24D55DBECF1FE5F6</key>
 		<dict>
 			<key>primary</key>
 			<true/>

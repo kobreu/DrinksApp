@@ -1,0 +1,145 @@
+{
+    "info": {
+        "locale": "nl_BE", 
+        "rows": 2, 
+        "columns": 40
+    }, 
+    "localization": {
+        "ProviderAccessoryUpdating": [
+            "Update wordt ", 
+            "uitgevoerd"
+        ], 
+        "ProcessingTransaction": [
+            "Betaling wordt verwerkt...", 
+            ""
+        ], 
+        "ApplicationSelection": [
+            "Kaart selecteren", 
+            ""
+        ], 
+        "TransactionAborting": [
+            "Betaling wordt afgebroken...", 
+            ""
+        ], 
+        "ProvideIdentification": [
+            "Identificatie vereist", 
+            ""
+        ], 
+        "ProviderAccessoryConfiguringConnectionLink": [
+            "Configuratie van", 
+            "de kaartlezer..."
+        ], 
+        "UpdatingDeviceConfigurationUpdate": [
+            "Config-update", 
+            "Dit kan even duren..."
+        ], 
+        "ReadingEMVCard": [
+            "Kaart wordt gelezen...", 
+            ""
+        ], 
+        "ProviderApproved": [
+            "Betaling geslaagd", 
+            ""
+        ], 
+        "ProvideSignature": [
+            "Handtekening vereist", 
+            ""
+        ], 
+        "ProviderAccessoryCheckingForUpdate": [
+            "Verbind met ", 
+            "kaartlezer"
+        ], 
+        "PINStatus": [
+            "PIN-code invoeren", 
+            "$digits$"
+        ], 
+        "RemoveCardWithStatus": [
+            "$reason1$", 
+            "Kaart terugnemen"
+        ], 
+        "UpdatingDeviceFirmwareUpdate": [
+            "Firmware-update", 
+            "Dit kan even duren..."
+        ], 
+        "ProviderFailed": [
+            "Betaling mislukt", 
+            "$error$"
+        ], 
+        "GenericError": [
+            "Fout", 
+            ""
+        ], 
+        "BarcodeScannerActive": [
+            "Barcodescanner", 
+            "actief"
+        ], 
+        "ProviderAccessoryConnecting": [
+            "Verbind met ", 
+            "kaartlezer"
+        ], 
+        "PresentCard": [
+            "$amount$", 
+            "Kaart ingeven of schuiven"
+        ], 
+        "PINLastTry": [
+            "PIN invoeren (laatste poging)", 
+            "$digits$"
+        ], 
+        "PINOk": [
+            "PIN OK", 
+            ""
+        ], 
+        "Idle": [
+            "Verbonden", 
+            ""
+        ], 
+        "ProviderTransactionRegistering": [
+            "Registreer", 
+            "betaling"
+        ], 
+        "SwipeCard": [
+            "$amount$", 
+            "Kaart doorschuiven"
+        ], 
+        "PINIncorrect": [
+            "PIN invoeren (verkeerde PIN)", 
+            "$digits$"
+        ], 
+        "UpdatingDeviceSoftwareUpdate": [
+            "Software-update", 
+            "Dit kan even duren..."
+        ], 
+        "ProviderDeclined": [
+            "Betaling geweigerd", 
+            "$reason1$"
+        ], 
+        "ProviderAborted": [
+            "Betaling afgebroken", 
+            ""
+        ], 
+        "UpdatingDeviceKeyInjection": [
+            "Aanmaak sleutel", 
+            "Dit kan even duren..."
+        ], 
+        "UpdatingDevice": [
+            "Update...", 
+            ""
+        ], 
+        "ProviderTransactionQuerying": [
+            "Controleer", 
+            "betaling"
+        ], 
+        "CardNotSupported": [
+            "Kaart niet ondersteund!", 
+            "Andere kaart of afbreken"
+        ], 
+        "CompletedWithStatus": [
+            "$reason1$", 
+            ""
+        ], 
+        "InsertCard": [
+            "$amount$", 
+            "Kaart insteken"
+        ]
+    }
+}

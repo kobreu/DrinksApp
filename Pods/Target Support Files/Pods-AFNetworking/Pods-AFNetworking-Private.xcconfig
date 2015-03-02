@@ -1,5 +1,5 @@
 #include "Pods-AFNetworking.xcconfig"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Private" "${PODS_ROOT}/Headers/Private/AFNetworking" "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/AFNetworking" "${PODS_ROOT}/Headers/Public/CocoaLumberjack" "${PODS_ROOT}/Headers/Public/Firebase" "${PODS_ROOT}/Headers/Public/HockeySDK" "${PODS_ROOT}/Headers/Public/MPBSignatureViewController" "${PODS_ROOT}/Headers/Public/Paybutton" "${PODS_ROOT}/Headers/Public/mpos"
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Build" "${PODS_ROOT}/Headers/Build/AFNetworking" "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/AFNetworking" "${PODS_ROOT}/Headers/Public/CocoaLumberjack" "${PODS_ROOT}/Headers/Public/Firebase" "${PODS_ROOT}/Headers/Public/HockeySDK" "${PODS_ROOT}/Headers/Public/MPBSignatureViewController" "${PODS_ROOT}/Headers/Public/payworks"
 OTHER_LDFLAGS = ${PODS_AFNETWORKING_OTHER_LDFLAGS} -ObjC
 PODS_ROOT = ${SRCROOT}

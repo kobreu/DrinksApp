@@ -1,0 +1,93 @@
+{
+    "info": {
+        "locale": "pt_PT", 
+        "rows": 1, 
+        "columns": 40
+    }, 
+    "localization": {
+        "DECLINED_PROCESSOR": [
+            "Recusado"
+        ], 
+        "PENDING_WAITING_FOR_FINALIZATION": [
+            "Pagamento aprovado"
+        ], 
+        "APPROVED": [
+            "Pagamento aprovado"
+        ], 
+        "NONE": [
+            ""
+        ], 
+        "ERROR_PROCESSOR_INVALID_NONCE": [
+            "Erro de Processamento (Invalid Nonce)"
+        ], 
+        "DECLINED_CARD_OR_TERMINAL_DECLINED": [
+            "Recusado"
+        ], 
+        "ERROR_PROCESSOR_MISSING_SESSION": [
+            "Erro de processamento (Missing Session)"
+        ], 
+        "ERROR_TERMINAL_TIMEOUT": [
+            "Erro de processamento (Terminal Timeout)"
+        ], 
+        "DECLINED_INVALID_TERMINAL_SOFTWARE": [
+            "Pagamento não é possível"
+        ], 
+        "ABORTED_SHOPPER_ABORTED": [
+            "Pagamento abortado pelo comprador"
+        ], 
+        "DECLINED_CARD_INVALID_SCHEME": [
+            "Cartão não permitido"
+        ], 
+        "ERROR_PROCESSOR_INVALID_FORMAT": [
+            "Erro de processamento (Formato Inválido)"
+        ], 
+        "DECLINED_INVALID_TERMINAL": [
+            "Pagamento não é possível"
+        ], 
+        "ERROR_TERMINAL_ERROR": [
+            "Erro de Processamento (Terminal Error)"
+        ], 
+        "ABORTED_MERCHANT_ABORTED": [
+            "Pagamento abortado pelo comerciante"
+        ], 
+        "ERROR_PROCESSOR_INVALID_STATUS": [
+            "Erro de Processamento (Invalid Status)"
+        ], 
+        "DECLINED_PIN_WRONG": [
+            "PIN errado"
+        ], 
+        "ERROR_SESSION_TIMEOUT": [
+            "Erro de Processamento (Session Timeout)"
+        ], 
+        "DECLINED_CARD_INVALID_PAN": [
+            "Cartão inválido"
+        ], 
+        "DECLINED_CARD_STOLEN": [
+            "Cartão roubado, tirar de circulação"
+        ], 
+        "DECLINED_SESSION_EXPIRED": [
+            "Pagamento não é possível"
+        ], 
+        "DECLINED_CARD_USE_ORIGINAL": [
+            "Use o cartão original"
+        ], 
+        "ERROR_PROCESSOR_INVALID_SESSION": [
+            "Erro de processamento (Invalid Session)"
+        ], 
+        "DECLINED_INVALID_TERMINAL_CONFIG": [
+            "Pagamento não é possível"
+        ], 
+        "ERROR_SERVER_INVALID_RESPONSE": [
+            "Erro de processamento (Invalid Response)"
+        ], 
+        "DECLINED_CARD_EXPIRED": [
+            "Cartão expirado"
+        ], 
+        "ABORTED_SHOPPER_REMOVED_CARD": [
+            "Pagamento abortado pelo comerciante"
+        ], 
+        "DECLINED_PIN_WRONG_TOO_OFTEN": [
+            "PIN errado inserido com muita frequência"
+        ]
+    }
+}

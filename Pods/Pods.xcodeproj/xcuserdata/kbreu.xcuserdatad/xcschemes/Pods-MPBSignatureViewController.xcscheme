@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C7E3C38B42E8D17605B4516A"
+               BlueprintIdentifier = "EAF4B19B24D55DBECF1FE5F6"
                BuildableName = "libPods-MPBSignatureViewController.a"
                BlueprintName = "Pods-MPBSignatureViewController"
                ReferencedContainer = "container:Pods.xcodeproj">

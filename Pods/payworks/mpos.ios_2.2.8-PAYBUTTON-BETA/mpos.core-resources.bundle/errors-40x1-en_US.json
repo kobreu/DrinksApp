@@ -1,0 +1,99 @@
+{
+    "info": {
+        "locale": "en_US", 
+        "rows": 1, 
+        "columns": 40
+    }, 
+    "localization": {
+        "ParameterInvalid": [
+            "Parameter invalid"
+        ], 
+        "AccessoryAlreadyDisconnected": [
+            "Accessory already disconnected"
+        ], 
+        "TransactionError": [
+            "Transaction error"
+        ], 
+        "TransactionAborted": [
+            "Transaction aborted"
+        ], 
+        "TransactionSessionNotFound": [
+            "Transaction session not found"
+        ], 
+        "SDKResourcesNotFound": [
+            "Resources not found"
+        ], 
+        "TransactionDeclined": [
+            "Transaction declined"
+        ], 
+        "AccessoryBusy": [
+            "Accessory is busy"
+        ], 
+        "TransactionNoLongerAbortable": [
+            "Transaction can no longer be aborted"
+        ], 
+        "AccessoryError": [
+            "Accessory error"
+        ], 
+        "AccessoryNotConnected": [
+            "Accessory not connected"
+        ], 
+        "TransactionActionError": [
+            "Transaction action error"
+        ], 
+        "AccessoryNotWhitelisted": [
+            "Accessory not whitelisted"
+        ], 
+        "ParameterMissing": [
+            "Parameter missing"
+        ], 
+        "AccessoryDeactivated": [
+            "Accessory is deactivated"
+        ], 
+        "SDKConfigurationMissing": [
+            "Configuration missing"
+        ], 
+        "TransactionInvalid": [
+            "Transaction invalid"
+        ], 
+        "SDKResourcesModified": [
+            "Resources missing"
+        ], 
+        "ServerUnavailable": [
+            "Check your internet connection"
+        ], 
+        "ServerError": [
+            "Server error"
+        ], 
+        "InternalInconsistency": [
+            "Internal error"
+        ], 
+        "ServerAuthenticationFailed": [
+            "Gateway authentication failed"
+        ], 
+        "AccessoryTampered": [
+            "Accessory tampered"
+        ], 
+        "TransactionReferenceNotFound": [
+            "Transaction reference not found"
+        ], 
+        "ServerPinningWithRemoteFailed": [
+            "Gateway verification failed"
+        ], 
+        "AccessoryAlreadyConnected": [
+            "Accessory already connected"
+        ], 
+        "AccessoryNotFound": [
+            "Accessory not found"
+        ], 
+        "TransactionBusy": [
+            "Transaction is busy"
+        ], 
+        "AccessoryRequiresUpdate": [
+            "Accessory update required"
+        ], 
+        "AccessoryBatteryLow": [
+            "Battery low"
+        ]
+    }
+}

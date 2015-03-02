@@ -1,0 +1,49 @@
+{
+    "info": {
+        "locale": "fr_FR"
+    }, 
+    "labels": {
+        "Status": "Statut", 
+        "PaymentDetailsSchemeOrLabel": "Carte", 
+        "Subject": "Description", 
+        "PaymentDetailsSource": "Mode de saisie", 
+        "StatusText": "Informations", 
+        "ClearingDetailsTerminalId": "ID terminal", 
+        "PaymentDetailsMaskedAccount": "Compte", 
+        "ClearingDetailsOriginalTransactionIdentifier": "Trx originale", 
+        "ClearingDetailsTransactionIdentifier": "Transaction", 
+        "ReceiptType": "Justificatif", 
+        "PaymentDetailsEMVApplicationID": "AID", 
+        "Identifier": "PWID", 
+        "Time": "Heure", 
+        "Date": "Date", 
+        "ClearingDetailsAuthorizationCode": "Autorisation", 
+        "ClearingDetailsMerchantId": "N° de contrat", 
+        "AmountAndCurrency": "Montant", 
+        "TransactionType": "Type"
+    }, 
+    "values": {
+        "StatusText": {
+            "DECLINED": "Autorisation refusée", 
+            "APPROVED": "Justificatif à conserver!", 
+            "ABORTED": "Transaction interrompue", 
+            "ERROR": "Transaction non valide"
+        }, 
+        "TransactionType": {
+            "REFUND": "Annulation", 
+            "CHARGE": "Paiement"
+        }, 
+        "PaymentDetailsSource": {
+            "MANUAL_AS_FALLBACK": "Manuel", 
+            "ICC": "Puce", 
+            "MANUAL": "Manuel", 
+            "MAGSTRIPE": "Bande magnétique", 
+            "CONTACTLESS": "Sans contact", 
+            "MAGSTRIPE_AS_FALLBACK": "Bande magnétique"
+        }, 
+        "ReceiptType": {
+            "MERCHANT": "Justificatif commerçant", 
+            "CUSTOMER": "Justificatif titulaire"
+        }
+    }
+}

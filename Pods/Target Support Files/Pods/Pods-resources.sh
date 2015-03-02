@@ -47,19 +47,11 @@ install_resource()
       ;;
   esac
 }
-if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_resource 'Paybutton/mpos.ios.ui.1.0.0-BETA/mPOSUIResources.bundle'
-  install_resource 'mpos/mpos.ios_2.2.7/mpos.core-resources.bundle'
-  install_resource "${BUILT_PRODUCTS_DIR}/HockeySDKResources.bundle"
-  install_resource "${BUILT_PRODUCTS_DIR}/MPBSignatureViewResources.bundle"
-fi
-if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_resource 'Paybutton/mpos.ios.ui.1.0.0-BETA/mPOSUIResources.bundle'
-  install_resource 'mpos/mpos.ios_2.2.7/mpos.core-resources.bundle'
-  install_resource "${BUILT_PRODUCTS_DIR}/HockeySDKResources.bundle"
-  install_resource "${BUILT_PRODUCTS_DIR}/MPBSignatureViewResources.bundle"
-fi
-
+          install_resource "payworks/mpos.ios_2.2.8-PAYBUTTON-BETA/mpos.core-resources.bundle"
+                    install_resource "payworks/mpos.ios_2.2.8-PAYBUTTON-BETA/mPOSUIResources.bundle"
+                    install_resource "${BUILT_PRODUCTS_DIR}/HockeySDKResources.bundle"
+                    install_resource "${BUILT_PRODUCTS_DIR}/MPBSignatureViewResources.bundle"
+          
 rsync -avr --copy-links --no-relative --exclude '*/.svn/*' --files-from="$RESOURCES_TO_COPY" / "${CONFIGURATION_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}"
 if [[ "${ACTION}" == "install" ]]; then
   rsync -avr --copy-links --no-relative --exclude '*/.svn/*' --files-from="$RESOURCES_TO_COPY" / "${INSTALL_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}"

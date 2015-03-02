@@ -2,7 +2,7 @@ platform :ios, '8.0'
 source 'https://github.com/CocoaPods/Specs.git'
 source 'https://bitbucket.org/mpymnt/io.mpymnt.repo.pods.git'
 
-pod 'Paybutton', '1.0.0-BETA'
+pod 'payworks', '2.2.8-PAYBUTTON-BETA'
 pod 'CocoaLumberjack', '~> 1.8'
 pod 'MPBSignatureViewController'
 pod 'AFNetworking'

@@ -14,7 +14,7 @@
 		</dict>
 		<dict>
 			<key>FooterText</key>
-			<string>Copyright (c) 2013-2014 AFNetworking (http://afnetworking.com/)
+			<string>Copyright (c) 2013-2015 AFNetworking (http://afnetworking.com/)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -222,15 +222,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 			<key>FooterText</key>
 			<string>©2015 payworks GmbH. All rights reserved.</string>
 			<key>Title</key>
-			<string>Paybutton</string>
-			<key>Type</key>
-			<string>PSGroupSpecifier</string>
-		</dict>
-		<dict>
-			<key>FooterText</key>
-			<string>©2015 payworks GmbH. All rights reserved.</string>
-			<key>Title</key>
-			<string>mpos</string>
+			<string>payworks</string>
 			<key>Type</key>
 			<string>PSGroupSpecifier</string>
 		</dict>
