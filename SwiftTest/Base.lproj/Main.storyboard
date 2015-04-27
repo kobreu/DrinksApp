@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="boI-RT-y9L">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="boI-RT-y9L">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
     </dependencies>
     <scenes>
-        <!--Root View Controller-->
+        <!--payworks Kitchen POS-->
         <scene sceneID="SmX-Rg-68X">
             <objects>
                 <tableViewController id="Sha-59-bNT" customClass="EmployeeTableController" customModule="SwiftTest" customModuleProvider="target" sceneMemberID="viewController">
@@ -47,7 +47,7 @@
                             <outlet property="delegate" destination="Sha-59-bNT" id="cDt-o5-RaL"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="eqI-1t-QAH"/>
+                    <navigationItem key="navigationItem" title="payworks Kitchen POS" id="eqI-1t-QAH"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dqN-Oh-UAA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

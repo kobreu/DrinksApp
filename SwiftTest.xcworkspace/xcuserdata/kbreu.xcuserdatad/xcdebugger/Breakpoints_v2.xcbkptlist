@@ -40,6 +40,7 @@
                   continueAfterRunningActions = "No"
                   symbolName = "SwiftTest.ViewController.(viewDidLoad (SwiftTest.ViewController) -&gt; () -&gt; ()).(closure #1)"
                   moduleName = "SwiftTest"
+                  usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/kbreu/dev/SwiftTest/SwiftTest/ViewController.swift"
                   timestampString = "442858640.257503"
                   startingColumnNumber = "9223372036854775807"
@@ -54,6 +55,7 @@
                   continueAfterRunningActions = "No"
                   symbolName = "SwiftTest.ViewController.(viewDidLoad (SwiftTest.ViewController) -&gt; () -&gt; ()).(closure #2)"
                   moduleName = "SwiftTest"
+                  usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/kbreu/dev/SwiftTest/SwiftTest/ViewController.swift"
                   timestampString = "442858640.257758"
                   startingColumnNumber = "9223372036854775807"
@@ -68,6 +70,7 @@
                   continueAfterRunningActions = "No"
                   symbolName = "reabstraction thunk helper from @callee_owned (@owned Swift.ImplicitlyUnwrappedOptional&lt;ObjectiveC.MPPaymentProcess&gt;, @owned Swift.ImplicitlyUnwrappedOptional&lt;ObjectiveC.MPTransaction&gt;, @owned Swift.ImplicitlyUnwrappedOptional&lt;ObjectiveC.MPPaymentProcessDetails&gt;) -&gt; (@unowned ()) to @callee_unowned @objc_block (@unowned Swift.ImplicitlyUnwrappedOptional&lt;ObjectiveC.MPPaymentProcess&gt;, @unowned Swift.ImplicitlyUnwrappedOptional&lt;ObjectiveC.MPTransaction&gt;, @unowned Swift.ImplicitlyUnwrappedOptional&lt;ObjectiveC.MPPaymentProcessDetails&gt;) -&gt; (@unowned ())"
                   moduleName = "SwiftTest"
+                  usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/kbreu/dev/SwiftTest/SwiftTest/ViewController.swift"
                   timestampString = "442858640.258003"
                   startingColumnNumber = "9223372036854775807"
@@ -116,6 +119,7 @@
                   continueAfterRunningActions = "No"
                   symbolName = "SwiftTest.ViewController.viewDidLoad (SwiftTest.ViewController)() -&gt; ()"
                   moduleName = "SwiftTest"
+                  usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/kbreu/dev/SwiftTest/SwiftTest/ViewController.swift"
                   timestampString = "442858640.684956"
                   startingColumnNumber = "9223372036854775807"
@@ -130,6 +134,7 @@
                   continueAfterRunningActions = "No"
                   symbolName = "SwiftTest.ViewController.(viewDidLoad (SwiftTest.ViewController) -&gt; () -&gt; ()).(closure #3)"
                   moduleName = "SwiftTest"
+                  usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/kbreu/dev/SwiftTest/SwiftTest/ViewController.swift"
                   timestampString = "442858640.685318"
                   startingColumnNumber = "9223372036854775807"
@@ -164,11 +169,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SwiftTest/ViewControllers.swift"
-            timestampString = "446491583.825799"
+            timestampString = "451847930.345648"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "454"
-            endingLineNumber = "454">
+            startingLineNumber = "482"
+            endingLineNumber = "482">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -178,11 +183,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SwiftTest/ViewControllers.swift"
-            timestampString = "446491583.825799"
+            timestampString = "451847930.345648"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "453"
-            endingLineNumber = "453">
+            startingLineNumber = "481"
+            endingLineNumber = "481">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -224,11 +229,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SwiftTest/ViewControllers.swift"
-            timestampString = "446491583.825799"
+            timestampString = "451847837.786396"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "91"
-            endingLineNumber = "91"
+            startingLineNumber = "98"
+            endingLineNumber = "98"
             landmarkName = "FirebaseDataManager"
             landmarkType = "3">
          </BreakpointContent>
@@ -240,11 +245,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SwiftTest/ViewControllers.swift"
-            timestampString = "446491583.825799"
+            timestampString = "451847837.786396"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "68"
-            endingLineNumber = "68"
+            startingLineNumber = "71"
+            endingLineNumber = "71"
             landmarkName = "MerchantData"
             landmarkType = "3">
          </BreakpointContent>
@@ -256,11 +261,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SwiftTest/ViewControllers.swift"
-            timestampString = "446491583.825799"
+            timestampString = "451847837.786396"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "66"
-            endingLineNumber = "66"
+            startingLineNumber = "69"
+            endingLineNumber = "69"
             landmarkName = "MerchantData"
             landmarkType = "3">
          </BreakpointContent>
@@ -272,11 +277,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SwiftTest/ViewControllers.swift"
-            timestampString = "446491583.825799"
+            timestampString = "451847837.786396"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "74"
-            endingLineNumber = "74"
+            startingLineNumber = "77"
+            endingLineNumber = "77"
             landmarkName = "employeeList(_:failure:)"
             landmarkType = "5">
             <Locations>
@@ -286,6 +291,7 @@
                   continueAfterRunningActions = "No"
                   symbolName = "SwiftTest.DataManager.deinit"
                   moduleName = "SwiftTest"
+                  usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/kbreu/dev/SwiftTest/SwiftTest/ViewControllers.swift"
                   timestampString = "443896549.004288"
                   startingColumnNumber = "9223372036854775807"
@@ -300,6 +306,7 @@
                   continueAfterRunningActions = "No"
                   symbolName = "SwiftTest.DataManager.__deallocating_deinit"
                   moduleName = "SwiftTest"
+                  usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/kbreu/dev/SwiftTest/SwiftTest/ViewControllers.swift"
                   timestampString = "443896549.004534"
                   startingColumnNumber = "9223372036854775807"
@@ -314,6 +321,7 @@
                   continueAfterRunningActions = "No"
                   symbolName = "SwiftTest.DataManager.init (SwiftTest.DataManager.Type)() -&gt; SwiftTest.DataManager"
                   moduleName = "SwiftTest"
+                  usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/kbreu/dev/SwiftTest/SwiftTest/ViewControllers.swift"
                   timestampString = "443896549.004812"
                   startingColumnNumber = "9223372036854775807"
@@ -348,11 +356,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SwiftTest/ViewControllers.swift"
-            timestampString = "446491583.825799"
+            timestampString = "451847930.345648"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "383"
-            endingLineNumber = "383">
+            startingLineNumber = "411"
+            endingLineNumber = "411">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -362,11 +370,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SwiftTest/ViewControllers.swift"
-            timestampString = "446491583.825799"
+            timestampString = "451847837.786396"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "104"
-            endingLineNumber = "104"
+            startingLineNumber = "111"
+            endingLineNumber = "111"
             landmarkName = "employeeList(_:failure:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -378,11 +386,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SwiftTest/ViewControllers.swift"
-            timestampString = "446491583.825799"
+            timestampString = "451847930.345648"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "424"
-            endingLineNumber = "424">
+            startingLineNumber = "452"
+            endingLineNumber = "452">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -392,11 +400,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SwiftTest/ViewControllers.swift"
-            timestampString = "446491583.825799"
+            timestampString = "451847930.345648"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "385"
-            endingLineNumber = "385">
+            startingLineNumber = "413"
+            endingLineNumber = "413">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -406,11 +414,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SwiftTest/ViewControllers.swift"
-            timestampString = "446491583.825799"
+            timestampString = "451847930.345648"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "382"
-            endingLineNumber = "382">
+            startingLineNumber = "410"
+            endingLineNumber = "410">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -420,11 +428,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SwiftTest/ViewControllers.swift"
-            timestampString = "446491583.825799"
+            timestampString = "451847930.345648"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "362"
-            endingLineNumber = "362">
+            startingLineNumber = "390"
+            endingLineNumber = "390">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -434,11 +442,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SwiftTest/ViewControllers.swift"
-            timestampString = "446491583.825799"
+            timestampString = "451847930.345648"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "304"
-            endingLineNumber = "304"
+            startingLineNumber = "332"
+            endingLineNumber = "332"
             landmarkName = "sort(_:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -450,11 +458,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SwiftTest/ViewControllers.swift"
-            timestampString = "446491583.825799"
+            timestampString = "451847837.786396"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "183"
-            endingLineNumber = "183"
+            startingLineNumber = "203"
+            endingLineNumber = "203"
             landmarkName = "viewDidLoad()"
             landmarkType = "5">
          </BreakpointContent>
@@ -466,11 +474,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SwiftTest/ViewControllers.swift"
-            timestampString = "446491583.825799"
+            timestampString = "451847837.786396"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "186"
-            endingLineNumber = "186"
+            startingLineNumber = "206"
+            endingLineNumber = "206"
             landmarkName = "viewDidLoad()"
             landmarkType = "5">
          </BreakpointContent>
@@ -482,11 +490,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SwiftTest/ViewControllers.swift"
-            timestampString = "446491583.825799"
+            timestampString = "451847837.786396"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "187"
-            endingLineNumber = "187"
+            startingLineNumber = "207"
+            endingLineNumber = "207"
             landmarkName = "viewDidLoad()"
             landmarkType = "5">
          </BreakpointContent>
@@ -498,11 +506,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SwiftTest/ViewControllers.swift"
-            timestampString = "446491583.825799"
+            timestampString = "451847837.786396"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "194"
-            endingLineNumber = "194"
+            startingLineNumber = "214"
+            endingLineNumber = "214"
             landmarkName = "viewDidLoad()"
             landmarkType = "5">
          </BreakpointContent>
@@ -514,11 +522,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SwiftTest/ViewControllers.swift"
-            timestampString = "446491583.825799"
+            timestampString = "451847930.345648"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "367"
-            endingLineNumber = "367">
+            startingLineNumber = "395"
+            endingLineNumber = "395">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -528,11 +536,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SwiftTest/ViewControllers.swift"
-            timestampString = "446491583.825799"
+            timestampString = "451847930.345648"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "287"
-            endingLineNumber = "287"
+            startingLineNumber = "315"
+            endingLineNumber = "315"
             landmarkName = "findEmployeeIndexById(_:id:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -544,11 +552,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SwiftTest/ViewControllers.swift"
-            timestampString = "446491583.825799"
+            timestampString = "451847930.345648"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "366"
-            endingLineNumber = "366">
+            startingLineNumber = "394"
+            endingLineNumber = "394">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -558,11 +566,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SwiftTest/ViewControllers.swift"
-            timestampString = "446491583.825799"
+            timestampString = "451847930.345648"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "368"
-            endingLineNumber = "368">
+            startingLineNumber = "396"
+            endingLineNumber = "396">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -572,11 +580,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SwiftTest/ViewControllers.swift"
-            timestampString = "450260396.847491"
+            timestampString = "451847837.786396"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "226"
-            endingLineNumber = "226"
+            startingLineNumber = "246"
+            endingLineNumber = "246"
             landmarkName = "tableView(_:cellForRowAtIndexPath:)"
             landmarkType = "5">
          </BreakpointContent>

@@ -40,6 +40,9 @@ class Employee : NSObject {
 class Drink : NSObject {
     var title = ""
     var cost = 100
+    var stock = 500
+    var did = 0
+    var trackStock = false
     
     required override init() {}
     
@@ -82,6 +85,10 @@ class DataManager {
         success()
     }
     
+    func pushStock(drink: Int, stock: Int, success: (Void -> Void), failure: (Void -> Void)) {
+        success()
+    }
+    
     func merchantData(success: (MerchantData) -> Void, failure: () -> Void) {
         success(MerchantData())
     }
@@ -109,9 +116,9 @@ class FirebaseDataManager : DataManager {
             while let rest = enumerator.nextObject() as? FDataSnapshot {
                 println(rest.value)
                 let emp = Employee()
-                emp.mid = rest.value["id"] as Int
-                emp.title = rest.value["name"] as String
-                emp.amount = rest.value["amount"] as Int
+                emp.mid = rest.value["id"] as! Int
+                emp.title = rest.value["name"] as! String
+                emp.amount = rest.value["amount"] as! Int
                 users.append(emp)
             }
             success(users)
@@ -126,8 +133,11 @@ class FirebaseDataManager : DataManager {
             var drinks:Array<Drink> = []
             while let drink = enumerator.nextObject() as? FDataSnapshot {
                 let drinkA = Drink()
-                drinkA.title = drink.value["name"] as String
-                drinkA.cost = drink.value["cost"] as Int
+                drinkA.title = drink.value["name"] as! String
+                drinkA.cost = drink.value["cost"] as! Int
+                drinkA.stock = drink.value["stock"] as! Int
+                drinkA.did = drink.value["id"] as! Int
+                drinkA.trackStock = drink.value["trackStock"] as! Bool
                 drinks.append(drinkA)
             }
             success(drinks)
@@ -139,15 +149,15 @@ class FirebaseDataManager : DataManager {
         
         merchantDataRef.observeEventType(.Value, withBlock: { (snapshot) -> Void in
             let merchantData = MerchantData()
-            merchantData.name = snapshot.value["name"] as String
-            merchantData.street = snapshot.value["street"] as String
-            merchantData.townzip = snapshot.value["townzip"] as String
-            merchantData.country = snapshot.value["country"] as String
-            merchantData.merchantIdentifier = snapshot.value["merchantId"] as String
-            merchantData.merchantSecretKey = snapshot.value["merchantSecretKey"] as String
-            merchantData.readerModel = snapshot.value["readerModel"] as String
-            merchantData.serverType = snapshot.value["serverType"] as String
-            merchantData.paymentEnabled = snapshot.value["paymentEnabled"] as Bool
+            merchantData.name = snapshot.value["name"] as! String
+            merchantData.street = snapshot.value["street"] as! String
+            merchantData.townzip = snapshot.value["townzip"] as! String
+            merchantData.country = snapshot.value["country"] as! String
+            merchantData.merchantIdentifier = snapshot.value["merchantId"] as! String
+            merchantData.merchantSecretKey = snapshot.value["merchantSecretKey"] as! String
+            merchantData.readerModel = snapshot.value["readerModel"] as! String
+            merchantData.serverType = snapshot.value["serverType"] as! String
+            merchantData.paymentEnabled = snapshot.value["paymentEnabled"] as! Bool
             
             success(merchantData)
         })
@@ -161,6 +171,16 @@ class FirebaseDataManager : DataManager {
         var amount = ["amount": amount]
         
         employee.updateChildValues(amount)
+    }
+    
+    override func pushStock(drink: Int, stock: Int, success: (Void -> Void), failure: (Void -> Void)) {
+        let pushAmountRef = Firebase(url: "https://amber-fire-1440.firebaseio.com/drinks")
+        
+        let drink = pushAmountRef.childByAppendingPath(String(drink))
+        
+        var stock = ["stock": stock]
+        
+        drink.updateChildValues(stock)
     }
 }
 
@@ -214,7 +234,7 @@ class EmployeeTableController : UITableViewController {
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let identifier = "identifier";
-        let cell = (tableView.dequeueReusableCellWithIdentifier(identifier) ?? CustomTableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: identifier)) as CustomTableViewCell;
+        let cell = (tableView.dequeueReusableCellWithIdentifier(identifier) ?? CustomTableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: identifier)) as! CustomTableViewCell;
         let index = indexPath.row
         println(self.employees[index].title)
         cell.textLabel?.text = self.employees[index].title
@@ -235,7 +255,7 @@ class EmployeeTableController : UITableViewController {
         let indexPath = self.tableView.indexPathForRowAtPoint(buttonPosition)!
         
         let amount = self.employees[indexPath.row].amount
-        let controller = MPUPaymentController.initializePaymentControllerWithProviderMode(merchantData.serverType == "LIVE" ? MPProviderMode.LIVE : MPProviderMode.TEST, merchantIdentifier: merchantData.merchantIdentifier, merchantSecret: merchantData.merchantSecretKey) as MPUPaymentController
+        let controller = MPUPaymentController.initializePaymentControllerWithProviderMode(merchantData.serverType == "LIVE" ? MPProviderMode.LIVE : MPProviderMode.TEST, merchantIdentifier: merchantData.merchantIdentifier, merchantSecret: merchantData.merchantSecretKey) as! MPUPaymentController
         
         controller.configuration.accessoryFamily = MPAccessoryFamily.MiuraMPI
         let viewController = controller.createPaymentViewControllerWithAmount(NSDecimalNumber(double: Double(amount) / 100.0), currency: MPCurrency.EUR, subject: "subject", customIdentifier: "customIdentifier") { (result, tx) -> Void in
@@ -261,7 +281,7 @@ class EmployeeTableController : UITableViewController {
     }
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        let drinks = self.storyboard?.instantiateViewControllerWithIdentifier("drinksController") as DrinksTableController
+        let drinks = self.storyboard?.instantiateViewControllerWithIdentifier("drinksController") as! DrinksTableController
         drinks.drinks = self.drinks
         drinks.finished = {(drink:Drink) -> () in
             let newamount = self.employees[indexPath.row].amount + drink.cost
@@ -277,6 +297,14 @@ class EmployeeTableController : UITableViewController {
                 alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.Default,handler: nil))
                 self.presentViewController(alertController, animated: true, completion: nil)
             })
+            
+            if(drink.trackStock) {
+                self.datamanager.pushStock(drink.did, stock: drink.stock-1, success: {
+            
+                    }, failure: {
+                    
+                });
+            }
         }
         self.navigationController?.pushViewController(drinks, animated: true);
     }
@@ -336,7 +364,7 @@ class DrinksTableController : UITableViewController {
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let identifier = "identifierElse";
-        let cell = (tableView.dequeueReusableCellWithIdentifier(identifier) ?? DrinkTableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: identifier)) as DrinkTableViewCell;
+        let cell = (tableView.dequeueReusableCellWithIdentifier(identifier) ?? DrinkTableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: identifier)) as! DrinkTableViewCell;
         let index = indexPath.row
         cell.textLabel?.text = self.drinks[index].title
         cell.cost.text = String(format: "%.2f €", Double(self.drinks[index].cost) / 100.0)
