@@ -28,30 +28,30 @@ PODS:
   - Firebase (2.2.0)
   - HockeySDK (3.6.2)
   - MPBSignatureViewController (1.4.8)
-  - payworks (2.2.8-PAYBUTTON-BETA):
-    - payworks/mpos (= 2.2.8-PAYBUTTON-BETA)
-  - payworks/mpos (2.2.8-PAYBUTTON-BETA):
-    - payworks/mpos/accessories (= 2.2.8-PAYBUTTON-BETA)
-    - payworks/mpos/comlinks (= 2.2.8-PAYBUTTON-BETA)
-    - payworks/mpos/core (= 2.2.8-PAYBUTTON-BETA)
-    - payworks/mpos/ui (= 2.2.8-PAYBUTTON-BETA)
-  - payworks/mpos/accessories (2.2.8-PAYBUTTON-BETA):
-    - payworks/mpos/accessories/miura (= 2.2.8-PAYBUTTON-BETA)
-    - payworks/mpos/accessories/verifone-e105 (= 2.2.8-PAYBUTTON-BETA)
-  - payworks/mpos/accessories/miura (2.2.8-PAYBUTTON-BETA):
+  - payworks (2.3.0-BETA03):
+    - payworks/mpos (= 2.3.0-BETA03)
+  - payworks/mpos (2.3.0-BETA03):
+    - payworks/mpos/accessories (= 2.3.0-BETA03)
+    - payworks/mpos/comlinks (= 2.3.0-BETA03)
+    - payworks/mpos/core (= 2.3.0-BETA03)
+    - payworks/mpos/ui (= 2.3.0-BETA03)
+  - payworks/mpos/accessories (2.3.0-BETA03):
+    - payworks/mpos/accessories/miura (= 2.3.0-BETA03)
+    - payworks/mpos/accessories/verifone-e105 (= 2.3.0-BETA03)
+  - payworks/mpos/accessories/miura (2.3.0-BETA03):
     - payworks/mpos/comlinks/externalaccessory
-  - payworks/mpos/accessories/verifone-e105 (2.2.8-PAYBUTTON-BETA):
+  - payworks/mpos/accessories/verifone-e105 (2.3.0-BETA03):
     - payworks/mpos/comlinks/verifone
-  - payworks/mpos/comlinks (2.2.8-PAYBUTTON-BETA):
-    - payworks/mpos/comlinks/externalaccessory (= 2.2.8-PAYBUTTON-BETA)
-    - payworks/mpos/comlinks/verifone (= 2.2.8-PAYBUTTON-BETA)
-  - payworks/mpos/comlinks/externalaccessory (2.2.8-PAYBUTTON-BETA):
+  - payworks/mpos/comlinks (2.3.0-BETA03):
+    - payworks/mpos/comlinks/externalaccessory (= 2.3.0-BETA03)
+    - payworks/mpos/comlinks/verifone (= 2.3.0-BETA03)
+  - payworks/mpos/comlinks/externalaccessory (2.3.0-BETA03):
     - payworks/mpos/core
-  - payworks/mpos/comlinks/verifone (2.2.8-PAYBUTTON-BETA):
+  - payworks/mpos/comlinks/verifone (2.3.0-BETA03):
     - payworks/mpos/core
-  - payworks/mpos/core (2.2.8-PAYBUTTON-BETA):
+  - payworks/mpos/core (2.3.0-BETA03):
     - CocoaLumberjack (~> 1.9)
-  - payworks/mpos/ui (2.2.8-PAYBUTTON-BETA):
+  - payworks/mpos/ui (2.3.0-BETA03):
     - MPBSignatureViewController (~> 1)
     - payworks/mpos/core
 
@@ -61,7 +61,7 @@ DEPENDENCIES:
   - Firebase (>= 2.2.0)
   - HockeySDK
   - MPBSignatureViewController
-  - payworks (= 2.2.8-PAYBUTTON-BETA)
+  - payworks (= 2.3.0-BETA03)
 
 SPEC CHECKSUMS:
   AFNetworking: 8bee59492a6ff15d69130efa4d0dc67e0094a52a
@@ -69,6 +69,6 @@ SPEC CHECKSUMS:
   Firebase: e7a2ea2ffeff99f9c37028b354194dcc9718d36b
   HockeySDK: bfd1f5ac75938b07499c4ac12932244b72a2e70b
   MPBSignatureViewController: c10ee62324e21a1a6859a12f0ff09a9e3c216dd1
-  payworks: 36e5f83cabdcffe72a6c17d971fd4f37967d1573
+  payworks: 0e11ff3ac427e208bfa8ce6f2a73eae5e08f1257
 
 COCOAPODS: 0.35.0

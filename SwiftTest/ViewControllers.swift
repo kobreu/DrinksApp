@@ -201,7 +201,7 @@ class EmployeeTableController : UITableViewController {
             
         })
         
-        
+        MPMpos.setLogLevel(16)
     }
     
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
@@ -223,7 +223,7 @@ class EmployeeTableController : UITableViewController {
         cell.amt.text = String(format: "%.2f €", amtD)
         let button = UIButton();
         button.setTitle("title", forState: .Normal);
-        cell.pay.hidden = !self.merchantData.paymentEnabled
+        cell.pay.hidden = !self.merchantData.paymentEnabled || amtD <= 0.0
         cell.tag = self.employees[index].mid
         [cell.addSubview(button)];
         return cell
