@@ -1,0 +1,117 @@
+{
+    "info": {
+        "columns": 40, 
+        "locale": "fr_FR", 
+        "rows": 1
+    }, 
+    "localization": {
+        "ABORTED": [
+            "Paiement interrompu"
+        ], 
+        "ABORTED_MERCHANT_ABORTED": [
+            "Paiement interrompu"
+        ], 
+        "ABORTED_SHOPPER_ABORTED": [
+            "Paiement interrompu"
+        ], 
+        "ABORTED_SHOPPER_REMOVED_CARD": [
+            "Paiement interrompu"
+        ], 
+        "ABORTED_PRESENT_CARD_TIMED_OUT": [
+            "Paiement interrompu"
+        ], 
+        "APPROVED": [
+            "Paiement accepté"
+        ], 
+        "DECLINED": [
+            "Refusé"
+        ], 
+        "DECLINED_CARD_EXPIRED": [
+            "Refusé - Carte périmée"
+        ], 
+        "DECLINED_CARD_INVALID_PAN": [
+            "Refusé - Carte non valide"
+        ], 
+        "DECLINED_CARD_INVALID_SCHEME": [
+            "Refusé - Carte non autorisée"
+        ], 
+        "DECLINED_CARD_OR_TERMINAL_DECLINED": [
+            "Refusé"
+        ], 
+        "DECLINED_CARD_STOLEN": [
+            "Refusé - Carte volée"
+        ], 
+        "DECLINED_CARD_USE_ORIGINAL": [
+            "Refusé - Utiliser l'original"
+        ], 
+        "DECLINED_INVALID_TERMINAL": [
+            "Paiement impossible"
+        ], 
+        "DECLINED_INVALID_TERMINAL_CONFIG": [
+            "Paiement impossible"
+        ], 
+        "DECLINED_INVALID_TERMINAL_SOFTWARE": [
+            "Paiement impossible"
+        ], 
+        "DECLINED_PIN_WRONG": [
+            "Refusé - PIN incorrect"
+        ], 
+        "DECLINED_PIN_WRONG_TOO_OFTEN": [
+            "Refusé - Erreur de PIN trop fréquente"
+        ], 
+        "DECLINED_PROCESSOR": [
+            "Refusé"
+        ], 
+        "DECLINED_PROCESSOR_EXCEEDS_WITHDRAWAL_COUNT_LIMIT": [
+            "Refusé"
+        ], 
+        "DECLINED_SESSION_EXPIRED": [
+            "Paiement impossible"
+        ], 
+        "ERROR": [
+            "Erreur de traitement"
+        ], 
+        "ERROR_APPROVED_OFFLINE": [
+            "Erreur de traitement (Terminal Approval)"
+        ], 
+        "ERROR_PROCESSOR_INVALID_FORMAT": [
+            "Erreur de traitement (Invalid Format)"
+        ], 
+        "ERROR_PROCESSOR_INVALID_NONCE": [
+            "Erreur de traitement (Invalid Nonce)"
+        ], 
+        "ERROR_PROCESSOR_INVALID_SESSION": [
+            "Erreur de traitement (Invalid Session)"
+        ], 
+        "ERROR_PROCESSOR_INVALID_STATUS": [
+            "Erreur de traitement (Invalid Status)"
+        ], 
+        "ERROR_PROCESSOR_MISSING_SESSION": [
+            "Erreur de traitement (Missing Session)"
+        ], 
+        "ERROR_PROCESSOR_CONNECTION_ERROR": [
+            "Erreur de traitement (Connection Error)"
+        ], 
+        "ERROR_SESSION_TIMEOUT": [
+            "Erreur de traitement (Session Timeout)"
+        ], 
+        "ERROR_TERMINAL_ERROR": [
+            "Erreur de traitement (Terminal Error)"
+        ], 
+        "ERROR_SERVER_INVALID_RESPONSE": [
+            "Erreur de traitement (Invalid Response)"
+        ], 
+        "ERROR_TERMINAL_TIMEOUT": [
+            "Erreur de traitement (Terminal Timeout)"
+        ], 
+        "NONE": [
+            ""
+        ], 
+        "PENDING": [
+            "Patienter SVP..."
+        ], 
+        "PENDING_WAITING_FOR_FINALIZATION": [
+            "Paiement accepté"
+        ]
+    }
+}

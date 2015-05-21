@@ -12,6 +12,6 @@
 #import <MPBSignatureViewController/MPBSignatureViewController.h>
 #import <mpos.core/mpos.h>
 #import <HockeySDK/HockeySDK.h>
-#import <mPOSUI/mPOSUI.h>
+#import <mpos-ui/mpos-ui.h>
 #import <Firebase/Firebase.h>
 #import <AFNetworking/AFNetworking.h>

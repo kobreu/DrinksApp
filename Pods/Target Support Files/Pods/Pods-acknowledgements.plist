@@ -14,7 +14,7 @@
 		</dict>
 		<dict>
 			<key>FooterText</key>
-			<string>Copyright (c) 2013-2015 AFNetworking (http://afnetworking.com/)
+			<string>Copyright (c) 2011–2015 Alamofire Software Foundation (http://alamofire.org/)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -43,7 +43,7 @@ THE SOFTWARE.
 			<key>FooterText</key>
 			<string>Software License Agreement (BSD License)
 
-Copyright (c) 2010, Deusty, LLC
+Copyright (c) 2010-2015, Deusty, LLC
 All rights reserved.
 
 Redistribution and use of this software in source and binary forms,
@@ -79,7 +79,7 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
 The Hockey SDK is provided under the following license:
 
     The MIT License
-    Copyright (c) 2012-2014 HockeyApp, Bit Stadium GmbH.
+    Copyright (c) 2012-2015 HockeyApp, Bit Stadium GmbH.
     All rights reserved.
 	
     Permission is hereby granted, free of charge, to any person
@@ -106,8 +106,8 @@ The Hockey SDK is provided under the following license:
 Except as noted below, PLCrashReporter 
 is provided under the following license:
 
-    Copyright (c) 2008 - 2014 Plausible Labs Cooperative, Inc.
-    Copyright (c) 2012 - 2014 HockeyApp, Bit Stadium GmbH.
+    Copyright (c) 2008 - 2015 Plausible Labs Cooperative, Inc.
+    Copyright (c) 2012 - 2015 HockeyApp, Bit Stadium GmbH.
     All rights reserved.
 
     Permission is hereby granted, free of charge, to any person

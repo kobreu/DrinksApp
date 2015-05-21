@@ -1,74 +1,75 @@
 PODS:
-  - AFNetworking (2.5.1):
-    - AFNetworking/NSURLConnection (= 2.5.1)
-    - AFNetworking/NSURLSession (= 2.5.1)
-    - AFNetworking/Reachability (= 2.5.1)
-    - AFNetworking/Security (= 2.5.1)
-    - AFNetworking/Serialization (= 2.5.1)
-    - AFNetworking/UIKit (= 2.5.1)
-  - AFNetworking/NSURLConnection (2.5.1):
+  - AFNetworking (2.5.4):
+    - AFNetworking/NSURLConnection (= 2.5.4)
+    - AFNetworking/NSURLSession (= 2.5.4)
+    - AFNetworking/Reachability (= 2.5.4)
+    - AFNetworking/Security (= 2.5.4)
+    - AFNetworking/Serialization (= 2.5.4)
+    - AFNetworking/UIKit (= 2.5.4)
+  - AFNetworking/NSURLConnection (2.5.4):
     - AFNetworking/Reachability
     - AFNetworking/Security
     - AFNetworking/Serialization
-  - AFNetworking/NSURLSession (2.5.1):
+  - AFNetworking/NSURLSession (2.5.4):
     - AFNetworking/Reachability
     - AFNetworking/Security
     - AFNetworking/Serialization
-  - AFNetworking/Reachability (2.5.1)
-  - AFNetworking/Security (2.5.1)
-  - AFNetworking/Serialization (2.5.1)
-  - AFNetworking/UIKit (2.5.1):
+  - AFNetworking/Reachability (2.5.4)
+  - AFNetworking/Security (2.5.4)
+  - AFNetworking/Serialization (2.5.4)
+  - AFNetworking/UIKit (2.5.4):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
-  - CocoaLumberjack (1.9.2):
-    - CocoaLumberjack/Extensions (= 1.9.2)
-  - CocoaLumberjack/Core (1.9.2)
-  - CocoaLumberjack/Extensions (1.9.2):
+  - CocoaLumberjack (2.0.0):
+    - CocoaLumberjack/Default (= 2.0.0)
+    - CocoaLumberjack/Extensions (= 2.0.0)
+  - CocoaLumberjack/Core (2.0.0)
+  - CocoaLumberjack/Default (2.0.0):
     - CocoaLumberjack/Core
-  - Firebase (2.2.0)
-  - HockeySDK (3.6.2)
-  - MPBSignatureViewController (1.4.8)
-  - payworks (2.3.0-BETA03):
-    - payworks/mpos (= 2.3.0-BETA03)
-  - payworks/mpos (2.3.0-BETA03):
-    - payworks/mpos/accessories (= 2.3.0-BETA03)
-    - payworks/mpos/comlinks (= 2.3.0-BETA03)
-    - payworks/mpos/core (= 2.3.0-BETA03)
-    - payworks/mpos/ui (= 2.3.0-BETA03)
-  - payworks/mpos/accessories (2.3.0-BETA03):
-    - payworks/mpos/accessories/miura (= 2.3.0-BETA03)
-    - payworks/mpos/accessories/verifone-e105 (= 2.3.0-BETA03)
-  - payworks/mpos/accessories/miura (2.3.0-BETA03):
+  - CocoaLumberjack/Extensions (2.0.0):
+    - CocoaLumberjack/Default
+  - Firebase (2.2.2)
+  - HockeySDK (3.6.4)
+  - MPBSignatureViewController (1.4.9)
+  - payworks (2.3.0-BETA07):
+    - payworks/mpos (= 2.3.0-BETA07)
+  - payworks/mpos (2.3.0-BETA07):
+    - payworks/mpos/accessories (= 2.3.0-BETA07)
+    - payworks/mpos/comlinks (= 2.3.0-BETA07)
+    - payworks/mpos/core (= 2.3.0-BETA07)
+    - payworks/mpos/ui (= 2.3.0-BETA07)
+  - payworks/mpos/accessories (2.3.0-BETA07):
+    - payworks/mpos/accessories/miura (= 2.3.0-BETA07)
+    - payworks/mpos/accessories/verifone-e105 (= 2.3.0-BETA07)
+  - payworks/mpos/accessories/miura (2.3.0-BETA07):
     - payworks/mpos/comlinks/externalaccessory
-  - payworks/mpos/accessories/verifone-e105 (2.3.0-BETA03):
+  - payworks/mpos/accessories/verifone-e105 (2.3.0-BETA07):
     - payworks/mpos/comlinks/verifone
-  - payworks/mpos/comlinks (2.3.0-BETA03):
-    - payworks/mpos/comlinks/externalaccessory (= 2.3.0-BETA03)
-    - payworks/mpos/comlinks/verifone (= 2.3.0-BETA03)
-  - payworks/mpos/comlinks/externalaccessory (2.3.0-BETA03):
+  - payworks/mpos/comlinks (2.3.0-BETA07):
+    - payworks/mpos/comlinks/externalaccessory (= 2.3.0-BETA07)
+    - payworks/mpos/comlinks/verifone (= 2.3.0-BETA07)
+  - payworks/mpos/comlinks/externalaccessory (2.3.0-BETA07):
     - payworks/mpos/core
-  - payworks/mpos/comlinks/verifone (2.3.0-BETA03):
+  - payworks/mpos/comlinks/verifone (2.3.0-BETA07):
     - payworks/mpos/core
-  - payworks/mpos/core (2.3.0-BETA03):
-    - CocoaLumberjack (~> 1.9)
-  - payworks/mpos/ui (2.3.0-BETA03):
+  - payworks/mpos/core (2.3.0-BETA07):
+    - CocoaLumberjack (~> 2)
+  - payworks/mpos/ui (2.3.0-BETA07):
     - MPBSignatureViewController (~> 1)
     - payworks/mpos/core
 
 DEPENDENCIES:
   - AFNetworking
-  - CocoaLumberjack (~> 1.8)
   - Firebase (>= 2.2.0)
   - HockeySDK
-  - MPBSignatureViewController
-  - payworks (= 2.3.0-BETA03)
+  - payworks (= 2.3.0-BETA07)
 
 SPEC CHECKSUMS:
-  AFNetworking: 8bee59492a6ff15d69130efa4d0dc67e0094a52a
-  CocoaLumberjack: 205769c032b5fef85b92472046bcc8b7e7c8a817
-  Firebase: e7a2ea2ffeff99f9c37028b354194dcc9718d36b
-  HockeySDK: bfd1f5ac75938b07499c4ac12932244b72a2e70b
-  MPBSignatureViewController: c10ee62324e21a1a6859a12f0ff09a9e3c216dd1
-  payworks: 0e11ff3ac427e208bfa8ce6f2a73eae5e08f1257
+  AFNetworking: 05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e
+  CocoaLumberjack: a6f77d987d65dc7ba86b0f84db7d0b9084f77bcb
+  Firebase: e35cdd2561bf4fea9c1e384e9400a9c173d19e47
+  HockeySDK: c07cdd580296737edcd0963e292c19885a53f563
+  MPBSignatureViewController: 908de4549598bc6c15cf553d1da72de8b45ee3d1
+  payworks: 1386315d256e1fc8d430f9b84f645fab14d76af8
 
 COCOAPODS: 0.35.0

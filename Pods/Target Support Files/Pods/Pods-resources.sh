@@ -47,8 +47,8 @@ install_resource()
       ;;
   esac
 }
-          install_resource "payworks/mpos.ios_2.3.0-BETA03/mpos.core-resources.bundle"
-                    install_resource "payworks/mpos.ios_2.3.0-BETA03/mPOSUIResources.bundle"
+          install_resource "payworks/mpos.core-resources.bundle"
+                    install_resource "payworks/mpos-ui-resources.bundle"
                     install_resource "${BUILT_PRODUCTS_DIR}/HockeySDKResources.bundle"
                     install_resource "${BUILT_PRODUCTS_DIR}/MPBSignatureViewResources.bundle"
           

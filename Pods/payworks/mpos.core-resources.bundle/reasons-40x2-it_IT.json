@@ -1,0 +1,117 @@
+{
+    "info": {
+        "columns": 40, 
+        "locale": "it_IT", 
+        "rows": 1
+    }, 
+    "localization": {
+        "ABORTED": [
+            "Pagamento annullato"
+        ], 
+        "ABORTED_MERCHANT_ABORTED": [
+            "Pagamento annullato"
+        ], 
+        "ABORTED_SHOPPER_ABORTED": [
+            "Pagamento annullato"
+        ], 
+        "ABORTED_SHOPPER_REMOVED_CARD": [
+            "Pagamento annullato"
+        ], 
+        "ABORTED_PRESENT_CARD_TIMED_OUT": [
+            "Pagamento annullato"
+        ], 
+        "APPROVED": [
+            "Pagamento accettato"
+        ], 
+        "DECLINED": [
+            "Rifiutato"
+        ], 
+        "DECLINED_CARD_EXPIRED": [
+            "Rifiutato - Carta scaduta"
+        ], 
+        "DECLINED_CARD_INVALID_PAN": [
+            "Rifiutato - Carta non valida"
+        ], 
+        "DECLINED_CARD_INVALID_SCHEME": [
+            "Rifiutato - Carta non autorizzata"
+        ], 
+        "DECLINED_CARD_OR_TERMINAL_DECLINED": [
+            "Rifiutato"
+        ], 
+        "DECLINED_CARD_STOLEN": [
+            "Rifiutato - Carta rubata"
+        ], 
+        "DECLINED_CARD_USE_ORIGINAL": [
+            "Rifiutato - Utilizzare l'originale"
+        ], 
+        "DECLINED_INVALID_TERMINAL": [
+            "Pagamento non possibile"
+        ], 
+        "DECLINED_INVALID_TERMINAL_CONFIG": [
+            "Pagamento non possibile"
+        ], 
+        "DECLINED_INVALID_TERMINAL_SOFTWARE": [
+            "Pagamento non possibile"
+        ], 
+        "DECLINED_PIN_WRONG": [
+            "Rifiutato - PIN errato"
+        ], 
+        "DECLINED_PIN_WRONG_TOO_OFTEN": [
+            "Rifiutato - PIN errato troppe volte"
+        ], 
+        "DECLINED_PROCESSOR": [
+            "Rifiutato"
+        ], 
+        "DECLINED_PROCESSOR_EXCEEDS_WITHDRAWAL_COUNT_LIMIT": [
+            "Rifiutato"
+        ], 
+        "DECLINED_SESSION_EXPIRED": [
+            "Pagamento non possibile"
+        ], 
+        "ERROR": [
+            "Errore di elaborazione"
+        ], 
+        "ERROR_APPROVED_OFFLINE": [
+            "Errore di elab. (Terminal Approval)"
+        ], 
+        "ERROR_PROCESSOR_INVALID_FORMAT": [
+            "Errore di elab. (Invalid Format)"
+        ], 
+        "ERROR_PROCESSOR_INVALID_NONCE": [
+            "Errore di elab. (Invalid Nonce)"
+        ], 
+        "ERROR_PROCESSOR_INVALID_SESSION": [
+            "Errore di elab. (Invalid Session)"
+        ], 
+        "ERROR_PROCESSOR_INVALID_STATUS": [
+            "Errore di elab. (Invalid Status)"
+        ], 
+        "ERROR_PROCESSOR_MISSING_SESSION": [
+            "Errore di elab. (Missing Session)"
+        ], 
+        "ERROR_PROCESSOR_CONNECTION_ERROR": [
+            "Errore di elab. (Connection Error)"
+        ], 
+        "ERROR_SESSION_TIMEOUT": [
+            "Errore di elab. (Session Timeout)"
+        ], 
+        "ERROR_TERMINAL_ERROR": [
+            "Errore di elab. (Terminal Error)"
+        ], 
+        "ERROR_SERVER_INVALID_RESPONSE": [
+            "Errore di elab. (Invalid Response)"
+        ], 
+        "ERROR_TERMINAL_TIMEOUT": [
+            "Errore di elab. (Terminal Timeout)"
+        ], 
+        "NONE": [
+            ""
+        ], 
+        "PENDING": [
+            "Attendere prego..."
+        ], 
+        "PENDING_WAITING_FOR_FINALIZATION": [
+            "Pagamento accettato"
+        ]
+    }
+}

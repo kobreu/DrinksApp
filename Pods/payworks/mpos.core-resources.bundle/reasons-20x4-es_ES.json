@@ -1,0 +1,153 @@
+{
+    "info": {
+        "columns": 20, 
+        "locale": "es_ES", 
+        "rows": 2
+    }, 
+    "localization": {
+        "ABORTED": [
+            "Pago cancelado", 
+            ""
+        ], 
+        "ABORTED_MERCHANT_ABORTED": [
+            "Pago cancelado", 
+            ""
+        ], 
+        "ABORTED_SHOPPER_ABORTED": [
+            "Pago cancelado", 
+            ""
+        ], 
+        "ABORTED_SHOPPER_REMOVED_CARD": [
+            "Pago cancelado", 
+            ""
+        ], 
+        "ABORTED_PRESENT_CARD_TIMED_OUT": [
+            "Pago cancelado", 
+            ""
+        ], 
+        "APPROVED": [
+            "Pago aprobado", 
+            ""
+        ], 
+        "DECLINED": [
+            "Rechazado", 
+            ""
+        ], 
+        "DECLINED_CARD_EXPIRED": [
+            "Tarjeta caducada", 
+            "Rechazado"
+        ], 
+        "DECLINED_CARD_INVALID_PAN": [
+            "Tarjeta inválida", 
+            "Rechazado"
+        ], 
+        "DECLINED_CARD_INVALID_SCHEME": [
+            "No permitido", 
+            "Rechazado"
+        ], 
+        "DECLINED_CARD_OR_TERMINAL_DECLINED": [
+            "Rechazado", 
+            ""
+        ], 
+        "DECLINED_CARD_STOLEN": [
+            "Tarjeta robada", 
+            "Rechazado"
+        ], 
+        "DECLINED_CARD_USE_ORIGINAL": [
+            "Use tarjeta original", 
+            "Rechazado"
+        ], 
+        "DECLINED_INVALID_TERMINAL": [
+            "No es posible ", 
+            "realizar el pago"
+        ], 
+        "DECLINED_INVALID_TERMINAL_CONFIG": [
+            "No es posible ", 
+            "realizar el pago"
+        ], 
+        "DECLINED_INVALID_TERMINAL_SOFTWARE": [
+            "No es posible ", 
+            "realizar el pago"
+        ], 
+        "DECLINED_PIN_WRONG": [
+            "PIN incorrecto", 
+            "Rechazado"
+        ], 
+        "DECLINED_PIN_WRONG_TOO_OFTEN": [
+            "Demasiados PIN", 
+            "Rechazado"
+        ], 
+        "DECLINED_PROCESSOR": [
+            "Rechazado", 
+            ""
+        ], 
+        "DECLINED_PROCESSOR_EXCEEDS_WITHDRAWAL_COUNT_LIMIT": [
+            "Rechazado", 
+            ""
+        ], 
+        "DECLINED_SESSION_EXPIRED": [
+            "No es posible ", 
+            "realizar el pago"
+        ], 
+        "ERROR": [
+            "Error procesando", 
+            ""
+        ], 
+        "ERROR_APPROVED_OFFLINE": [
+            "Error procesando", 
+            "(confirm Terminal)"
+        ], 
+        "ERROR_PROCESSOR_INVALID_FORMAT": [
+            "Error procesando", 
+            "(formato inválido)"
+        ], 
+        "ERROR_PROCESSOR_INVALID_NONCE": [
+            "Error procesando", 
+            "(Nonce inválido)"
+        ], 
+        "ERROR_PROCESSOR_INVALID_SESSION": [
+            "Error procesando", 
+            "(sesión inválida)"
+        ], 
+        "ERROR_PROCESSOR_INVALID_STATUS": [
+            "Error procesando", 
+            "(estado inválido)"
+        ], 
+        "ERROR_PROCESSOR_MISSING_SESSION": [
+            "Error procesando", 
+            "(sesión inexistente)"
+        ], 
+        "ERROR_PROCESSOR_CONNECTION_ERROR": [
+            "Error procesando", 
+            "(Connection Error)"
+        ], 
+        "ERROR_SESSION_TIMEOUT": [
+            "Error procesando", 
+            "(sesión caducada)"
+        ], 
+        "ERROR_TERMINAL_ERROR": [
+            "Error procesando", 
+            "(error en Terminal)"
+        ], 
+        "ERROR_SERVER_INVALID_RESPONSE": [
+            "Error procesando", 
+            "(respuesta inválida)"
+        ], 
+        "ERROR_TERMINAL_TIMEOUT": [
+            "Error procesando", 
+            "(error en Terminal)"
+        ], 
+        "NONE": [
+            "", 
+            ""
+        ], 
+        "PENDING": [
+            "Por favor, espere...", 
+            ""
+        ], 
+        "PENDING_WAITING_FOR_FINALIZATION": [
+            "Pago aprobado", 
+            ""
+        ]
+    }
+}

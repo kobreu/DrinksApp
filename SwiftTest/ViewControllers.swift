@@ -255,12 +255,13 @@ class EmployeeTableController : UITableViewController {
         let indexPath = self.tableView.indexPathForRowAtPoint(buttonPosition)!
         
         let amount = self.employees[indexPath.row].amount
-        let controller = MPUPaymentController.initializePaymentControllerWithProviderMode(merchantData.serverType == "LIVE" ? MPProviderMode.LIVE : MPProviderMode.TEST, merchantIdentifier: merchantData.merchantIdentifier, merchantSecret: merchantData.merchantSecretKey) as! MPUPaymentController
-        
+        let controller = MPUMposUi.initializeWithProviderMode(merchantData.serverType == "LIVE" ? MPProviderMode.LIVE : MPProviderMode.TEST, merchantIdentifier: merchantData.merchantIdentifier, merchantSecret: merchantData.merchantSecretKey) as! MPUMposUi
+
         controller.configuration.accessoryFamily = MPAccessoryFamily.MiuraMPI
-        let viewController = controller.createPaymentViewControllerWithAmount(NSDecimalNumber(double: Double(amount) / 100.0), currency: MPCurrency.EUR, subject: "subject", customIdentifier: "customIdentifier") { (result, tx) -> Void in
+        controller.configuration.receiptMethod = MPUMposUiConfigurationReceiptMethod.ReadyMade;
+        let viewController = controller.createTransactionViewControllerWithAmount(NSDecimalNumber(double: Double(amount) / 100.0), currency: MPCurrency.EUR, subject: "subject", customIdentifier: "customIdentifier") { (me, result, tx) -> Void in
             self.dismissViewControllerAnimated(true, completion: nil)
-            if (result == MPUPaymentControllerResult.Approved) {
+            if (result == MPUMposUiTransactionResult.Approved) {
                 self.employees[indexPath.row].amount = 0
                 let id = self.employees[indexPath.row].mid
                 self.datamanager.pushAmount(id, amount: 0, success: {} , failure: {
