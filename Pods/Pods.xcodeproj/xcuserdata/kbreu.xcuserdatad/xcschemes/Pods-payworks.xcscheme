@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4CC6D3005C22C93722CAEB84"
+               BlueprintIdentifier = "7E736F560CF9E2AB7E4B78FB"
                BuildableName = "libPods-payworks.a"
                BlueprintName = "Pods-payworks"
                ReferencedContainer = "container:Pods.xcodeproj">
