@@ -269,10 +269,6 @@ class EmployeeTableController : UITableViewController {
                 self.tableView.reloadRowsAtIndexPaths([NSIndexPath(forRow: indexPath.row, inSection: 0)], withRowAnimation: UITableViewRowAnimation.None)
                 self.sort(self.employees)
             } else {
-                let alertController = UIAlertController(title: "You did not pay!", message:
-                    "If you think this was due to an error, contact Korbinian.", preferredStyle: UIAlertControllerStyle.Alert)
-                alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.Default,handler: nil))
-                self.presentViewController(alertController, animated: true, completion: nil)
             }
         }
         
