@@ -1,197 +1,133 @@
 {
     "info": {
-        "columns": 40, 
-        "locale": "fr_FR", 
+        "columns": 40,
+        "locale": "fr_FR",
         "rows": 2
-    }, 
+    },
     "localization": {
         "ApplicationSelection": [
-            "Sélectionner carte", 
+            "Please select your account",
             ""
-        ], 
-        "AuthorizingTransaction": [
-            "", 
-            "Autorisation du paiement..."
-        ], 
-        "BarcodeScannerActive": [
-            "Lecteur", 
-            "de code-barres actif"
-        ], 
-        "CardNotSupportedIccMagstripe": [
-            "Utiliser une", 
-            "autre carte"
-        ], 
-        "CardNotSupportedNfc": [
-            "Insérer, faire glisser ou", 
-            "autre carte"
-        ], 
-        "CompletedWithStatus": [
-            "$reason1$", 
-            ""
-        ], 
-        "CompletingTransaction": [
-            "", 
-            "Complétant paiement..."
-        ], 
-        "GenericError": [
-            "Erreur", 
-            ""
-        ], 
-        "Idle": [
-            "Connexion établie", 
-            ""
-        ], 
-        "InsertCard": [
-            "$amount$", 
-            "Insérer la carte"
-        ], 
-        "InsertOrSwipeCard": [
-            "$amount$", 
-            "Insérer ou faire glisser la carte"
-        ], 
-        "InsertOrSwipeCardActivateNfc": [
-            "$amount$ Insérer ou faire", 
-            "glisser la carte, [OK] pour NFC"
-        ], 
-        "PINIncorrect": [
-            "Saisir le PIN (PIN incorrect)", 
-            "$digits$"
-        ], 
-        "PINLastTry": [
-            "Saisir le code PIN (dernier essai)", 
-            "$digits$"
-        ], 
-        "PINOk": [
-            "PIN OK", 
-            ""
-        ], 
-        "PINStatus": [
-            "Saisir le PIN", 
-            "$digits$"
-        ], 
-        "PresentCard": [
-            "$amount$", 
-            "Carte SVP"
-        ], 
-        "ProcessingTransaction": [
-            "Traitement en cours...", 
-            ""
-        ], 
-        "ProvideIdentification": [
-            "Identification requise", 
-            ""
-        ], 
-        "ProvideSignature": [
-            "Signature requise", 
-            ""
-        ], 
-        "ProvideSignatureWithStatus": [
-            "$reason1$", 
-            "Signature requise"
-        ], 
-        "ProviderAccessoryCheckingForUpdate": [
-            "Connexion au lecteur ", 
-            "de cartes en cours"
-        ], 
-        "ProviderAccessoryConnecting": [
-            "Connexion au lecteur ", 
-            "de cartes en cours"
-        ], 
-        "ProviderAccessoryUpdating": [
-            "Mise à jour ", 
-            "en cours"
-        ], 
-        "ProviderAccessoryWaitingForReader": [
-            "Searching for reader", 
-            "Please turn on reader"
-        ], 
-        "ProviderAborted": [
-            "Paiement interrompu", 
-            ""
-        ], 
-        "ProviderApproved": [
-            "Paiement accepté", 
-            ""
-        ], 
-        "ProviderDeclined": [
-            "Paiement refusé", 
-            "$reason1$"
-        ], 
-        "ProviderFailed": [
-            "Paiement échoué", 
-            "$error$"
-        ], 
-        "ProviderNotRefundable": [
-            "Payment", 
-            "not refundable"
-        ], 
-        "ProviderTransactionQuerying": [
-            "Contrôle ", 
-            "du paiement "
-        ], 
-        "ProviderTransactionRegistering": [
-            "Paiement en cours", 
-            "d'enregistrement"
-        ], 
-        "ProviderAccessoryConfiguringConnectionLink": [
-            "Configuration", 
-            "du lecteur..."
-        ], 
-        "ProviderComponentPrinterSending": [
-            "Sending to", 
-            "printer"
-        ], 
-        "ProviderComponentPrinterSent": [
-            "Successfully", 
-            "sent to printer"
-        ], 
-        "ProviderComponentPrinterAborted": [
-            "Printing aborted", 
-            ""
-        ], 
-        "ProviderComponentPrinterFailed": [
-            "Printing failed", 
-            "$error$"
-        ], 
-        "ReadingEMVCard": [
-            "Carte en cours de lecture...", 
-            ""
-        ], 
-        "RemoveCardWithStatus": [
-            "$reason1$", 
-            "Retirer la carte"
-        ], 
-        "SwipeCard": [
-            "$amount$", 
-            "Faire glisser la carte"
-        ], 
-        "TransactionAborting": [
-            "Paiement interrompu...", 
-            ""
-        ], 
-        "UpdatingDevice": [
-            "Mise à jour...", 
-            ""
-        ], 
-        "UpdatingDeviceConfigurationUpdate": [
-            "Mise à jour config.", 
-            "Cela peut prendre quelques instants..."
-        ], 
-        "UpdatingDeviceFirmwareUpdate": [
-            "Mise à jour firmware", 
-            "Patientez SVP..."
-        ], 
-        "UpdatingDeviceSoftwareUpdate": [
-            "Mise à jour du logiciel. ", 
-            "Patientez SVP"
-        ], 
-        "UpdatingDeviceKeyInjection": [
-            "Génération de clé.", 
-            "Patientez SVP"
-        ], 
+        ],
         "CardNotSupported": [
-            "Carte non reconnue!", 
-            "Autre carte ou annuler"
+            "Card not supported!",
+            "Try another or press cancel"
+        ],
+        "CompletedWithStatus": [
+            "$reason1$",
+            ""
+        ],
+        "GenericError": [
+            "Error",
+            ""
+        ],
+        "Idle": [
+            "Connected",
+            ""
+        ],
+        "InsertCard": [
+            "$amount$",
+            "Insert card"
+        ],
+        "PINIncorrect": [
+            "Enter PIN (incorrect)",
+            "$digits$"
+        ],
+        "PINLastTry": [
+            "Enter PIN (last try)",
+            "$digits$"
+        ],
+        "PINOk": [
+            "PIN OK",
+            ""
+        ],
+        "PINStatus": [
+            "Enter PIN",
+            "$digits$"
+        ],
+        "PresentCard": [
+            "$amount$",
+            "Present card"
+        ],
+        "ProcessingTransaction": [
+            "Processing payment...",
+            ""
+        ],
+        "ProvideIdentification": [
+            "Identification required",
+            ""
+        ],
+        "ProvideSignature": [
+            "Signature required",
+            ""
+        ],
+        "ProviderAccessoryCheckingForUpdate": [
+            "Checking for",
+            "updates"
+        ],
+        "ProviderAccessoryConnecting": [
+            "Connecting to",
+            "accessory"
+        ],
+        "ProviderAccessoryUpdating": [
+            "Applying",
+            "updates"
+        ],
+        "ProviderCompleted": [
+            "Workflow",
+            "completed"
+        ],
+        "ProviderFailed": [
+            "Workflow failed",
+            "$error$"
+        ],
+        "ProviderTransactionQuerying": [
+            "Querying",
+            "transaction"
+        ],
+        "ProviderTransactionRegistering": [
+            "Registering",
+            "transaction"
+        ],
+        "ReadingEMVCard": [
+            "Reading card...",
+            ""
+        ],
+        "RemoveCardWithStatus": [
+            "$reason1$",
+            "Remove card"
+        ],
+        "SwipeCard": [
+            "$amount$",
+            "Swipe card"
+        ],
+        "TransactionAborting": [
+            "Aborting payment...",
+            ""
+        ],
+        "UpdatingDevice": [
+            "Updating...",
+            ""
+        ],
+        "UpdatingDeviceConfigurationUpdate": [
+            "Updating Config",
+            "This may take a few moments..."
+        ],
+        "UpdatingDeviceFirmwareUpdate": [
+            "Updating Firmware",
+            "This may take a while..."
+        ],
+        "UpdatingDeviceKeyInjection": [
+            "Generating Keys",
+            "This may take a few moments..."
+        ],
+        "UpdatingDeviceSoftwareUpdate": [
+            "Updating Software",
+            "This may take a while..."
+        ],
+        "BarcodeScannerActive": [
+            "Barcode scanner",
+            "active"
         ]
     }
 }

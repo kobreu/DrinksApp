@@ -72,10 +72,7 @@ typedef NS_OPTIONS(NSUInteger, MPPaymentAccessoryRequirement) {
     MPPaymentAccessoryRequirementAmountConfirmation             = 1 << 0,
     
     /** Indicates if the accessory requires an authentication before any updates can be installed */
-    MPPaymentAccessoryRequirementAuthenticationBeforeUpdate     = 1 << 1,
-    
-    /** Indicates that the accessory needs a manual interaction in order to enable NFC transaction (upgrade from ICC/Magstripe to NFC) */
-    MPPaymentAccessoryRequirementManualNFCActivation            = 1 << 2,
+    MPPaymentAccessoryRequirementAuthenticationBeforeUpdate     = 1 << 1
 };
 
 

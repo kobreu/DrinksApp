@@ -172,19 +172,6 @@ typedef void (^MPTransactionAbortSuccess)(MPTransaction *transaction);
  */
 typedef void (^MPTransactionAbortFailure)(MPTransaction *transaction, NSError *error);
 
-/**
- * Success handler for sending a receipt via email.
- * @since 2.3.0
- */
-typedef void (^MPCustomerReceiptSendingSuccess)(NSString *transactionIdentifier, NSString *emailAddress);
-
-/**
- * Failure handler for sending a receipt via email.
- * @param error Error describing why the mail sending failed
- * @since 2.3.0
- */
-typedef void (^MPCustomerReceiptSendingFailure)(NSString *transactionIdentifier, NSString *emailAddress, NSError *);
-
 
 /**
  * Indicating the mode the provider will run in.
@@ -326,7 +313,7 @@ typedef NS_ENUM(NSUInteger, MPProviderMode){
 /** @name Manage Transactions */
 
 /**
- * Queries a previous transaction (including state), typically when the transaction failed due to network errors.
+ * Looks up a previous transaction (including state), typically when the transaction failed due to network errors.
  * @param identifier The reference to the transaction session
  * @param success The success handler called when the transaction lookup was successful
  * @param failure The failure handler called when the lookup failed
@@ -335,19 +322,26 @@ typedef NS_ENUM(NSUInteger, MPProviderMode){
  */
 - (void)lookupTransactionWithSessionIdentifier:(NSString *)identifier success:(MPTransactionLookupSuccess)success failure:(MPTransactionLookupFailure)failure;
 
-/**
- * Queries a previous transaction (including state), typically when the transaction failed due to network errors.
- * @param identifier The identifier of the transaction
- * @param success The success handler called when the transaction lookup was successful
- * @param failure The failure handler called when the lookup failed
- * @throws NSException If the identifier is invalid
- * @since 2.3.0
- */
-- (void)lookupTransactionWithTransactionIdentifier:(NSString *)identifier success:(MPTransactionLookupSuccess)success failure:(MPTransactionLookupFailure)failure;
 
 #pragma mark -
 #pragma mark Execute Transactions
 /** @name Execute Transactions */
+
+/**
+ * Starts registering and executing a given transaction with the help of the given accessory. From there on action callbacks will request additional parameters if necessary.
+ * This request typically starts a mPOS transaction.
+ * @param transaction The transaction to be excecuted
+ * @param schemePreference The schemes that are allowed for the transaction (they will be used in the order of appearance)
+ * @param accessory The accessory to use for the transaction
+ * @param approval The approved handler called when the transaction was approved.
+ * @param decline The declined handler called when the transaction was declined during the execution.
+ * @param abort The abort handler called when the transaction was aborted during the execution.
+ * @param failure The failure handler called when the transaction failed, have a look at the error for more details
+ * @param actionRequired The action required handler called when additional details are necessary (e.g. a customer signature)
+ * @throws NSException If the transaction is invalid
+ * @since 2.0.0
+ */
+- (void)startTransaction:(MPTransaction *)transaction usingSchemePreference:(NSArray *)schemePreference onAccessory:(MPAccessory *)accessory approval:(MPTransactionApproval)approval decline:(MPTransactionDecline)decline abort:(MPTransactionAbort)abort failure:(MPTransactionFailure)failure actionRequired:(MPTransactionActionRequired)actionRequired __attribute__((deprecated("Scheme preferences are no longer honored, use startTransaction:usingAccessory:approval:decline:abort:failure:actionRequired: instead.")));
 
 /**
  * Starts registering and executing a given transaction with the help of the given accessory. From there on action callbacks will request additional parameters if necessary.
@@ -385,20 +379,6 @@ typedef NS_ENUM(NSUInteger, MPProviderMode){
  * @since 2.0.0
  */
 - (void)abortTransaction:(MPTransaction *)transaction success:(MPTransactionAbortSuccess)success failure:(MPTransactionAbortFailure)failure;
-
-#pragma mark -
-#pragma mark Send Receipts
-
-/**
- * Sends out an email receipt for a given transaction.
- * @param transactionIdentifier A reference to the transaction
- * @param emailAddress Email receiver of the receipt
- * @param success The success handler called when the sending was successful
- * @param failure The failure handler called when the sending failed
- * @throws NSException If the transation is invalid
- * @since 2.3.0
- */
-- (void)sendCustomerReceiptForTransactionIdentifier:(NSString *)transactionIdentifier emailAddress:(NSString *)emailAddress success:(MPCustomerReceiptSendingSuccess)success failure:(MPCustomerReceiptSendingFailure)failure;
 
 
 

@@ -28,10 +28,8 @@ typedef NS_ENUM(NSUInteger, MPPaymentDetailsSource) {
     MPPaymentDetailsSourceMagneticStripe,
     /** The source of the payment details was the magnetic track, but as a fallback to ICC */
     MPPaymentDetailsSourceMagneticStripeFallback,
-    /** The source of the payment details was a NFC Card in EMV mode*/
-    MPPaymentDetailsSourceNFCUsingEMV,
-    /** The source of the payment details was a NFC Card in Magstripe mode*/
-    MPPaymentDetailsSourceNFCUsingMSD,
+    /** The source of the payment details was a NFC Card */
+    MPPaymentDetailsSourceNFC,
 };
 
 /**
@@ -56,7 +54,7 @@ typedef NS_ENUM(NSUInteger, MPPaymentDetailsScheme){
     /** Any kind of Diners Club*/
     MPPaymentDetailsSchemeDinersClub,
     /** Any kind of Discover*/
-    MPPaymentDetailsSchemeDiscover,
+    MPPaymentDetailsDiscover,
     /** Any kind of UnionPay*/
     MPPaymentDetailsSchemeUnionPay
 };
@@ -75,9 +73,7 @@ typedef NS_ENUM(NSUInteger, MPPaymentDetailsCustomerVerification) {
     /** A PIN was used */
     MPPaymentDetailsCustomerVerificationPIN,
     /** A PIN and a Signature was used */
-    MPPaymentDetailsCustomerVerificationPINAndSignature,
-    /** The customer device was doing the verification (i.e. Apple Pay) */
-    MPPaymentDetailsCustomerVerificationCustomerDevice
+    MPPaymentDetailsCustomerVerificationPINSignature
 };
 
 

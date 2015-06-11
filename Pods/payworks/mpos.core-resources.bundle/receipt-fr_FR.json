@@ -1,67 +1,49 @@
-{
+﻿{
     "info": {
         "locale": "fr_FR"
-    }, 
+    },
     "labels": {
-        "Date": "Date", 
-        "Time": "Heure", 
-        "Status": "Statut", 
-        "AmountAndCurrency": "Montant", 
-        "StatusText": "Informations", 
-        "Subject": "Description", 
-        "TransactionType": "Type", 
-        "ReceiptType": "Justificatif", 
-        "Identifier": "PWID", 
-        "PaymentDetailsSource": "Mode de saisie", 
-        "PaymentDetailsEMVApplicationID": "AID", 
-        "PaymentDetailsSchemeOrLabel": "Carte", 
-        "PaymentDetailsMaskedAccount": "Compte", 
-        "PaymentDetailsCustomerVerification": "Vérification", 
-        "PaymentDetailsAccountSequenceNumber": "Numéro de carte", 
-        "ClearingDetailsTransactionIdentifier": "Transaction", 
-        "ClearingDetailsOriginalTransactionIdentifier": "Trx originale", 
-        "ClearingDetailsAuthorizationCode": "Autorisation", 
-        "ClearingDetailsMerchantId": "N° de contrat", 
-        "ClearingDetailsTerminalId": "ID terminal", 
-        "MerchantDetailsPublicName": "Nom", 
-        "MerchantDetailsAddress": "Adresse", 
-        "MerchantDetailsZip": "Code Postal", 
-        "MerchantDetailsCity": "Cité", 
-        "MerchantDetailsCountry": "État", 
-        "MerchantDetailsContact": "Interlocuteur", 
-        "MerchantDetailsAdditionalInformation": "Informations Complémentaires"
-    }, 
+		"Date": "Date",
+		"Time": "Time",
+		"Status": "Status",
+		"AmountAndCurrency": "Amount",
+		"StatusText": "Information",
+		"Subject": "Description",
+		"TransactionType": "Type",
+		"ReceiptType": "Receipt Type",
+        "Identifier": "PWID",
+        "PaymentDetailsSource": "Entry Mode",
+        "PaymentDetailsEMVApplicationID": "AID",
+		"PaymentDetailsSchemeOrLabel" : "Card",
+		"PaymentDetailsMaskedAccount" : "Account",
+        "ClearingDetailsTransactionIdentifier": "Transaction",
+        "ClearingDetailsOriginalTransactionIdentifier": "Original TX",
+        "ClearingDetailsAuthorizationCode": "Authorization",
+        "ClearingDetailsContractIdentifier": "Merchant ID",
+        "ClearingDetailsTerminalId": "Terminal ID"
+    },
     "values": {
         "ReceiptType": {
-            "MERCHANT": "Justificatif commerçant", 
-            "CUSTOMER": "Justificatif titulaire"
-        }, 
+            "MERCHANT": "Merchant Receipt",
+            "CUSTOMER": "Cardholder Receipt"
+        },
         "StatusText": {
-            "APPROVED": "Justificatif à conserver!", 
-            "DECLINED": "Autorisation refusée", 
-            "ABORTED": "Transaction interrompue", 
-            "ERROR": "Transaction non valide"
-        }, 
+            "APPROVED": "Please retain receipt!",
+            "DECLINED": "Authorization declined.",
+            "ABORTED": "Canceled transaction.",
+            "ERROR": "Invalid transaction."
+        },
         "PaymentDetailsSource": {
-            "ICC": "Puce", 
-            "MAGSTRIPE": "Bande magnétique", 
-            "CONTACTLESS": "Sans contact", 
-            "MAGSTRIPE_AS_FALLBACK": "Bande magnétique", 
-            "MANUAL": "Manuel", 
-            "MANUAL_AS_FALLBACK": "Manuel", 
-            "NFC_ICC": "Sans contact", 
-            "NFC_MAGSTRIPE": "Sans contact"
-        }, 
+            "ICC": "Chip",
+            "MAGSTRIPE": "Magstripe",
+            "MAGSTRIPE_AS_FALLBACK": "Magstripe",
+            "CONTACTLESS": "Contactless",
+            "MANUAL": "Keyed",
+            "MANUAL_AS_FALLBACK": "Keyed"
+        },
         "TransactionType": {
-            "CHARGE": "Paiement", 
-            "REFUND": "Annulation"
-        }, 
-        "PaymentDetailsCustomerVerification": {
-            "NONE": "Aucune", 
-            "PIN": "PIN", 
-            "SIGNATURE": "Signature", 
-            "PIN_AND_SIGNATURE": "PIN et signature", 
-            "SHOPPER_DEVICE": "Dispositif client"
+            "CHARGE": "Payment",
+            "REFUND": "Reversal"
         }
     }
 }

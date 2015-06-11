@@ -60,12 +60,6 @@ typedef NS_ENUM(NSInteger, MPReceiptLineKey) {
     /** The application identifier of the used card. */
     MPReceiptLineKeyPaymentDetailsEMVApplicationID = 103,
 
-    /** The sequence number of the card */
-    MPReceiptLineKeyPaymentDetailsAccountSequenceNumber = 104,
-    
-    /** The verification used for the transaction */
-    MPReceiptLineKeyPaymentDetailsCustomerVerification = 105,
-    
     /** The transaction identifier set by the aquirer. */
     MPReceiptLineKeyClearingDetailsTransactionIdentifier = 200,
 

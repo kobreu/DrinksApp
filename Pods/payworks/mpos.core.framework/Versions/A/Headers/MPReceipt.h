@@ -18,17 +18,6 @@
 #import "MPTransaction.h"
 #import "MPReceiptLineItem.h"
 
-/**
- * The available types for a receipt type.
- * @since 2.5.0
- */
-typedef NS_ENUM(NSUInteger, MPReceiptType) {
-    /** Receipt for the merchant */
-    MPReceiptTypeMerchant,
-    /** Receipt for the customer */
-    MPReceiptTypeCustomer
-};
-
 
 /**
  * Receipt object containing all data that must be printed/provided on a receipt. The items are already localized accoring to the current locale and region format of the device the SDK is running on.

@@ -31,46 +31,34 @@ typedef NS_ENUM(NSUInteger, MPAccessoryFamily){
     MPAccessoryFamilyMock
 };
 
-@class MPReceiptFactory;
+
 @class MPTransactionTemplate;
-#import "MPTransactionProcess.h"
+#import "MPPaymentProcess.h"
 #import "MPTransaction.h"
 
 
-/**
+/*
  * Callback block for a transaction query with session identifier.
  * @param transaction The transaction with the provided sessionIdentifier
  * @param error The error that might have occured
- * @since 2.3.0
+ * @since 2.2.0
  */
 typedef void (^MPTransactionProviderQueryBySessionIdentifierCompleted)(MPTransaction *transaction, NSError *error);
 
-/**
- * Callback block for a transaction query with transaction identifier.
- * @param transaction The transaction with the provided transactionIdentifier
+/*
+ * Callback block for a transaction query with a custom identifier.
+ * @param transactions The transactions with the provided customIdentifier
  * @param error The error that might have occured
- * @since 2.3.0
+ * @since 2.2.0
  */
-typedef void (^MPTransactionProviderQueryByTransactionIdentifierCompleted)(MPTransaction *transaction, NSError *error);
+typedef void (^MPTransactionProviderQueryByCustomIdentifierCompleted)(NSArray *transactions, NSError *error);
 
-/**
- * Callback block for a sending a receipt for a transaction.
- * @param error The error that might have occured
- * @since 2.3.0
- */
-typedef void (^MPTransactionProviderSendingCustomerReceiptCompleted)(NSString *transactionIdentifier, NSString *emailAddress, NSError *error);
 
 /**
  * Provider that simplifies the process of making a single transaction by encapsulating the necessary steps inbetween.
  * @since 2.2.0
  */
 @interface MPTransactionProvider : NSObject
-
-/**
- * Returns a factory that must be used to generate receipts.
- * @since 2.3.0
- */
-@property (strong, readonly, nonatomic) MPReceiptFactory *receiptFactory;
 
 /**
  * Creates a new template for a new transaction.
@@ -81,10 +69,7 @@ typedef void (^MPTransactionProviderSendingCustomerReceiptCompleted)(NSString *t
  * @return A new transaction templated that can be used to start a transaction locally
  * @since 2.2.0
  */
-- (MPTransactionTemplate *)chargeTransactionTemplateWithAmount:(NSDecimalNumber *)amount
-                                                      currency:(MPCurrency)currency
-                                                       subject:(NSString *)subject
-                                              customIdentifier:(NSString *)customIdentifier;
+- (MPTransactionTemplate *)chargeTransactionTemplateWithAmount:(NSDecimalNumber *)amount currency:(MPCurrency)currency subject:(NSString *)subject customIdentifier:(NSString *)customIdentifier;
 
 /**
  * Creates a new template, linking to a previous transaction.
@@ -94,42 +79,40 @@ typedef void (^MPTransactionProviderSendingCustomerReceiptCompleted)(NSString *t
  * @return A new transaction templated that can be used to start a transaction locally
  * @since 2.2.0
  */
-- (MPTransactionTemplate *)refundTransactionTemplateWithReferenceToPreviousTransaction:(NSString *)referencedTransactionIdentifier
-                                                                               subject:(NSString *)subject
-                                                                      customIdentifier:(NSString *)customIdentifier;
+- (MPTransactionTemplate *)refundTransactionTemplateWithReferenceToPreviousTransaction:(NSString *)referencedTransactionIdentifier subject:(NSString *)subject customIdentifier:(NSString *)customIdentifier;
 
 
 /**
- * Starts and returns a new transaction process which guide you through a complete transaction. This method is used if the session has already been created on the backend.
+ * Starts and returns a new payment process which guide you through a complete transaction. This method is used if the session has already been created on the backend.
  * @param sessionIdentifier The sessionIdentifier of the transaction to start
  * @param accessoryFamily The kind of accessory you want to use for the transaction
  * @param statusChanged The status of the process changed and new information can be displayed to the user
  * @param actionRequired An explicit action by the merchant or customer is required
- * @param completed The paymentProcess ended and a new one can be started
+ * @param ended The paymentProcess ended and a new one can be started
  * @since 2.2.0
  */
-- (MPTransactionProcess *)startTransactionWithSessionIdentifier:(NSString *)sessionIdentifier
-                                                 usingAccessory:(MPAccessoryFamily)accessoryFamily
-                                                  statusChanged:(MPTransactionProcessStatusChanged)statusChanged
-                                                 actionRequired:(MPTransactionProcessActionRequired)actionRequired
-                                                      completed:(MPTransactionProcessCompleted)completed;
+- (MPPaymentProcess *)startPaymentWithSessionIdentifier:(NSString *)sessionIdentifier
+                                         usingAccessory:(MPAccessoryFamily)accessoryFamily
+                                           statusChanged:(MPPaymentProcessStatusChanged)statusChanged
+                                         actionRequired:(MPPaymentProcessActionRequired)actionRequired
+                                                  ended:(MPPaymentProcessEnded)ended;
 
 /**
- * Starts and returns a new transaction process which guide you through a complete transaction. This method registers the transaction locally without requiring a backend for this.
+ * Starts and returns a new payment process which guide you through a complete transaction. This method registers the transaction locally without requiring a backend for this.
  * @param template The template describing the general transaction parameters
  * @param accessoryFamily The kind of accessory you want to use for the transaction
  * @param registered Callback when the transaction has been registered with the backend. Use this information to save a reference to it.
  * @param statusChanged The status of the process changed and new information can be displayed to the user
  * @param actionRequired An explicit action by the merchant or customer is required
- * @param completed The paymentProcess ended and a new one can be started
+ * @param ended The paymentProcess ended and a new one can be started
  * @since 2.2.0
  */
-- (MPTransactionProcess *)startTransactionWithTemplate:(MPTransactionTemplate *)template
-                                        usingAccessory:(MPAccessoryFamily)accessoryFamily
-                                            registered:(MPTransactionProcessRegistered)registered
-                                         statusChanged:(MPTransactionProcessStatusChanged)statusChanged
-                                        actionRequired:(MPTransactionProcessActionRequired)actionRequired
-                                             completed:(MPTransactionProcessCompleted)completed;
+- (MPPaymentProcess *)startPaymentWithTemplate:(MPTransactionTemplate *)template
+                                usingAccessory:(MPAccessoryFamily)accessoryFamily
+                                    registered:(MPPaymentProcessRegistered)registered
+                                  statusChanged:(MPPaymentProcessStatusChanged)statusChanged
+                                actionRequired:(MPPaymentProcessActionRequired)actionRequired
+                                         ended:(MPPaymentProcessEnded)ended;
 
 /**
  * Queries a transaction by its session identifier.
@@ -138,28 +121,15 @@ typedef void (^MPTransactionProviderSendingCustomerReceiptCompleted)(NSString *t
  * @since 2.2.0
  */
 - (void)queryTransactionBySessionIdentifier:(NSString *)sessionIdentifier
-                                  completed:(MPTransactionProviderQueryBySessionIdentifierCompleted)completed;
-
+                           completed:(MPTransactionProviderQueryBySessionIdentifierCompleted)completed;
 
 /**
- * Queries a transaction by its identifier.
- * @param sessionIdentifier The identifier of the transaction
+ * Queries transactions by its session identifier.
+ * @param customIdentifier The custom identifier of the transaction(s)
  * @param completed The asnyc completion callback
- * @since 2.3.0
+ * @since 2.2.0
  */
-- (void)queryTransactionByTransactionIdentifier:(NSString *)sessionIdentifier
-                                      completed:(MPTransactionProviderQueryByTransactionIdentifierCompleted)completed;
-
-
-/**
- * Sends a receipt for the given transaction.
- * @param transaction The transaction to generate the receipt for
- * @param emailAddress Email receiver of the receipt
- * @param completed The async completion block
- * @since 2.3.0
- */
-- (void)sendCustomerReceiptForTransactionIdentifier:(NSString *)transactionIdentifier
-                                       emailAddress:(NSString *)emailAddress
-                                          completed:(MPTransactionProviderSendingCustomerReceiptCompleted)completed;
+- (void)queryTransactionByCustomIdentifier:(NSString *)customIdentifier
+                                 completed:(MPTransactionProviderQueryByCustomIdentifierCompleted)completed;
 
 @end

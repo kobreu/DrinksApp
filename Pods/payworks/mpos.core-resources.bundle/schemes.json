@@ -1,22 +1,13 @@
 {
     "AMERICAN_EXPRESS": {
-        "aid": "A00000002501",
+        "aid": "A000000025",
         "bins": {
             "excluded": [],
-            "included": [
-                [
-                    340000,
-                    349999
-                ],
-                [
-                    370000,
-                    379999
-                ]
-            ]
+            "included": []
         },
         "gateway": {
             "brand": "AMEX",
-            "method": "CC"
+            "method": "__"
         },
         "magstripeSupported": true,
         "name": "American Express"

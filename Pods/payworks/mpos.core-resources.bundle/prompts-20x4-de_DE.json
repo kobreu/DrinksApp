@@ -1,249 +1,160 @@
 {
     "info": {
-        "columns": 20, 
-        "locale": "de_DE", 
+        "columns": 20,
+        "locale": "de_DE",
         "rows": 4
-    }, 
+    },
     "localization": {
         "ApplicationSelection": [
-            "", 
-            "Bitte Karte", 
-            "auswählen", 
+            "",
+            "Bitte Konto",
+            "ausw\u00e4hlen",
             ""
-        ], 
-        "AuthorizingTransaction": [
-            "", 
-            "Zahlung wird", 
-            "autorisiert...", 
-            ""
-        ], 
-        "BarcodeScannerActive": [
-            "", 
-            "Barcodescanner", 
-            "aktiv", 
-            ""
-        ], 
-        "CardNotSupportedIccMagstripe": [
-            "", 
-            "Andere Karte", 
-            "benutzen", 
-            ""
-        ], 
-        "CardNotSupportedNfc": [
-            "Einstecken,", 
-            "durchziehen oder", 
-            "andere Karte", 
-            "benutzen"
-        ], 
-        "CompletedWithStatus": [
-            "", 
-            "$reason1$", 
-            "$reason2$", 
-            ""
-        ], 
-        "CompletingTransaction": [
-            "", 
-            "Zahlung wird", 
-            "gespeichert...", 
-            ""
-        ], 
-        "GenericError": [
-            "", 
-            "", 
-            "Fehler", 
-            ""
-        ], 
-        "Idle": [
-            "", 
-            "", 
-            "Verbunden", 
-            ""
-        ], 
-        "InsertCard": [
-            "$amount$", 
-            "", 
-            "Karte einstecken", 
-            ""
-        ], 
-        "InsertOrSwipeCard": [
-            "$amount$", 
-            "", 
-            "Karte einstecken", 
-            "oder durchziehen"
-        ], 
-        "InsertOrSwipeCardActivateNfc": [
-            "$amount$", 
-            "Karte einstecken", 
-            "oder durchziehen", 
-            "[OK] für NFC"
-        ], 
-        "PINIncorrect": [
-            "", 
-            "Enter PIN", 
-            "$digits$", 
-            "(PIN falsch)"
-        ], 
-        "PINLastTry": [
-            "", 
-            "PIN eingeben", 
-            "$digits$", 
-            "(letzter Versuch)"
-        ], 
-        "PINOk": [
-            "", 
-            "", 
-            "PIN OK", 
-            ""
-        ], 
-        "PINStatus": [
-            "", 
-            "PIN eingeben", 
-            "$digits$", 
-            ""
-        ], 
-        "PresentCard": [
-            "$amount$", 
-            "", 
-            "Bitte Karte", 
-            ""
-        ], 
-        "ProcessingTransaction": [
-            "", 
-            "Zahlung wird", 
-            "verarbeitet...", 
-            ""
-        ], 
-        "ProvideIdentification": [
-            "", 
-            "Identifikation", 
-            "benötigt", 
-            ""
-        ], 
-        "ProvideSignature": [
-            "", 
-            "Unterschrift", 
-            "benötigt", 
-            ""
-        ], 
-        "ProvideSignatureWithStatus": [
-            "$reason1$", 
-            "$reason2$", 
-            "Unterschrift", 
-            "benötigt"
-        ], 
-        "ProviderAccessoryCheckingForUpdate": [
-            ""
-        ], 
-        "ProviderAccessoryConnecting": [
-            ""
-        ], 
-        "ProviderAccessoryUpdating": [
-            ""
-        ], 
-        "ProviderAccessoryWaitingForReader": [
-            ""
-        ], 
-        "ProviderAborted": [
-            ""
-        ], 
-        "ProviderApproved": [
-            ""
-        ], 
-        "ProviderDeclined": [
-            ""
-        ], 
-        "ProviderFailed": [
-            ""
-        ], 
-        "ProviderNotRefundable": [
-            ""
-        ], 
-        "ProviderTransactionQuerying": [
-            ""
-        ], 
-        "ProviderTransactionRegistering": [
-            ""
-        ], 
-        "ProviderAccessoryConfiguringConnectionLink": [
-            ""
-        ], 
-        "ProviderComponentPrinterSending": [
-            ""
-        ], 
-        "ProviderComponentPrinterSent": [
-            ""
-        ], 
-        "ProviderComponentPrinterAborted": [
-            ""
-        ], 
-        "ProviderComponentPrinterFailed": [
-            ""
-        ], 
-        "ReadingEMVCard": [
-            "", 
-            "Karte wird", 
-            "gelesen...", 
-            ""
-        ], 
-        "RemoveCardWithStatus": [
-            "$reason1$", 
-            "$reason2$", 
-            "", 
-            "Karte entnehmen"
-        ], 
-        "SwipeCard": [
-            "$amount$", 
-            "", 
-            "Karte durchziehen", 
-            ""
-        ], 
-        "TransactionAborting": [
-            "", 
-            "Zahlung wird", 
-            "abgebrochen...", 
-            ""
-        ], 
-        "UpdatingDevice": [
-            "", 
-            "Gerät wird", 
-            "aktualisiert...", 
-            ""
-        ], 
-        "UpdatingDeviceConfigurationUpdate": [
-            "Aktualisiere", 
-            "Konfiguration", 
-            "", 
-            "Bitte warten..."
-        ], 
-        "UpdatingDeviceFirmwareUpdate": [
-            "Aktualisiere", 
-            "Firmware", 
-            "", 
-            "Bitte warten..."
-        ], 
-        "UpdatingDeviceKeyInjection": [
-            "Schlüsselerzeugung", 
-            "", 
-            "", 
-            "Bitte warten..."
-        ], 
-        "UpdatingDeviceSoftwareUpdate": [
-            "Aktualisiere", 
-            "Software", 
-            "", 
-            "Bitte warten..."
-        ], 
+        ],
         "CardNotSupported": [
-            "Karte nicht", 
-            "unterstützt!", 
-            "Andere Karte", 
+            "Karte nicht",
+            "unterst\u00fctzt!",
+            "Andere Karte",
             "oder abbrechen"
-        ], 
-        "SelectApp": [
-            "Auswahl:", 
-            "", 
-            "", 
-            "mehr"
+        ],
+        "CompletedWithStatus": [
+            "",
+            "$reason1$",
+            "$reason2$",
+            ""
+        ],
+        "GenericError": [
+            "",
+            "",
+            "Fehler",
+            ""
+        ],
+        "Idle": [
+            "",
+            "",
+            "Verbunden",
+            ""
+        ],
+        "InsertCard": [
+            "$amount$",
+            "",
+            "Karte einstecken",
+            ""
+        ],
+        "PINIncorrect": [
+            "",
+            "Enter PIN",
+            "$digits$",
+            "(PIN falsch)"
+        ],
+        "PINLastTry": [
+            "",
+            "PIN eingeben",
+            "$digits$",
+            "(letzter Versuch)"
+        ],
+        "PINOk": [
+            "",
+            "",
+            "PIN OK",
+            ""
+        ],
+        "PINStatus": [
+            "",
+            "PIN eingeben",
+            "$digits$",
+            ""
+        ],
+        "PresentCard": [
+            "$amount$",
+            "",
+            "Karte einstecken",
+            "oder durchziehen"
+        ],
+        "ProcessingTransaction": [
+            "",
+            "Zahlung wird",
+            "verarbeitet...",
+            ""
+        ],
+        "ProvideIdentification": [
+            "",
+            "Identifikation",
+            "ben\u00f6tigt",
+            ""
+        ],
+        "ProvideSignature": [
+            "",
+            "Unterschrift",
+            "ben\u00f6tigt",
+            ""
+        ],
+        "ProviderAccessoryCheckingForUpdate": [],
+        "ProviderAccessoryConnecting": [],
+        "ProviderAccessoryUpdating": [],
+        "ProviderCompleted": [],
+        "ProviderFailed": [],
+        "ProviderTransactionQuerying": [],
+        "ProviderTransactionRegistering": [],
+        "ReadingEMVCard": [
+            "",
+            "Karte wird",
+            "gelesen...",
+            ""
+        ],
+       "RemoveCardWithStatus": [
+            "$reason1$",
+            "$reason2$",
+            "",
+            "Karte entnehmen"
+        ],
+        "SwipeCard": [
+            "$amount$",
+            "",
+            "Karte durchziehen",
+            ""
+        ],
+        "TransactionAborting": [
+            "",
+            "Zahlung wird",
+            "abgebrochen...",
+            ""
+        ],
+        "UpdatingDevice": [
+            "",
+            "Ger\u00e4t wird",
+            "aktualisiert...",
+            ""
+        ],
+        "UpdatingDeviceConfigurationUpdate": [
+            "Config-Update",
+            "",
+            "Dies kann einen",
+            "Moment dauern..."
+        ],
+        "UpdatingDeviceFirmwareUpdate": [
+            "Firmware-Update",
+            "",
+            "Dies kann etwas",
+            "l\u00e4nger dauern..."
+        ],
+        "UpdatingDeviceKeyInjection": [
+            "Schl\u00fcsselerzeugung",
+            "",
+            "Dies kann einen",
+            "Moment dauern..."
+        ],
+        "UpdatingDeviceSoftwareUpdate": [
+            "Software-Update",
+            "",
+            "Dies kann etwas",
+            "l\u00e4nger dauern..."
+        ],
+        "BarcodeScannerActive": [
+            "",
+            "Barcodescanner",
+            "aktiv",
+            ""
         ]
     }
 }

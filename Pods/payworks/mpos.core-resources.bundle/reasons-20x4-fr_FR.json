@@ -1,153 +1,121 @@
 {
     "info": {
-        "columns": 20, 
-        "locale": "fr_FR", 
+        "columns": 20,
+        "locale": "fr_FR",
         "rows": 2
-    }, 
+    },
     "localization": {
-        "ABORTED": [
-            "", 
-            "Paiement interrompu"
-        ], 
         "ABORTED_MERCHANT_ABORTED": [
-            "", 
-            "Paiement interrompu"
-        ], 
+            "",
+            "Merchant aborted"
+        ],
         "ABORTED_SHOPPER_ABORTED": [
-            "", 
-            "Paiement interrompu"
-        ], 
+            "",
+            "Shopper aborted"
+        ],
         "ABORTED_SHOPPER_REMOVED_CARD": [
-            "", 
-            "Paiement interrompu"
-        ], 
-        "ABORTED_PRESENT_CARD_TIMED_OUT": [
-            "", 
-            "Paiement interrompu"
-        ], 
+            "",
+            "Shopper aborted"
+        ],
         "APPROVED": [
-            "", 
-            "Paiement accepté"
-        ], 
-        "DECLINED": [
-            "", 
-            "Refusé"
-        ], 
+            "",
+            "Approved"
+        ],
         "DECLINED_CARD_EXPIRED": [
-            "Carte périmée", 
-            "Refusé"
-        ], 
+            "",
+            "Card expired"
+        ],
         "DECLINED_CARD_INVALID_PAN": [
-            "Carte non valide", 
-            "Refusé"
-        ], 
+            "",
+            "Invalid card"
+        ],
         "DECLINED_CARD_INVALID_SCHEME": [
-            "Carte non autorisée", 
-            "Refusé"
-        ], 
+            "",
+            "Card not allowed"
+        ],
         "DECLINED_CARD_OR_TERMINAL_DECLINED": [
-            "", 
-            "Refusé"
-        ], 
+            "",
+            "Declined"
+        ],
         "DECLINED_CARD_STOLEN": [
-            "Carte volée", 
-            "Refusé"
-        ], 
+            "Stolen card,",
+            "pick up"
+        ],
         "DECLINED_CARD_USE_ORIGINAL": [
-            "Utiliser l'original", 
-            "Refusé"
-        ], 
+            "",
+            "Use original card"
+        ],
         "DECLINED_INVALID_TERMINAL": [
-            "Paiement ", 
-            "impossible"
-        ], 
+            "Payment not ",
+            "possible"
+        ],
         "DECLINED_INVALID_TERMINAL_CONFIG": [
-            "Paiement ", 
-            "impossible"
-        ], 
+            "Payment not ",
+            "possible"
+        ],
         "DECLINED_INVALID_TERMINAL_SOFTWARE": [
-            "Paiement ", 
-            "impossible"
-        ], 
+            "Payment not ",
+            "possible"
+        ],
         "DECLINED_PIN_WRONG": [
-            "NIP incorrect", 
-            "Refusé"
-        ], 
+            "",
+            "Wrong PIN"
+        ],
         "DECLINED_PIN_WRONG_TOO_OFTEN": [
-            "Erreur de PIN trop", 
-            "fréquente, refusé"
-        ], 
+            "Wrong PIN entered",
+            "too often"
+        ],
         "DECLINED_PROCESSOR": [
-            "", 
-            "Refusé"
-        ], 
-        "DECLINED_PROCESSOR_EXCEEDS_WITHDRAWAL_COUNT_LIMIT": [
-            "", 
-            "Refusé"
-        ], 
+            "",
+            "Declined"
+        ],
         "DECLINED_SESSION_EXPIRED": [
-            "Paiement ", 
-            "impossible"
-        ], 
-        "ERROR": [
-            "Erreur de traitement", 
-            ""
-        ], 
-        "ERROR_APPROVED_OFFLINE": [
-            "Erreur de traitement", 
-            "(Terminal Approval)"
-        ], 
+            "Payment not ",
+            "possible"
+        ],
         "ERROR_PROCESSOR_INVALID_FORMAT": [
-            "Erreur de traitement", 
-            "(Invalid Format)"
-        ], 
+            "",
+            "Processing error"
+        ],
         "ERROR_PROCESSOR_INVALID_NONCE": [
-            "Erreur de traitement", 
-            "(Invalid Nonce)"
-        ], 
+            "",
+            "Processing error"
+        ],
         "ERROR_PROCESSOR_INVALID_SESSION": [
-            "Erreur de traitement", 
-            "(Invalid Session)"
-        ], 
+            "",
+            "Processing error"
+        ],
         "ERROR_PROCESSOR_INVALID_STATUS": [
-            "Erreur de traitement", 
-            "(Invalid Status)"
-        ], 
+            "",
+            "Processing error"
+        ],
         "ERROR_PROCESSOR_MISSING_SESSION": [
-            "Erreur de traitement", 
-            "(Missing Session)"
-        ], 
-        "ERROR_PROCESSOR_CONNECTION_ERROR": [
-            "Erreur de traitement", 
-            "(Connection Error)"
-        ], 
+            "",
+            "Processing error"
+        ],
         "ERROR_SESSION_TIMEOUT": [
-            "Erreur de traitement", 
-            "(Session Timeout)"
-        ], 
+            "",
+            "Processing error"
+        ],
         "ERROR_TERMINAL_ERROR": [
-            "Erreur de traitement", 
-            "(Terminal Timeout)"
-        ], 
+            "",
+            "Processing error"
+        ],
         "ERROR_SERVER_INVALID_RESPONSE": [
-            "Erreur de traitement", 
-            "(Invalid Response)"
-        ], 
+            "",
+            "Processing error"
+        ],
         "ERROR_TERMINAL_TIMEOUT": [
-            "Erreur de traitement", 
-            "(Terminal Error)"
-        ], 
+            "",
+            "Processing error"
+        ],
         "NONE": [
-            "", 
+            "",
             ""
-        ], 
-        "PENDING": [
-            "", 
-            "Patienter SVP..."
-        ], 
-        "PENDING_WAITING_FOR_FINALIZATION": [
-            "", 
-            "Paiement accepté"
+        ],
+        "PENDING_WAITING_FOR_FINALIZATION" : [
+            "",
+            "Approved"
         ]
     }
 }
