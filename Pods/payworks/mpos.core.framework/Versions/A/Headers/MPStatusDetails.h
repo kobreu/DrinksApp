@@ -21,12 +21,14 @@
  */
 typedef NS_ENUM(NSUInteger, MPTransactionStatusDetailsCode){
     /** Transaction needs to be initialized */
-    MPTransactionStatusDetailsCodeNone = 0,
+    MPTransactionStatusDetailsCodeUnknown = 0,
     
     /** Transaction is initialized and can be started */
     MPTransactionStatusDetailsCodeInitializedAtServer,
     /** Transaction is initialized and can be started */
     MPTransactionStatusDetailsCodeInitializedAtProcessor,
+    /** Transaction has been re-initialized at the server and should be processed again */
+    MPTransactionStatusDetailsCodeInitializedWithReplacement,
     
     /** The transaction was send to the processor and is awaiting approval */
     MPTransactionStatusDetailsCodePendingWaitungForProcessor,
@@ -38,7 +40,7 @@ typedef NS_ENUM(NSUInteger, MPTransactionStatusDetailsCode){
     
     /** The transaction was aborted by the customer */
     MPTransactionStatusDetailsCodeDeclinedCardOrTerminalDeclined,
-    /** The transaction was declined by the terminal */
+    /** The transaction was declined by the processor */
     MPTransactionStatusDetailsCodeDeclinedProcessor,
     /** The software on the device is no longer valid */
     MPTransactionStatusDetailsCodeDeclinedInvalidTerminalSoftware,
@@ -48,6 +50,54 @@ typedef NS_ENUM(NSUInteger, MPTransactionStatusDetailsCode){
     MPTransactionStatusDetailsCodeDeclinedInvalidTerminal,
     /** The session created for the transaction has expired */
     MPTransactionStatusDetailsCodeDeclinedSessionExpired,
+    /** The entered PIN is wrong */
+    MPTransactionStatusDetailsCodeDeclinedPinWrong,
+    /** The PIN was entered wrong too often*/
+    MPTransactionStatusDetailsCodeDeclinedPinWrongTooOften,
+    /** The used card is expired */
+    MPTransactionStatusDetailsCodeDeclinedCardExpired,
+    /** The scheme presented by the card is invalid */
+    MPTransactionStatusDetailsCodeDeclinedCardInvalidScheme,
+    /** The PAN on the card is invalid*/
+    MPTransactionStatusDetailsCodeDeclinedCardInvalidPan,
+    /** The card was reported stolen */
+    MPTransactionStatusDetailsCodeDeclinedCardStolen,
+    /** A different card has to be used for this transaction */
+    MPTransactionStatusDetailsCodeDeclinedCardUseOriginal,
+    /** The transaction was declined by the processor with a special error case */
+    MPTransactionStatusDetailsCodeDeclinedProcessorExceedsWithdrawalCountLimit,
+    /** Processor error */
+    MPTransactionStatusDetailsCodeDeclinedProcessorInconsistentState,
+    /** The transaction was declined due to a malformed request */
+    MPTransactionStatusDetailsCodeDeclinedMalformedRequest,
+    /** Transaction not possible, because the card might have been manipulated */
+    MPTransactionStatusDetailsCodeDeclinedManipulationSuspected,
+    /** Card is not allowed */
+    MPTransactionStatusDetailsCodeDeclinedCardBlocked,
+    /** Card has insufficient funds */
+    MPTransactionStatusDetailsCodeDeclinedInsufficientFunds,
+    /** Merchant did too many transactions within a certain timeframe */
+    MPTransactionStatusDetailsCodeDeclinedTransactionFrequencyExceeded,
+    /** Card has been reported as lost and cannot be used anymore */
+    MPTransactionStatusDetailsCodeDeclinedCardLost,
+    /** Card scheme not allowed */
+    MPTransactionStatusDetailsCodeDeclinedInvalidScheme,
+    /** Transaction amount is not allowed (too high or too low) */
+    MPTransactionStatusDetailsCodeDeclinedInvalidAmount,
+    /** The configuration data in the merchant's processing path is wrong */
+    MPTransactionStatusDetailsCodeDeclinedInvalidConfiguration,
+    /** Same transcation is already being processed */
+    MPTransactionStatusDetailsCodeDeclinedDuplicateTransaction,
+    /** The transaction was declined due to an invalid workflow */
+    MPTransactionStatusDetailsCodeDeclinedInvalidWorkflow,
+    /** Card expired */
+    MPTransactionStatusDetailsCodeDeclinedProcessorCardExpired,
+    /** Refund not possible (e.g. not allowed by bank or transaction already refunded) */
+    MPTransactionStatusDetailsCodeDeclinedProcessorRefundNotPossible,
+    /** Transaction with this card temporarily not possible, due to too many tries */
+    MPTransactionStatusDetailsCodeDeclinedProcessorTemporarilyBlacklisted,
+    /** Transaction amount exceeds card limit */
+    MPTransactionStatusDetailsCodeDeclinedAmountExceedsLimit,
     
     /** The transaction was aborted by the customer by removing the card */
     MPTransactionStatusDetailsCodeAbortedShopperRemovedCard,
@@ -55,6 +105,8 @@ typedef NS_ENUM(NSUInteger, MPTransactionStatusDetailsCode){
     MPTransactionStatusDetailsCodeAbortedShopperAborted,
     /** The transaction was aborted by the merchant */
     MPTransactionStatusDetailsCodeAbortedMerchantAborted,
+    /** The transaction timed out waiting for a card */
+    MPTransactionStatusDetailsCodeAbortedWaitingForCardTimeout,
     
     /** Processor error */
     MPTransactionStatusDetailsCodeErrorInvalidProcessorFormat,
@@ -66,14 +118,34 @@ typedef NS_ENUM(NSUInteger, MPTransactionStatusDetailsCode){
     MPTransactionStatusDetailsCodeErrorInvalidProcessorSession,
     /** Processor error */
     MPTransactionStatusDetailsCodeErrorInvalidProcessorNonce,
+    /** Processor error */
+    MPTransactionStatusDetailsCodeErrorProcessorConnectionError,
+    /** Processor error */
+    MPTransactionStatusDetailsCodeErrorProcessorFailedInconsistentStateUnresolved,
+    /** Processor error */
+    MPTransactionStatusDetailsCodeErrorProcessorFailedInconsistentStateResolved,
+    /** Configuration error at payment processor */
+    MPTransactionStatusDetailsCodeErrorProcessorPaymentDetailsExtractionFailed,
+    /** Configuration error at payment processor */
+    MPTransactionStatusDetailsCodeErrorProcessorInvalidPaymentDetails,
+    /** Configuration error at payment processor */
+    MPTransactionStatusDetailsCodeErrorProcessorInvalidConfiguration,
+    /** Configuration error at payment processor */
+    MPTransactionStatusDetailsCodeErrorProcessorMalformedRequest,
+    /** Same transcation is already being processed */
+    MPTransactionStatusDetailsCodeErrorProcessorTransactionAlreadyInProgress,
+    /** No response from acquiring bank received */
+    MPTransactionStatusDetailsCodeErrorProcessorConnectionNoResponse,
     /** The terminal processing the transaction encountered an error */
     MPTransactionStatusDetailsCodeErrorTerminalError,
     /** The terminal processing the transaction encountered an error */
     MPTransactionStatusDetailsCodeErrorTerminalTimeout,
     /** The server returned an invalid response */
     MPTransactionStatusDetailsCodeErrorServerInvalidResponse,
-    /** Tne server timed out*/
-    MPTransactionStatusDetailsCodeErrorServerSessionTimeout
+    /** The server timed out */
+    MPTransactionStatusDetailsCodeErrorServerSessionTimeout,
+    /** The transaction was (falsely) approved offline */
+    MPTransactionStatusDetailsCodeErrorApprovedOffline
 };
 
 

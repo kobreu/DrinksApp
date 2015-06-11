@@ -38,19 +38,19 @@
 
 
 /**
- * Creates a new template, linking to a previous transaction.
+ * Creates a new refund template, linking to a previous transaction. This is for looking up the actual transaction which should get refunded.
  * @param referencedTransactionIdentifier The transaction to reference
  * @param type The type of the transaction
  * @param subject The subject of the transaction
  * @param customIdentifier The custom identifier of the transaction
  * @return A new transaction templated that can be registered
- * @since 2.0.0
+ * @since 2.3.0
  */
-- (MPTransactionTemplate *)transactionTemplateWithReferenceToPreviousTransaction:(NSString *)referencedTransactionIdentifier type:(MPTransactionType)type subject:(NSString *)subject customIdentifier:(NSString *)customIdentifier;
+- (MPTransactionTemplate *)refundTransactionTemplateWithReferenceToPreviousTransactionIdentifier:(NSString *)referencedTransactionIdentifier subject:(NSString *)subject customIdentifier:(NSString *)customIdentifier;
 
 
 /**
- * Creates a new template, linking to a previous transaction and providing additional payment related properties.
+ * Creates a new refund template, linking to a previous transaction and providing additional payment related properties.
  * @param referencedTransactionIdentifier The transaction to reference
  * @param amount The amount The amount of the transaction
  * @param currency The currency of the transaction
@@ -60,7 +60,16 @@
  * @return A new transaction templated that can be registered
  * @since 2.0.0
  */
-- (MPTransactionTemplate *)transactionTemplateWithReferenceToPreviousTransaction:(NSString *)referencedTransactionIdentifier amount:(NSDecimalNumber *)amount currency:(MPCurrency)currency type:(MPTransactionType)type subject:(NSString *)subject customIdentifier:(NSString *)customIdentifier;
+- (MPTransactionTemplate *)refundTransactionTemplateWithReferenceToPreviousTransactionIdentifier:(NSString *)referencedTransactionIdentifier amount:(NSDecimalNumber *)amount currency:(MPCurrency)currency subject:(NSString *)subject customIdentifier:(NSString *)customIdentifier;
 
+/**
+ * Creates a new refund template, linking to a transaction which was looked up.
+ * @param transaction The transaction for linking
+ * @param subject The subject of the transaction
+ * @param customIdentifier The custom identifier of the transaction
+ * @return A new transaction template that can be used for a refund without card present
+ * @since 2.3.0
+ */
+- (MPTransactionTemplate *)refundTransactionTemplateWithReferenceToPreviousTransaction:(MPTransaction *)transaction subject:(NSString *)subject customIdentifier:(NSString *)customIdentifier;
 
 @end

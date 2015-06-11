@@ -38,10 +38,16 @@ typedef NS_ENUM(NSUInteger, MPAccessoryType){
     MPAccessoryTypeUnknown = 0,
     /** Miura Shuttle */
     MPAccessoryTypeMiuraShuttle,
+    /** Miura M010 */
+    MPAccessoryTypeMiuraM010,
+    /** Miura M007 */
+    MPAccessoryTypeMiuraM007,
     /** Verifone E105 */
     MPAccessoryTypeVerifoneE105,
-    /** Verifone E3x5*/
-    MPAccessoryTypeVerifoneE3x5,
+    /** Verifone E315*/
+    MPAccessoryTypeVerifoneE315,
+    /** Verifone E335*/
+    MPAccessoryTypeVerifoneE335,
     /** Mock */
     MPAccessoryTypeMock
 };
@@ -130,12 +136,16 @@ typedef NS_ENUM(NSUInteger, MPLocale){
     MPLocale_de_DE,
     /** English */
     MPLocale_en_US,
-    /** English */
-    MPLocale_es_ES,
     /** French */
     MPLocale_fr_FR,
     /** Italian */
-    MPLocale_it_IT
+    MPLocale_it_IT,
+    /** Belgian */
+    MPLocale_nl_BE,
+    /** Portuguese */
+    MPLocale_pt_PT,
+    /** Spanish */
+    MPLocale_es_ES
 };
 
 

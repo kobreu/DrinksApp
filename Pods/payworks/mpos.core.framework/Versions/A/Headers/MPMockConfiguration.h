@@ -88,7 +88,9 @@ typedef NS_ENUM(NSUInteger, MPMockConfigurationGatewayBehavior){
     /** The payment encounters an error in the execute phase */
     MPMockConfigurationGatewayBehaviorErrorDuringExecute,
     /** The payment encounters an error in the finalize phase */
-    MPMockConfigurationGatewayBehaviorErrorDuringFinalizeOrVoid
+    MPMockConfigurationGatewayBehaviorErrorDuringFinalizeOrVoid,
+    /** The refund encounters an error in the finalize phase */
+    MPMockConfigurationGatewayBehaviorErrorDuringRefundWithoutCard
 };
 
 /**

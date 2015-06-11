@@ -50,7 +50,7 @@
 
 /**
  * An (optional) custom identifier, that can be used to reference transaction to your internal system.
- * Valid range is [a-zA-Z0-9].
+ * Valid range is ([A-Z][a-z][0-9])*{0,256}.
  * @since 2.0.0
  */
 @property (strong, readonly, nonatomic) NSString *customIdentifier;

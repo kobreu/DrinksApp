@@ -195,7 +195,7 @@ typedef NS_ENUM(NSUInteger, MPTransactionState)
 /** @name Transaction Setup (must be set manually) */
 
 /**
- * The type of transactio to be executed.
+ * The type of transaction to be executed.
  * @since 2.0.0
  */
 @property (assign, readonly, nonatomic) MPTransactionType type;
@@ -211,7 +211,7 @@ typedef NS_ENUM(NSUInteger, MPTransactionState)
 @property (strong, readonly, nonatomic) MPPaymentDetails *paymentDetails;
 
 /**
- * The refund params asociated with the transaction.
+ * The refund params associated with the transaction.
  * @since 2.0.0
  */
 @property (strong, readonly, nonatomic) MPRefundDetails *refundDetails;
@@ -299,20 +299,6 @@ typedef NS_ENUM(NSUInteger, MPTransactionState)
 #pragma mark -
 #pragma mark Customer and Receipt Information
 /** @name Customer and Receipt Information */
-
-/**
- * Additional customer information attached to the transaction and submitted to the processor.
- * @since 2.0.0
- */
-//@property (strong, nonatomic) MPCustomerInformation *customerInformation;
-
-
-/**
- * Receipt information to be send to a printer or provided with other means.
- * @since 2.0.0
- */
-@property (strong, readonly, nonatomic) MPReceiptDetails *receiptDetails;
-
 
 /**
  * Location information on the current transaction

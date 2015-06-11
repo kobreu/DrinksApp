@@ -37,7 +37,7 @@
  * @param logLevel The log level to use from now on
  * @since 2.0.0
  */
-+ (void)setLogLevel:(int)logLevel;
++ (void)setLogLevel:(NSUInteger)logLevel;
 
 
 

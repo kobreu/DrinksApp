@@ -32,13 +32,6 @@ extern NSString *const MPErrorSourceKey;
  * @since 2.0.0
  */
 extern NSString *const MPErrorTypeKey;
-/**
- * Constant describing the key for the error recovery information
- * @since 2.0.0
- */
-extern NSString *const MPErrorRecoveryKey;
-
-
 
 /**
  * Constant describing the key for the error description
@@ -51,7 +44,7 @@ extern NSString *const MPErrorInfoKey;
  */
 extern NSString *const MPErrorDeveloperInfoKey;
 /**
- * Constant describing the key for the error localized description, also available for NSLocalisedDescriptionKey
+ * Constant describing the key for the error localized description, also available for NSLocalizedDescriptionKey
  * @since 2.0.0
  */
 extern NSString *const MPErrorLocalizedDescriptionKey;
@@ -141,30 +134,16 @@ typedef NS_ENUM(NSUInteger, MPErrorType){
     MPErrorTypeServerPinningWithRemoteFailed,
     /** The server returned an error */
     MPErrorTypeServerError, //invalid response
-    //26
+    //27
     /** Required resources were not found */
     MPErrorTypeSDKResourcesNotFound,
     /** Required resources were modified and are invalid */
     MPErrorTypeSDKResourcesModified,
     /** Configuration data is missng */
     MPErrorTypeSDKConfigurationMissing,
-    //29
+    //30
     /** The SDK reached an inconsistent state */
     MPErrorTypeInternalInconsistency
-};
-
-
-/**
- * Enum describing the recovery/retry behaviour of the error.
- * @since 2.0.0
- */
-typedef NS_ENUM(NSUInteger, MPErrorRecovery){
-    /** Recovery state unkndown */
-    MPErrorRecoveryUnknown = 0,
-    /** No recovery possible, final result (e.g. declined) */
-    MPErrorRecoveryFinal,
-    /** Just retry the transaction (e.g. network error) */
-    MPErrorRecoveryRetry,
 };
 
 /**
@@ -184,12 +163,6 @@ typedef NS_ENUM(NSUInteger, MPErrorRecovery){
  * @since 2.0.0
  */
 @property (assign, readonly, nonatomic) MPErrorType type;
-
-/**
- * Information on the recovery procedure after this specific error.
- * @since 2.0.0
- */
-@property (assign, readonly, nonatomic) MPErrorRecovery recovery;
 
 /**
  * A human readable description of the error.

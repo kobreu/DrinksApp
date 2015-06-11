@@ -1,160 +1,255 @@
 {
     "info": {
+        "columns": 20, 
         "locale": "es_ES", 
-        "rows": 4, 
-        "columns": 20
+        "rows": 4
     }, 
     "localization": {
         "ApplicationSelection": [
-            "",
-            "Please select",
-            "your account",
+            "", 
+            "Elija", 
+            "su cuenta", 
             ""
-        ],
-        "CardNotSupported": [
-            "Card not",
-            "supported!",
-            "Try another",
-            "or press cancel"
-        ],
-        "CompletedWithStatus": [
-            "",
-            "$reason1$",
-            "$reason2$",
+        ], 
+        "AuthorizingTransaction": [
+            "", 
+            "Autorizando", 
+            "el pago...", 
             ""
-        ],
-        "GenericError": [
-            "",
-            "",
-            "Error",
-            ""
-        ],
-        "Idle": [
-            "",
-            "",
-            "Connected",
-            ""
-        ],
-        "InsertCard": [
-            "$amount$",
-            "",
-            "Insert card",
-            ""
-        ],
-        "PINIncorrect": [
-            "",
-            "Enter PIN",
-            "$digits$",
-            "(PIN incorrect)"
-        ],
-        "PINLastTry": [
-            "",
-            "Enter PIN",
-            "$digits$",
-            "(last try)"
-        ],
-        "PINOk": [
-            "",
-            "",
-            "PIN OK",
-            ""
-        ],
-        "PINStatus": [
-            "",
-            "Enter PIN",
-            "$digits$",
-            ""
-        ],
-        "PresentCard": [
-            "$amount$",
-            "",
-            "Present card",
-            ""
-        ],
-        "ProcessingTransaction": [
-            "",
-            "Processing",
-            "payment...",
-            ""
-        ],
-        "ProvideIdentification": [
-            "",
-            "Identification",
-            "required",
-            ""
-        ],
-        "ProvideSignature": [
-            "",
-            "Signature",
-            "required",
-            ""
-        ],
-        "ProviderAccessoryCheckingForUpdate": [],
-        "ProviderAccessoryConnecting": [],
-        "ProviderAccessoryUpdating": [],
-        "ProviderCompleted": [],
-        "ProviderFailed": [],
-        "ProviderTransactionQuerying": [],
-        "ProviderTransactionRegistering": [],
-        "ReadingEMVCard": [
-            "",
-            "",
-            "Reading card...",
-            ""
-        ],
-        "RemoveCardWithStatus": [
-            "$reason1$",
-            "$reason2$",
-            "",
-            "Remove card"
-        ],
-        "SwipeCard": [
-            "$amount$",
-            "",
-            "Swipe card",
-            ""
-        ],
-        "TransactionAborting": [
-            "",
-            "Aborting",
-            "payment...",
-            ""
-        ],
-        "UpdatingDevice": [
-            "",
-            "",
-            "Updating...",
-            ""
-        ],
-        "UpdatingDeviceConfigurationUpdate": [
-            "Updating Config",
-            "",
-            "This may take",
-            "a few moments..."
-        ],
-        "UpdatingDeviceFirmwareUpdate": [
-            "Updating Firmware",
-            "",
-            "This may take",
-            "a while..."
-        ],
-        "UpdatingDeviceKeyInjection": [
-            "Generating Keys",
-            "",
-            "This may take",
-            "a few moments..."
-        ],
-        "UpdatingDeviceSoftwareUpdate": [
-            "Updating Software",
-            "",
-            "This may take",
-            "a while..."
-        ],
+        ], 
         "BarcodeScannerActive": [
-            "",
-            "Barcode scanner",
-            "active",
+            "", 
+            "Lector de código", 
+            "de barras activo", 
             ""
+        ], 
+        "CardNotSupportedIccMagstripe": [
+            "", 
+            "Pruebe", 
+            "con otra tarjeta", 
+            ""
+        ], 
+        "CardNotSupportedNfc": [
+            "", 
+            "Introduzca,", 
+            "deslice o pruebe", 
+            "con otra tarjeta"
+        ], 
+        "CompletedWithStatus": [
+            "", 
+            "$reason1$", 
+            "$reason2$", 
+            ""
+        ], 
+        "CompletingTransaction": [
+            "", 
+            "Completando ", 
+            "pago...", 
+            ""
+        ], 
+        "GenericError": [
+            "", 
+            "", 
+            "Error", 
+            ""
+        ], 
+        "Idle": [
+            "", 
+            "", 
+            "Conectado", 
+            ""
+        ], 
+        "InsertCard": [
+            "$amount$", 
+            "", 
+            "Introduzca tarjeta", 
+            ""
+        ], 
+        "InsertOrSwipeCard": [
+            "$amount$", 
+            "", 
+            "Instroduzca o", 
+            "deslice tarjeta"
+        ], 
+        "InsertOrSwipeCardActivateNfc": [
+            "$amount$", 
+            "Introduzca o", 
+            "deslice tarjeta", 
+            "[OK] para NFC"
+        ], 
+        "PINIncorrect": [
+            "", 
+            "Introduzca PIN", 
+            "$digits$", 
+            "(PIN incorrecto)"
+        ], 
+        "PINLastTry": [
+            "", 
+            "Introduzca PIN", 
+            "$digits$", 
+            "(último intento)"
+        ], 
+        "PINOk": [
+            "", 
+            "", 
+            "PIN OK", 
+            ""
+        ], 
+        "PINStatus": [
+            "", 
+            "Introduzca PIN", 
+            "$digits$", 
+            ""
+        ], 
+        "PresentCard": [
+            "$amount$", 
+            "", 
+            "Tarjeta por favor", 
+            ""
+        ], 
+        "ProcessingTransaction": [
+            "", 
+            "Procesando", 
+            "pago...", 
+            ""
+        ], 
+        "ProvideIdentification": [
+            "", 
+            "Identificación", 
+            "necesaria", 
+            ""
+        ], 
+        "ProvideSignature": [
+            "", 
+            "Firma", 
+            "necesaria", 
+            ""
+        ], 
+        "ProvideSignatureWithStatus": [
+            "$reason1$", 
+            "$reason2$", 
+            "Firma", 
+            "necesaria"
+        ], 
+        "ProviderAccessoryCheckingForUpdate": [
+            ""
+        ], 
+        "ProviderAccessoryConnecting": [
+            ""
+        ], 
+        "ProviderAccessoryUpdating": [
+            ""
+        ], 
+        "ProviderAccessoryWaitingForReader": [
+            ""
+        ], 
+        "ProviderAccessoryConnectingPrinter": [
+            ""
+        ], 
+        "ProviderAccessoryWaitingForPrinter": [
+            ""
+        ], 
+        "ProviderAborted": [
+            ""
+        ], 
+        "ProviderApproved": [
+            ""
+        ], 
+        "ProviderDeclined": [
+            ""
+        ], 
+        "ProviderFailed": [
+            ""
+        ], 
+        "ProviderNotRefundable": [
+            ""
+        ], 
+        "ProviderTransactionQuerying": [
+            ""
+        ], 
+        "ProviderTransactionRegistering": [
+            ""
+        ], 
+        "ProviderAccessoryConfiguringConnectionLink": [
+            ""
+        ], 
+        "ProviderComponentPrinterSending": [
+            ""
+        ], 
+        "ProviderComponentPrinterSent": [
+            ""
+        ], 
+        "ProviderComponentPrinterAborted": [
+            ""
+        ], 
+        "ProviderComponentPrinterFailed": [
+            ""
+        ], 
+        "ReadingEMVCard": [
+            "", 
+            "Leyendo", 
+            "tarjeta...", 
+            ""
+        ], 
+        "RemoveCardWithStatus": [
+            "$reason1$", 
+            "$reason2$", 
+            "", 
+            "Retire tarjeta"
+        ], 
+        "SwipeCard": [
+            "$amount$", 
+            "", 
+            "Deslice tarjeta", 
+            ""
+        ], 
+        "TransactionAborting": [
+            "", 
+            "Cancelar", 
+            "pago...", 
+            ""
+        ], 
+        "UpdatingDevice": [
+            "", 
+            "", 
+            "Actualizando...", 
+            ""
+        ], 
+        "UpdatingDeviceConfigurationUpdate": [
+            "Actualizando ", 
+            "Configuración", 
+            "", 
+            "Espere..."
+        ], 
+        "UpdatingDeviceFirmwareUpdate": [
+            "Actualizando", 
+            "Firmware", 
+            "", 
+            "Espere..."
+        ], 
+        "UpdatingDeviceKeyInjection": [
+            "Generando", 
+            "claves", 
+            "", 
+            "Espere..."
+        ], 
+        "UpdatingDeviceSoftwareUpdate": [
+            "Actualizando", 
+            "software", 
+            "", 
+            "Espere..."
+        ], 
+        "CardNotSupported": [
+            "¡Tarjeta", 
+            "no soportada!", 
+            "Pruebe otra o", 
+            " presione Cancelar"
+        ], 
+        "SelectApp": [
+            "Seleccione:", 
+            "", 
+            "", 
+            "más"
         ]
     }
 }

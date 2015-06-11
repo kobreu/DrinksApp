@@ -32,11 +32,6 @@
 #import "MPLocationDetails.h"
 #import "MPRefundDetails.h"
 
-#import "MPReceiptDetails.h"
-#import "MPAbstractReceiptDetailsWrapper.h"
-#import "MPEMVReceiptDetailsWrapper.h"
-#import "MPMagneticStripeReceiptDetailsWrapper.h"
-
 #import "MPTransactionActionSupport.h"
 #import "MPTransactionActionResponse.h"
 #import "MPTransactionActionResponseFactory.h"
@@ -66,6 +61,7 @@
 #import "MPPaymentDetailsFactory.h"
 
 #import "MPTransactionProvider.h"
-#import "MPPaymentProcess.h"
-#import "MPPaymentProcessDetails.h"
+#import "MPTransactionProcess.h"
+#import "MPTransactionProcessDetails.h"
 #import "MPTransactionTemplate.h"
+#import "MPLocalizationToolbox.h"

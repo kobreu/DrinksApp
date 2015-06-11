@@ -259,7 +259,7 @@ class EmployeeTableController : UITableViewController {
 
         controller.configuration.accessoryFamily = MPAccessoryFamily.MiuraMPI
         controller.configuration.receiptMethod = MPUMposUiConfigurationReceiptMethod.ReadyMade;
-        let viewController = controller.createTransactionViewControllerWithAmount(NSDecimalNumber(double: Double(amount) / 100.0), currency: MPCurrency.EUR, subject: "subject", customIdentifier: "customIdentifier") { (me, result, tx) -> Void in
+        let viewController = controller.createChargeTransactionViewControllerWithAmount(NSDecimalNumber(double: Double(amount) / 100.0), currency: MPCurrency.EUR, subject: "subject", customIdentifier: "customIdentifier") { (me, result, tx) -> Void in
             self.dismissViewControllerAnimated(true, completion: nil)
             if (result == MPUMposUiTransactionResult.Approved) {
                 self.employees[indexPath.row].amount = 0

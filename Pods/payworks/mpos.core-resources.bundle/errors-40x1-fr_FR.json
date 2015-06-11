@@ -1,104 +1,99 @@
 {
-	"info": {
-		"locale": "fr_FR",
-		"rows": 1,
-		"columns": 40
-	}, 
-	"localization": {
-		"ParameterMissing": [
-			"Parameter missing"
-		],
-	    "ParameterInvalid": [
-	    	"Parameter invalid"
-	    ],
-	    "AccessoryNotFound": [
-	    	"Accessory not found"
-	    ],
-	    "AccessoryNotConnected": [
-	    	"Accessory not connected"
-	    ],
-	    "AccessoryAlreadyConnected": [
-	    	"Accessory already connected"
-	    ],
-	    "AccessoryAlreadyDisconnected": [
-	    	"Accessory already disconnected"
-	    ],
-	    "AccessoryBusy": [
-	    	"Accessory is busy"
-	    ],
-	    "AccessoryNotWhitelisted": [
-	    	"Accessory not whitelisted"
-	    ],
-	    "AccessoryDeactivated": [
-	    	"Accessory is deactivted"
-	    ],
-	    "AccessoryRequiresUpdate": [
-	    	"Accessory update required"
-	    ],
-	    "AccessoryBatteryLow": [
-	    	"Battery low"
-	    ],
-	    "AccessoryTampered": [
-	    	"Accessory tampered"
-	    ],
-	    "AccessoryError": [
-	    	"Accessory error"
-	    ],
-	    "TransactionSessionNotFound": [
-	    	"Transaction session not found"
-	    ],
-	    "TransactionReferenceNotFound": [
-	    	"Transaction reference not found"
-	    ],
-	    "TransactionInvalid": [
-	    	"Transaction invalid"
-	    ],
-	    "TransactionBusy": [
-	    	"Transaction is busy"
-	    ],
-	    "TransactionNoLongerAbortable": [
-	    	"Transaction can no longer be aborted"
-	    ],
-	    "TransactionDeclined": [
-	    	"Transaction declined"
-	    ],
-	    "TransactionAborted": [
-	    	"Transaction aborted"
-	    ],
-	    "TransactionError": [
-	    	"Transaction error"
-	    ],
-	    "TransactionActionError": [
-	    	"Transaction action error"
-	    ],    
-	    "ServerUnavailable": [
-	    	"Gateway unavailable"
-	    ],
-	    "ServerAuthenticationFailed": [
-	    	"Gateway authentication failed"
-	    ],
-	    "ServerPinningWithRemoteFailed": [
-	    	"Gateway verification failed"
-	    ],
-	    "ServerError": [
-	    	"Server error"
-	    ],
-	    "SDKResourcesNotFound": [
-	    	"Resources not found"
-	    ],
-	    "SDKResourcesModified": [
-	    	"Resources missing"
-	    ],
-	    "SDKConfigurationMissing": [
-	    	"Configuration missing"
-	    ],
-	    "InternalInconsistency": [
-	    	"Internal error"
-	    ]
-	}
+    "info": {
+        "locale": "fr_FR", 
+        "rows": 1, 
+        "columns": 40
+    }, 
+    "localization": {
+        "ParameterMissing": [
+            "Absence de paramètre"
+        ], 
+        "ParameterInvalid": [
+            "Paramètre non valide"
+        ], 
+        "AccessoryNotFound": [
+            "Accessoire introuvable"
+        ], 
+        "AccessoryNotConnected": [
+            "Accessoire non connecté"
+        ], 
+        "AccessoryAlreadyConnected": [
+            "Accessoire déjà déconnecté"
+        ], 
+        "AccessoryAlreadyDisconnected": [
+            "Accessoire déjà déconnecté"
+        ], 
+        "AccessoryBusy": [
+            "Accessoire occupé"
+        ], 
+        "AccessoryNotWhitelisted": [
+            "Accessoire absent de la liste autorisée"
+        ], 
+        "AccessoryDeactivated": [
+            "Accessoire désactivé"
+        ], 
+        "AccessoryRequiresUpdate": [
+            "Mise à jour d'accessoire requise"
+        ], 
+        "AccessoryBatteryLow": [
+            "Batterie faible"
+        ], 
+        "AccessoryTampered": [
+            "Accessoire altéré"
+        ], 
+        "AccessoryError": [
+            "Erreur d'accessoire"
+        ], 
+        "TransactionSessionNotFound": [
+            "Transaction: session introuvable"
+        ], 
+        "TransactionReferenceNotFound": [
+            "Référence de transaction introuvable"
+        ], 
+        "TransactionInvalid": [
+            "Transaction non valide"
+        ], 
+        "TransactionBusy": [
+            "Transaction en cours"
+        ], 
+        "TransactionNoLongerAbortable": [
+            "Abandon de la transaction impossible"
+        ], 
+        "TransactionDeclined": [
+            "Transaction refusée"
+        ], 
+        "TransactionAborted": [
+            "Transaction abandonnée"
+        ], 
+        "TransactionError": [
+            "Erreur de transaction"
+        ], 
+        "TransactionActionError": [
+            "Erreur d'exécution de la transaction"
+        ], 
+        "ServerUnavailable": [
+            "Vérifiez votre liaison internet"
+        ], 
+        "ServerAuthenticationFailed": [
+            "Echec d'authentification de passerelle"
+        ], 
+        "ServerPinningWithRemoteFailed": [
+            "Échec de contrôle de passerelle"
+        ], 
+        "ServerError": [
+            "Erreur du serveur"
+        ], 
+        "SDKResourcesNotFound": [
+            "Ressources introuvables"
+        ], 
+        "SDKResourcesModified": [
+            "Ressources modifiées"
+        ], 
+        "SDKConfigurationMissing": [
+            "Absence de configuration"
+        ], 
+        "InternalInconsistency": [
+            "Erreur interne"
+        ]
+    }
 }
-
-
-
-
-    
