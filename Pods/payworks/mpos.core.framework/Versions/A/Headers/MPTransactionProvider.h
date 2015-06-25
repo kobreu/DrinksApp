@@ -27,6 +27,8 @@ typedef NS_ENUM(NSUInteger, MPAccessoryFamily){
     MPAccessoryFamilyVerifoneESeries,
     /** Use the Verifone e105 */
     MPAccessoryFamilyVerifoneE105,
+    /** Use the Sewoo printer */
+    MPAccessoryFamilySewoo,
     /** Use a mock */
     MPAccessoryFamilyMock
 };
@@ -35,8 +37,23 @@ typedef NS_ENUM(NSUInteger, MPAccessoryFamily){
 @class MPTransactionTemplate;
 @class MPLocalizationToolbox;
 #import "MPTransactionProcess.h"
+#import "MPPrintingProcess.h"
 #import "MPTransaction.h"
 
+/**
+ * Callback block for a transaction query with custom identifier.
+ * @param transactions Array of MPTransaction objects with the provided customIdentifier
+ * @param error The error that might have occured
+ * @since 2.3.1
+ */
+typedef void (^MPTransactionProviderQueryByCustomIdentifierCompleted)(NSArray *transactions, NSError *error);
+
+/**
+ * Callback block for querying a single transaction with custom identifier
+ * @param error The error that might have occured
+ * @since 2.4.0
+ */
+typedef void (^MPTransactionProviderQuerySingleTransactionByCustomIdentifierCompleted)(MPTransaction *transaction, NSError *error);
 
 /**
  * Callback block for a transaction query with session identifier.
@@ -60,6 +77,14 @@ typedef void (^MPTransactionProviderQueryByTransactionIdentifierCompleted)(MPTra
  * @since 2.3.0
  */
 typedef void (^MPTransactionProviderSendingCustomerReceiptCompleted)(NSString *transactionIdentifier, NSString *emailAddress, NSError *error);
+
+
+/**
+ * Callback block for a transaction receipt query.
+ * @param error The error that might have occured
+ * @since 2.4.0
+ */
+typedef void (^MPTransactionProviderQueryTransactionReceiptCompleted)(NSString *transactionIdentifier, MPReceipt *receipt, NSError *error);
 
 /**
  * Provider that simplifies the process of making a single transaction by encapsulating the necessary steps inbetween.
@@ -104,7 +129,17 @@ typedef void (^MPTransactionProviderSendingCustomerReceiptCompleted)(NSString *t
 - (MPTransactionTemplate *)refundTransactionTemplateWithReferenceToPreviousTransaction:(NSString *)referencedTransactionIdentifier
                                                                                subject:(NSString *)subject
                                                                       customIdentifier:(NSString *)customIdentifier;
-
+/**
+ * Creates a new template, linking to a previous transaction with the given customIdentifier
+ * @param customIdentifier the transaction to reference
+ * @param subject The subject of the transaction
+ * @param refundCustomIdentifier the custom identifier of the transaction
+ * @return A new transaction template that can be used to start a transaction locally
+ * @since 2.3.1
+ */
+- (MPTransactionTemplate *)refundTransactionTemplateWithOriginalCustomIdentifier:(NSString *)customIdentifier
+                                                                         subject:(NSString *)subject
+                                                          refundCustomIdentifier:(NSString *)refundCustomIdentifier;
 
 /**
  * Starts and returns a new transaction process which guide you through a complete transaction. This method is used if the session has already been created on the backend.
@@ -139,28 +174,64 @@ typedef void (^MPTransactionProviderSendingCustomerReceiptCompleted)(NSString *t
                                              completed:(MPTransactionProcessCompleted)completed;
 
 /**
+ * Queries a customer transaction receipt by its transaction identifier.
+ * @param transactionIdentifier The identifier of the transaction for querying the receipt.
+ * @param completed The query is finished
+ * @since 2.4.0
+ */
+- (void)queryCustomerTransactionReceiptByTransactionIdentifier:(NSString *)transactionIdentifier
+                                                     completed:(MPTransactionProviderQueryTransactionReceiptCompleted)completed;
+
+/**
+ * Queries a merchant transaction receipt by its transaction identifier.
+ * @param transactionIdentifier The identifier of the transaction for querying the receipt.
+ * @param completed The query is finished
+ * @since 2.4.0
+ */
+- (void)queryMerchantTransactionReceiptByTransactionIdentifier:(NSString *)transactionIdentifier
+                                                     completed:(MPTransactionProviderQueryTransactionReceiptCompleted)completed;
+
+/**
  * Queries a transaction by its session identifier.
  * @param sessionIdentifier The session identifier of the transaction
- * @param completed The asnyc completion callback
+ * @param completed The async completion callback
  * @since 2.2.0
  */
 - (void)queryTransactionBySessionIdentifier:(NSString *)sessionIdentifier
                                   completed:(MPTransactionProviderQueryBySessionIdentifierCompleted)completed;
 
+/**
+ * Queries transactions by custom identifier. Returns only the first page.
+ * @param customIdentifier the custom identifier of the transactions
+ * @param completed the async completion callback
+ * @since 2.3.1
+ */
+- (void)queryTransactionsByCustomIdentifier:(NSString*)customIdentifier
+                                 completed: (MPTransactionProviderQueryByCustomIdentifierCompleted) completed;
+
+
+/**
+ * Queries the last charge transaction with the given custom Identifier.
+ * @param customIdentifier the custom identifier of the transaction
+ * @param completed the async completion callback
+ * @since 2.3.1
+ */
+- (void)queryLastChargeTransactionWithCustomIdentifer:(NSString*)customIdentifier
+                                            completed:(MPTransactionProviderQuerySingleTransactionByCustomIdentifierCompleted)completed;
 
 /**
  * Queries a transaction by its identifier.
- * @param sessionIdentifier The identifier of the transaction
- * @param completed The asnyc completion callback
+ * @param transactionIdentifier The identifier of the transaction
+ * @param completed The async completion callback
  * @since 2.3.0
  */
-- (void)queryTransactionByTransactionIdentifier:(NSString *)sessionIdentifier
+- (void)queryTransactionByTransactionIdentifier:(NSString *)transactionIdentifier
                                       completed:(MPTransactionProviderQueryByTransactionIdentifierCompleted)completed;
 
 
 /**
  * Sends a receipt for the given transaction.
- * @param transaction The transaction to generate the receipt for
+ * @param transactionIdentifier The transaction identifier to generate the receipt for
  * @param emailAddress Email receiver of the receipt
  * @param completed The async completion block
  * @since 2.3.0
@@ -168,5 +239,23 @@ typedef void (^MPTransactionProviderSendingCustomerReceiptCompleted)(NSString *t
 - (void)sendCustomerReceiptForTransactionIdentifier:(NSString *)transactionIdentifier
                                        emailAddress:(NSString *)emailAddress
                                           completed:(MPTransactionProviderSendingCustomerReceiptCompleted)completed;
+
+
+/**
+ * Prints a customer receipt for the given transaction identifier.
+ * A convenience method which first fetches the transaction.
+ *
+ * @param transactionIdentifier Transaction identifier of the transaction.
+ * @param accessoryFamily The kind of accessory you want to use for the printing.
+ * @param statusChanged The status of the process changed and new information can be displayed to the user
+ * @param completed The printingProcess ended and a new one can be started
+ * @since 2.4.0
+ */
+- (MPPrintingProcess *)printCustomerReceiptForTransactionIdentifier:(NSString *)transactionIdentifier
+                                                     usingAccessory:(MPAccessoryFamily)accessoryFamily
+                                                      statusChanged:(MPPrintingProcessStatusChanged)statusChanged
+                                                          completed:(MPPrintingProcessCompleted)completed;
+
+
 
 @end

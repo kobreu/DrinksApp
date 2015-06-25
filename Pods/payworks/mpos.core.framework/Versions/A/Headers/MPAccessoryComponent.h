@@ -16,8 +16,10 @@
 // TO REPRODUCE, DISCLOSE OR DISTRIBUTE ITS CONTENTS, OR TO MANUFACTURE, USE, OR SELL ANYTHING THAT IT  MAY DESCRIBE, IN WHOLE OR IN PART.
 
 
-#import <Foundation/Foundation.h>
-
+/**
+ * Base class for all accessory components.
+ * @since 2.2.0
+ */
 @interface MPAccessoryComponent : NSObject
 
 

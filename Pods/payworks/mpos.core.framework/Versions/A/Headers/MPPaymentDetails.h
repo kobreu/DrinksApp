@@ -107,5 +107,11 @@ typedef NS_ENUM(NSUInteger, MPPaymentDetailsCustomerVerification) {
  */
 @property (assign, readonly, nonatomic) MPPaymentDetailsCustomerVerification customerVerification;
 
+/**
+ * The (masked) account number used for the transaction.
+ * @since 2.4.0
+ */
+@property (strong, readonly, nonatomic) NSString *accountNumber;
+
 
 @end

@@ -44,6 +44,18 @@
         "AccessoryError": [
             "Erreur d'accessoire"
         ], 
+        "AccessoryComponentNotFound": [
+            "Accessory component not found"
+        ], 
+        "AccessoryComponentPrinterBusy": [
+            "Printer busy"
+        ], 
+        "AccessoryComponentPrinterPaperLowOrOut": [
+            "Printer low or out of paper"
+        ], 
+        "AccessoryComponentPrinterCoverOpen": [
+            "Printer cover is open"
+        ], 
         "TransactionSessionNotFound": [
             "Transaction: session introuvable"
         ], 
@@ -70,6 +82,9 @@
         ], 
         "TransactionActionError": [
             "Erreur d'exécution de la transaction"
+        ], 
+        "ServerTimeout": [
+            "Server timeout"
         ], 
         "ServerUnavailable": [
             "Vérifiez votre liaison internet"

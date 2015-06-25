@@ -4,16 +4,6 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>HockeySDKResources.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>MPBSignatureViewResources.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>Pods-AFNetworking.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -24,7 +14,12 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-Firebase.xcscheme</key>
+		<key>Pods-FontAwesomeKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-HockeySDK-HockeySDKResources.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -34,12 +29,17 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-MPBSignatureViewController.xcscheme</key>
+		<key>Pods-Lockbox.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-payworks.xcscheme</key>
+		<key>Pods-MPBSignatureViewController-MPBSignatureViewResources.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-MPBSignatureViewController.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -52,47 +52,47 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>02A813190488BB2D0D1C2A88</key>
+		<key>0BEED756FDED78F278F0272B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>06C385E2E319B35E484E4430</key>
+		<key>70B49ACF194012A88264B3AA</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>0BE4E86CFFA0BA284B3D800E</key>
+		<key>A04897DFBF354894DA583520</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>184922EDC5284D7B069F31AD</key>
+		<key>B4AE65C01B4C2D149205306B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>1C732F548C081E8C7553486B</key>
+		<key>D5301276DFC97B609D867735</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>1D9B356B3F1BAF299E30807A</key>
+		<key>D84B0EEB820F5867C77DA1A3</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>833DAC21208E9441920E587D</key>
+		<key>DF4B784637F206E9F7E98574</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8B801BE2F8E2E058D7603813</key>
+		<key>EBF5C35F472F4F4CD45A48B1</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D7A628F1580F2C28004304B9</key>
+		<key>FC9848A9A6BE97D6213B9F41</key>
 		<dict>
 			<key>primary</key>
 			<true/>

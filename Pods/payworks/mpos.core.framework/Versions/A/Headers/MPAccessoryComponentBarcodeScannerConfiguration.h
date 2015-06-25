@@ -15,30 +15,66 @@
 // LAWS AND INTERNATIONAL TREATIES.  THE RECEIPT OR POSSESSION OF  THIS SOURCE CODE AND/OR RELATED INFORMATION DOES NOT CONVEY OR IMPLY ANY RIGHTS
 // TO REPRODUCE, DISCLOSE OR DISTRIBUTE ITS CONTENTS, OR TO MANUFACTURE, USE, OR SELL ANYTHING THAT IT  MAY DESCRIBE, IN WHOLE OR IN PART.
 
-
-#import <Foundation/Foundation.h>
-
+/**
+ * The available trigger modes.
+ * @since 2.2.0
+ */
 typedef NS_ENUM(int, MPBarcodeTriggerMode) {
+    /** Edge trigger */
     MPBarcodeTriggerModeEdge = 0,
+    /** Level trigger */
     MPBarcodeTriggerModeLevel,
+    /** Soft trigger */
     MPBarcodeTriggerModeSoft,
+    /** Passive trigger */
     MPBarcodeTriggerModePassive
 };
 
+/**
+ * The available scan modes.
+ * @since 2.2.0
+ */
 typedef NS_ENUM(int, MPBarcodeScanMode) {
+    /** 1d only mode */
     MPBarcodeScanMode1D = 0,
+    /** 1D and 2D modes */
     MPBarcodeScanMode1D2D
 };
 
+/**
+ * The available continuous modes.
+ * @since 2.2.0
+ */
 typedef NS_ENUM(int, MPBarcodeContinuousMode) {
+    /** Continuous mode disabled */
     MPBarcodeContinuousModeDisabled = 0,
+    /** Continuous mode enabled */
     MPBarcodeContinuousModeEnabled
 };
 
+
+/**
+ * Configuration for the barcode component.
+ * @since 2.2.0
+ */
 @interface MPAccessoryComponentBarcodeScannerConfiguration : NSObject
 
+/**
+ * The triger mode when detecing barcodes and how
+ * @since 2.2.0
+ */
 @property (assign, nonatomic) MPBarcodeTriggerMode triggerMode;
+
+/**
+ * The types of barcodes to detect.
+ * @since 2.2.0
+ */
 @property (assign, nonatomic) MPBarcodeScanMode scanMode;
+
+/**
+ * Sets the continuous mode on the scanner.
+ * @since 2.2.0
+ */
 @property (assign, nonatomic) MPBarcodeContinuousMode continuousMode;
 
 @end

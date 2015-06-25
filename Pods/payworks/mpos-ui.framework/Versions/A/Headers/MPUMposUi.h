@@ -30,6 +30,7 @@
 @class MPUMposUiConfiguration;
 @class MPUTransactionParameters;
 
+
 /**
  * Enum describing the result of the transaction.
  */
@@ -45,8 +46,25 @@ typedef NS_ENUM(NSUInteger, MPUMposUiTransactionResult) {
     MPUMposUiTransactionResultFailed
 };
 
+/**
+ * Describes to which application you would like to log in
+ */
+typedef NS_ENUM(NSUInteger, MPUMposUiApplicationName) {
+    /**
+     * Login to SIX mCashier
+     */
+    MPUMposUiApplicationNameMcashier = 0,
+    
+    /**
+     * Login to ConCardis OptiPay
+     */
+    MPUMposUiApplicationNameConCardis
+};
+
 
 typedef void (^MPUTransactionControllerCompleted)(UIViewController *controller, MPUMposUiTransactionResult result, MPTransaction *transaction);
+
+typedef void (^MPUAuthenticateFailed)(void);
 
 /**
  * Shared factory that creates different ViewController that guide you through a transaction.
@@ -76,6 +94,8 @@ typedef void (^MPUTransactionControllerCompleted)(UIViewController *controller, 
  */
 + (NSString *)version;
 
+
+#pragma mark Initialize with merchantIdentifier / merchantSecretKey
 /**
  * Initializes the MposUi. The method *MUST* be called before any transaction can be started.
  * @param providerMode The mode to use
@@ -84,6 +104,21 @@ typedef void (^MPUTransactionControllerCompleted)(UIViewController *controller, 
  */
 + (id)initializeWithProviderMode:(MPProviderMode)providerMode merchantIdentifier:(NSString *)merchantIdentifier merchantSecret:(NSString *)merchantSecret;
 
+#pragma mark Initialize Login / Logout with an existing application
+/**
+ * Initializes the MposUi with the given login method and integrator identifier. The method *MUST* be called before any transaction can be started.
+ * @param loginMethod The login to use
+ * @param integratorIdentifier The integratorIdentifier to use
+ */
++ (id)initializeWithLogin:(MPUMposUiApplicationName)applicationName integratorIdentifier:(NSString*) integratorIdentifier;
+
+/**
+ * Logs the user out. Use this e.g. when the user logs out from your app.
+ * Only use this when you initialized the MposUi with a login
+ */
+- (void)logout;
+
+#pragma mark Transaction Methods
 
 /**
  * Creates an UIViewController that starts the transactions and updates its views accordingly.
@@ -118,10 +153,21 @@ typedef void (^MPUTransactionControllerCompleted)(UIViewController *controller, 
 
 /**
  * Creates an UIViewController that starts the summary view for the transaction.
- * @param transactionIdentiier The transaction identifer of the transaction.
+ * @param transactionIdentifier The transaction identifer of the transaction.
  * @return The ViewControlller ready to be pushed for display
  */
-- (UIViewController *)createSummaryViewControllerWithTransactionIdentifier:(NSString *)transacitonIdentifier;
+- (UIViewController *)createSummaryViewControllerWithTransactionIdentifier:(NSString *)transactionIdentifier;
+
+/**
+ * Creates an UIViewController that shows settings.
+ * Only use when MPMposUi is initialized with a login.
+ */
+- (UIViewController *)createSettingsViewController;
+
+/**
+ * Utility function to present the view controllers.
+ */
+- (void)showViewController:(UIViewController*)viewController presentOnViewController:(UIViewController*)presentingViewController;
 
 /**
  * Returns an instance of the initialized MposUi.

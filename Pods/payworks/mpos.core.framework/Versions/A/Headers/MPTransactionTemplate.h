@@ -62,4 +62,10 @@
  */
 @property (strong, readonly, nonatomic) NSString *referencedTransactionIdentifier;
 
+/*
+ * A reference to the custom Identifier of a previous transaction
+ * @since 2.4.0
+ */
+@property (strong, readonly, nonatomic) NSString *referencedCustomIdentifier;
+
 @end

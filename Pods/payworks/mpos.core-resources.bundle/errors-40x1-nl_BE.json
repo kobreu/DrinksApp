@@ -44,6 +44,18 @@
         "AccessoryError": [
             "Fout randapparaat"
         ], 
+        "AccessoryComponentNotFound": [
+            "Accessory component not found"
+        ], 
+        "AccessoryComponentPrinterBusy": [
+            "Printer busy"
+        ], 
+        "AccessoryComponentPrinterPaperLowOrOut": [
+            "Printer low or out of paper"
+        ], 
+        "AccessoryComponentPrinterCoverOpen": [
+            "Printer cover is open"
+        ], 
         "TransactionSessionNotFound": [
             "Transactiesessie niet gevonden"
         ], 
@@ -70,6 +82,9 @@
         ], 
         "TransactionActionError": [
             "Fout transactie-actie"
+        ], 
+        "ServerTimeout": [
+            "Server timeout"
         ], 
         "ServerUnavailable": [
             "Controleer uw internetverbinding"

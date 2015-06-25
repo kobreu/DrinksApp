@@ -19,6 +19,12 @@
 @class MPMockConfiguration;
 
 
+typedef void (^MPMposLoginSuccess)(NSString *username, NSString *merchantIdentifier, NSString *merchantSecretKey);
+typedef void (^MPMposLoginFailure)(NSString *username, NSError *error);
+
+typedef void (^MPMposPasswordResetRequestSuccess)(NSString *username);
+typedef void (^MPMposPasswordResetRequestFailure)(NSString *username, NSError *error);
+
 /**
  * Extension to the base SDK, offering additional functionalities for logging and mocking.
  * @since 2.0.0
@@ -39,6 +45,35 @@
  */
 + (void)setLogLevel:(NSUInteger)logLevel;
 
+/**
+ * Login for whitelabel applications with the given credentials
+ * @param mode
+ * @param applicationIdentifier
+ * @param username
+ * @param password
+ * @param success
+ * @param failure
+ */
++ (void) loginWithMode:(MPProviderMode)mode
+ applicationIdentifier:(NSString *)applicationIdentifier
+              username:(NSString *)username
+              password:(NSString *)password
+             success:(MPMposLoginSuccess)success
+             failure:(MPMposLoginFailure)failure;
 
+
+/**
+ * Password reset for whitelabel applications with the given credentials
+ * @param mode
+ * @param applicationIdentifier
+ * @param username
+ * @param success
+ * @param failure
+ */
++ (void) passwordResetRequest:(MPProviderMode)mode
+        applicationIdentifier:(NSString *)applicationIdentifier
+                     username:(NSString *)username
+                      success:(MPMposPasswordResetRequestSuccess)success
+                      failure:(MPMposPasswordResetRequestFailure)failure;
 
 @end

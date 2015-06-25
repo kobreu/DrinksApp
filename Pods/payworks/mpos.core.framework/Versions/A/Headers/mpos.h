@@ -60,6 +60,9 @@
 
 #import "MPPaymentDetailsFactory.h"
 
+#import "MPPrintingProcess.h"
+#import "MPPrintingProcessDetails.h"
+
 #import "MPTransactionProvider.h"
 #import "MPTransactionProcess.h"
 #import "MPTransactionProcessDetails.h"

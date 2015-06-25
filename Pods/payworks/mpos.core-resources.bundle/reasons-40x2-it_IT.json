@@ -149,6 +149,18 @@
         "ERROR_SERVER_INVALID_RESPONSE": [
             "Errore (Invalid Response)"
         ], 
+        "ERROR_SERVER_UNAVAILABLE": [
+            "Errore (Server unavailable)"
+        ], 
+        "ERROR_SERVER_TIMEOUT": [
+            "Errore (Server timeout)"
+        ], 
+        "ERROR_SERVER_AUTHENTICATION_FAILED": [
+            "Errore (Auth failed)"
+        ], 
+        "ERROR_SERVER_PINNING_FAILED": [
+            "Errore (Pinning failed)"
+        ], 
         "ERROR_TERMINAL_TIMEOUT": [
             "Errore (Terminal Timeout)"
         ], 

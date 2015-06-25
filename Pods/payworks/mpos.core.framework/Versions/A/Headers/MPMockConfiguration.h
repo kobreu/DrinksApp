@@ -94,6 +94,23 @@ typedef NS_ENUM(NSUInteger, MPMockConfigurationGatewayBehavior){
 };
 
 /**
+ * Defines the payment source that is used during a transaction.
+ * @since 2.2.0
+ */
+
+typedef NS_ENUM(NSUInteger, MPMockConfigurationPrinterAccessoryBehaviour){
+    
+    /** Printer works normally */
+    MPMockConfigurationPrinterAccessoryBehaviourNormal = 0,
+    /** Printer is busy */
+    MPMockConfigurationPrinterAccessoryBehaviourBusy,
+    /** Printer is low or out of paper */
+    MPMockConfigurationPrinterAccessoryBehaviourPaperEmpty,
+    /** The printer's cover is open */
+    MPMockConfigurationPrinterAccessoryBehaviourCoverOpen
+};
+
+/**
  * The gateway behavior for an ongoing transaction.
  * @since 2.2.0
  */
@@ -157,6 +174,11 @@ typedef NS_ENUM(NSUInteger, MPMockConfigurationMockUpdateBehavior) {
  */
 @property (assign, nonatomic) MPPaymentDetailsScheme paymentAccessoryCardScheme;
 
+/**
+ * The behavior of the printing workflow.
+ * @since 2.4.0
+ */
+@property (assign, nonatomic) MPMockConfigurationPrinterAccessoryBehaviour printerAccessoryBehavior;
 
 /**
  * The behavior of the processor.

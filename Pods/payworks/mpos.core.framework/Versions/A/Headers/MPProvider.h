@@ -17,6 +17,7 @@
 
 #import "MPTransaction.h"
 #import "MPAccessory.h"
+#import "MPReceipt.h"
 
 @protocol MPProviderComponentDelegate;
 @protocol MPAccessoryComponentDelegate;
@@ -118,6 +119,20 @@ typedef void (^MPTransactionLookupSuccess)(MPTransaction *transaction);
  */
 typedef void (^MPTransactionLookupFailure)(NSString *identifier, NSError *error);
 
+/**
+ * Success handler for a transactions lookup with our gateway.
+ * @param transactions the requested transactions
+ * @since 2.3.1
+ */
+typedef void (^MPTransactionsLookupSuccess)(NSArray *transactions);
+
+/**
+ * Failure handler for a transactions lookup with our gateway.
+ * @param customIdentifier The customIdentifier used to lookup the transaction
+ * @param error Error describing why the lookup failed
+ * @since 2.3.1
+ */
+typedef void (^MPTransactionsLookupFailure)(NSString *customIdentifier, NSError *error);
 
 /**
  * Approval handler for executing a tranaction. At this stage the transaction is approved (completed successfully, executed and approved by the host).
@@ -207,6 +222,19 @@ typedef void (^MPCustomerReceiptSendingSuccess)(NSString *transactionIdentifier,
  * @since 2.3.0
  */
 typedef void (^MPCustomerReceiptSendingFailure)(NSString *transactionIdentifier, NSString *emailAddress, NSError *);
+
+/**
+ * Success handler for querying a transaction receipt.
+ * @since 2.4.0
+ */
+typedef void (^MPTransactionReceiptQuerySuccess)(NSString *transactionIdentifier, MPReceipt *receipt);
+
+/**
+ * Failure handler for querying a transaction receipt.
+ * @param error Error describing why the query failed
+ * @since 2.4.0
+ */
+typedef void (^MPTransactionReceiptQueryFailure)(NSString *transactionIdentifier, NSError *error);
 
 
 /**
@@ -368,6 +396,17 @@ typedef NS_ENUM(NSUInteger, MPProviderMode){
  */
 - (void)lookupTransactionWithTransactionIdentifier:(NSString *)identifier success:(MPTransactionLookupSuccess)success failure:(MPTransactionLookupFailure)failure;
 
+/**
+ * Queries previous transactions (including state).
+ * @param customIdentifier
+ * @param success The success handler called when the transaction lookup was successful
+ * @param failure The failure handler called when the lookup failed
+ * @throws NSException If the identifier is invalid
+ * @since 2.3.1
+ */
+- (void)lookupTransactionsWithCustomIdentifier:(NSString *)customIdentifier success:(MPTransactionsLookupSuccess)success failure:(MPTransactionsLookupFailure)failure;
+
+
 #pragma mark -
 #pragma mark Execute Transactions
 /** @name Execute Transactions */
@@ -437,6 +476,17 @@ typedef NS_ENUM(NSUInteger, MPProviderMode){
  * @since 2.3.0
  */
 - (void)refundTransactionWithoutCardForTemplate:(MPTransactionTemplate *)transactionTemplate approved:(MPRefundTransactionWithoutCardApproved)approved declined:(MPRefundTransactionWithoutCardDeclined)declined failure:(MPRefundTransactionWithoutCardFailure)failure;
+
+/**
+ * Queries a receipt for a given transaction.
+ * @param transactionIdentifier A reference to the transaction
+ * @param receiptType The type of receipt to query
+ * @param success The success handler called when the query was successful
+ * @param failure The failure handler called when the query failed
+ * @throws NSException If the transation is invalid
+ * @since 2.4.0
+ */
+- (void)queryTransactionReceiptByTransactionIdentifier:(NSString *)transactionIdentifier receiptType:(MPReceiptType)receiptType success:(MPTransactionReceiptQuerySuccess)success failure:(MPTransactionReceiptQueryFailure)failure;
 
 #pragma mark -
 #pragma mark Register Callbacks

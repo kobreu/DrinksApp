@@ -1,75 +1,97 @@
 PODS:
-  - AFNetworking (2.5.3):
-    - AFNetworking/NSURLConnection (= 2.5.3)
-    - AFNetworking/NSURLSession (= 2.5.3)
-    - AFNetworking/Reachability (= 2.5.3)
-    - AFNetworking/Security (= 2.5.3)
-    - AFNetworking/Serialization (= 2.5.3)
-    - AFNetworking/UIKit (= 2.5.3)
-  - AFNetworking/NSURLConnection (2.5.3):
+  - AFNetworking (2.5.4):
+    - AFNetworking/NSURLConnection (= 2.5.4)
+    - AFNetworking/NSURLSession (= 2.5.4)
+    - AFNetworking/Reachability (= 2.5.4)
+    - AFNetworking/Security (= 2.5.4)
+    - AFNetworking/Serialization (= 2.5.4)
+    - AFNetworking/UIKit (= 2.5.4)
+  - AFNetworking/NSURLConnection (2.5.4):
     - AFNetworking/Reachability
     - AFNetworking/Security
     - AFNetworking/Serialization
-  - AFNetworking/NSURLSession (2.5.3):
+  - AFNetworking/NSURLSession (2.5.4):
     - AFNetworking/Reachability
     - AFNetworking/Security
     - AFNetworking/Serialization
-  - AFNetworking/Reachability (2.5.3)
-  - AFNetworking/Security (2.5.3)
-  - AFNetworking/Serialization (2.5.3)
-  - AFNetworking/UIKit (2.5.3):
+  - AFNetworking/Reachability (2.5.4)
+  - AFNetworking/Security (2.5.4)
+  - AFNetworking/Serialization (2.5.4)
+  - AFNetworking/UIKit (2.5.4):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
-  - CocoaLumberjack (2.0.0):
-    - CocoaLumberjack/Default (= 2.0.0)
-    - CocoaLumberjack/Extensions (= 2.0.0)
-  - CocoaLumberjack/Core (2.0.0)
-  - CocoaLumberjack/Default (2.0.0):
+  - CocoaLumberjack (2.0.1):
+    - CocoaLumberjack/Default (= 2.0.1)
+    - CocoaLumberjack/Extensions (= 2.0.1)
+  - CocoaLumberjack/Core (2.0.1)
+  - CocoaLumberjack/Default (2.0.1):
     - CocoaLumberjack/Core
-  - CocoaLumberjack/Extensions (2.0.0):
+  - CocoaLumberjack/Extensions (2.0.1):
     - CocoaLumberjack/Default
   - Firebase (2.2.2)
+  - FontAwesomeKit (2.1.8):
+    - FontAwesomeKit/Core (= 2.1.8)
+    - FontAwesomeKit/FontAwesome (= 2.1.8)
+    - FontAwesomeKit/FoundationIcons (= 2.1.8)
+    - FontAwesomeKit/IonIcons (= 2.1.8)
+    - FontAwesomeKit/Zocial (= 2.1.8)
+  - FontAwesomeKit/Core (2.1.8)
+  - FontAwesomeKit/FontAwesome (2.1.8):
+    - FontAwesomeKit/Core
+  - FontAwesomeKit/FoundationIcons (2.1.8):
+    - FontAwesomeKit/Core
+  - FontAwesomeKit/IonIcons (2.1.8):
+    - FontAwesomeKit/Core
+  - FontAwesomeKit/Zocial (2.1.8):
+    - FontAwesomeKit/Core
   - HockeySDK (3.6.4)
+  - Lockbox (2.1.0)
   - MPBSignatureViewController (1.4.11)
-  - payworks (2.3.1):
-    - payworks/mpos (= 2.3.1)
-  - payworks/mpos (2.3.1):
-    - payworks/mpos/accessories (= 2.3.1)
-    - payworks/mpos/comlinks (= 2.3.1)
-    - payworks/mpos/core (= 2.3.1)
-    - payworks/mpos/ui (= 2.3.1)
-  - payworks/mpos/accessories (2.3.1):
-    - payworks/mpos/accessories/miura (= 2.3.1)
-    - payworks/mpos/accessories/verifone-e105 (= 2.3.1)
-  - payworks/mpos/accessories/miura (2.3.1):
+  - payworks (2.3.1-ACQUIRERSDK):
+    - payworks/mpos (= 2.3.1-ACQUIRERSDK)
+  - payworks/mpos (2.3.1-ACQUIRERSDK):
+    - payworks/mpos/accessories (= 2.3.1-ACQUIRERSDK)
+    - payworks/mpos/comlinks (= 2.3.1-ACQUIRERSDK)
+    - payworks/mpos/core (= 2.3.1-ACQUIRERSDK)
+    - payworks/mpos/ui (= 2.3.1-ACQUIRERSDK)
+  - payworks/mpos/accessories (2.3.1-ACQUIRERSDK):
+    - payworks/mpos/accessories/miura (= 2.3.1-ACQUIRERSDK)
+    - payworks/mpos/accessories/verifone-e105 (= 2.3.1-ACQUIRERSDK)
+  - payworks/mpos/accessories/miura (2.3.1-ACQUIRERSDK):
     - payworks/mpos/comlinks/externalaccessory
-  - payworks/mpos/accessories/verifone-e105 (2.3.1):
+    - payworks/mpos/core
+  - payworks/mpos/accessories/verifone-e105 (2.3.1-ACQUIRERSDK):
     - payworks/mpos/comlinks/verifone
-  - payworks/mpos/comlinks (2.3.1):
-    - payworks/mpos/comlinks/externalaccessory (= 2.3.1)
-    - payworks/mpos/comlinks/verifone (= 2.3.1)
-  - payworks/mpos/comlinks/externalaccessory (2.3.1):
     - payworks/mpos/core
-  - payworks/mpos/comlinks/verifone (2.3.1):
+  - payworks/mpos/comlinks (2.3.1-ACQUIRERSDK):
+    - payworks/mpos/comlinks/externalaccessory (= 2.3.1-ACQUIRERSDK)
+    - payworks/mpos/comlinks/verifone (= 2.3.1-ACQUIRERSDK)
+  - payworks/mpos/comlinks/externalaccessory (2.3.1-ACQUIRERSDK):
     - payworks/mpos/core
-  - payworks/mpos/core (2.3.1):
-    - CocoaLumberjack (~> 2)
-  - payworks/mpos/ui (2.3.1):
+  - payworks/mpos/comlinks/verifone (2.3.1-ACQUIRERSDK):
+    - payworks/mpos/core
+  - payworks/mpos/core (2.3.1-ACQUIRERSDK):
+    - AFNetworking (~> 2.5.4)
+    - CocoaLumberjack (~> 2.0.0)
+    - Lockbox (~> 2.1.0)
+  - payworks/mpos/ui (2.3.1-ACQUIRERSDK):
     - MPBSignatureViewController (~> 1.4.11)
     - payworks/mpos/core
 
 DEPENDENCIES:
-  - AFNetworking (= 2.5.3)
   - Firebase (>= 2.2.0)
+  - FontAwesomeKit (~> 2.1.0)
   - HockeySDK
-  - payworks
+  - payworks (= 2.3.1-ACQUIRERSDK)
 
 SPEC CHECKSUMS:
-  AFNetworking: e1d86c2a96bb5d2e7408da36149806706ee122fe
-  CocoaLumberjack: a6f77d987d65dc7ba86b0f84db7d0b9084f77bcb
+  AFNetworking: 05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e
+  CocoaLumberjack: 019d1361244274a6138c788c6cb80baabc13fb8f
   Firebase: e35cdd2561bf4fea9c1e384e9400a9c173d19e47
+  FontAwesomeKit: 64759fb28b5d2e74a1bd81553d7c11ca10e32179
   HockeySDK: c07cdd580296737edcd0963e292c19885a53f563
+  Lockbox: 16442da35d9d4286966936763be728a931d589c3
   MPBSignatureViewController: 88c3748b613770fbaa020f884e7393aa9e95af0a
-  payworks: 3ac418dc4802a4c67840348ef3884f884391f035
+  payworks: 039e2dbaa04db15387a9d4c942323aa57a667dfe
 
-COCOAPODS: 0.35.0
+COCOAPODS: 0.37.2

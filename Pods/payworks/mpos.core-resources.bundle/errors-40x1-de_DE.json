@@ -12,37 +12,49 @@
             "Parameter ungültig"
         ], 
         "AccessoryNotFound": [
-            "Leser nicht gefunden"
+            "Gerät nicht gefunden"
         ], 
         "AccessoryNotConnected": [
-            "Keine Verbindung zum Leser"
+            "Keine Verbindung zum Gerät"
         ], 
         "AccessoryAlreadyConnected": [
-            "Leser bereits verbunden"
+            "Gerät bereits verbunden"
         ], 
         "AccessoryAlreadyDisconnected": [
-            "Verbindung zum Leser bereits getrennt"
+            "Verbindung zum Gerät bereits getrennt"
         ], 
         "AccessoryBusy": [
-            "Leser ist blockiert"
+            "Gerät ist blockiert"
         ], 
         "AccessoryNotWhitelisted": [
-            "Kein Whitelisting des Lesers"
+            "Kein Whitelisting des Geräts"
         ], 
         "AccessoryDeactivated": [
-            "Leser deaktiviert"
+            "Gerät deaktiviert"
         ], 
         "AccessoryRequiresUpdate": [
-            "Leser-Update erforderlich"
+            "Geräte-Update erforderlich"
         ], 
         "AccessoryBatteryLow": [
             "Niedrige Batterieladung"
         ], 
         "AccessoryTampered": [
-            "Leser manipuliert"
+            "Gerät manipuliert"
         ], 
         "AccessoryError": [
-            "Leserfehler"
+            "Gerätefehler"
+        ], 
+        "AccessoryComponentNotFound": [
+            "Gerätekomponente nicht gefunden"
+        ], 
+        "AccessoryComponentPrinterBusy": [
+            "Drucker ist blockiert"
+        ], 
+        "AccessoryComponentPrinterPaperLowOrOut": [
+            "Kein oder wenig Papier im Drucker"
+        ], 
+        "AccessoryComponentPrinterCoverOpen": [
+            "Druckergehäuse ist offen"
         ], 
         "TransactionSessionNotFound": [
             "Transaktions-Session nicht gefunden"
@@ -70,6 +82,9 @@
         ], 
         "TransactionActionError": [
             "Transaktion, Bedienungsfehler"
+        ], 
+        "ServerTimeout": [
+            "Server Zeitüberschreitung"
         ], 
         "ServerUnavailable": [
             "Internetverbindung prüfen"

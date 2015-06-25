@@ -106,7 +106,16 @@ typedef NS_ENUM(NSUInteger, MPErrorType){
     MPErrorTypeAccessoryTampered,
     /** An error occured while communicating with the device */
     MPErrorTypeAccessoryError, //invalid response
-    //14
+    /** Accessory component not found */
+    MPErrorTypeAccessoryComponentNotFound,
+    /** The printer is currently busy */
+    MPErrorTypeAccessoryComponentPrinterBusy,
+    /** The printer ran out of paper */
+    MPErrorTypeAccessoryComponentPrinterPaperLowOrOut,
+    /** The cover of the printer is open */
+    MPErrorTypeAccessoryComponentPrinterCoverOpen,
+    
+    //17
     /** The provided session was not found */
     MPErrorTypeTransactionSessionNotFound,
     /** The provided reference was not found */
@@ -125,23 +134,27 @@ typedef NS_ENUM(NSUInteger, MPErrorType){
     MPErrorTypeTransactionError,
     /** The action was handled using an incorrect response */
     MPErrorTypeTransactionActionError,
-    //23
+    //26
     /** The server is unavailable */
     MPErrorTypeServerUnavailable,
     /** Authentication with the server failed, credential missmatch */
     MPErrorTypeServerAuthenticationFailed,
+    /** Missing / malformed username */
+    MPErrorTypeUnknownUsername,
     /** SSL pinning failed, had to cancel authentication*/
     MPErrorTypeServerPinningWithRemoteFailed,
+    /** Timout from the server received */
+    MPErrorTypeServerTimeout,
     /** The server returned an error */
     MPErrorTypeServerError, //invalid response
-    //27
+    //30
     /** Required resources were not found */
     MPErrorTypeSDKResourcesNotFound,
     /** Required resources were modified and are invalid */
     MPErrorTypeSDKResourcesModified,
     /** Configuration data is missng */
     MPErrorTypeSDKConfigurationMissing,
-    //30
+    //33
     /** The SDK reached an inconsistent state */
     MPErrorTypeInternalInconsistency
 };

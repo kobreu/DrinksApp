@@ -21,67 +21,92 @@
 /** Unique keys used by a receipt line item. */
 typedef NS_ENUM(NSInteger, MPReceiptLineKey) {
 
+    /** Unknown line key */
+    MPReceiptLineKeyUnknown,
+    
     /** The type of the receipt. */
-    MPReceiptLineKeyReceiptType = 0,
+    MPReceiptLineKeyReceiptType,
 
     /** The type of the transaction (charge or refund). */
-    MPReceiptLineKeyTransactionType = 1,
+    MPReceiptLineKeyTransactionType,
 
     /** The subject of the receipt. */
-    MPReceiptLineKeySubject = 2,
+    MPReceiptLineKeySubject,
 
     /** The transaction identifier. */
-    MPReceiptLineKeyIdentifier = 3,
+    MPReceiptLineKeyIdentifier,
 
     /** The amount and currency formatted for the used locale. */
-    MPReceiptLineKeyAmountAndCurrency = 4,
+    MPReceiptLineKeyAmountAndCurrency,
 
     /**  The date formatted for the used locale. */
-    MPReceiptLineKeyDate = 5,
+    MPReceiptLineKeyDate,
 
     /** The time formatted for the used locale. */
-    MPReceiptLineKeyTime = 6,
+    MPReceiptLineKeyTime,
 
     /** The status text based on the transaction state. */
-    MPReceiptLineKeyStatusText = 7,
+    MPReceiptLineKeyStatusText,
 
     /** The status of the transaction. */
-    MPReceiptLineKeyStatus = 8,
+    MPReceiptLineKeyStatus,
 
     /** The scheme or label of the used card. */
-    MPReceiptLineKeyPaymentDetailsSchemeOrLabel = 100,
+    MPReceiptLineKeyPaymentDetailsSchemeOrLabel,
 
     /** The masked account number of the used card. */
-    MPReceiptLineKeyPaymentDetailsMaskedAccount = 101,
+    MPReceiptLineKeyPaymentDetailsMaskedAccount,
 
     /** The actual source of the payment details. */
-    MPReceiptLineKeyPaymentDetailsSource = 102,
+    MPReceiptLineKeyPaymentDetailsSource,
 
     /** The application identifier of the used card. */
-    MPReceiptLineKeyPaymentDetailsEMVApplicationID = 103,
+    MPReceiptLineKeyPaymentDetailsEMVApplicationID,
 
     /** The sequence number of the card */
-    MPReceiptLineKeyPaymentDetailsAccountSequenceNumber = 104,
+    MPReceiptLineKeyPaymentDetailsAccountSequenceNumber,
     
     /** The verification used for the transaction */
-    MPReceiptLineKeyPaymentDetailsCustomerVerification = 105,
+    MPReceiptLineKeyPaymentDetailsCustomerVerification,
     
     /** The transaction identifier set by the aquirer. */
-    MPReceiptLineKeyClearingDetailsTransactionIdentifier = 200,
+    MPReceiptLineKeyClearingDetailsTransactionIdentifier,
 
     /** The original transaction identifier set by the aquirer. */
-    MPReceiptLineKeyClearingDetailsOriginalTransactionIdentifier = 201,
+    MPReceiptLineKeyClearingDetailsOriginalTransactionIdentifier,
 
     /** The authorization code set by the aquirer. */
-    MPReceiptLineKeyClearingDetailsAuthorizationCode = 202,
+    MPReceiptLineKeyClearingDetailsAuthorizationCode,
 
     /** The merchant identifier set by the aquirer. */
-    MPReceiptLineKeyClearingDetailsMerchantId = 203,
+    MPReceiptLineKeyClearingDetailsMerchantId,
 
     /** The terminal identifier used for the transaction. */
-    MPReceiptLineKeyClearingDetailsTerminalId = 204,
+    MPReceiptLineKeyClearingDetailsTerminalId,
     
+    /** The merchant's public name. */
+    MPReceiptLineKeyMerchantDetailsPublicName,
+    
+    /** The merchant's address. */
+    MPReceiptLineKeyMerchantDetailsAddress,
+    
+    /** The merchant's zip code. */
+    MPReceiptLineKeyMerchantDetailsZip,
+    
+    /** The merchant's city. */
+    MPReceiptLineKeyMerchantDetailsCity,
+    
+    /** The merchant's country. */
+    MPReceiptLineKeyMerchantDetailsCountry,
+    
+    /** The merchant's contact information. */
+    MPReceiptLineKeyMerchantDetailsContact,
+    
+    /** The merchant's additional information. */
+    MPReceiptLineKeyMerchantDetailsAdditionalInformation
+
 };
+
 
 /**
  * A localized entry on the receipt.

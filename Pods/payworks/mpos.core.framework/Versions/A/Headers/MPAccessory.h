@@ -27,6 +27,8 @@ typedef NS_ENUM(NSUInteger, MPAccessoryCategory){
     MPAccessoryCategoryUnknown = 0,
     /** The accessory is a payment device, capable of handling card interactions */
     MPAccessoryCategoryPayment,
+    /** The accessory is not a payment device but contains some components */
+    MPAccessoryCategoryGeneric,
 };
 
 /**
@@ -48,6 +50,8 @@ typedef NS_ENUM(NSUInteger, MPAccessoryType){
     MPAccessoryTypeVerifoneE315,
     /** Verifone E335*/
     MPAccessoryTypeVerifoneE335,
+    /** Sewoo LKP21 */
+    MPAccessoryTypeSewooLKP21,
     /** Mock */
     MPAccessoryTypeMock
 };
@@ -157,7 +161,9 @@ typedef NS_OPTIONS(NSUInteger, MPAccessoryComponentType) {
     /** No componenets are available */
     MPAccessoryComponentTypeNone                = 0,
     /** Barcode scanner component available */
-    MPAccessoryComponentTypeBarcodeScanner      = 1 << 0
+    MPAccessoryComponentTypeBarcodeScanner      = 1 << 0,
+    /** Printer component available */
+    MPAccessoryComponentTypePrinter             = 2 << 0
 };
 
 @class MPAccessoryDetails;

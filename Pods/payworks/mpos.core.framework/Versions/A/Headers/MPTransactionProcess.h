@@ -66,6 +66,7 @@ typedef void (^MPTransactionProcessCompleted)(MPTransactionProcess *transactionP
 
 /**
  * Automated workflow that encapsulates all steps required for making a transaction.
+ * @since 2.2.0
  */
 @interface MPTransactionProcess : NSObject
 

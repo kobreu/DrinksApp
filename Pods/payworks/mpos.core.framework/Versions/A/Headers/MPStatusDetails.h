@@ -140,12 +140,23 @@ typedef NS_ENUM(NSUInteger, MPTransactionStatusDetailsCode){
     MPTransactionStatusDetailsCodeErrorTerminalError,
     /** The terminal processing the transaction encountered an error */
     MPTransactionStatusDetailsCodeErrorTerminalTimeout,
+    
     /** The server returned an invalid response */
     MPTransactionStatusDetailsCodeErrorServerInvalidResponse,
+    /** The server is unavailable */
+    MPTransactionStatusDetailsCodeErrorServerUnavailable,
+    /** Authentication with the server failed, credential missmatch */
+    MPTransactionStatusDetailsCodeErrorServerAuthenticationFailed,
+    /** SSL pinning failed, had to cancel authentication*/
+    MPTransactionStatusDetailsCodeErrorServerPinningWithRemoteFailed,
+    /** Timout from the server received */
+    MPTransactionStatusDetailsCodeErrorServerTimeout,
     /** The server timed out */
+    
     MPTransactionStatusDetailsCodeErrorServerSessionTimeout,
     /** The transaction was (falsely) approved offline */
     MPTransactionStatusDetailsCodeErrorApprovedOffline
+
 };
 
 

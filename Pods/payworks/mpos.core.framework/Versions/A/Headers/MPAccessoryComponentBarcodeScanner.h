@@ -31,20 +31,49 @@ typedef void (^MPBarcodeComponentStartScanFailure)(MPAccessoryComponentBarcodeSc
 typedef void (^MPBarcodeComponentStopScanSuccess)(MPAccessoryComponentBarcodeScanner *component);
 typedef void (^MPBarcodeComponentStopScanFailure)(MPAccessoryComponentBarcodeScanner *component, NSError *error);
 
+
+/**
+ * Component providing access to barcode scanning features of the accessory.
+ * @since 2.4.0
+ */
 @interface MPAccessoryComponentBarcodeScanner : MPAccessoryComponent
 
-- (void)startScanWithConfiguration:(MPAccessoryComponentBarcodeScannerConfiguration *)config
+/**
+ * Starts a new scan and appls an updated configuration before starting.
+ * @param configuration The configuration to apply to the barcode scanner
+ * @param success The success handler called when the scan was successfully started
+ * @param scan Callback for scanned barcodes during the scan process
+ * @param button Callback for pressed buttons during the scan proces
+ * @param failure The failure handler called when the scan failed
+ * @since 2.2.0
+ */
+- (void)startScanWithConfiguration:(MPAccessoryComponentBarcodeScannerConfiguration *)configuration
           success:(MPBarcodeComponentStartScanSuccess)success
              scan:(MPBarcodeComponentScan)scan
            button:(MPBarcodeComponentButton)button
           failure:(MPBarcodeComponentStartScanFailure)failure;
 
+
+/**
+ * Starts a new scan without applying an updated configuration first.
+ * @param success The success handler called when the scan was successfully started
+ * @param scan Callback for scanned barcodes during the scan process
+ * @param button Callback for pressed buttons during the scan proces
+ * @param failure The failure handler called when the scan failed
+ * @since 2.2.0
+ */
 - (void)startScanWithSuccess:(MPBarcodeComponentStartScanSuccess)success
              scan:(MPBarcodeComponentScan)scan
            button:(MPBarcodeComponentButton)button
           failure:(MPBarcodeComponentStartScanFailure)failure;
 
 
+/**
+ * Stops an ongoing scan.
+ * @param success The success handler called when the abort was successful
+ * @param failure The failure handler called when the abort failed
+ * @since 2.2.0
+ */
 - (void)stopScan:(MPBarcodeComponentStopScanSuccess)success
          failure:(MPBarcodeComponentStopScanFailure)failure;
 @end

@@ -17,13 +17,43 @@
 
 #import "MPTransaction.h"
 
+/**
+ * Helper toolbox to format amounts, currencies and dates
+ * @since 2.3.0
+ */
 @interface MPLocalizationToolbox : NSObject
 
+/**
+ * Formats an amount and currency based on the system region and locale.
+ * @param amount The amount to format
+ * @param currency The currency to format
+ * @return A formatted amound and currency
+ * @since 2.3.0
+ */
 - (NSString *)textFormattedForAmount:(NSDecimalNumber *)amount currency:(MPCurrency)currency;
 
+/**
+ * Formats a date based on the system region and locale.
+ * @param date The date to format
+ * @return A formatted date
+ * @since 2.3.0
+ */
 - (NSString *)textFormattedForDate:(NSDate *)date;
-- (NSString *)textFormattedForTime:(NSDate *)date;
-- (NSString *)textFormattedForTimeAndDate:(NSDate *)date;
+
+/**
+ * Formats a time based on the system region and locale.
+ * @param time The time to format
+ * @return A formatted time
+ * @since 2.3.0
+ */- (NSString *)textFormattedForTime:(NSDate *)time;
+
+/**
+ * Formats a date and time based on the system region and locale.
+ * @param datetime The date and time to format
+ * @return A formatted date and time
+ * @since 2.3.0
+ */
+- (NSString *)textFormattedForTimeAndDate:(NSDate *)datetime;
 
 @end
 

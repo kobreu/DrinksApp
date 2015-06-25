@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0510"
+   LastUpgradeVersion = "0640"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "02A813190488BB2D0D1C2A88"
+               BlueprintIdentifier = "D5301276DFC97B609D867735"
                BuildableName = "libPods-MPBSignatureViewController.a"
                BlueprintName = "Pods-MPBSignatureViewController"
                ReferencedContainer = "container:Pods.xcodeproj">

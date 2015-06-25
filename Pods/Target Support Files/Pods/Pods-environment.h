@@ -10,67 +10,67 @@
 #define COCOAPODS_POD_AVAILABLE_AFNetworking
 #define COCOAPODS_VERSION_MAJOR_AFNetworking 2
 #define COCOAPODS_VERSION_MINOR_AFNetworking 5
-#define COCOAPODS_VERSION_PATCH_AFNetworking 3
+#define COCOAPODS_VERSION_PATCH_AFNetworking 4
 
 // AFNetworking/NSURLConnection
 #define COCOAPODS_POD_AVAILABLE_AFNetworking_NSURLConnection
 #define COCOAPODS_VERSION_MAJOR_AFNetworking_NSURLConnection 2
 #define COCOAPODS_VERSION_MINOR_AFNetworking_NSURLConnection 5
-#define COCOAPODS_VERSION_PATCH_AFNetworking_NSURLConnection 3
+#define COCOAPODS_VERSION_PATCH_AFNetworking_NSURLConnection 4
 
 // AFNetworking/NSURLSession
 #define COCOAPODS_POD_AVAILABLE_AFNetworking_NSURLSession
 #define COCOAPODS_VERSION_MAJOR_AFNetworking_NSURLSession 2
 #define COCOAPODS_VERSION_MINOR_AFNetworking_NSURLSession 5
-#define COCOAPODS_VERSION_PATCH_AFNetworking_NSURLSession 3
+#define COCOAPODS_VERSION_PATCH_AFNetworking_NSURLSession 4
 
 // AFNetworking/Reachability
 #define COCOAPODS_POD_AVAILABLE_AFNetworking_Reachability
 #define COCOAPODS_VERSION_MAJOR_AFNetworking_Reachability 2
 #define COCOAPODS_VERSION_MINOR_AFNetworking_Reachability 5
-#define COCOAPODS_VERSION_PATCH_AFNetworking_Reachability 3
+#define COCOAPODS_VERSION_PATCH_AFNetworking_Reachability 4
 
 // AFNetworking/Security
 #define COCOAPODS_POD_AVAILABLE_AFNetworking_Security
 #define COCOAPODS_VERSION_MAJOR_AFNetworking_Security 2
 #define COCOAPODS_VERSION_MINOR_AFNetworking_Security 5
-#define COCOAPODS_VERSION_PATCH_AFNetworking_Security 3
+#define COCOAPODS_VERSION_PATCH_AFNetworking_Security 4
 
 // AFNetworking/Serialization
 #define COCOAPODS_POD_AVAILABLE_AFNetworking_Serialization
 #define COCOAPODS_VERSION_MAJOR_AFNetworking_Serialization 2
 #define COCOAPODS_VERSION_MINOR_AFNetworking_Serialization 5
-#define COCOAPODS_VERSION_PATCH_AFNetworking_Serialization 3
+#define COCOAPODS_VERSION_PATCH_AFNetworking_Serialization 4
 
 // AFNetworking/UIKit
 #define COCOAPODS_POD_AVAILABLE_AFNetworking_UIKit
 #define COCOAPODS_VERSION_MAJOR_AFNetworking_UIKit 2
 #define COCOAPODS_VERSION_MINOR_AFNetworking_UIKit 5
-#define COCOAPODS_VERSION_PATCH_AFNetworking_UIKit 3
+#define COCOAPODS_VERSION_PATCH_AFNetworking_UIKit 4
 
 // CocoaLumberjack
 #define COCOAPODS_POD_AVAILABLE_CocoaLumberjack
 #define COCOAPODS_VERSION_MAJOR_CocoaLumberjack 2
 #define COCOAPODS_VERSION_MINOR_CocoaLumberjack 0
-#define COCOAPODS_VERSION_PATCH_CocoaLumberjack 0
+#define COCOAPODS_VERSION_PATCH_CocoaLumberjack 1
 
 // CocoaLumberjack/Core
 #define COCOAPODS_POD_AVAILABLE_CocoaLumberjack_Core
 #define COCOAPODS_VERSION_MAJOR_CocoaLumberjack_Core 2
 #define COCOAPODS_VERSION_MINOR_CocoaLumberjack_Core 0
-#define COCOAPODS_VERSION_PATCH_CocoaLumberjack_Core 0
+#define COCOAPODS_VERSION_PATCH_CocoaLumberjack_Core 1
 
 // CocoaLumberjack/Default
 #define COCOAPODS_POD_AVAILABLE_CocoaLumberjack_Default
 #define COCOAPODS_VERSION_MAJOR_CocoaLumberjack_Default 2
 #define COCOAPODS_VERSION_MINOR_CocoaLumberjack_Default 0
-#define COCOAPODS_VERSION_PATCH_CocoaLumberjack_Default 0
+#define COCOAPODS_VERSION_PATCH_CocoaLumberjack_Default 1
 
 // CocoaLumberjack/Extensions
 #define COCOAPODS_POD_AVAILABLE_CocoaLumberjack_Extensions
 #define COCOAPODS_VERSION_MAJOR_CocoaLumberjack_Extensions 2
 #define COCOAPODS_VERSION_MINOR_CocoaLumberjack_Extensions 0
-#define COCOAPODS_VERSION_PATCH_CocoaLumberjack_Extensions 0
+#define COCOAPODS_VERSION_PATCH_CocoaLumberjack_Extensions 1
 
 // Firebase
 #define COCOAPODS_POD_AVAILABLE_Firebase
@@ -78,11 +78,53 @@
 #define COCOAPODS_VERSION_MINOR_Firebase 2
 #define COCOAPODS_VERSION_PATCH_Firebase 2
 
+// FontAwesomeKit
+#define COCOAPODS_POD_AVAILABLE_FontAwesomeKit
+#define COCOAPODS_VERSION_MAJOR_FontAwesomeKit 2
+#define COCOAPODS_VERSION_MINOR_FontAwesomeKit 1
+#define COCOAPODS_VERSION_PATCH_FontAwesomeKit 8
+
+// FontAwesomeKit/Core
+#define COCOAPODS_POD_AVAILABLE_FontAwesomeKit_Core
+#define COCOAPODS_VERSION_MAJOR_FontAwesomeKit_Core 2
+#define COCOAPODS_VERSION_MINOR_FontAwesomeKit_Core 1
+#define COCOAPODS_VERSION_PATCH_FontAwesomeKit_Core 8
+
+// FontAwesomeKit/FontAwesome
+#define COCOAPODS_POD_AVAILABLE_FontAwesomeKit_FontAwesome
+#define COCOAPODS_VERSION_MAJOR_FontAwesomeKit_FontAwesome 2
+#define COCOAPODS_VERSION_MINOR_FontAwesomeKit_FontAwesome 1
+#define COCOAPODS_VERSION_PATCH_FontAwesomeKit_FontAwesome 8
+
+// FontAwesomeKit/FoundationIcons
+#define COCOAPODS_POD_AVAILABLE_FontAwesomeKit_FoundationIcons
+#define COCOAPODS_VERSION_MAJOR_FontAwesomeKit_FoundationIcons 2
+#define COCOAPODS_VERSION_MINOR_FontAwesomeKit_FoundationIcons 1
+#define COCOAPODS_VERSION_PATCH_FontAwesomeKit_FoundationIcons 8
+
+// FontAwesomeKit/IonIcons
+#define COCOAPODS_POD_AVAILABLE_FontAwesomeKit_IonIcons
+#define COCOAPODS_VERSION_MAJOR_FontAwesomeKit_IonIcons 2
+#define COCOAPODS_VERSION_MINOR_FontAwesomeKit_IonIcons 1
+#define COCOAPODS_VERSION_PATCH_FontAwesomeKit_IonIcons 8
+
+// FontAwesomeKit/Zocial
+#define COCOAPODS_POD_AVAILABLE_FontAwesomeKit_Zocial
+#define COCOAPODS_VERSION_MAJOR_FontAwesomeKit_Zocial 2
+#define COCOAPODS_VERSION_MINOR_FontAwesomeKit_Zocial 1
+#define COCOAPODS_VERSION_PATCH_FontAwesomeKit_Zocial 8
+
 // HockeySDK
 #define COCOAPODS_POD_AVAILABLE_HockeySDK
 #define COCOAPODS_VERSION_MAJOR_HockeySDK 3
 #define COCOAPODS_VERSION_MINOR_HockeySDK 6
 #define COCOAPODS_VERSION_PATCH_HockeySDK 4
+
+// Lockbox
+#define COCOAPODS_POD_AVAILABLE_Lockbox
+#define COCOAPODS_VERSION_MAJOR_Lockbox 2
+#define COCOAPODS_VERSION_MINOR_Lockbox 1
+#define COCOAPODS_VERSION_PATCH_Lockbox 0
 
 // MPBSignatureViewController
 #define COCOAPODS_POD_AVAILABLE_MPBSignatureViewController

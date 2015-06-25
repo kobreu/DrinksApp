@@ -90,13 +90,6 @@ typedef NS_ENUM(NSUInteger, MPReceiptType) {
  */
 @property (assign, readonly, nonatomic) BOOL printSignatureLine;
 
-
-/**
- * Indicates the overall status of the tranaction.
- * @since 2.1.0
- */
-@property (assign, readonly, nonatomic) MPTransactionStatus transactionStatus;
-
 /**
  * Clearing details of the receipt.
  * Array of MPReceiptLineItem objects
@@ -110,6 +103,13 @@ typedef NS_ENUM(NSUInteger, MPReceiptType) {
  * @since 2.1.0
  */
 @property (strong, readonly, nonatomic) NSArray *paymentDetails;
+
+/**
+ * Merchant details of the receipt.
+ * Array of MPReceiptLineItem objects
+ * @since 2.1.0
+ */
+@property (strong, readonly, nonatomic) NSArray *merchantDetails;
 
 /**
  * Key-based lookup for individual line items.

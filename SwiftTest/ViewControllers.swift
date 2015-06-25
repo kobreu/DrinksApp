@@ -221,7 +221,19 @@ class EmployeeTableController : UITableViewController {
             
         })
         
+        MPUMposUi.initializeWithLogin(MPUMposUiApplicationName.ConCardis, integratorIdentifier: "DRINKS")
+        
+        let btn = UIButton.buttonWithType(UIButtonType.InfoDark) as! UIButton;
+        btn.addTarget(self, action: "info:", forControlEvents: .TouchUpInside);
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(customView: btn);
+
+        
+        
         MPMpos.setLogLevel(16)
+    }
+    
+    func info(sender: UIButton!) {
+        MPUMposUi.sharedInitializedInstance().showViewController(MPUMposUi.sharedInitializedInstance().createSettingsViewController(), presentOnViewController: self);
     }
     
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
@@ -255,11 +267,11 @@ class EmployeeTableController : UITableViewController {
         let indexPath = self.tableView.indexPathForRowAtPoint(buttonPosition)!
         
         let amount = self.employees[indexPath.row].amount
-        let controller = MPUMposUi.initializeWithProviderMode(merchantData.serverType == "LIVE" ? MPProviderMode.LIVE : MPProviderMode.TEST, merchantIdentifier: merchantData.merchantIdentifier, merchantSecret: merchantData.merchantSecretKey) as! MPUMposUi
+        //let controller = MPUMposUi.initializeWithProviderMode(merchantData.serverType == "LIVE" ? MPProviderMode.LIVE : MPProviderMode.TEST, merchantIdentifier: merchantData.merchantIdentifier, merchantSecret: merchantData.merchantSecretKey) as! MPUMposUi
 
-        controller.configuration.accessoryFamily = MPAccessoryFamily.MiuraMPI
-        controller.configuration.receiptMethod = MPUMposUiConfigurationReceiptMethod.ReadyMade;
-        let viewController = controller.createChargeTransactionViewControllerWithAmount(NSDecimalNumber(double: Double(amount) / 100.0), currency: MPCurrency.EUR, subject: "subject", customIdentifier: "customIdentifier") { (me, result, tx) -> Void in
+       // controller.configuration.accessoryFamily = MPAccessoryFamily.MiuraMPI
+        //controller.configuration.receiptMethod = MPUMposUiConfigurationReceiptMethod.ReadyMade;
+        let viewController = MPUMposUi.sharedInitializedInstance().createChargeTransactionViewControllerWithAmount(NSDecimalNumber(double: Double(amount) / 100.0), currency: MPCurrency.EUR, subject: "subject", customIdentifier: "customIdentifier") { (me, result, tx) -> Void in
             self.dismissViewControllerAnimated(true, completion: nil)
             if (result == MPUMposUiTransactionResult.Approved) {
                 self.employees[indexPath.row].amount = 0
