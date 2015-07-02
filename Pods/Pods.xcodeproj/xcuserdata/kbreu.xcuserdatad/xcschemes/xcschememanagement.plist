@@ -14,11 +14,6 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-FontAwesomeKit.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>Pods-HockeySDK-HockeySDKResources.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -52,47 +47,42 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>0BEED756FDED78F278F0272B</key>
+		<key>0CD876CC803D2E47691896E1</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>70B49ACF194012A88264B3AA</key>
+		<key>36A2EB284BA6D405BB57DE3C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A04897DFBF354894DA583520</key>
+		<key>4D6492F8BBA5BF6AFFDE4A9E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B4AE65C01B4C2D149205306B</key>
+		<key>9694F2ECC1FAB616959CCB48</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D5301276DFC97B609D867735</key>
+		<key>9939852AF901D8F062DF68C2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D84B0EEB820F5867C77DA1A3</key>
+		<key>D92160372455A9B6FA49FEF7</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>DF4B784637F206E9F7E98574</key>
+		<key>F95BD078705EAC322659B663</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>EBF5C35F472F4F4CD45A48B1</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>FC9848A9A6BE97D6213B9F41</key>
+		<key>FE3AE98F93A08F09BC09EBF9</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -10,6 +10,8 @@ import Foundation
 import UIKit
 import MessageUI
 
+let LockboxLocationConstant = "location"
+
 class CustomTableViewCell : UITableViewCell {
     @IBOutlet weak var button: UIButton!
     @IBOutlet weak var amt: UILabel!
@@ -96,18 +98,16 @@ class DataManager {
 
 
 
-class FirebaseDataManager : DataManager {
+class FirebaseDataManager : DataManager {    
     
-    var employeeRef:Firebase
-    
-    override init() {
-        // Create a reference to a Firebase location
-        employeeRef = Firebase(url:"https://amber-fire-1440.firebaseio.com/employees")
-        
-       
+    func fireBaseWithPath(path: String)->Firebase! {
+        let firebaseurl = Lockbox.stringForKey(LockboxLocationConstant);
+        let firebase = Firebase(url:String(format: "https://%@.firebaseio.com%@", firebaseurl, path));
+        return firebase
     }
     
     override func employeeList(success: (Array<Employee>) -> Void, failure: () -> Void) {
+        let employeeRef = fireBaseWithPath("/employees")
         // start reading data
         employeeRef.observeEventType(.Value, withBlock: {
             snapshot in
@@ -126,7 +126,7 @@ class FirebaseDataManager : DataManager {
     }
     
     override func drinkList(success: (Array<Drink> -> Void), failure: () -> Void) {
-        let drinkRef = Firebase(url:"https://amber-fire-1440.firebaseio.com/drinks")
+        let drinkRef = fireBaseWithPath("/drinks")
         
         drinkRef.observeEventType(.Value, withBlock: { (snapshot) -> Void in
             let enumerator = snapshot.children
@@ -145,7 +145,7 @@ class FirebaseDataManager : DataManager {
     }
     
     override func merchantData(success: (MerchantData) -> Void, failure: () -> Void) {
-        let merchantDataRef = Firebase(url:"https://amber-fire-1440.firebaseio.com/merchantData")
+        let merchantDataRef = fireBaseWithPath("/merchantData")
         
         merchantDataRef.observeEventType(.Value, withBlock: { (snapshot) -> Void in
             let merchantData = MerchantData()
@@ -164,7 +164,7 @@ class FirebaseDataManager : DataManager {
     }
     
     override func pushAmount(employee: Int, amount: Int, success: (Void -> Void), failure: (Void -> Void)) {
-        let pushAmountRef = Firebase(url: "https://amber-fire-1440.firebaseio.com/employees")
+        let pushAmountRef = fireBaseWithPath("/employees")
         
         let employee = pushAmountRef.childByAppendingPath(String(employee - 1))
         
@@ -174,13 +174,39 @@ class FirebaseDataManager : DataManager {
     }
     
     override func pushStock(drink: Int, stock: Int, success: (Void -> Void), failure: (Void -> Void)) {
-        let pushAmountRef = Firebase(url: "https://amber-fire-1440.firebaseio.com/drinks")
+        let pushAmountRef = fireBaseWithPath("/drinks")
         
         let drink = pushAmountRef.childByAppendingPath(String(drink))
         
         var stock = ["stock": stock]
         
         drink.updateChildValues(stock)
+    }
+}
+
+class SettingsController : UITableViewController
+{
+    
+    @IBOutlet weak var changeLocationButton: UIButton!
+
+    @IBOutlet weak var locationTextField: UITextField!
+    override func viewDidLoad() {
+        locationTextField.text = Lockbox.stringForKey(LockboxLocationConstant)
+    }
+
+    @IBAction func locationEditingBegan(sender: AnyObject) {
+        changeLocationButton.enabled = true;
+    }
+    
+    @IBAction func locationChanged(sender: AnyObject) {
+        Lockbox.setString(locationTextField.text, forKey: LockboxLocationConstant)
+        changeLocationButton.enabled = false;
+        locationTextField.resignFirstResponder();
+        MPUMposUi.sharedInitializedInstance().logout();
+    }
+    
+    @IBAction func changePaymentSettings(sender: AnyObject) {
+        MPUMposUi.sharedInitializedInstance().showViewController(MPUMposUi.sharedInitializedInstance().createSettingsViewController(), presentOnViewController: self);
     }
 }
 
@@ -195,19 +221,40 @@ class EmployeeTableController : UITableViewController {
     
     override func viewDidLoad() {
         self.employees = []
+        
+        if(Lockbox.stringForKey(LockboxLocationConstant) == nil) {
+            var alert = UIAlertController(title: "Alert", message: "Please go to Admin to configure a location!", preferredStyle: UIAlertControllerStyle.Alert)
+            alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.Cancel, handler: nil))
+            self.presentViewController(alert, animated: true, completion: nil)
+        } else {
+            loadData();
+        }
+        
+        MPUMposUi.initializeWithLogin(MPUMposUiApplicationName.ConCardis, integratorIdentifier: "DRINKS")
+        
+        //let btn = UIButton.buttonWithType(UIButtonType.InfoDark) as! UIButton;
+        //btn.addTarget(self, action: "info:", forControlEvents: .TouchUpInside);
+        //self.navigationItem.rightBarButtonItem = UIBarButtonItem(customView: btn);
+
+        
+        
+        MPMpos.setLogLevel(16)
+    }
+    
+    func loadData() {
         datamanager.employeeList({ (employees) -> Void in
             let oldEmployees = self.employees
             self.employees = employees
             self.tableView.reloadData()
             self.sort(oldEmployees)
-        }, failure: { () -> Void in
-            
+            }, failure: { () -> Void in
+                
         })
         
         self.drinks = []
         datamanager.drinkList({ (drinks) -> Void in
             self.drinks = drinks
-        }, failure: { () -> Void in
+            }, failure: { () -> Void in
                 
         })
         self.merchantData = MerchantData()
@@ -217,24 +264,14 @@ class EmployeeTableController : UITableViewController {
             println(merchantData)
             self.tableView.reloadData()
             self.sort(self.employees)
-        }, failure: { () -> Void in
-            
+            }, failure: { () -> Void in
+                
         })
-        
-        MPUMposUi.initializeWithLogin(MPUMposUiApplicationName.ConCardis, integratorIdentifier: "DRINKS")
-        
-        let btn = UIButton.buttonWithType(UIButtonType.InfoDark) as! UIButton;
-        btn.addTarget(self, action: "info:", forControlEvents: .TouchUpInside);
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem(customView: btn);
-
-        
-        
-        MPMpos.setLogLevel(16)
     }
     
-    func info(sender: UIButton!) {
+    /*func info(sender: UIButton!) {
         MPUMposUi.sharedInitializedInstance().showViewController(MPUMposUi.sharedInitializedInstance().createSettingsViewController(), presentOnViewController: self);
-    }
+    }*/
     
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1;

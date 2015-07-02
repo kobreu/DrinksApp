@@ -29,21 +29,6 @@ PODS:
   - CocoaLumberjack/Extensions (2.0.1):
     - CocoaLumberjack/Default
   - Firebase (2.2.2)
-  - FontAwesomeKit (2.1.8):
-    - FontAwesomeKit/Core (= 2.1.8)
-    - FontAwesomeKit/FontAwesome (= 2.1.8)
-    - FontAwesomeKit/FoundationIcons (= 2.1.8)
-    - FontAwesomeKit/IonIcons (= 2.1.8)
-    - FontAwesomeKit/Zocial (= 2.1.8)
-  - FontAwesomeKit/Core (2.1.8)
-  - FontAwesomeKit/FontAwesome (2.1.8):
-    - FontAwesomeKit/Core
-  - FontAwesomeKit/FoundationIcons (2.1.8):
-    - FontAwesomeKit/Core
-  - FontAwesomeKit/IonIcons (2.1.8):
-    - FontAwesomeKit/Core
-  - FontAwesomeKit/Zocial (2.1.8):
-    - FontAwesomeKit/Core
   - HockeySDK (3.6.4)
   - Lockbox (2.1.0)
   - MPBSignatureViewController (1.4.11)
@@ -80,15 +65,14 @@ PODS:
 
 DEPENDENCIES:
   - Firebase (>= 2.2.0)
-  - FontAwesomeKit (~> 2.1.0)
   - HockeySDK
+  - Lockbox
   - payworks (= 2.3.1-ACQUIRERSDK)
 
 SPEC CHECKSUMS:
   AFNetworking: 05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e
   CocoaLumberjack: 019d1361244274a6138c788c6cb80baabc13fb8f
   Firebase: e35cdd2561bf4fea9c1e384e9400a9c173d19e47
-  FontAwesomeKit: 64759fb28b5d2e74a1bd81553d7c11ca10e32179
   HockeySDK: c07cdd580296737edcd0963e292c19885a53f563
   Lockbox: 16442da35d9d4286966936763be728a931d589c3
   MPBSignatureViewController: 88c3748b613770fbaa020f884e7393aa9e95af0a

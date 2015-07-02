@@ -15,4 +15,4 @@
 #import <mpos-ui/mpos-ui.h>
 #import <Firebase/Firebase.h>
 #import <AFNetworking/AFNetworking.h>
-#import <FontAwesomeKit/FontAwesomeKit.h>
+#import <Lockbox/Lockbox.h>
