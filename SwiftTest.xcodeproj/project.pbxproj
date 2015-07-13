@@ -418,7 +418,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = SwiftTest;
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "85b2f040-b69e-4f58-8bf4-5bf5c306ff55";
 				SWIFT_OBJC_BRIDGING_HEADER = "SwiftTest/mpos-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALID_ARCHS = "arm64 armv7s armv7";
@@ -445,7 +445,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = SwiftTest;
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "85b2f040-b69e-4f58-8bf4-5bf5c306ff55";
 				SWIFT_OBJC_BRIDGING_HEADER = "SwiftTest/mpos-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALID_ARCHS = "arm64 armv7s armv7";
