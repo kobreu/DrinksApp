@@ -246,7 +246,6 @@ class EmployeeTableController : UITableViewController {
             let oldEmployees = self.employees
             self.employees = employees
             self.tableView.reloadData()
-            self.sort(oldEmployees)
             }, failure: { () -> Void in
                 
         })
@@ -263,7 +262,6 @@ class EmployeeTableController : UITableViewController {
             // TODO: only hide payment Buttons if necessary
             println(merchantData)
             self.tableView.reloadData()
-            self.sort(self.employees)
             }, failure: { () -> Void in
                 
         })
@@ -316,7 +314,6 @@ class EmployeeTableController : UITableViewController {
                 self.datamanager.pushAmount(id, amount: 0, success: {} , failure: {
                 })
                 self.tableView.reloadRowsAtIndexPaths([NSIndexPath(forRow: indexPath.row, inSection: 0)], withRowAnimation: UITableViewRowAnimation.None)
-                self.sort(self.employees)
             } else {
             }
         }
@@ -336,7 +333,6 @@ class EmployeeTableController : UITableViewController {
             self.datamanager.pushAmount(id, amount: newamount, success: {
                 self.employees[indexPath.row].amount = newamount
                 self.tableView.reloadRowsAtIndexPaths([indexPath], withRowAnimation: UITableViewRowAnimation.None)
-                self.sort(self.employees)
             }, failure: {
                 let alertController = UIAlertController(title: "Could not add drink, try again!", message:
                     nil, preferredStyle: UIAlertControllerStyle.Alert)
@@ -354,39 +350,7 @@ class EmployeeTableController : UITableViewController {
         }
         self.navigationController?.pushViewController(drinks, animated: true);
     }
-    
-    func findEmployeeIndexById(employees: Array<Employee>, id:Int) -> Int? {
-        for employee in employees {
-            if(employee.mid == id) {
-                return find(employees, employee)
-            }
-        }
-        return nil
-    }
-    
-    
-    func sort(oldEmployees: Array<Employee>) {
-        let unsorted = self.employees
-        
-        println(oldEmployees)
-        println(self.employees)
-        
-        self.employees.sort({ $0.amount > $1.amount })
-        
-        self.tableView.beginUpdates()
-        
-        for (index, element) in enumerate(unsorted) {
-            let sourceRow = self.findEmployeeIndexById(oldEmployees, id: element.mid) ?? index
-            let destRow = find(self.employees, element)!
-            
-            if (destRow != sourceRow) {
-                let sourceIndexPath = NSIndexPath(forRow: sourceRow, inSection: 0)
-                let destIndexPath = NSIndexPath(forRow: destRow, inSection: 0)
-                self.tableView.moveRowAtIndexPath(sourceIndexPath, toIndexPath: destIndexPath)
-            }
-        }
-        self.tableView.endUpdates()
-    }
+
 }
 
 class DrinksTableController : UITableViewController {

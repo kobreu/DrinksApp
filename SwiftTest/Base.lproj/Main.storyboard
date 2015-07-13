@@ -5,7 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <scenes>
-        <!--payworks Kitchen POS-->
+        <!--Kitchen POS-->
         <scene sceneID="SmX-Rg-68X">
             <objects>
                 <tableViewController id="Sha-59-bNT" customClass="EmployeeTableController" customModule="SwiftTest" customModuleProvider="target" sceneMemberID="viewController">
@@ -47,7 +47,17 @@
                             <outlet property="delegate" destination="Sha-59-bNT" id="cDt-o5-RaL"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="payworks Kitchen POS" id="eqI-1t-QAH">
+                    <navigationItem key="navigationItem" title="Kitchen POS" id="eqI-1t-QAH">
+                        <barButtonItem key="leftBarButtonItem" title="Item" style="plain" id="yDR-VF-ZAS">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="wnL-6i-Coj">
+                                <rect key="frame" x="16" y="-20" width="191" height="144"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="aasas" image="payworks_logo_blueb.png">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" style="plain" id="F4y-F9-KOl">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="TbI-sd-ZDb">
                                 <rect key="frame" x="-23" y="-15" width="133" height="30"/>
@@ -240,4 +250,7 @@
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="payworks_logo_blueb.png" width="107" height="21"/>
+    </resources>
 </document>
