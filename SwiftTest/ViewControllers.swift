@@ -24,14 +24,12 @@ class DrinkTableViewCell : UITableViewCell {
 }
 
 class Employee : NSObject {
-    var mid = 0
     var title = "fribbu"
     var amount = 0
     
     required override init() {}
     
     init(id:Int, name:String, amount: Int){
-        self.mid = id
         self.title = name
         self.amount = amount
     }
@@ -67,6 +65,7 @@ class MerchantData : NSObject {
     var serverType = "TEST"
     var readerModel = "MIURA"
     var paymentEnabled = true
+
     
     required override init() {}
     
@@ -94,6 +93,11 @@ class DataManager {
     func merchantData(success: (MerchantData) -> Void, failure: () -> Void) {
         success(MerchantData())
     }
+    
+    func addUser(name: String, email: String, money: Int, success: (Void -> Void), failure: (Void -> Void))
+    {
+        success();
+    }
 }
 
 
@@ -116,7 +120,6 @@ class FirebaseDataManager : DataManager {
             while let rest = enumerator.nextObject() as? FDataSnapshot {
                 println(rest.value)
                 let emp = Employee()
-                emp.mid = rest.value["id"] as! Int
                 emp.title = rest.value["name"] as! String
                 emp.amount = rest.value["amount"] as! Int
                 users.append(emp)
@@ -182,6 +185,17 @@ class FirebaseDataManager : DataManager {
         
         drink.updateChildValues(stock)
     }
+    
+    override func addUser(name: String, email: String, money: Int, success: (Void -> Void), failure: (Void -> Void)) {
+        let pushAmountRef = fireBaseWithPath("/employees")
+        let AddUser = [
+            "name":name,
+            "email":email,
+            "amount":money
+        ]
+        let AddUserRef = pushAmountRef.childByAutoId();
+        AddUserRef.setValue(AddUser);
+    }
 }
 
 class SettingsController : UITableViewController
@@ -209,6 +223,21 @@ class SettingsController : UITableViewController
         MPUMposUi.sharedInitializedInstance().showViewController(MPUMposUi.sharedInitializedInstance().createSettingsViewController(), presentOnViewController: self);
     }
 }
+
+class AddUserController : UIViewController
+{
+    //In xCode Builder
+    @IBOutlet weak var AddUserName: UITextField!
+    @IBOutlet weak var AddUserEMail: UITextField!
+    @IBOutlet weak var AddUserMoney: UITextField!
+    
+    var finished: ((String, String, Int) -> Void)!
+    @IBAction func AddUserBtn(sender: AnyObject)
+    {
+        finished(AddUserName.text,AddUserEMail.text,AddUserMoney.text.toInt()!);
+    }
+}
+
 
 
 class EmployeeTableController : UITableViewController {
@@ -239,6 +268,20 @@ class EmployeeTableController : UITableViewController {
         
         
         MPMpos.setLogLevel(16)
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if (segue.identifier == "ADDUSER")
+        {
+            let VC: AddUserController = segue.destinationViewController as! AddUserController
+            VC.finished =  {(name:String, email:String, amount:Int) -> () in
+                self.datamanager.addUser(name, email: email, money: amount, success: {
+                    NSLog("aaaa")
+                    }, failure: {
+                    NSLog("bbbb")
+                })
+            }
+        }
     }
     
     func loadData() {
@@ -291,7 +334,6 @@ class EmployeeTableController : UITableViewController {
         let button = UIButton();
         button.setTitle("title", forState: .Normal);
         cell.pay.hidden = !self.merchantData.paymentEnabled || amtD <= 0.0
-        cell.tag = self.employees[index].mid
         [cell.addSubview(button)];
         return cell
     }
@@ -310,7 +352,7 @@ class EmployeeTableController : UITableViewController {
             self.dismissViewControllerAnimated(true, completion: nil)
             if (result == MPUMposUiTransactionResult.Approved) {
                 self.employees[indexPath.row].amount = 0
-                let id = self.employees[indexPath.row].mid
+                let id = 0;
                 self.datamanager.pushAmount(id, amount: 0, success: {} , failure: {
                 })
                 self.tableView.reloadRowsAtIndexPaths([NSIndexPath(forRow: indexPath.row, inSection: 0)], withRowAnimation: UITableViewRowAnimation.None)
@@ -328,7 +370,7 @@ class EmployeeTableController : UITableViewController {
         drinks.drinks = self.drinks
         drinks.finished = {(drink:Drink) -> () in
             let newamount = self.employees[indexPath.row].amount + drink.cost
-            let id = self.employees[indexPath.row].mid
+            let id = 0;
             let amount = self.employees[indexPath.row].amount
             self.datamanager.pushAmount(id, amount: newamount, success: {
                 self.employees[indexPath.row].amount = newamount
