@@ -364,7 +364,7 @@ class EmployeeTableController : UITableViewController {
             if (result == MPUMposUiTransactionResult.Approved) {
                 self.employees[indexPath.row].amount = 0
                 self.datamanager.pushAmount(self.employees[indexPath.row].key, amount: 0, success: {} , failure: {
-                })
+                }) 
                 self.tableView.reloadRowsAtIndexPaths([NSIndexPath(forRow: indexPath.row, inSection: 0)], withRowAnimation: UITableViewRowAnimation.None)
             } else {
             }
