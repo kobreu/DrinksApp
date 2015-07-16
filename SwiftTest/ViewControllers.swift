@@ -26,6 +26,7 @@ class DrinkTableViewCell : UITableViewCell {
 class Employee : NSObject {
     var title = "fribbu"
     var amount = 0
+    var key = "";
     
     required override init() {}
     
@@ -82,7 +83,7 @@ class DataManager {
         success([Drink(name:"Mate", cost: 100),Drink(name:"Spezi", cost: 100)])
     }
     
-    func pushAmount(employee: Int, amount:Int, success: (Void -> Void), failure: (Void -> Void)) {
+    func pushAmount(employeekey: String, amount:Int, success: (Void -> Void), failure: (Void -> Void)) {
         success()
     }
     
@@ -122,6 +123,7 @@ class FirebaseDataManager : DataManager {
                 let emp = Employee()
                 emp.title = rest.value["name"] as! String
                 emp.amount = rest.value["amount"] as! Int
+                emp.key = rest.key;
                 users.append(emp)
             }
             success(users)
@@ -166,10 +168,10 @@ class FirebaseDataManager : DataManager {
         })
     }
     
-    override func pushAmount(employee: Int, amount: Int, success: (Void -> Void), failure: (Void -> Void)) {
+    override func pushAmount(employeekey: String, amount: Int, success: (Void -> Void), failure: (Void -> Void)) {
         let pushAmountRef = fireBaseWithPath("/employees")
         
-        let employee = pushAmountRef.childByAppendingPath(String(employee - 1))
+        let employee = pushAmountRef.childByAppendingPath(employeekey)
         
         var amount = ["amount": amount]
         
@@ -352,8 +354,7 @@ class EmployeeTableController : UITableViewController {
             self.dismissViewControllerAnimated(true, completion: nil)
             if (result == MPUMposUiTransactionResult.Approved) {
                 self.employees[indexPath.row].amount = 0
-                let id = 0;
-                self.datamanager.pushAmount(id, amount: 0, success: {} , failure: {
+                self.datamanager.pushAmount(self.employees[indexPath.row].key, amount: 0, success: {} , failure: {
                 })
                 self.tableView.reloadRowsAtIndexPaths([NSIndexPath(forRow: indexPath.row, inSection: 0)], withRowAnimation: UITableViewRowAnimation.None)
             } else {
@@ -370,9 +371,8 @@ class EmployeeTableController : UITableViewController {
         drinks.drinks = self.drinks
         drinks.finished = {(drink:Drink) -> () in
             let newamount = self.employees[indexPath.row].amount + drink.cost
-            let id = 0;
             let amount = self.employees[indexPath.row].amount
-            self.datamanager.pushAmount(id, amount: newamount, success: {
+            self.datamanager.pushAmount(self.employees[indexPath.row].key, amount: newamount, success: {
                 self.employees[indexPath.row].amount = newamount
                 self.tableView.reloadRowsAtIndexPaths([indexPath], withRowAnimation: UITableViewRowAnimation.None)
             }, failure: {
