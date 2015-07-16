@@ -60,11 +60,11 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" style="plain" id="to0-tb-wte">
                             <view key="customView" contentMode="scaleToFill" id="6at-rq-yAu">
-                                <rect key="frame" x="0.0" y="0.0" width="133" height="33"/>
+                                <rect key="frame" x="435" y="5" width="150" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jvB-Ez-upM">
-                                        <rect key="frame" x="81" y="-1" width="44" height="30"/>
+                                        <rect key="frame" x="98" y="2" width="44" height="30"/>
                                         <state key="normal" title="Admin">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
@@ -72,23 +72,17 @@
                                             <segue destination="Vi5-TO-86l" kind="show" id="dn0-5x-hsw"/>
                                         </connections>
                                     </button>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="epW-Eq-G74">
-                                        <rect key="frame" x="-10" y="0.0" width="83" height="33"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lct-jW-EhW">
-                                                <rect key="frame" x="18" y="0.0" width="65" height="30"/>
-                                                <state key="normal" title="Add User">
-                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                </state>
-                                                <connections>
-                                                    <segue destination="fYl-yV-DBo" kind="popoverPresentation" identifier="ADDUSER" popoverAnchorView="lct-jW-EhW" id="oNS-qv-QAc">
-                                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
-                                                    </segue>
-                                                </connections>
-                                            </button>
-                                        </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lct-jW-EhW">
+                                        <rect key="frame" x="8" y="2" width="65" height="30"/>
+                                        <state key="normal" title="Add User">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="fYl-yV-DBo" kind="popoverPresentation" identifier="ADDUSER" popoverAnchorView="lct-jW-EhW" id="oNS-qv-QAc">
+                                                <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                            </segue>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
@@ -96,6 +90,11 @@
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dqN-Oh-UAA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="4cT-0z-mHJ">
+                    <rect key="frame" x="0.0" y="0.0" width="133" height="33"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
             </objects>
             <point key="canvasLocation" x="851" y="-1589"/>
         </scene>
@@ -203,7 +202,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" returnKeyType="done"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="-100000" borderStyle="roundedRect" placeholder="Money" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RNT-8b-nj5">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1" borderStyle="roundedRect" placeholder="Money" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RNT-8b-nj5">
                                 <rect key="frame" x="16" y="104" width="268" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>

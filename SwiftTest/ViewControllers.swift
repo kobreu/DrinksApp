@@ -57,6 +57,7 @@ class Drink : NSObject {
 
 
 class MerchantData : NSObject {
+    var NewEmployeeDisc = -300;
     var name = "payworks GmbH"
     var street = "Grillparzerstraße 14"
     var townzip = "81675 München"
@@ -154,6 +155,7 @@ class FirebaseDataManager : DataManager {
         
         merchantDataRef.observeEventType(.Value, withBlock: { (snapshot) -> Void in
             let merchantData = MerchantData()
+            merchantData.NewEmployeeDisc = snapshot.value["NewEmployeeDisc"] as! Int
             merchantData.name = snapshot.value["name"] as! String
             merchantData.street = snapshot.value["street"] as! String
             merchantData.townzip = snapshot.value["townzip"] as! String
@@ -228,15 +230,20 @@ class SettingsController : UITableViewController
 
 class AddUserController : UIViewController
 {
-    //In xCode Builder
+    //New Employee Discount
+    var merchantData:MerchantData!;
     @IBOutlet weak var AddUserName: UITextField!
     @IBOutlet weak var AddUserEMail: UITextField!
     @IBOutlet weak var AddUserMoney: UITextField!
+    override func viewDidLoad()
+    {
+        AddUserMoney.text = String(self.merchantData.NewEmployeeDisc);
+    }
     
     var finished: ((String, String, Int) -> Void)!
     @IBAction func AddUserBtn(sender: AnyObject)
     {
-        finished(AddUserName.text,AddUserEMail.text,AddUserMoney.text.toInt()!);
+        finished(AddUserName.text,AddUserEMail.text,self.merchantData.NewEmployeeDisc);
     }
 }
 
@@ -276,6 +283,8 @@ class EmployeeTableController : UITableViewController {
         if (segue.identifier == "ADDUSER")
         {
             let VC: AddUserController = segue.destinationViewController as! AddUserController
+            var amount = self.merchantData.NewEmployeeDisc;
+            VC.merchantData = self.merchantData;
             VC.finished =  {(name:String, email:String, amount:Int) -> () in
                 self.datamanager.addUser(name, email: email, money: amount, success: {
                     NSLog("aaaa")
