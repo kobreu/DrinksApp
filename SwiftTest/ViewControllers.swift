@@ -100,6 +100,10 @@ class DataManager {
     {
         success();
     }
+    
+    func removeUser(key: String, success: (Void -> Void), failure: (Void -> Void)) {
+        success();
+    }
 }
 
 
@@ -200,6 +204,12 @@ class FirebaseDataManager : DataManager {
         let AddUserRef = pushAmountRef.childByAutoId();
         AddUserRef.setValue(AddUser);
     }
+    
+    override func removeUser(key: String, success: (Void -> Void), failure: (Void -> Void)) {
+        let ref = fireBaseWithPath("/employees")
+        let employee = ref.childByAppendingPath(key)
+        employee.setValue(nil)
+    }
 }
 
 class SettingsController : UITableViewController
@@ -259,7 +269,6 @@ class EmployeeTableController : UITableViewController {
     
     override func viewDidLoad() {
         self.employees = []
-        
         if(Lockbox.stringForKey(LockboxLocationConstant) == nil) {
             var alert = UIAlertController(title: "Alert", message: "Please go to Admin to configure a location!", preferredStyle: UIAlertControllerStyle.Alert)
             alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.Cancel, handler: nil))
@@ -347,6 +356,27 @@ class EmployeeTableController : UITableViewController {
         cell.pay.hidden = !self.merchantData.paymentEnabled || amtD <= 0.0
         [cell.addSubview(button)];
         return cell
+    }
+    
+    override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
+        return true
+    }
+    
+    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+        let index = indexPath.row
+        if(self.employees[index].amount > 0) {
+            let alertController = UIAlertController(title: "Can't delete user with open bill!", message:
+                "Please pay the bill first, then delete the user", preferredStyle: UIAlertControllerStyle.Alert)
+            alertController.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default,handler: nil))
+            
+            self.presentViewController(alertController, animated: true, completion: nil)
+        } else {
+            self.datamanager.removeUser(self.employees[index].key, success: { () -> Void in
+                
+                }, failure: { () -> Void in
+                    
+            })
+        }
     }
     
     
