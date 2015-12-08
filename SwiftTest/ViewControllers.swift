@@ -124,7 +124,7 @@ class FirebaseDataManager : DataManager {
             let enumerator = snapshot.children
             var users:Array<Employee> = []
             while let rest = enumerator.nextObject() as? FDataSnapshot {
-                println(rest.value)
+                print(rest.value)
                 let emp = Employee()
                 emp.title = rest.value["name"] as! String
                 emp.amount = rest.value["amount"] as! Int
@@ -179,7 +179,7 @@ class FirebaseDataManager : DataManager {
         
         let employee = pushAmountRef.childByAppendingPath(employeekey)
         
-        var amount = ["amount": amount]
+        let amount = ["amount": amount]
         
         employee.updateChildValues(amount)
     }
@@ -189,7 +189,7 @@ class FirebaseDataManager : DataManager {
         
         let drink = pushAmountRef.childByAppendingPath(String(drink))
         
-        var stock = ["stock": stock]
+        let stock = ["stock": stock]
         
         drink.updateChildValues(stock)
     }
@@ -253,12 +253,13 @@ class AddUserController : UIViewController
     var finished: ((String, String, Int) -> Void)!
     @IBAction func AddUserBtn(sender: AnyObject)
     {
-        finished(AddUserName.text,AddUserEMail.text,self.merchantData.NewEmployeeDisc);
+        finished(AddUserName.text!,AddUserEMail.text!,self.merchantData.NewEmployeeDisc);
     }
 }
 
 
 
+@available(iOS 8.0, *)
 class EmployeeTableController : UITableViewController {
     
     var employees:Array<Employee>!
@@ -270,7 +271,7 @@ class EmployeeTableController : UITableViewController {
     override func viewDidLoad() {
         self.employees = []
         if(Lockbox.stringForKey(LockboxLocationConstant) == nil) {
-            var alert = UIAlertController(title: "Alert", message: "Please go to Admin to configure a location!", preferredStyle: UIAlertControllerStyle.Alert)
+            let alert = UIAlertController(title: "Alert", message: "Please go to Admin to configure a location!", preferredStyle: UIAlertControllerStyle.Alert)
             alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.Cancel, handler: nil))
             self.presentViewController(alert, animated: true, completion: nil)
         } else {
@@ -323,7 +324,7 @@ class EmployeeTableController : UITableViewController {
         datamanager.merchantData({ (merchantData) -> Void in
             self.merchantData = merchantData
             // TODO: only hide payment Buttons if necessary
-            println(merchantData)
+            print(merchantData)
             self.tableView.reloadData()
             }, failure: { () -> Void in
                 
@@ -346,10 +347,10 @@ class EmployeeTableController : UITableViewController {
         let identifier = "identifier";
         let cell = (tableView.dequeueReusableCellWithIdentifier(identifier) ?? CustomTableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: identifier)) as! CustomTableViewCell;
         let index = indexPath.row
-        println(self.employees[index].title)
+        print(self.employees[index].title)
         cell.textLabel?.text = self.employees[index].title
         let amtD = Double(self.employees[index].amount) / 100.0
-        println(amtD)
+        print(amtD)
         cell.amt.text = String(format: "%.2f €", amtD)
         let button = UIButton();
         button.setTitle("title", forState: .Normal);

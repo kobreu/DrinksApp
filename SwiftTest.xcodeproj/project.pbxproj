@@ -30,7 +30,7 @@
 
 /* Begin PBXFileReference section */
 		0D50387589C8D54105D2173A /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		2DEA8ED51A4876E3004EF502 /* SwiftTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DEA8ED51A4876E3004EF502 /* Drinks App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Drinks App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DEA8ED91A4876E3004EF502 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2DEA8EDA1A4876E3004EF502 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2DEA8EDF1A4876E3004EF502 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -81,7 +81,7 @@
 		2DEA8ED61A4876E3004EF502 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2DEA8ED51A4876E3004EF502 /* SwiftTest.app */,
+				2DEA8ED51A4876E3004EF502 /* Drinks App.app */,
 				2DEA8EEA1A4876E3004EF502 /* SwiftTestTests.xctest */,
 			);
 			name = Products;
@@ -164,7 +164,7 @@
 			);
 			name = SwiftTest;
 			productName = SwiftTest;
-			productReference = 2DEA8ED51A4876E3004EF502 /* SwiftTest.app */;
+			productReference = 2DEA8ED51A4876E3004EF502 /* Drinks App.app */;
 			productType = "com.apple.product-type.application";
 		};
 		2DEA8EE91A4876E3004EF502 /* SwiftTestTests */ = {
@@ -191,6 +191,8 @@
 		2DEA8ECD1A4876E3004EF502 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0710;
+				LastSwiftUpdateCheck = 0710;
 				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = "Korbinian Breu";
 				TargetAttributes = {
@@ -413,15 +415,17 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEFINES_MODULE = YES;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 					"$(PODS_ROOT)/HockeySDK/Vendor",
 				);
 				INFOPLIST_FILE = SwiftTest/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = SwiftTest;
+				PRODUCT_BUNDLE_IDENTIFIER = io.payworks.labs.retail.SwiftTest;
+				PRODUCT_NAME = "Drinks App";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "SwiftTest/mpos-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -440,16 +444,18 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEFINES_MODULE = YES;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 					"$(PODS_ROOT)/HockeySDK/Vendor",
 				);
 				INFOPLIST_FILE = SwiftTest/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = SwiftTest;
-				PROVISIONING_PROFILE = "";
+				PRODUCT_BUNDLE_IDENTIFIER = io.payworks.labs.retail.SwiftTest;
+				PRODUCT_NAME = "Drinks App";
+				PROVISIONING_PROFILE = "110196b2-dd83-4f9d-8fbb-181529df9eff";
 				SWIFT_OBJC_BRIDGING_HEADER = "SwiftTest/mpos-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALID_ARCHS = "arm64 armv7s armv7";
