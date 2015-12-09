@@ -11,22 +11,11 @@
 		2DEA8EE01A4876E3004EF502 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DEA8EDE1A4876E3004EF502 /* Main.storyboard */; };
 		2DEA8EE21A4876E3004EF502 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DEA8EE11A4876E3004EF502 /* Images.xcassets */; };
 		2DEA8EE51A4876E3004EF502 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2DEA8EE31A4876E3004EF502 /* LaunchScreen.xib */; };
-		2DEA8EF11A4876E3004EF502 /* SwiftTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DEA8EF01A4876E3004EF502 /* SwiftTestTests.swift */; };
 		2DEA8F051A487E7B004EF502 /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DEA8F041A487E7B004EF502 /* ExternalAccessory.framework */; };
 		2DF13B491B53C72100349BE9 /* payworks_logo_blueb@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DF13B481B53C72100349BE9 /* payworks_logo_blueb@2x.png */; };
 		2DF8D4041A7164CC002F507F /* ViewControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DF8D4031A7164CC002F507F /* ViewControllers.swift */; };
 		90180996989980138D7B4F53 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4996AC80A9DF2958237ACA3C /* libPods.a */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		2DEA8EEB1A4876E3004EF502 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2DEA8ECD1A4876E3004EF502 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 2DEA8ED41A4876E3004EF502;
-			remoteInfo = SwiftTest;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0D50387589C8D54105D2173A /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -36,7 +25,6 @@
 		2DEA8EDF1A4876E3004EF502 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2DEA8EE11A4876E3004EF502 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		2DEA8EE41A4876E3004EF502 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		2DEA8EEA1A4876E3004EF502 /* SwiftTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DEA8EEF1A4876E3004EF502 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2DEA8EF01A4876E3004EF502 /* SwiftTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftTestTests.swift; sourceTree = "<group>"; };
 		2DEA8F031A487892004EF502 /* mpos-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "mpos-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -54,13 +42,6 @@
 			files = (
 				2DEA8F051A487E7B004EF502 /* ExternalAccessory.framework in Frameworks */,
 				90180996989980138D7B4F53 /* libPods.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2DEA8EE71A4876E3004EF502 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,7 +63,6 @@
 			isa = PBXGroup;
 			children = (
 				2DEA8ED51A4876E3004EF502 /* Drinks App.app */,
-				2DEA8EEA1A4876E3004EF502 /* SwiftTestTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -167,24 +147,6 @@
 			productReference = 2DEA8ED51A4876E3004EF502 /* Drinks App.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2DEA8EE91A4876E3004EF502 /* SwiftTestTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 2DEA8EF71A4876E3004EF502 /* Build configuration list for PBXNativeTarget "SwiftTestTests" */;
-			buildPhases = (
-				2DEA8EE61A4876E3004EF502 /* Sources */,
-				2DEA8EE71A4876E3004EF502 /* Frameworks */,
-				2DEA8EE81A4876E3004EF502 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				2DEA8EEC1A4876E3004EF502 /* PBXTargetDependency */,
-			);
-			name = SwiftTestTests;
-			productName = SwiftTestTests;
-			productReference = 2DEA8EEA1A4876E3004EF502 /* SwiftTestTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -199,10 +161,6 @@
 					2DEA8ED41A4876E3004EF502 = {
 						CreatedOnToolsVersion = 6.1.1;
 						DevelopmentTeam = PR8KQJ7W56;
-					};
-					2DEA8EE91A4876E3004EF502 = {
-						CreatedOnToolsVersion = 6.1.1;
-						TestTargetID = 2DEA8ED41A4876E3004EF502;
 					};
 				};
 			};
@@ -220,7 +178,6 @@
 			projectRoot = "";
 			targets = (
 				2DEA8ED41A4876E3004EF502 /* SwiftTest */,
-				2DEA8EE91A4876E3004EF502 /* SwiftTestTests */,
 			);
 		};
 /* End PBXProject section */
@@ -234,13 +191,6 @@
 				2DEA8EE01A4876E3004EF502 /* Main.storyboard in Resources */,
 				2DEA8EE51A4876E3004EF502 /* LaunchScreen.xib in Resources */,
 				2DEA8EE21A4876E3004EF502 /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2DEA8EE81A4876E3004EF502 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,23 +239,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2DEA8EE61A4876E3004EF502 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2DEA8EF11A4876E3004EF502 /* SwiftTestTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		2DEA8EEC1A4876E3004EF502 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 2DEA8ED41A4876E3004EF502 /* SwiftTest */;
-			targetProxy = 2DEA8EEB1A4876E3004EF502 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		2DEA8EDE1A4876E3004EF502 /* Main.storyboard */ = {
@@ -462,40 +396,6 @@
 			};
 			name = Release;
 		};
-		2DEA8EF81A4876E3004EF502 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = SwiftTestTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftTest.app/SwiftTest";
-			};
-			name = Debug;
-		};
-		2DEA8EF91A4876E3004EF502 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = SwiftTestTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftTest.app/SwiftTest";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -513,15 +413,6 @@
 			buildConfigurations = (
 				2DEA8EF51A4876E3004EF502 /* Debug */,
 				2DEA8EF61A4876E3004EF502 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		2DEA8EF71A4876E3004EF502 /* Build configuration list for PBXNativeTarget "SwiftTestTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				2DEA8EF81A4876E3004EF502 /* Debug */,
-				2DEA8EF91A4876E3004EF502 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

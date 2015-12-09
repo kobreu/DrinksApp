@@ -16,6 +16,7 @@ class CustomTableViewCell : UITableViewCell {
     @IBOutlet weak var button: UIButton!
     @IBOutlet weak var amt: UILabel!
     @IBOutlet weak var pay: UIButton!
+    @IBOutlet weak var nameLabel: UILabel!
 }
 
 class DrinkTableViewCell : UITableViewCell {
@@ -348,13 +349,13 @@ class EmployeeTableController : UITableViewController {
         let cell = (tableView.dequeueReusableCellWithIdentifier(identifier) ?? CustomTableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: identifier)) as! CustomTableViewCell;
         let index = indexPath.row
         print(self.employees[index].title)
-        cell.textLabel?.text = self.employees[index].title
+        cell.nameLabel.text = self.employees[index].title
         let amtD = Double(self.employees[index].amount) / 100.0
         print(amtD)
-        cell.amt.text = String(format: "%.2f €", amtD)
+        cell.amt!.text = String(format: "%.2f €", amtD)
         let button = UIButton();
         button.setTitle("title", forState: .Normal);
-        cell.pay.hidden = !self.merchantData.paymentEnabled || amtD <= 0.0
+        cell.pay!.hidden = !self.merchantData.paymentEnabled || amtD <= 0.0
         [cell.addSubview(button)];
         return cell
     }

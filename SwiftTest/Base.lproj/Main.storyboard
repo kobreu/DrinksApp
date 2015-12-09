@@ -1,25 +1,30 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="boI-RT-y9L">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="boI-RT-y9L">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Kitchen POS-->
         <scene sceneID="SmX-Rg-68X">
             <objects>
-                <tableViewController id="Sha-59-bNT" customClass="EmployeeTableController" customModule="SwiftTest" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="Sha-59-bNT" customClass="EmployeeTableController" customModule="Drinks_App" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="blT-d0-V39">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="identifier" id="W7f-FE-Gzt" customClass="CustomTableViewCell" customModule="SwiftTest" customModuleProvider="target">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="identifier" id="W7f-FE-Gzt" customClass="CustomTableViewCell" customModule="Drinks_App" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="86" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="W7f-FE-Gzt" id="fmj-uC-GxC">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0XE-pK-eaN">
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0XE-pK-eaN">
                                             <rect key="frame" x="495" y="0.0" width="105" height="44"/>
                                             <state key="normal" title="Pay">
                                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -28,16 +33,38 @@
                                                 <action selector="pay:" destination="Sha-59-bNT" eventType="touchUpInside" id="dQv-5Q-I7w"/>
                                             </connections>
                                         </button>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Amt" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OWa-uc-hS3">
-                                            <rect key="frame" x="326" y="13" width="91" height="21"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amt" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OWa-uc-hS3">
+                                            <rect key="frame" x="326" y="11" width="91" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="91" id="XaI-uR-zxK"/>
+                                            </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hg0-ob-HYh">
+                                            <rect key="frame" x="15" y="11" width="187" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstItem="OWa-uc-hS3" firstAttribute="leading" secondItem="Hg0-ob-HYh" secondAttribute="trailing" constant="124" id="0Bx-iT-3VS"/>
+                                        <constraint firstItem="OWa-uc-hS3" firstAttribute="centerY" secondItem="fmj-uC-GxC" secondAttribute="centerY" id="34E-kU-9SF"/>
+                                        <constraint firstItem="0XE-pK-eaN" firstAttribute="leading" secondItem="OWa-uc-hS3" secondAttribute="trailing" constant="78" id="Gv9-a5-D6N"/>
+                                        <constraint firstItem="0XE-pK-eaN" firstAttribute="baseline" secondItem="OWa-uc-hS3" secondAttribute="baseline" id="IYJ-ik-aga"/>
+                                        <constraint firstItem="0XE-pK-eaN" firstAttribute="top" secondItem="fmj-uC-GxC" secondAttribute="top" id="N0h-El-KWp"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="Hg0-ob-HYh" secondAttribute="trailing" constant="390" id="as8-Pb-r4P"/>
+                                        <constraint firstItem="0XE-pK-eaN" firstAttribute="firstBaseline" secondItem="OWa-uc-hS3" secondAttribute="baseline" id="lzJ-7H-cVy"/>
+                                        <constraint firstItem="Hg0-ob-HYh" firstAttribute="centerY" secondItem="fmj-uC-GxC" secondAttribute="centerY" id="pqL-lC-ehE"/>
+                                        <constraint firstAttribute="trailing" secondItem="0XE-pK-eaN" secondAttribute="trailing" id="uBw-kF-dl6"/>
+                                        <constraint firstItem="Hg0-ob-HYh" firstAttribute="leading" secondItem="fmj-uC-GxC" secondAttribute="leadingMargin" constant="7" id="ylW-wC-3ve"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="amt" destination="OWa-uc-hS3" id="LIG-cI-D6e"/>
+                                    <outlet property="nameLabel" destination="Hg0-ob-HYh" id="6m5-fr-9jc"/>
                                     <outlet property="pay" destination="0XE-pK-eaN" id="Jm5-gv-vKW"/>
                                 </connections>
                             </tableViewCell>
@@ -50,7 +77,7 @@
                     <navigationItem key="navigationItem" title="Kitchen POS" id="eqI-1t-QAH">
                         <barButtonItem key="leftBarButtonItem" title="Item" style="plain" id="yDR-VF-ZAS">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="wnL-6i-Coj">
-                                <rect key="frame" x="16" y="-20" width="191" height="144"/>
+                                <rect key="frame" x="20" y="-50" width="191" height="144"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="aasas" image="payworks_logo_blueb.png">
                                     <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -60,7 +87,7 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" style="plain" id="to0-tb-wte">
                             <view key="customView" contentMode="scaleToFill" id="6at-rq-yAu">
-                                <rect key="frame" x="435" y="5" width="150" height="33"/>
+                                <rect key="frame" x="430" y="5" width="150" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jvB-Ez-upM">
@@ -101,7 +128,7 @@
         <!--Settings Controller-->
         <scene sceneID="gjW-iW-J6d">
             <objects>
-                <tableViewController id="Vi5-TO-86l" customClass="SettingsController" customModule="SwiftTest" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="Vi5-TO-86l" customClass="SettingsController" customModule="Drinks_App" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="HgP-eF-OYq">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -110,8 +137,10 @@
                             <tableViewSection id="U4w-I7-PMw">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="gY8-2J-wlZ">
+                                        <rect key="frame" x="0.0" y="99" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gY8-2J-wlZ" id="MaZ-u9-MdX">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Location" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WAC-fm-nuG">
@@ -141,8 +170,10 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="SSu-Pi-VNE">
+                                        <rect key="frame" x="0.0" y="143" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="SSu-Pi-VNE" id="oVf-tv-WfY">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Payment" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cEk-cd-U4A">
@@ -183,7 +214,7 @@
         <!--Add User Controller-->
         <scene sceneID="bLJ-vv-Spr">
             <objects>
-                <viewController id="fYl-yV-DBo" customClass="AddUserController" customModule="SwiftTest" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="fYl-yV-DBo" customClass="AddUserController" customModule="Drinks_App" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="usr-Gb-R4Y"/>
                         <viewControllerLayoutGuide type="bottom" id="NCG-wf-nw6"/>
@@ -234,15 +265,17 @@
         <!--Drinks Table Controller-->
         <scene sceneID="owV-U7-6dg">
             <objects>
-                <tableViewController storyboardIdentifier="drinksController" id="g5c-6A-80u" customClass="DrinksTableController" customModule="SwiftTest" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="drinksController" id="g5c-6A-80u" customClass="DrinksTableController" customModule="Drinks_App" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="1cR-B0-HN9">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="identifierElse" id="26k-Fs-r3d" customClass="DrinkTableViewCell" customModule="SwiftTest" customModuleProvider="target">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="identifierElse" id="26k-Fs-r3d" customClass="DrinkTableViewCell" customModule="Drinks_App" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="86" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="26k-Fs-r3d" id="5Z2-iq-kj5">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Cost" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2G2-Tg-dgT">
@@ -288,7 +321,7 @@
         <!--Sale View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="SaleViewController" customModule="SwiftTest" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="SaleViewController" customModule="Drinks_App" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
