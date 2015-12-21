@@ -20,8 +20,8 @@ class CustomTableViewCell : UITableViewCell {
 }
 
 class DrinkTableViewCell : UITableViewCell {
-    
     @IBOutlet weak var cost: UILabel!
+    @IBOutlet weak var nameLabel: UILabel!
 }
 
 class Employee : NSObject {
@@ -459,7 +459,7 @@ class DrinksTableController : UITableViewController {
         let identifier = "identifierElse";
         let cell = (tableView.dequeueReusableCellWithIdentifier(identifier) ?? DrinkTableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: identifier)) as! DrinkTableViewCell;
         let index = indexPath.row
-        cell.textLabel?.text = self.drinks[index].title
+        cell.nameLabel?.text = self.drinks[index].title
         cell.cost.text = String(format: "%.2f €", Double(self.drinks[index].cost) / 100.0)
         return cell
     }
