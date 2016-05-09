@@ -1,0 +1,1 @@
+../../../../payworks/mpos.core.framework/Headers/MPProcessingDetails.h

@@ -191,7 +191,7 @@
         ], 
         "ERROR_TERMINAL_ERROR": [
             "Errore", 
-            "(Terminal Timeout)"
+            "(Terminal Error)"
         ], 
         "ERROR_SERVER_INVALID_RESPONSE": [
             "Errore", 
@@ -213,9 +213,17 @@
             "Errore", 
             "(Pinning failed)"
         ], 
+        "ERROR_SERVER_ACCESSORY_DEACTIVATED": [
+            "Errore", 
+            "(Term. deactivated)"
+        ], 
+        "ERROR_SERVER_ACCESSORY_NOT_ASSIGNED_TO_MERCHANT": [
+            "Errore", 
+            "(Term. not assigned)"
+        ], 
         "ERROR_TERMINAL_TIMEOUT": [
             "Errore", 
-            "(Terminal Error)"
+            "(Terminal Timeout)"
         ], 
         "ERROR_PROCESSOR_FAILED_INCONSISTENT_STATE_UNRESOLVED": [
             "Errore", 

@@ -55,8 +55,8 @@
         ], 
         "Idle": [
             "", 
-            "", 
-            "Conectado", 
+            "Por favor, ", 
+            "espere...", 
             ""
         ], 
         "InsertCard": [
@@ -68,7 +68,7 @@
         "InsertOrSwipeCard": [
             "$amount$", 
             "", 
-            "Instroduzca o", 
+            "Introduzca o", 
             "deslice tarjeta"
         ], 
         "InsertOrSwipeCardActivateNfc": [
@@ -250,6 +250,16 @@
             "", 
             "", 
             "más"
+        ], 
+        "AskingForTipConfirmation": [
+            "$amount$", 
+            "", 
+            "Add TIP?", 
+            " [X] No     [OK] Yes"
+        ], 
+        "ProviderComponentTippingAskingForTip": [
+            "", 
+            "Asking for TIP..."
         ]
     }
 }

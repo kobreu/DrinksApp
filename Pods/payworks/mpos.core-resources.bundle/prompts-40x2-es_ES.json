@@ -10,7 +10,7 @@
             ""
         ], 
         "AuthorizingTransaction": [
-            "Autorizando el pago..", 
+            "Autorizando el pago...", 
             ""
         ], 
         "BarcodeScannerActive": [
@@ -38,7 +38,7 @@
             ""
         ], 
         "Idle": [
-            "Conectado", 
+            "Por favor, espere...", 
             ""
         ], 
         "InsertCard": [
@@ -47,7 +47,7 @@
         ], 
         "InsertOrSwipeCard": [
             "$amount$", 
-            "Instroduzca o deslice tarjeta"
+            "Introduzca o deslice tarjeta"
         ], 
         "InsertOrSwipeCardActivateNfc": [
             "$amount$ Introduzca o deslice tarjeta ", 
@@ -90,11 +90,11 @@
             "Firma necesaria"
         ], 
         "ProviderAccessoryCheckingForUpdate": [
-            "Connectando con el", 
+            "Conectando con el", 
             "lector de tarjetas"
         ], 
         "ProviderAccessoryConnecting": [
-            "Connectando con el", 
+            "Conectando con el", 
             "lector de tarjetas"
         ], 
         "ProviderAccessoryUpdating": [
@@ -106,12 +106,12 @@
             "Por favor, enciéndalo"
         ], 
         "ProviderAccessoryConnectingPrinter": [
-            "Connecting to", 
-            "printer"
+            "Conectando con", 
+            "la impresora"
         ], 
         "ProviderAccessoryWaitingForPrinter": [
-            "Searching for printer", 
-            "Please turn on printer"
+            "Buscando la impresora", 
+            "Por favor, enciéndala"
         ], 
         "ProviderAborted": [
             "Pago cancelado", 
@@ -130,8 +130,8 @@
             "$error$"
         ], 
         "ProviderNotRefundable": [
-            "Reembolso", 
-            "imposible"
+            "Pago no reembolsable", 
+            ""
         ], 
         "ProviderTransactionQuerying": [
             "Buscando", 
@@ -146,23 +146,23 @@
             "Por favor, espere..."
         ], 
         "ProviderComponentPrinterSending": [
-            "Sending to", 
-            "printer"
+            "Imprimiendo...", 
+            ""
         ], 
         "ProviderComponentPrinterSent": [
-            "Successfully", 
-            "sent to printer"
+            "Imprimiendo...", 
+            ""
         ], 
         "ProviderComponentPrinterAborted": [
-            "Printing aborted", 
+            "Impresión cancelada", 
             ""
         ], 
         "ProviderComponentPrinterFailed": [
-            "Printing failed", 
+            "Error en el impresión", 
             "$error$"
         ], 
         "ReadingEMVCard": [
-            "Leyendo tarjeta", 
+            "Leyendo tarjeta...", 
             ""
         ], 
         "RemoveCardWithStatus": [
@@ -200,6 +200,13 @@
         "CardNotSupported": [
             "¡Tarjeta no soportada!", 
             "Pruebe otra o presione Cancelar"
+        ], 
+        "AskingForTipConfirmation": [
+            "$amount$", 
+            "Add TIP?"
+        ], 
+        "ProviderComponentTippingAskingForTip": [
+            "Asking for TIP..."
         ]
     }
 }

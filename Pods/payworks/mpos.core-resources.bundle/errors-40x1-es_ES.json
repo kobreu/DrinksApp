@@ -18,7 +18,7 @@
             "Accesorio no conectado"
         ], 
         "AccessoryAlreadyConnected": [
-            "Accesorio ya contectado"
+            "Accesorio ya conectado"
         ], 
         "AccessoryAlreadyDisconnected": [
             "Accesorio desconectado"
@@ -45,16 +45,16 @@
             "Error en accesorio"
         ], 
         "AccessoryComponentNotFound": [
-            "Accessory component not found"
+            "Componente no encontrado"
         ], 
         "AccessoryComponentPrinterBusy": [
-            "Printer busy"
+            "Impresora ocupada"
         ], 
         "AccessoryComponentPrinterPaperLowOrOut": [
-            "Printer low or out of paper"
+            "La impresora se quedó sin papel"
         ], 
         "AccessoryComponentPrinterCoverOpen": [
-            "Printer cover is open"
+            "La cubierta del impresora está abierta"
         ], 
         "TransactionSessionNotFound": [
             "No se encontró la sesión de la transacción"
@@ -95,11 +95,14 @@
         "ServerPinningWithRemoteFailed": [
             "Error en la verificación con la Pasarela"
         ], 
+        "ServerInvalidResponse": [
+            "Invalid response from server"
+        ], 
         "ServerError": [
             "Error en servidor"
         ], 
         "SDKResourcesNotFound": [
-            "Recursos no encontrado"
+            "Recursos no encontrados"
         ], 
         "SDKResourcesModified": [
             "Recursos modificados"
@@ -109,6 +112,9 @@
         ], 
         "InternalInconsistency": [
             "Error interno"
+        ], 
+        "ServerUnknownUsername": [
+            "No account found"
         ]
     }
 }

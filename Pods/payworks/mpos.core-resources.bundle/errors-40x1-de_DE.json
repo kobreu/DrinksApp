@@ -95,6 +95,9 @@
         "ServerPinningWithRemoteFailed": [
             "Gateway-Prüfung fehlgeschlagen"
         ], 
+        "ServerInvalidResponse": [
+            "Ungültige Antwort vom Server"
+        ], 
         "ServerError": [
             "Serverfehler"
         ], 
@@ -109,6 +112,9 @@
         ], 
         "InternalInconsistency": [
             "Interner Fehler"
+        ], 
+        "ServerUnknownUsername": [
+            "No account found"
         ]
     }
 }

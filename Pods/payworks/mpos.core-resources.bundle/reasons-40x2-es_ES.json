@@ -99,7 +99,7 @@
             "Rechazado - Config. incorrecta"
         ], 
         "DECLINED_DUPLICATE_TRANSACTION": [
-            "Rechazado - Transación en curso"
+            "Rechazado - Transacción en curso"
         ], 
         "DECLINED_INVALID_WORKFLOW": [
             "Rechazado"
@@ -120,7 +120,7 @@
             "Error procesando el pago"
         ], 
         "ERROR_APPROVED_OFFLINE": [
-            "Error (confirmado Terminal)"
+            "Error (Terminal Approval)"
         ], 
         "ERROR_PROCESSOR_INVALID_FORMAT": [
             "Error (formato inválido)"
@@ -160,6 +160,12 @@
         ], 
         "ERROR_SERVER_PINNING_FAILED": [
             "Error (Pinning failed)"
+        ], 
+        "ERROR_SERVER_ACCESSORY_DEACTIVATED": [
+            "Error (Terminal deactivated)"
+        ], 
+        "ERROR_SERVER_ACCESSORY_NOT_ASSIGNED_TO_MERCHANT": [
+            "Error (Terminal not assigned)"
         ], 
         "ERROR_TERMINAL_TIMEOUT": [
             "Error (Terminal no response)"

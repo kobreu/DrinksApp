@@ -1,0 +1,265 @@
+{
+    "info": {
+        "columns": 20, 
+        "locale": "pl_PL", 
+        "rows": 4
+    }, 
+    "localization": {
+        "ApplicationSelection": [
+            "", 
+            "Wybierz ", 
+            "swoje konto", 
+            ""
+        ], 
+        "AuthorizingTransaction": [
+            "", 
+            "Autoryzacja", 
+            "płatności...", 
+            ""
+        ], 
+        "BarcodeScannerActive": [
+            "", 
+            "Włączony skaner", 
+            "kodów kreskowych", 
+            ""
+        ], 
+        "CardNotSupportedIccMagstripe": [
+            "", 
+            "", 
+            "Spróbuj inną kartę", 
+            ""
+        ], 
+        "CardNotSupportedNfc": [
+            "", 
+            "Włóż,", 
+            "przeciągnij lub", 
+            "spróbuj inną kartę"
+        ], 
+        "CompletedWithStatus": [
+            "", 
+            "$reason1$", 
+            "$reason2$", 
+            ""
+        ], 
+        "CompletingTransaction": [
+            "", 
+            "Realizacja", 
+            "płatności...", 
+            ""
+        ], 
+        "GenericError": [
+            "", 
+            "", 
+            "Błąd", 
+            ""
+        ], 
+        "Idle": [
+            "", 
+            "", 
+            "Proszę czekać...", 
+            ""
+        ], 
+        "InsertCard": [
+            "$amount$", 
+            "", 
+            "Włóż kartę", 
+            ""
+        ], 
+        "InsertOrSwipeCard": [
+            "$amount$", 
+            "", 
+            "Włóż lub", 
+            "przeciągnij kartę"
+        ], 
+        "InsertOrSwipeCardActivateNfc": [
+            "$amount$", 
+            "Włóż lub", 
+            "przeciągnij kartę", 
+            "[OK] dla NFC"
+        ], 
+        "PINIncorrect": [
+            "", 
+            "Wprowadź PIN", 
+            "$digits$", 
+            "(błędny PIN)"
+        ], 
+        "PINLastTry": [
+            "", 
+            "Wprowadź PIN", 
+            "$digits$", 
+            "(ostatnia próba)"
+        ], 
+        "PINOk": [
+            "", 
+            "", 
+            "PIN OK", 
+            ""
+        ], 
+        "PINStatus": [
+            "", 
+            "Wprowadź PIN", 
+            "$digits$", 
+            ""
+        ], 
+        "PresentCard": [
+            "$amount$", 
+            "", 
+            "Prezentuj kartę", 
+            ""
+        ], 
+        "ProcessingTransaction": [
+            "", 
+            "Przetwarzanie", 
+            "płatności...", 
+            ""
+        ], 
+        "ProvideIdentification": [
+            "", 
+            "Wymagana", 
+            "identyfikacja", 
+            ""
+        ], 
+        "ProvideSignature": [
+            "", 
+            "Wymagany", 
+            "podpis", 
+            ""
+        ], 
+        "ProvideSignatureWithStatus": [
+            "$reason1$", 
+            "$reason2$", 
+            "Wymagany", 
+            "podpis"
+        ], 
+        "ProviderAccessoryCheckingForUpdate": [
+            ""
+        ], 
+        "ProviderAccessoryConnecting": [
+            ""
+        ], 
+        "ProviderAccessoryUpdating": [
+            ""
+        ], 
+        "ProviderAccessoryWaitingForReader": [
+            ""
+        ], 
+        "ProviderAccessoryConnectingPrinter": [
+            ""
+        ], 
+        "ProviderAccessoryWaitingForPrinter": [
+            ""
+        ], 
+        "ProviderAborted": [
+            ""
+        ], 
+        "ProviderApproved": [
+            ""
+        ], 
+        "ProviderDeclined": [
+            ""
+        ], 
+        "ProviderFailed": [
+            ""
+        ], 
+        "ProviderNotRefundable": [
+            ""
+        ], 
+        "ProviderTransactionQuerying": [
+            ""
+        ], 
+        "ProviderTransactionRegistering": [
+            ""
+        ], 
+        "ProviderAccessoryConfiguringConnectionLink": [
+            ""
+        ], 
+        "ProviderComponentPrinterSending": [
+            ""
+        ], 
+        "ProviderComponentPrinterSent": [
+            ""
+        ], 
+        "ProviderComponentPrinterAborted": [
+            ""
+        ], 
+        "ProviderComponentPrinterFailed": [
+            ""
+        ], 
+        "ReadingEMVCard": [
+            "", 
+            "", 
+            "Wczytywanie karty...", 
+            ""
+        ], 
+        "RemoveCardWithStatus": [
+            "$reason1$", 
+            "$reason2$", 
+            "", 
+            "Usuń kartę"
+        ], 
+        "SwipeCard": [
+            "$amount$", 
+            "", 
+            "Przeciągnij kartę", 
+            ""
+        ], 
+        "TransactionAborting": [
+            "", 
+            "Anulowanie", 
+            "płatności...", 
+            ""
+        ], 
+        "UpdatingDevice": [
+            "", 
+            "", 
+            "Aktualizacja...", 
+            ""
+        ], 
+        "UpdatingDeviceConfigurationUpdate": [
+            "Aktualizacja", 
+            "konfiguracji", 
+            "", 
+            "Proszę czekać..."
+        ], 
+        "UpdatingDeviceFirmwareUpdate": [
+            "Aktualizacja", 
+            "oprogramowania", 
+            "firmowego", 
+            "Proszę czekać..."
+        ], 
+        "UpdatingDeviceKeyInjection": [
+            "Generowanie kluczy", 
+            "", 
+            "", 
+            "Proszę czekać..."
+        ], 
+        "UpdatingDeviceSoftwareUpdate": [
+            "Aktualizacja", 
+            "oprogramowania", 
+            "", 
+            "Proszę czekać..."
+        ], 
+        "CardNotSupported": [
+            "Nieobsługiwana", 
+            "karta! Spróbuj inną", 
+            "kartę lub", 
+            "naciśnij \"anuluj\""
+        ], 
+        "SelectApp": [
+            "Wybierz:", 
+            "", 
+            "", 
+            "Więcej:"
+        ], 
+        "AskingForTipConfirmation": [
+            "$amount$", 
+            "", 
+            "Add TIP?", 
+            " [X] No     [OK] Yes"
+        ], 
+        "ProviderComponentTippingAskingForTip": [
+            "", 
+            "Asking for TIP..."
+        ]
+    }
+}

@@ -95,6 +95,9 @@
         "ServerPinningWithRemoteFailed": [
             "Gateway verification failed"
         ], 
+        "ServerInvalidResponse": [
+            "Invalid response from server"
+        ], 
         "ServerError": [
             "Server error"
         ], 
@@ -109,9 +112,9 @@
         ], 
         "InternalInconsistency": [
             "Internal error"
-        ],
-        "UnknownUsername": [
-        	"No account found."
-        ],
+        ], 
+        "ServerUnknownUsername": [
+            "No account found"
+        ]
     }
 }

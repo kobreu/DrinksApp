@@ -38,7 +38,8 @@
             ""
         ], 
         "Idle": [
-            "Conectado"
+            "Por favor aguarde...", 
+            ""
         ], 
         "InsertCard": [
             "$amount$", 
@@ -104,12 +105,12 @@
             "Por favor ligue o leitor"
         ], 
         "ProviderAccessoryConnectingPrinter": [
-            "Connecting to", 
-            "printer"
+            "A conectar à", 
+            "impressora"
         ], 
         "ProviderAccessoryWaitingForPrinter": [
-            "Searching for printer", 
-            "Please turn on printer"
+            "Procurando o impressora", 
+            "Por favor ligue o impressora"
         ], 
         "ProviderAborted": [
             "Pagamento abortado", 
@@ -143,19 +144,19 @@
             "o leitor..."
         ], 
         "ProviderComponentPrinterSending": [
-            "Sending to", 
-            "printer"
+            "A imprimir...", 
+            ""
         ], 
         "ProviderComponentPrinterSent": [
-            "Successfully", 
-            "sent to printer"
+            "A imprimir...", 
+            ""
         ], 
         "ProviderComponentPrinterAborted": [
-            "Printing aborted", 
+            "Impressão abortada", 
             ""
         ], 
         "ProviderComponentPrinterFailed": [
-            "Printing failed", 
+            "Impressão falhou", 
             "$error$"
         ], 
         "ReadingEMVCard": [
@@ -197,6 +198,13 @@
         "CardNotSupported": [
             "Cartão não suportado!", 
             "Tente outro cartão ou anule a operação"
+        ], 
+        "AskingForTipConfirmation": [
+            "$amount$", 
+            "Add TIP?"
+        ], 
+        "ProviderComponentTippingAskingForTip": [
+            "Asking for TIP..."
         ]
     }
 }

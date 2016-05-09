@@ -1,0 +1,76 @@
+{
+    "info": {
+        "locale": "pl_PL"
+    }, 
+    "labels": {
+        "Date": "Data", 
+        "Time": "Czas", 
+        "Status": "Status", 
+        "AmountAndCurrency": "Kwota", 
+        "StatusText": "Informacje", 
+        "Subject": "Opis", 
+        "TransactionType": "Typ", 
+        "ReceiptType": "Rodzaj pokwitowania", 
+        "Identifier": "PWID", 
+        "PaymentDetailsSource": "Tryb wprowadzania", 
+        "PaymentDetailsEMVApplicationID": "AID", 
+        "PaymentDetailsSchemeOrLabel": "Karta", 
+        "PaymentDetailsMaskedAccount": "Konto", 
+        "PaymentDetailsCustomerVerification": "Weryfikacja", 
+        "PaymentDetailsAccountSequenceNumber": "Numer karty", 
+        "ClearingDetailsTransactionIdentifier": "Transakcja", 
+        "ClearingDetailsOriginalTransactionIdentifier": "Oryginalna TX", 
+        "ClearingDetailsAuthorizationCode": "Autoryzacja", 
+        "ClearingDetailsMerchantId": "ID sprzedawcy", 
+        "ClearingDetailsTerminalId": "ID terminala", 
+        "MerchantDetailsPublicName": "Nazwa", 
+        "MerchantDetailsAddress": "Adres", 
+        "MerchantDetailsZip": "Kod pocztowy", 
+        "MerchantDetailsCity": "Miasto", 
+        "MerchantDetailsCountry": "Kraj", 
+        "MerchantDetailsContact": "Kontakt", 
+        "MerchantDetailsAdditionalInformation": "Informacje dodatkowe"
+    }, 
+    "values": {
+        "ReceiptType": {
+            "MERCHANT": "Pokwitowanie sprzedawcy", 
+            "CUSTOMER": "Pokwitowanie posiadacza karty"
+        }, 
+        "StatusText": {
+            "APPROVED": "Prosimy zachować pokwitowanie!", 
+            "DECLINED": "Autoryzacja odrzucona.", 
+            "ABORTED": "Transakcja anulowana.", 
+            "ERROR": "Transakcja niepoprawna."
+        }, 
+        "PaymentDetailsSource": {
+            "ICC": "Czip", 
+            "MAGSTRIPE": "Pasek magnetyczny", 
+            "CONTACTLESS": "Brak kontaktu", 
+            "MAGSTRIPE_AS_FALLBACK": "Pasek magnetyczny", 
+            "MANUAL": "Wpisano", 
+            "MANUAL_AS_FALLBACK": "Wpisano", 
+            "NFC_ICC": "Brak kontaktu", 
+            "NFC_MAGSTRIPE": "Brak kontaktu"
+        }, 
+        "TransactionType": {
+            "CHARGE": "Płatność", 
+            "REFUND": "Płatność zwrotna"
+        }, 
+        "PaymentDetailsCustomerVerification": {
+            "NONE": "Brak", 
+            "PIN": "PIN", 
+            "SIGNATURE": "Podpis", 
+            "PIN_AND_SIGNATURE": "PIN i podpis", 
+            "SHOPPER_DEVICE": "Urządzenie klienta", 
+            "CARD_SECURITY_CODE": "Kod zabezpieczający zgodny.", 
+            "UNKNOWN": "Dokonano weryfikacji nieznanego posiadacza karty."
+        }, 
+        "MessagesRetentionReminder": {
+            "MessagesRetentionReminder": "Prosimy zachować pokwitowanie!"
+        }, 
+        "MessagesMerchantDeclaration": {
+            "REFUND": "PROSZĘ UZNAĆ MOJE KONTO WYŚWIETLONĄ KWOTĄ", 
+            "CHARGE": "PROSZĘ OBCIĄŻYĆ MOJE KONTO WYŚWIETLONĄ KWOTĄ"
+        }
+    }
+}

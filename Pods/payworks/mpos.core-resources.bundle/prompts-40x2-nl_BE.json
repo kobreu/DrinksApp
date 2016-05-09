@@ -38,7 +38,7 @@
             ""
         ], 
         "Idle": [
-            "Verbonden", 
+            "Wacht alsjeblieft...", 
             ""
         ], 
         "InsertCard": [
@@ -106,12 +106,12 @@
             "Kaartlezer inschakelen"
         ], 
         "ProviderAccessoryConnectingPrinter": [
-            "Connecting to", 
+            "Verbind met", 
             "printer"
         ], 
         "ProviderAccessoryWaitingForPrinter": [
-            "Searching for printer", 
-            "Please turn on printer"
+            "Printer zoeken", 
+            "Printer inschakelen"
         ], 
         "ProviderAborted": [
             "Betaling afgebroken", 
@@ -146,19 +146,19 @@
             "de kaartlezer..."
         ], 
         "ProviderComponentPrinterSending": [
-            "Sending to", 
-            "printer"
+            "Afdrukken...", 
+            ""
         ], 
         "ProviderComponentPrinterSent": [
-            "Successfully", 
-            "sent to printer"
+            "Afdrukken...", 
+            ""
         ], 
         "ProviderComponentPrinterAborted": [
-            "Printing aborted", 
+            "Afdrukken afgebroken", 
             ""
         ], 
         "ProviderComponentPrinterFailed": [
-            "Printing failed", 
+            "Afdrukken mislukt", 
             "$error$"
         ], 
         "ReadingEMVCard": [
@@ -200,6 +200,13 @@
         "CardNotSupported": [
             "Kaart niet ondersteund!", 
             "Andere kaart of afbreken"
+        ], 
+        "AskingForTipConfirmation": [
+            "$amount$", 
+            "Add TIP?"
+        ], 
+        "ProviderComponentTippingAskingForTip": [
+            "Asking for TIP..."
         ]
     }
 }

@@ -231,11 +231,17 @@ class SettingsController : UITableViewController
         Lockbox.setString(locationTextField.text, forKey: LockboxLocationConstant)
         changeLocationButton.enabled = false;
         locationTextField.resignFirstResponder();
-        MPUMposUi.sharedInitializedInstance().logout();
+        MPUMposUi.sharedInitializedInstance()?.logoutFromApplication();
     }
     
     @IBAction func changePaymentSettings(sender: AnyObject) {
-        MPUMposUi.sharedInitializedInstance().showViewController(MPUMposUi.sharedInitializedInstance().createSettingsViewController(), presentOnViewController: self);
+        let viewController = MPUMposUi.sharedInitializedInstance()!.createSettingsViewController({(viewController:UIViewController) -> () in
+            self.dismissViewControllerAnimated(true, completion: nil)
+        });
+        
+        let modalNav = UINavigationController(rootViewController: viewController)
+        modalNav.modalPresentationStyle = UIModalPresentationStyle.FormSheet
+        self.presentViewController(modalNav, animated: true, completion: nil)
     }
 }
 
@@ -279,7 +285,7 @@ class EmployeeTableController : UITableViewController {
             loadData();
         }
         
-        MPUMposUi.initializeWithLogin(MPUMposUiApplicationName.ConCardis, integratorIdentifier: "DRINKS")
+        MPUMposUi.initializeWithProviderMode(MPProviderMode.LIVE, application: MPUApplicationName.Concardis, integratorIdentifier: "DRINKS");
         
         //let btn = UIButton.buttonWithType(UIButtonType.InfoDark) as! UIButton;
         //btn.addTarget(self, action: "info:", forControlEvents: .TouchUpInside);
@@ -391,9 +397,9 @@ class EmployeeTableController : UITableViewController {
 
        // controller.configuration.accessoryFamily = MPAccessoryFamily.MiuraMPI
         //controller.configuration.receiptMethod = MPUMposUiConfigurationReceiptMethod.ReadyMade;
-        let viewController = MPUMposUi.sharedInitializedInstance().createChargeTransactionViewControllerWithAmount(NSDecimalNumber(double: Double(amount) / 100.0), currency: MPCurrency.EUR, subject: String(format: "Great to have you onboard! Enjoy your day!"), customIdentifier: "customIdentifier") { (me, result, tx) -> Void in
+        let viewController = MPUMposUi.sharedInitializedInstance()!.createChargeTransactionViewControllerWithAmount(NSDecimalNumber(double: Double(amount) / 100.0), currency: MPCurrency.EUR, subject: String(format: "Great to have you onboard! Enjoy your day!"), customIdentifier: "customIdentifier") { (me, result, tx) -> Void in
             self.dismissViewControllerAnimated(true, completion: nil)
-            if (result == MPUMposUiTransactionResult.Approved) {
+            if (result == MPUTransactionResult.Approved) {
                 self.employees[indexPath.row].amount = 0
                 self.datamanager.pushAmount(self.employees[indexPath.row].key, amount: 0, success: {} , failure: {
                 }) 

@@ -4,37 +4,32 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Pods-AFNetworking.xcscheme</key>
+		<key>CocoaLumberjack.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-CocoaLumberjack.xcscheme</key>
+		<key>HockeySDK-HockeySDKResources.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-HockeySDK-HockeySDKResources.xcscheme</key>
+		<key>HockeySDK.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-HockeySDK.xcscheme</key>
+		<key>Lockbox.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-Lockbox.xcscheme</key>
+		<key>MPBSignatureViewController-MPBSignatureViewResources.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-MPBSignatureViewController-MPBSignatureViewResources.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods-MPBSignatureViewController.xcscheme</key>
+		<key>MPBSignatureViewController.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -47,42 +42,37 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>0CD876CC803D2E47691896E1</key>
+		<key>0A57651E1F6BD858ABD269AFB6701796</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>36A2EB284BA6D405BB57DE3C</key>
+		<key>12E2BC28C62976C425F4B71C2723F0B1</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>4D6492F8BBA5BF6AFFDE4A9E</key>
+		<key>1614360839428BEF54A9813F45ACB7BD</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>9694F2ECC1FAB616959CCB48</key>
+		<key>3FC2CFAD218200DD706731875DD53241</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>9939852AF901D8F062DF68C2</key>
+		<key>405540AD0E5AF64081A19CA89CD8AA50</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D92160372455A9B6FA49FEF7</key>
+		<key>DE7509C4F9EE7BE1D7D768DF93B2EB0C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F95BD078705EAC322659B663</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>FE3AE98F93A08F09BC09EBF9</key>
+		<key>FE3E2FB0F8C4FC35D4CC36BE7F5BA09D</key>
 		<dict>
 			<key>primary</key>
 			<true/>

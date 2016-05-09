@@ -45,16 +45,16 @@
             "Erreur d'accessoire"
         ], 
         "AccessoryComponentNotFound": [
-            "Accessory component not found"
+            "Composant introuvable"
         ], 
         "AccessoryComponentPrinterBusy": [
-            "Printer busy"
+            "Imprimante occupée"
         ], 
         "AccessoryComponentPrinterPaperLowOrOut": [
-            "Printer low or out of paper"
+            "L'imprimante manque de papier"
         ], 
         "AccessoryComponentPrinterCoverOpen": [
-            "Printer cover is open"
+            "Le capot de l'imprimante est ouvert"
         ], 
         "TransactionSessionNotFound": [
             "Transaction: session introuvable"
@@ -84,7 +84,7 @@
             "Erreur d'exécution de la transaction"
         ], 
         "ServerTimeout": [
-            "Server timeout"
+            "Délai dépassé du serveur"
         ], 
         "ServerUnavailable": [
             "Vérifiez votre liaison internet"
@@ -94,6 +94,9 @@
         ], 
         "ServerPinningWithRemoteFailed": [
             "Échec de contrôle de passerelle"
+        ], 
+        "ServerInvalidResponse": [
+            "Invalid response from server"
         ], 
         "ServerError": [
             "Erreur du serveur"
@@ -109,6 +112,9 @@
         ], 
         "InternalInconsistency": [
             "Erreur interne"
+        ], 
+        "ServerUnknownUsername": [
+            "No account found"
         ]
     }
 }

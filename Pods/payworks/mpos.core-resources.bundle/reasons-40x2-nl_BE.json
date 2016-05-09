@@ -161,6 +161,12 @@
         "ERROR_SERVER_PINNING_FAILED": [
             "Fout (Pinning failed)"
         ], 
+        "ERROR_SERVER_ACCESSORY_DEACTIVATED": [
+            "Fout (Terminal deactivated)"
+        ], 
+        "ERROR_SERVER_ACCESSORY_NOT_ASSIGNED_TO_MERCHANT": [
+            "Fout (Terminal not assigned)"
+        ], 
         "ERROR_TERMINAL_TIMEOUT": [
             "Fout (time-out terminal)"
         ], 

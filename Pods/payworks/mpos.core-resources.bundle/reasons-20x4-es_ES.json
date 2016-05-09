@@ -130,7 +130,7 @@
             "Rechazado"
         ], 
         "DECLINED_DUPLICATE_TRANSACTION": [
-            "Transación en curso", 
+            "Transacción en curso", 
             "Rechazado"
         ], 
         "DECLINED_INVALID_WORKFLOW": [
@@ -191,7 +191,7 @@
         ], 
         "ERROR_TERMINAL_ERROR": [
             "Error", 
-            "(Terminal Timeout)"
+            "(Terminal Error)"
         ], 
         "ERROR_SERVER_INVALID_RESPONSE": [
             "Error", 
@@ -213,9 +213,17 @@
             "Error", 
             "(Pinning failed)"
         ], 
+        "ERROR_SERVER_ACCESSORY_DEACTIVATED": [
+            "Error", 
+            "(Term. deactivated)"
+        ], 
+        "ERROR_SERVER_ACCESSORY_NOT_ASSIGNED_TO_MERCHANT": [
+            "Error", 
+            "(Term. not assigned)"
+        ], 
         "ERROR_TERMINAL_TIMEOUT": [
             "Error", 
-            "(Terminal Error)"
+            "(Terminal Timeout)"
         ], 
         "ERROR_PROCESSOR_FAILED_INCONSISTENT_STATE_UNRESOLVED": [
             "Error", 

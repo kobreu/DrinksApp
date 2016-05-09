@@ -161,6 +161,12 @@
         "ERROR_SERVER_PINNING_FAILED": [
             "Errore (Pinning failed)"
         ], 
+        "ERROR_SERVER_ACCESSORY_DEACTIVATED": [
+            "Errore (Terminal deactivated)"
+        ], 
+        "ERROR_SERVER_ACCESSORY_NOT_ASSIGNED_TO_MERCHANT": [
+            "Errore (Terminal not assigned)"
+        ], 
         "ERROR_TERMINAL_TIMEOUT": [
             "Errore (Terminal Timeout)"
         ], 

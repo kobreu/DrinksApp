@@ -45,16 +45,16 @@
             "Fout randapparaat"
         ], 
         "AccessoryComponentNotFound": [
-            "Accessory component not found"
+            "Component niet gevonden"
         ], 
         "AccessoryComponentPrinterBusy": [
-            "Printer busy"
+            "Printer is bezig"
         ], 
         "AccessoryComponentPrinterPaperLowOrOut": [
-            "Printer low or out of paper"
+            "De printer heeft geen papier"
         ], 
         "AccessoryComponentPrinterCoverOpen": [
-            "Printer cover is open"
+            "Het deksel van de printer is geopend"
         ], 
         "TransactionSessionNotFound": [
             "Transactiesessie niet gevonden"
@@ -95,6 +95,9 @@
         "ServerPinningWithRemoteFailed": [
             "Gateway verificatie mislukt"
         ], 
+        "ServerInvalidResponse": [
+            "Invalid response from server"
+        ], 
         "ServerError": [
             "Serverfout"
         ], 
@@ -109,6 +112,9 @@
         ], 
         "InternalInconsistency": [
             "Interne fout"
+        ], 
+        "ServerUnknownUsername": [
+            "No account found"
         ]
     }
 }

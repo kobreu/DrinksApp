@@ -38,7 +38,7 @@
             ""
         ], 
         "Idle": [
-            "Connected", 
+            "Please wait...", 
             ""
         ], 
         "InsertCard": [
@@ -146,12 +146,12 @@
             "Please wait..."
         ], 
         "ProviderComponentPrinterSending": [
-            "Sending to", 
-            "printer"
+            "Printing...", 
+            ""
         ], 
         "ProviderComponentPrinterSent": [
-            "Successfully", 
-            "sent to printer"
+            "Printing...", 
+            ""
         ], 
         "ProviderComponentPrinterAborted": [
             "Printing aborted", 
@@ -200,6 +200,13 @@
         "CardNotSupported": [
             "Card not supported!", 
             "Try another or press cancel"
+        ], 
+        "AskingForTipConfirmation": [
+            "$amount$", 
+            "Add TIP?"
+        ], 
+        "ProviderComponentTippingAskingForTip": [
+            "Asking for TIP..."
         ]
     }
 }

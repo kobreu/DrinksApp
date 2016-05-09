@@ -45,16 +45,16 @@
             "Erro do acessório"
         ], 
         "AccessoryComponentNotFound": [
-            "Accessory component not found"
+            "Componente não encontrado"
         ], 
         "AccessoryComponentPrinterBusy": [
-            "Printer busy"
+            "Impressora está ocupada"
         ], 
         "AccessoryComponentPrinterPaperLowOrOut": [
-            "Printer low or out of paper"
+            "A impressora esteja sem papel"
         ], 
         "AccessoryComponentPrinterCoverOpen": [
-            "Printer cover is open"
+            "A tampa da impressora está aberta"
         ], 
         "TransactionSessionNotFound": [
             "Sessão da transacção não encontrada"
@@ -95,6 +95,9 @@
         "ServerPinningWithRemoteFailed": [
             "Verificação do Gateway falhou"
         ], 
+        "ServerInvalidResponse": [
+            "Invalid response from server"
+        ], 
         "ServerError": [
             "Erro do servidor"
         ], 
@@ -109,6 +112,9 @@
         ], 
         "InternalInconsistency": [
             "Erro interno"
+        ], 
+        "ServerUnknownUsername": [
+            "No account found"
         ]
     }
 }

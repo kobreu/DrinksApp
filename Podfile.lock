@@ -1,81 +1,62 @@
 PODS:
-  - AFNetworking (2.5.4):
-    - AFNetworking/NSURLConnection (= 2.5.4)
-    - AFNetworking/NSURLSession (= 2.5.4)
-    - AFNetworking/Reachability (= 2.5.4)
-    - AFNetworking/Security (= 2.5.4)
-    - AFNetworking/Serialization (= 2.5.4)
-    - AFNetworking/UIKit (= 2.5.4)
-  - AFNetworking/NSURLConnection (2.5.4):
-    - AFNetworking/Reachability
-    - AFNetworking/Security
-    - AFNetworking/Serialization
-  - AFNetworking/NSURLSession (2.5.4):
-    - AFNetworking/Reachability
-    - AFNetworking/Security
-    - AFNetworking/Serialization
-  - AFNetworking/Reachability (2.5.4)
-  - AFNetworking/Security (2.5.4)
-  - AFNetworking/Serialization (2.5.4)
-  - AFNetworking/UIKit (2.5.4):
-    - AFNetworking/NSURLConnection
-    - AFNetworking/NSURLSession
-  - CocoaLumberjack (2.0.1):
-    - CocoaLumberjack/Default (= 2.0.1)
-    - CocoaLumberjack/Extensions (= 2.0.1)
-  - CocoaLumberjack/Core (2.0.1)
-  - CocoaLumberjack/Default (2.0.1):
+  - CocoaLumberjack (2.0.3):
+    - CocoaLumberjack/Default (= 2.0.3)
+    - CocoaLumberjack/Extensions (= 2.0.3)
+  - CocoaLumberjack/Core (2.0.3)
+  - CocoaLumberjack/Default (2.0.3):
     - CocoaLumberjack/Core
-  - CocoaLumberjack/Extensions (2.0.1):
+  - CocoaLumberjack/Extensions (2.0.3):
     - CocoaLumberjack/Default
   - Firebase (2.2.2)
   - HockeySDK (3.6.4)
   - Lockbox (2.1.0)
-  - MPBSignatureViewController (1.4.11)
-  - payworks (2.3.1-ACQUIRERSDK):
-    - payworks/mpos (= 2.3.1-ACQUIRERSDK)
-  - payworks/mpos (2.3.1-ACQUIRERSDK):
-    - payworks/mpos/accessories (= 2.3.1-ACQUIRERSDK)
-    - payworks/mpos/comlinks (= 2.3.1-ACQUIRERSDK)
-    - payworks/mpos/core (= 2.3.1-ACQUIRERSDK)
-    - payworks/mpos/ui (= 2.3.1-ACQUIRERSDK)
-  - payworks/mpos/accessories (2.3.1-ACQUIRERSDK):
-    - payworks/mpos/accessories/miura (= 2.3.1-ACQUIRERSDK)
-    - payworks/mpos/accessories/verifone-e105 (= 2.3.1-ACQUIRERSDK)
-  - payworks/mpos/accessories/miura (2.3.1-ACQUIRERSDK):
+  - MPBSignatureViewController (1.5.0)
+  - payworks (2.7.1):
+    - payworks/mpos (= 2.7.1)
+  - payworks.paybutton (2.7.1):
+    - Lockbox (~> 2.1.0)
+    - MPBSignatureViewController (~> 1.5.0)
+    - payworks/mpos/core (= 2.7.1)
+  - payworks/mpos (2.7.1):
+    - payworks/mpos/accessories (= 2.7.1)
+    - payworks/mpos/comlinks (= 2.7.1)
+    - payworks/mpos/core (= 2.7.1)
+  - payworks/mpos/accessories (2.7.1):
+    - payworks/mpos/accessories/miura (= 2.7.1)
+    - payworks/mpos/accessories/sewoo (= 2.7.1)
+    - payworks/mpos/accessories/verifone-e105 (= 2.7.1)
+  - payworks/mpos/accessories/miura (2.7.1):
     - payworks/mpos/comlinks/externalaccessory
     - payworks/mpos/core
-  - payworks/mpos/accessories/verifone-e105 (2.3.1-ACQUIRERSDK):
+  - payworks/mpos/accessories/sewoo (2.7.1):
+    - payworks/mpos/core
+  - payworks/mpos/accessories/verifone-e105 (2.7.1):
     - payworks/mpos/comlinks/verifone
     - payworks/mpos/core
-  - payworks/mpos/comlinks (2.3.1-ACQUIRERSDK):
-    - payworks/mpos/comlinks/externalaccessory (= 2.3.1-ACQUIRERSDK)
-    - payworks/mpos/comlinks/verifone (= 2.3.1-ACQUIRERSDK)
-  - payworks/mpos/comlinks/externalaccessory (2.3.1-ACQUIRERSDK):
+  - payworks/mpos/comlinks (2.7.1):
+    - payworks/mpos/comlinks/externalaccessory (= 2.7.1)
+    - payworks/mpos/comlinks/verifone (= 2.7.1)
+  - payworks/mpos/comlinks/externalaccessory (2.7.1):
     - payworks/mpos/core
-  - payworks/mpos/comlinks/verifone (2.3.1-ACQUIRERSDK):
+  - payworks/mpos/comlinks/verifone (2.7.1):
     - payworks/mpos/core
-  - payworks/mpos/core (2.3.1-ACQUIRERSDK):
-    - AFNetworking (~> 2.5.4)
+  - payworks/mpos/core (2.7.1):
     - CocoaLumberjack (~> 2.0.0)
-    - Lockbox (~> 2.1.0)
-  - payworks/mpos/ui (2.3.1-ACQUIRERSDK):
-    - MPBSignatureViewController (~> 1.4.11)
-    - payworks/mpos/core
 
 DEPENDENCIES:
   - Firebase (>= 2.2.0)
   - HockeySDK
   - Lockbox
-  - payworks (= 2.3.1-ACQUIRERSDK)
+  - payworks (= 2.7.1)
+  - payworks.paybutton (= 2.7.1)
 
 SPEC CHECKSUMS:
-  AFNetworking: 05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e
-  CocoaLumberjack: 019d1361244274a6138c788c6cb80baabc13fb8f
+  CocoaLumberjack: f58d8a19629f4d8379ae14bb3534def24161430e
   Firebase: e35cdd2561bf4fea9c1e384e9400a9c173d19e47
   HockeySDK: c07cdd580296737edcd0963e292c19885a53f563
   Lockbox: 16442da35d9d4286966936763be728a931d589c3
-  MPBSignatureViewController: 88c3748b613770fbaa020f884e7393aa9e95af0a
-  payworks: 039e2dbaa04db15387a9d4c942323aa57a667dfe
+  MPBSignatureViewController: a40b4e33456b4b85f0048e3081437aca2e53c0eb
+  payworks: 9ec39836563dd272c6fc6d72ef6f8cb861cd3025
+  payworks.paybutton: d720815787b383849c74d84b783eb5b34f20d24d
 
-COCOAPODS: 0.37.2
+COCOAPODS: 0.39.0

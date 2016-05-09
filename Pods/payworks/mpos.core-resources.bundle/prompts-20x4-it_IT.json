@@ -55,8 +55,8 @@
         ], 
         "Idle": [
             "", 
-            "", 
-            "Connesso", 
+            "Pazientare ", 
+            "qualche istante...", 
             ""
         ], 
         "InsertCard": [
@@ -250,6 +250,16 @@
             "", 
             "", 
             "more"
+        ], 
+        "AskingForTipConfirmation": [
+            "$amount$", 
+            "", 
+            "Add TIP?", 
+            " [X] No     [OK] Yes"
+        ], 
+        "ProviderComponentTippingAskingForTip": [
+            "", 
+            "Asking for TIP..."
         ]
     }
 }

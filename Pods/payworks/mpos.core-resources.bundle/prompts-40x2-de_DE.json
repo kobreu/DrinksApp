@@ -38,7 +38,7 @@
             ""
         ], 
         "Idle": [
-            "Verbunden", 
+            "Bitte warten...", 
             ""
         ], 
         "InsertCard": [
@@ -146,19 +146,19 @@
             "Bitte warten..."
         ], 
         "ProviderComponentPrinterSending": [
-            "Sending to", 
-            "printer"
+            "Drucken...", 
+            ""
         ], 
         "ProviderComponentPrinterSent": [
-            "Successfully", 
-            "sent to printer"
+            "Drucken...", 
+            ""
         ], 
         "ProviderComponentPrinterAborted": [
-            "Printing aborted", 
+            "Drucken abgebrochen", 
             ""
         ], 
         "ProviderComponentPrinterFailed": [
-            "Printing failed", 
+            "Drucken fehlgeschlagen", 
             "$error$"
         ], 
         "ReadingEMVCard": [
@@ -200,6 +200,13 @@
         "CardNotSupported": [
             "Karte nicht unterstützt!", 
             "Andere Karte oder abbrechen"
+        ], 
+        "AskingForTipConfirmation": [
+            "$amount$", 
+            "Add TIP?"
+        ], 
+        "ProviderComponentTippingAskingForTip": [
+            "Asking for TIP..."
         ]
     }
 }
