@@ -1,0 +1,1 @@
+../../../../payworks-dev/mpos.core.framework/Headers/MPPaymentDetailsFactory.h

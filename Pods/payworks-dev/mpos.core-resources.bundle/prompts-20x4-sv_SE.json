@@ -1,0 +1,282 @@
+{
+    "info": {
+        "columns": 20, 
+        "locale": "sv_SE", 
+        "rows": 4
+    }, 
+    "localization": {
+        "ApplicationSelection": [
+            "", 
+            "Välj", 
+            "konto", 
+            ""
+        ], 
+        "AuthorizingTransaction": [
+            "", 
+            "Bearbetar", 
+            "betalning...", 
+            ""
+        ], 
+        "BarcodeScannerActive": [
+            "", 
+            "Streckkodsläsare", 
+            "aktiv", 
+            ""
+        ], 
+        "CardNotSupportedIccMagstripe": [
+            "", 
+            "", 
+            "Prova ett annat kort", 
+            ""
+        ], 
+        "CardNotSupportedNfc": [
+            "", 
+            "Sätt i,", 
+            "dra eller prova ett ", 
+            "annant kort"
+        ], 
+        "CompletedWithStatus": [
+            "", 
+            "$reason1$", 
+            "$reason2$", 
+            ""
+        ], 
+        "CompletingTransaction": [
+            "", 
+            "Bearbetar", 
+            "betalning...", 
+            ""
+        ], 
+        "GenericError": [
+            "", 
+            "", 
+            "Fel", 
+            ""
+        ], 
+        "Idle": [
+            "", 
+            "", 
+            "Vänta...", 
+            ""
+        ], 
+        "InsertCard": [
+            "$amount$", 
+            "", 
+            "Sätt i kort", 
+            ""
+        ], 
+        "InsertOrSwipeCard": [
+            "$amount$", 
+            "", 
+            "Sätt i eller ", 
+            "dra kort"
+        ], 
+        "InsertOrSwipeCardActivateNfc": [
+            "$amount$", 
+            "Sätt i eller ", 
+            "dra kort", 
+            "[OK] för NFC"
+        ], 
+        "PINIncorrect": [
+            "", 
+            "Ange PIN", 
+            "$digits$ ", 
+            "(fel PIN)"
+        ], 
+        "PINLastTry": [
+            "", 
+            "Ange PIN", 
+            "$digits$ ", 
+            "(sista försöket)"
+        ], 
+        "PINOk": [
+            "", 
+            "", 
+            "PIN OK", 
+            ""
+        ], 
+        "PINStatus": [
+            "", 
+            "Ange PIN", 
+            "$siffror$", 
+            ""
+        ], 
+        "PresentCard": [
+            "$amount$", 
+            "", 
+            "Presentera kort", 
+            ""
+        ], 
+        "ProcessingTransaction": [
+            "", 
+            "Bearbetar", 
+            "betalning...", 
+            ""
+        ], 
+        "ProvideIdentification": [
+            "", 
+            "Identifikation ", 
+            "krävs", 
+            ""
+        ], 
+        "ProvideSignature": [
+            "", 
+            "Signatur ", 
+            "krävs", 
+            ""
+        ], 
+        "ProvideSignatureWithStatus": [
+            "$reason1$", 
+            "$reason2$", 
+            "Signatur ", 
+            "krävs"
+        ], 
+        "ProviderAccessoryCheckingForUpdate": [
+            ""
+        ], 
+        "ProviderAccessoryConnecting": [
+            ""
+        ], 
+        "ProviderAccessoryUpdating": [
+            ""
+        ], 
+        "ProviderAccessoryWaitingForReader": [
+            ""
+        ], 
+        "ProviderAccessoryConnectingPrinter": [
+            ""
+        ], 
+        "ProviderAccessoryWaitingForPrinter": [
+            ""
+        ], 
+        "ProviderAborted": [
+            ""
+        ], 
+        "ProviderApproved": [
+            ""
+        ], 
+        "ProviderDeclined": [
+            ""
+        ], 
+        "ProviderFailed": [
+            ""
+        ], 
+        "ProviderInconclusive": [
+            ""
+        ], 
+        "Completed": [
+            ""
+        ], 
+        "Aborted": [
+            ""
+        ], 
+        "Failed": [
+            ""
+        ], 
+        "ProviderNotRefundable": [
+            ""
+        ], 
+        "ProviderTransactionQuerying": [
+            ""
+        ], 
+        "ProviderTransactionRegistering": [
+            ""
+        ], 
+        "ProviderAccessoryConfiguringConnectionLink": [
+            ""
+        ], 
+        "ProviderComponentPrinterSending": [
+            ""
+        ], 
+        "ProviderComponentPrinterSent": [
+            ""
+        ], 
+        "ProviderComponentPrinterAborted": [
+            ""
+        ], 
+        "ProviderComponentPrinterFailed": [
+            ""
+        ], 
+        "ReadingEMVCard": [
+            "", 
+            "", 
+            "Läser kort...", 
+            ""
+        ], 
+        "RemoveCardWithStatus": [
+            "$reason1$", 
+            "$reason2$", 
+            "", 
+            "Ta ut kort"
+        ], 
+        "RemoveCard": [
+            "", 
+            "", 
+            "Ta ut kort", 
+            ""
+        ], 
+        "SwipeCard": [
+            "$belopp$", 
+            "", 
+            "Dra kort", 
+            ""
+        ], 
+        "SwipeCardWithoutAmount": [
+            "", 
+            "", 
+            "Dra kort", 
+            ""
+        ], 
+        "TransactionAborting": [
+            "", 
+            "Avbryter ", 
+            "betalning...", 
+            ""
+        ], 
+        "UpdatingDevice": [
+            "", 
+            "", 
+            "Uppdaterar...", 
+            ""
+        ], 
+        "UpdatingDeviceConfigurationUpdate": [
+            "Uppdaterar konfig", 
+            "", 
+            " ", 
+            "Vänta..."
+        ], 
+        "UpdatingDeviceFirmwareUpdate": [
+            "Uppdaterar firmware", 
+            " ", 
+            "", 
+            "Vänta..."
+        ], 
+        "UpdatingDeviceKeyInjection": [
+            "Genererar nycklar", 
+            "", 
+            "", 
+            "Vänta..."
+        ], 
+        "UpdatingDeviceSoftwareUpdate": [
+            "Uppdaterar mjukvara", 
+            "", 
+            "", 
+            "Vänta..."
+        ], 
+        "CardNotSupported": [
+            "", 
+            "Kort stöds inte!", 
+            "Prova ett annat", 
+            "eller tryck avbryt"
+        ], 
+        "AskingForTipConfirmation": [
+            "$amount$", 
+            "", 
+            "Lägg till dricks?", 
+            "[X] Nej [OK] Ja"
+        ], 
+        "ProviderComponentTippingAskingForTip": [
+            ""
+        ]
+    }
+}

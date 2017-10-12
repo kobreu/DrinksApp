@@ -1,0 +1,237 @@
+{
+    "info": {
+        "columns": 40, 
+        "locale": "sv_SE", 
+        "rows": 2
+    }, 
+    "localization": {
+        "ApplicationSelection": [
+            "Välj ditt konto", 
+            ""
+        ], 
+        "AuthorizingTransaction": [
+            "Bearbetar betalning...", 
+            ""
+        ], 
+        "BarcodeScannerActive": [
+            "Streckkodsläsare aktiv", 
+            ""
+        ], 
+        "CardNotSupportedIccMagstripe": [
+            "Prova ett annat kort", 
+            ""
+        ], 
+        "CardNotSupportedNfc": [
+            "Sätt i, ", 
+            "dra eller prova ett annat kort"
+        ], 
+        "CompletedWithStatus": [
+            "$reason1$", 
+            ""
+        ], 
+        "CompletingTransaction": [
+            "Bearbetar betalning...", 
+            ""
+        ], 
+        "GenericError": [
+            "Fel", 
+            ""
+        ], 
+        "Idle": [
+            "Vänta...", 
+            ""
+        ], 
+        "InsertCard": [
+            "$amount$", 
+            "Sätt i kort"
+        ], 
+        "InsertOrSwipeCard": [
+            "$amount$", 
+            "Sätt i eller dra kort"
+        ], 
+        "InsertOrSwipeCardActivateNfc": [
+            "$amount$ ", 
+            "Sätt i eller dra kort[OK] för NFC"
+        ], 
+        "PINIncorrect": [
+            "Ange PIN (inkorrekt) ", 
+            "$digits$"
+        ], 
+        "PINLastTry": [
+            "Ange PIN (sista försöket)", 
+            "$digits$"
+        ], 
+        "PINOk": [
+            "PIN OK", 
+            ""
+        ], 
+        "PINStatus": [
+            "Ange PIN", 
+            "$digits$"
+        ], 
+        "PresentCard": [
+            "$amount$", 
+            "Presentera kort"
+        ], 
+        "ProcessingTransaction": [
+            "Bearbetar betalning...", 
+            ""
+        ], 
+        "ProvideIdentification": [
+            "Identifikation krävs", 
+            ""
+        ], 
+        "ProvideSignature": [
+            "Signatur krävs", 
+            ""
+        ], 
+        "ProvideSignatureWithStatus": [
+            "$reason1$ ", 
+            "Signatur krävs"
+        ], 
+        "ProviderAccessoryCheckingForUpdate": [
+            "Ansluter till ", 
+            "kortläsare"
+        ], 
+        "ProviderAccessoryConnecting": [
+            "Ansluter till ", 
+            "kortläsare"
+        ], 
+        "ProviderAccessoryUpdating": [
+            "Lägger till", 
+            "uppdateringar"
+        ], 
+        "ProviderAccessoryWaitingForReader": [
+            "Söker efter läsare ", 
+            "Sätt på läsare"
+        ], 
+        "ProviderAccessoryConnectingPrinter": [
+            "Ansluter till", 
+            "skrivare"
+        ], 
+        "ProviderAccessoryWaitingForPrinter": [
+            "Söker efter skrivare ", 
+            "Sätt på skrivare"
+        ], 
+        "ProviderAborted": [
+            "Betalning avbruten", 
+            ""
+        ], 
+        "ProviderApproved": [
+            "Betalning godkänd", 
+            ""
+        ], 
+        "ProviderDeclined": [
+            "Betalning avvisad ", 
+            "$reason1$"
+        ], 
+        "ProviderFailed": [
+            "Betalning misslyckades ", 
+            "$error$"
+        ], 
+        "ProviderInconclusive": [
+            "Betalning ofullständig ", 
+            "$error$"
+        ], 
+        "Completed": [
+            "Slutförd", 
+            ""
+        ], 
+        "Aborted": [
+            "Avbruten", 
+            ""
+        ], 
+        "Failed": [
+            "Misslyckades", 
+            ""
+        ], 
+        "ProviderNotRefundable": [
+            "Betalning ej ", 
+            "återbetalningsbar"
+        ], 
+        "ProviderTransactionQuerying": [
+            "Kontrollerar", 
+            "transaktion"
+        ], 
+        "ProviderTransactionRegistering": [
+            "Registrerar", 
+            "transaktion"
+        ], 
+        "ProviderAccessoryConfiguringConnectionLink": [
+            "Konfigurerar anslutning", 
+            "Vänta..."
+        ], 
+        "ProviderComponentPrinterSending": [
+            "Skriver ut...", 
+            ""
+        ], 
+        "ProviderComponentPrinterSent": [
+            "Skriver ut...", 
+            ""
+        ], 
+        "ProviderComponentPrinterAborted": [
+            "Utskrift avbruten", 
+            ""
+        ], 
+        "ProviderComponentPrinterFailed": [
+            "Utskrift misslyckades", 
+            "$error$"
+        ], 
+        "ReadingEMVCard": [
+            "Läser kort...", 
+            ""
+        ], 
+        "RemoveCardWithStatus": [
+            "$reason1$", 
+            "Ta kort"
+        ], 
+        "RemoveCard": [
+            "", 
+            "Ta kort"
+        ], 
+        "SwipeCard": [
+            "$amount$", 
+            "Dra kort"
+        ], 
+        "SwipeCardWithoutAmount": [
+            "Dra kort", 
+            ""
+        ], 
+        "TransactionAborting": [
+            "Avbryter betalning...", 
+            ""
+        ], 
+        "UpdatingDevice": [
+            "Uppdaterar...", 
+            ""
+        ], 
+        "UpdatingDeviceConfigurationUpdate": [
+            "Uppdaterar konfiguration", 
+            "Vänligen vänta..."
+        ], 
+        "UpdatingDeviceFirmwareUpdate": [
+            "Uppdaterar firmware", 
+            "Vänligen vänta..."
+        ], 
+        "UpdatingDeviceSoftwareUpdate": [
+            "Uppdaterar mjukvara", 
+            "Vänligen vänta..."
+        ], 
+        "UpdatingDeviceKeyInjection": [
+            "Skapar nycklar", 
+            "Vänligen vänta..."
+        ], 
+        "CardNotSupported": [
+            "Kort stöds ej!", 
+            "Prova ett annat eller tryck Avbryt"
+        ], 
+        "AskingForTipConfirmation": [
+            "$amount$", 
+            "Lägg till dricks?"
+        ], 
+        "ProviderComponentTippingAskingForTip": [
+            "Fråga om dricks...", 
+            ""
+        ]
+    }
+}

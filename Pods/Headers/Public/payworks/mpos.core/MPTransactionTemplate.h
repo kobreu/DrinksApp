@@ -1,1 +1,0 @@
-../../../../payworks/mpos.core.framework/Headers/MPTransactionTemplate.h

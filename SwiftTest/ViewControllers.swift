@@ -395,6 +395,7 @@ class EmployeeTableController : UITableViewController {
         let amount = self.employees[indexPath.row].amount
         //let controller = MPUMposUi.initializeWithProviderMode(merchantData.serverType == "LIVE" ? MPProviderMode.LIVE : MPProviderMode.TEST, merchantIdentifier: merchantData.merchantIdentifier, merchantSecret: merchantData.merchantSecretKey) as! MPUMposUi
 
+        print(MPCurrency.EUR)
        // controller.configuration.accessoryFamily = MPAccessoryFamily.MiuraMPI
         //controller.configuration.receiptMethod = MPUMposUiConfigurationReceiptMethod.ReadyMade;
         let viewController = MPUMposUi.sharedInitializedInstance()!.createChargeTransactionViewControllerWithAmount(NSDecimalNumber(double: Double(amount) / 100.0), currency: MPCurrency.EUR, subject: String(format: "Great to have you onboard! Enjoy your day!"), customIdentifier: "customIdentifier") { (me, result, tx) -> Void in

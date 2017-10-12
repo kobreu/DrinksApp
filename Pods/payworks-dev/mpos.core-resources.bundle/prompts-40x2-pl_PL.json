@@ -1,0 +1,237 @@
+{
+    "info": {
+        "columns": 40, 
+        "locale": "pl_PL", 
+        "rows": 2
+    }, 
+    "localization": {
+        "ApplicationSelection": [
+            "Wybierz ", 
+            "swoje konto"
+        ], 
+        "AuthorizingTransaction": [
+            "Przetwarzanie płatności...", 
+            ""
+        ], 
+        "BarcodeScannerActive": [
+            "Włączony skaner", 
+            "kodów kreskowych"
+        ], 
+        "CardNotSupportedIccMagstripe": [
+            "Spróbuj inną kartę", 
+            ""
+        ], 
+        "CardNotSupportedNfc": [
+            "Włóż, przeciągnij", 
+            "lub spróbuj inną kartę"
+        ], 
+        "CompletedWithStatus": [
+            "$reason1$", 
+            ""
+        ], 
+        "CompletingTransaction": [
+            "Przetwarzanie płatności...", 
+            ""
+        ], 
+        "GenericError": [
+            "Błąd", 
+            ""
+        ], 
+        "Idle": [
+            "Proszę czekać...", 
+            ""
+        ], 
+        "InsertCard": [
+            "$amount$", 
+            "Włóż kartę"
+        ], 
+        "InsertOrSwipeCard": [
+            "$amount$", 
+            "Włóż lub przeciągnij kartę"
+        ], 
+        "InsertOrSwipeCardActivateNfc": [
+            "$amount$ Włóż lub przeciągnij kartę", 
+            "[OK] dla NFC"
+        ], 
+        "PINIncorrect": [
+            "Wprowadź PIN (niepoprawny)", 
+            "$digits$"
+        ], 
+        "PINLastTry": [
+            "Wprowadź PIN (ostatnia próba)", 
+            "$digits$"
+        ], 
+        "PINOk": [
+            "PIN OK", 
+            ""
+        ], 
+        "PINStatus": [
+            "Wprowadź PIN", 
+            "$digits$"
+        ], 
+        "PresentCard": [
+            "$amount$", 
+            "Prezentuj kartę"
+        ], 
+        "ProcessingTransaction": [
+            "Przetwarzanie płatności...", 
+            ""
+        ], 
+        "ProvideIdentification": [
+            "Wymagana identyfikacja", 
+            ""
+        ], 
+        "ProvideSignature": [
+            "Wymagany podpis", 
+            ""
+        ], 
+        "ProvideSignatureWithStatus": [
+            "$reason1$", 
+            "Wymagany podpis"
+        ], 
+        "ProviderAccessoryCheckingForUpdate": [
+            "Łączenie", 
+            "z czytnikiem kart..."
+        ], 
+        "ProviderAccessoryConnecting": [
+            "Łączenie", 
+            "z czytnikiem kart..."
+        ], 
+        "ProviderAccessoryUpdating": [
+            "Aktualizowanie", 
+            ""
+        ], 
+        "ProviderAccessoryWaitingForReader": [
+            "Szukam czytnika", 
+            "Prosimy włączyć czytnik"
+        ], 
+        "ProviderAccessoryConnectingPrinter": [
+            "Łączenie z", 
+            "drukarką"
+        ], 
+        "ProviderAccessoryWaitingForPrinter": [
+            "Szukam drukarki", 
+            "Prosimy włączyć drukarkę"
+        ], 
+        "ProviderAborted": [
+            "Płatność anulowano", 
+            ""
+        ], 
+        "ProviderApproved": [
+            "Płatność zatwierdzono", 
+            ""
+        ], 
+        "ProviderDeclined": [
+            "Płatność odrzucono", 
+            "$reason1$"
+        ], 
+        "ProviderFailed": [
+            "Płatności nie wykonano", 
+            "$error$"
+        ], 
+        "ProviderInconclusive": [
+            "Płatność nierozstrzygnięta", 
+            " $error$"
+        ], 
+        "Completed": [
+            "Zrealizowano", 
+            ""
+        ], 
+        "Aborted": [
+            "Przerwano", 
+            ""
+        ], 
+        "Failed": [
+            "Niepowodzenie", 
+            ""
+        ], 
+        "ProviderNotRefundable": [
+            "Płatność nie", 
+            "podlega zwrotowi"
+        ], 
+        "ProviderTransactionQuerying": [
+            "Zapytanie o", 
+            "transakcję"
+        ], 
+        "ProviderTransactionRegistering": [
+            "Rejestracja", 
+            "transakcji"
+        ], 
+        "ProviderAccessoryConfiguringConnectionLink": [
+            "Konfigurowanie połączenia", 
+            "Proszę czekać..."
+        ], 
+        "ProviderComponentPrinterSending": [
+            "Drukowanie...", 
+            ""
+        ], 
+        "ProviderComponentPrinterSent": [
+            "Drukowanie...", 
+            ""
+        ], 
+        "ProviderComponentPrinterAborted": [
+            "Drukowanie anulowano", 
+            ""
+        ], 
+        "ProviderComponentPrinterFailed": [
+            "Błąd drukowania", 
+            "$error$"
+        ], 
+        "ReadingEMVCard": [
+            "Wczytywanie karty...", 
+            ""
+        ], 
+        "RemoveCardWithStatus": [
+            "$reason1$", 
+            "Usuń kartę"
+        ], 
+        "RemoveCard": [
+            " ", 
+            "Usuń kartę"
+        ], 
+        "SwipeCard": [
+            "$amount$", 
+            "Przeciągnij kartę"
+        ], 
+        "SwipeCardWithoutAmount": [
+            "Przeciągnij kartę", 
+            ""
+        ], 
+        "TransactionAborting": [
+            "Anulowanie płatności...", 
+            ""
+        ], 
+        "UpdatingDevice": [
+            "Aktualizacja...", 
+            ""
+        ], 
+        "UpdatingDeviceConfigurationUpdate": [
+            "Aktualizacja  konfiguracji", 
+            "Proszę czekać..."
+        ], 
+        "UpdatingDeviceFirmwareUpdate": [
+            "Aktualizacja  oprogramowania firmowego", 
+            "Proszę czekać..."
+        ], 
+        "UpdatingDeviceSoftwareUpdate": [
+            "Aktualizacja  oprogramowania", 
+            "Proszę czekać..."
+        ], 
+        "UpdatingDeviceKeyInjection": [
+            "Generowanie kluczy", 
+            "Proszę czekać..."
+        ], 
+        "CardNotSupported": [
+            "Nieobsługiwana karta! Spróbuj", 
+            "innej karty lub naciśnij \"anuluj\""
+        ], 
+        "AskingForTipConfirmation": [
+            "$amount$", 
+            "Dodać NAPIWEK?"
+        ], 
+        "ProviderComponentTippingAskingForTip": [
+            "Prośba o NAPIWEK...", 
+            ""
+        ]
+    }
+}

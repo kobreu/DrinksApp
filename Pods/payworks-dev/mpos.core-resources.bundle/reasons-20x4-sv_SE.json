@@ -1,0 +1,277 @@
+{
+    "info": {
+        "columns": 20, 
+        "locale": "sv_SE", 
+        "rows": 2
+    }, 
+    "localization": {
+        "ABORTED": [
+            "", 
+            "Betalning avbruten"
+        ], 
+        "ABORTED_MERCHANT_ABORTED": [
+            "", 
+            "Betalning avbruten"
+        ], 
+        "ABORTED_SHOPPER_ABORTED": [
+            "", 
+            "Betalning avbruten"
+        ], 
+        "ABORTED_SHOPPER_REMOVED_CARD": [
+            "", 
+            "Betalning avbruten"
+        ], 
+        "ABORTED_PRESENT_CARD_TIMED_OUT": [
+            "", 
+            "Betalning avbruten"
+        ], 
+        "APPROVED": [
+            "Betalning ", 
+            "godkänd"
+        ], 
+        "DECLINED": [
+            "", 
+            "Avvisad"
+        ], 
+        "DECLINED_CARD_EXPIRED": [
+            "", 
+            "Avvisad"
+        ], 
+        "DECLINED_CARD_INVALID_PAN": [
+            "", 
+            "Avvisad"
+        ], 
+        "DECLINED_CARD_INVALID_SCHEME": [
+            "", 
+            "Avvisad"
+        ], 
+        "DECLINED_CARD_OR_TERMINAL_DECLINED": [
+            "", 
+            "Avvisad"
+        ], 
+        "DECLINED_CARD_STOLEN": [
+            "", 
+            "Avvisad"
+        ], 
+        "DECLINED_CARD_USE_ORIGINAL": [
+            "", 
+            "Avvisad"
+        ], 
+        "DECLINED_INVALID_TERMINAL": [
+            "Betalning ", 
+            "inte möjlig"
+        ], 
+        "DECLINED_INVALID_TERMINAL_CONFIG": [
+            "Betalning ", 
+            "inte möjlig"
+        ], 
+        "DECLINED_INVALID_TERMINAL_SOFTWARE": [
+            "Betalning ", 
+            "inte möjlig"
+        ], 
+        "DECLINED_PIN_WRONG": [
+            "Fel PIN ", 
+            "avslagen"
+        ], 
+        "DECLINED_PIN_WRONG_TOO_OFTEN": [
+            "Fel PIN för många", 
+            "gånger,avvisad"
+        ], 
+        "DECLINED_PROCESSOR": [
+            "", 
+            "Avvisad"
+        ], 
+        "DECLINED_PROCESSOR_EXCEEDS_WITHDRAWAL_COUNT_LIMIT": [
+            "", 
+            "Avvisad"
+        ], 
+        "DECLINED_PROCESSOR_UNCAPTURED_CHARGES_NOT_SUPPORTED": [
+            "", 
+            "Avvisad"
+        ], 
+        "DECLINED_SESSION_EXPIRED": [
+            "Betalning ", 
+            "inte möjlig"
+        ], 
+        "DECLINED_PROCESSOR_INCONSISTENT_STATE": [
+            "", 
+            "Avvisad"
+        ], 
+        "DECLINED_MALFORMED_REQUEST": [
+            "", 
+            "Avvisad"
+        ], 
+        "DECLINED_MANIPULATION_SUSPECTED": [
+            "", 
+            "Avvisad"
+        ], 
+        "DECLINED_CARD_BLOCKED": [
+            "", 
+            "Avvisad"
+        ], 
+        "DECLINED_INSUFFICIENT_FUNDS": [
+            "", 
+            "Avvisad"
+        ], 
+        "DECLINED_TRANSACTION_FREQUENCY_EXCEEDED": [
+            "", 
+            "Avvisad"
+        ], 
+        "DECLINED_CARD_LOST": [
+            "", 
+            "Avvisad"
+        ], 
+        "DECLINED_INVALID_SCHEME": [
+            "", 
+            "Avvisad"
+        ], 
+        "DECLINED_INVALID_AMOUNT": [
+            "", 
+            "Avvisad"
+        ], 
+        "DECLINED_INVALID_CONFIGURATION": [
+            "", 
+            "Avvisad"
+        ], 
+        "DECLINED_DUPLICATE_TRANSACTION": [
+            "", 
+            "Avvisad"
+        ], 
+        "DECLINED_INVALID_WORKFLOW": [
+            "", 
+            "Avvisad"
+        ], 
+        "DECLINED_PROCESSOR_CARD_EXPIRED": [
+            "", 
+            "Avvisad"
+        ], 
+        "DECLINED_PROCESSOR_REFUND_NOT_POSSIBLE": [
+            "", 
+            "Avvisad"
+        ], 
+        "DECLINED_PROCESSOR_TEMPORARILY_BLACKLISTED": [
+            "", 
+            "Avvisad"
+        ], 
+        "DECLINED_AMOUNT_EXCEEDS_LIMIT": [
+            "", 
+            "Avvisad"
+        ], 
+        "ERROR": [
+            "Bearbetar fel", 
+            ""
+        ], 
+        "ERROR_APPROVED_OFFLINE": [
+            "Fel", 
+            "(Terminal Approval)"
+        ], 
+        "ERROR_PROCESSOR_INVALID_FORMAT": [
+            "Fel", 
+            "(Invalid Format)"
+        ], 
+        "ERROR_PROCESSOR_INVALID_NONCE": [
+            "Fel", 
+            "(Invalid Nonce)"
+        ], 
+        "ERROR_PROCESSOR_INVALID_SESSION": [
+            "Fel", 
+            "(Invalid Session)"
+        ], 
+        "ERROR_PROCESSOR_INVALID_STATUS": [
+            "Fel", 
+            "(Invalid Status)"
+        ], 
+        "ERROR_PROCESSOR_MISSING_SESSION": [
+            "Fel", 
+            "(Missing Session)"
+        ], 
+        "ERROR_PROCESSOR_CONNECTION_ERROR": [
+            "Fel", 
+            "(Connection Error)"
+        ], 
+        "ERROR_SESSION_TIMEOUT": [
+            "Fel", 
+            "(Session Timeout)"
+        ], 
+        "ERROR_TERMINAL_ERROR": [
+            "Fel", 
+            "(Terminal Error)"
+        ], 
+        "ERROR_SERVER_INVALID_RESPONSE": [
+            "Fel ", 
+            "(Invalid Response)"
+        ], 
+        "ERROR_SERVER_UNAVAILABLE": [
+            "Fel ", 
+            "(Server unavailable)"
+        ], 
+        "ERROR_SERVER_TIMEOUT": [
+            "Fel ", 
+            "(Server Timeout)"
+        ], 
+        "ERROR_SERVER_AUTHENTICATION_FAILED": [
+            "Fel ", 
+            "(Auth failed)"
+        ], 
+        "ERROR_SERVER_PINNING_FAILED": [
+            "Fel ", 
+            "(Pinning failed)"
+        ], 
+        "ERROR_SERVER_ACCESSORY_DEACTIVATED": [
+            "Fel ", 
+            "(Term. deactivated)"
+        ], 
+        "ERROR_SERVER_ACCESSORY_NOT_ASSIGNED_TO_MERCHANT": [
+            "Fel ", 
+            "(Term. not assigned)"
+        ], 
+        "ERROR_TERMINAL_TIMEOUT": [
+            "Fel ", 
+            "(Terminal Timeout)"
+        ], 
+        "ERROR_PROCESSOR_FAILED_INCONSISTENT_STATE_UNRESOLVED": [
+            "Fel ", 
+            "(Inconsistent State)"
+        ], 
+        "ERROR_PROCESSOR_FAILED_INCONSISTENT_STATE_RESOLVED": [
+            "Fel ", 
+            "(Inconsistent State)"
+        ], 
+        "ERROR_PROCESSOR_PAYMENT_DETAILS_EXTRACTION_FAILED": [
+            "Fel ", 
+            "(Details Extraction)"
+        ], 
+        "ERROR_PROCESSOR_INVALID_PAYMENT_DETAILS": [
+            "Fel ", 
+            "(Invalid Details)"
+        ], 
+        "ERROR_PROCESSOR_INVALID_CONFIGURATION": [
+            "Fel ", 
+            "(Invalid Config.)"
+        ], 
+        "ERROR_PROCESSOR_MALFORMED_REQUEST": [
+            "Fel ", 
+            "(Malformed Request)"
+        ], 
+        "ERROR_PROCESSOR_TRANSACTION_ALREADY_IN_PROGRESS": [
+            "Fel ", 
+            "(Tx in progress)"
+        ], 
+        "ERROR_PROCESSOR_CONNECTION_NO_RESPONSE": [
+            "Fel ", 
+            "(No response)"
+        ], 
+        "NONE": [
+            "", 
+            ""
+        ], 
+        "PENDING": [
+            "Bearbetar", 
+            "betalning..."
+        ], 
+        "PENDING_WAITING_FOR_FINALIZATION": [
+            "Bearbetar", 
+            "betalning..."
+        ]
+    }
+}

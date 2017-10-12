@@ -14,11 +14,6 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>HockeySDK.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>Lockbox.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -52,22 +47,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>1614360839428BEF54A9813F45ACB7BD</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>3FC2CFAD218200DD706731875DD53241</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>405540AD0E5AF64081A19CA89CD8AA50</key>
+		<key>5E8CC417F3BAA9E6F7289D409039B5D3</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>DE7509C4F9EE7BE1D7D768DF93B2EB0C</key>
+		<key>6F47E204843B206B22CBF7404AB229AF</key>
 		<dict>
 			<key>primary</key>
 			<true/>

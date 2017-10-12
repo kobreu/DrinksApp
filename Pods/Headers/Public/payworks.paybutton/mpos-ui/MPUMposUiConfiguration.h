@@ -1,1 +1,0 @@
-../../../../payworks.paybutton/mpos-ui.framework/Versions/A/Headers/MPUMposUiConfiguration.h

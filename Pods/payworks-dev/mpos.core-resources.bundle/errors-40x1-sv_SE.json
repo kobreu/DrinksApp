@@ -1,0 +1,123 @@
+{
+    "info": {
+        "locale": "sv_SE", 
+        "rows": 1, 
+        "columns": 40
+    }, 
+    "localization": {
+        "ParameterMissing": [
+            "Parameter saknas"
+        ], 
+        "ParameterInvalid": [
+            "Parameter ogiltig"
+        ], 
+        "AccessoryNotFound": [
+            "Tillsats hittades inte"
+        ], 
+        "AccessoryNotConnected": [
+            "Tillsats inte ansluten"
+        ], 
+        "AccessoryAlreadyConnected": [
+            "Tillsats är redan ansluten"
+        ], 
+        "AccessoryAlreadyDisconnected": [
+            "Tillsats har kopplats från"
+        ], 
+        "AccessoryBusy": [
+            "Tillsats är upptagen"
+        ], 
+        "AccessoryNotWhitelisted": [
+            "Tillsats inte vitlistad"
+        ], 
+        "AccessoryDeactivated": [
+            "Tillsats är avaktiverad"
+        ], 
+        "AccessoryRequiresUpdate": [
+            "Uppdatering av tillsats krävs"
+        ], 
+        "AccessoryBatteryLow": [
+            "Lågt batteri"
+        ], 
+        "AccessoryTampered": [
+            "Tillsats har manipulerats"
+        ], 
+        "AccessoryError": [
+            "Tillsatsfel"
+        ], 
+        "AccessoryComponentNotFound": [
+            "Tillsatskomponent hittades inte"
+        ], 
+        "AccessoryComponentPrinterBusy": [
+            "Skrivaren är upptagen"
+        ], 
+        "AccessoryComponentPrinterPaperLowOrOut": [
+            "Skrivaren har slut eller nästan slut på papper"
+        ], 
+        "AccessoryComponentPrinterCoverOpen": [
+            "Locket på skrivaren är öppet"
+        ], 
+        "TransactionSessionNotFound": [
+            "Transaktionens session kan inte hittas"
+        ], 
+        "TransactionReferenceNotFound": [
+            "Transaktionens referens kan inte hittas"
+        ], 
+        "TransactionInvalid": [
+            "Ogiltig transaktion"
+        ], 
+        "TransactionBusy": [
+            "Transaktion är upptagen"
+        ], 
+        "TransactionNoLongerAbortable": [
+            "Transaktionen kan inte längre avbrytas"
+        ], 
+        "TransactionDeclined": [
+            "Transaktionen avvisad"
+        ], 
+        "TransactionAborted": [
+            "Transaktionen avbruten"
+        ], 
+        "TransactionError": [
+            "Transaktionsfel"
+        ], 
+        "TransactionActionError": [
+            "Fel vid transaktionsåtgärd"
+        ], 
+        "ServerTimeout": [
+            "Server timeout"
+        ], 
+        "ServerUnavailable": [
+            "Kontrollera din anslutning till internet"
+        ], 
+        "ServerAuthenticationFailed": [
+            "Gateway autenticering misslyckades"
+        ], 
+        "ServerPinningWithRemoteFailed": [
+            "Gateway verifikation misslyckades"
+        ], 
+        "ServerInvalidResponse": [
+            "Ogiltigt svar från servern"
+        ], 
+        "ServerError": [
+            "Serverfel"
+        ], 
+        "SDKResourcesNotFound": [
+            "Resursen kunde inte hittas"
+        ], 
+        "SDKResourcesModified": [
+            "Resursen har modifierats"
+        ], 
+        "SDKConfigurationMissing": [
+            "Konfiguration saknas"
+        ], 
+        "SDKFeatureNotEnabled": [
+            "Funktionen är inte aktiverad"
+        ], 
+        "InternalInconsistency": [
+            "Internt fel"
+        ], 
+        "ServerUnknownUsername": [
+            "Hittade inget konto"
+        ]
+    }
+}

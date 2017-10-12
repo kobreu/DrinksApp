@@ -58,14 +58,14 @@ install_resource()
   esac
 }
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_resource "payworks/mpos.core-resources.bundle"
-  install_resource "payworks.paybutton/mpos-ui-resources.bundle"
+  install_resource "payworks-dev/mpos.core-resources.bundle"
+  install_resource "payworks.paybutton-dev/mpos-ui-resources.bundle"
   install_resource "${BUILT_PRODUCTS_DIR}/HockeySDKResources.bundle"
   install_resource "${BUILT_PRODUCTS_DIR}/MPBSignatureViewResources.bundle"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_resource "payworks/mpos.core-resources.bundle"
-  install_resource "payworks.paybutton/mpos-ui-resources.bundle"
+  install_resource "payworks-dev/mpos.core-resources.bundle"
+  install_resource "payworks.paybutton-dev/mpos-ui-resources.bundle"
   install_resource "${BUILT_PRODUCTS_DIR}/HockeySDKResources.bundle"
   install_resource "${BUILT_PRODUCTS_DIR}/MPBSignatureViewResources.bundle"
 fi

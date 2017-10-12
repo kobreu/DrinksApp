@@ -162,6 +162,7 @@
 					2DEA8ED41A4876E3004EF502 = {
 						CreatedOnToolsVersion = 6.1.1;
 						DevelopmentTeam = PR8KQJ7W56;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -365,6 +366,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = PR8KQJ7W56;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -378,6 +380,7 @@
 				PRODUCT_NAME = "Drinks App";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "SwiftTest/mpos-Bridging-Header.h";
+				SWIFT_VERSION = 2.3;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALID_ARCHS = "arm64 armv7s armv7";
 			};
@@ -394,6 +397,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = PR8KQJ7W56;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -405,8 +409,10 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.payworks.labs.retail.SwiftTest;
 				PRODUCT_NAME = "Drinks App";
-				PROVISIONING_PROFILE = "110196b2-dd83-4f9d-8fbb-181529df9eff";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "SwiftTest/mpos-Bridging-Header.h";
+				SWIFT_VERSION = 2.3;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALID_ARCHS = "arm64 armv7s armv7";
 			};
